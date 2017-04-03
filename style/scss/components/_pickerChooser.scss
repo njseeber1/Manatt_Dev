@@ -1,0 +1,171 @@
+// -----------------------------------------------------------------------------
+// PICKERCHOOSER
+// -----------------------------------------------------------------------------
+.pickerChooser {
+    padding: $spacer*2 $spacer;
+    background: $colorGrayLighter;
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-wrap: wrap;
+        background: transparent;
+        padding: $spacer*3;
+    }
+}
+
+.pickerChooser-heading {
+    text-align: center;
+    margin-bottom: $spacer*2;
+    @include media-breakpoint-up(md) {
+        flex: 0 0 100%;
+        border-bottom: 2px solid;
+        padding-bottom: $spacer;
+    }
+}
+
+.pickerChooser-copy {
+    padding: $spacer;
+    @include media-breakpoint-up(md) {
+        padding: 0 $spacer*2;
+    }
+}
+
+.pickerChooser-cta {
+    text-align: center;
+    padding: $spacer;
+    margin-bottom: 0;
+    .btn {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.7;
+        padding-right: $spacer*2;
+        padding-left: $spacer*2;
+    }
+    @include media-breakpoint-up(md) {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.pickerChooser-list {
+    display: none;
+    font-size: 18px;
+    @include media-breakpoint-up(md) {
+        list-style: none;
+        padding-left: $spacer;
+        display: block;
+        flex: 0 0 30%;
+        padding-right: $spacer;
+        border-right: 2px solid $colorBorder;
+        li {
+            margin-bottom: $spacer;
+            a {
+                transition: all .05s ease;
+                color: inherit;
+            }
+            &.selected a,
+            a:hover {
+                text-decoration: none;
+                font-weight: bold;
+                &:after {
+                    content: '\f2fb';
+                    display: inline-block;
+                    font: normal normal normal 14px/1 '#{$zmdi-font-name}';
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 24px;
+                    height: 1em;
+                    width: 1em;
+                    text-align: center;
+                    vertical-align: -.15em;
+                }
+            }
+        }
+    }
+}
+
+.pickerChooser-select {
+    margin-bottom: $spacer;
+    font-size: 12px;
+    font-weight: bold;
+    color: $colorGrayDark;
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.pickerChooser-content {
+    @include media-breakpoint-up(md) {
+        flex: 0 0 70%;
+        display: flex;
+        min-height: 600px;
+    }
+}
+
+.pickerChooser-choice {
+    display: none;
+    &.is-visible {
+        display: block;
+    }
+    @include media-breakpoint-up(md) {
+        flex: 0 0 100%;
+        &.is-visible {
+            display: flex;
+        }
+    }
+}
+
+.pickerChooser-subHeading {
+    font-size: 24px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: $spacer*1.5;
+    }
+}
+
+.pickerChooser-copy {
+    p {
+        margin-bottom: $spacer*1.5;
+    }
+    @include media-breakpoint-up(md) {
+        flex: 0 0 66.6666%;
+    }
+}
+
+.pickerChooser-img {
+    @include media-breakpoint-down(md) {
+        display: none;
+        background: transparent
+    }
+    @include media-breakpoint-up(md) {
+        display: block;
+        flex: 0 0 33.3333%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.flashMe {
+    -webkit-animation: pulse 1.5s;
+    animation: pulse 1.5s;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        background-color: rgba($colorHighlight, .75);
+    }
+    100% {
+        background-color: $colorWhite;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba($colorHighlight, .75);
+    }
+    100% {
+        background-color: $colorWhite;
+    }
+}

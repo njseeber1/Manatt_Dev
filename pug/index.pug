@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title [client name]
+
+	body
+		main
+			.container
+				table(width="100%").table.table-striped
+					thead
+						tr
+							th #
+							th Page Template
+							th Info
+					tbody
+						tr
+							th(scope='row') 001
+							td
+								a(href='home.html') Home
+							td.zmdi-hourglass-alt in progress

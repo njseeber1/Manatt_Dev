@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+//create an iconstyle mixin so you can just add material design icons like so:
+// <p class="zmdi-flower-alt">Now I have an icon without a clunky i element yo</p>
+
+@mixin iconStyle {
+  display: inline-block;
+  font: normal normal normal 14px/1 '#{$zmdi-font-name}';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right:.4em;
+}
+%iconStyle {
+    @include iconStyle;
+}
+[class^='zmdi-'],
+[class*=' zmdi-'] {
+    &:before {
+        @extend %iconStyle;
+
+        text-decoration: none;
+    }
+}

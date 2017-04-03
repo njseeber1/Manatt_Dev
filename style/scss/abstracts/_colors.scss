@@ -1,0 +1,62 @@
+/* COLORS
+========================================================================== */
+
+/*
+ * Declare brand colors here as they may be used in some of the variables below.
+ *
+ * The default secondary and accent colors are populated with SASS color functions to
+ * generate a 3 color analogous palette (hue values 30 degrees to either side on the color wheel).
+ * If the client has a full color palette those hex values should be entered instead
+
+ * 
+ Just in case you want to mess with different color rules:
+    Monochromatic color harmony maintains a constant value in the H and varies the S and V values.
+
+    Complementary color harmony uses H values that are about 200 degrees apart (with variations
+    in S and V as desired).
+
+    Triadic color harmony uses 3 H values roughly 130 degrees apart (vary S and V to taste).
+
+    Analogous color harmony uses 3 or more H values in a range of about 30 degrees plus and
+    minus from your key color.
+
+ */
+
+$colorBrandGold: #F0AB00 !default;
+$colorBrandCyan: #00A9E0 !default;
+$colorBrandTurq: #00A8B4 !default;
+$colorBrandGreen: #7AB800 !default;
+$colorBrandRed: #D52B1E !default;
+$colorBrandOrange: #E47F2D !default;
+$colorBrandMagenta: #C50084 !default;
+$colorBrandBlueDark: #004157 !default;
+/*
+ * Monochrome colors
+ */
+
+$colorWhite: #fff !default;
+$colorBlack: #000 !default;
+$colorGray: #959595 !default;
+$colorGrayLight: mix(white, $colorGray, 50%) !default;
+$colorGrayLighter: mix(white, $colorGray, 80%) !default;
+$colorGrayLightest: mix(white, $colorGray, 90%) !default;
+$colorGrayDark: mix(black, $colorGray, 25%) !default;
+$colorGrayDarker: mix(black, $colorGray, 35%) !default;
+$colorGrayDarkest: mix(black, $colorGray, 55%) !default;
+
+/*
+ * Text elements
+ */
+
+$colorText: $colorGrayDarker !default; //color overall body copy
+$colorLinks: inherit !default; //color basic links sitewide
+
+/*
+ * Generic border color for consistency
+ */
+ $colorBorder: $colorGrayLighter !default;
+/*
+ * Generic attention getter
+ */
+ $colorHighlight: #ffd500 !default;
+

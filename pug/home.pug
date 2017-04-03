@@ -1,0 +1,223 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title Home
+
+	body
+		include includes/_headerMain.pug
+		main
+			.container.container-fluid.p-0
+				.row.no-gutters
+					.col-lg-6
+						.row.no-gutters
+							.col-12
+								.tile.tile--animate.tile--img.ar--1-1.ar-sm--2-1.ar-lg--1-1(style="background-image:url(http://placehold.it/600x600)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+												ul.tile-share
+													li SHARE
+													li
+														a(href="").zmdi-twitter
+													li
+														a(href="").zmdi-facebook
+													li
+														a(href="").zmdi-linkedin
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading Character max - 30 - Title
+											p.tile-caption
+												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							.col-12.hidden-lg-up.js-homepage-mobileActionBar
+								//-this is empty to append the search section on mobile
+					.col-lg-6
+						.row.no-gutters
+							.col-12
+								.tile.tile--animate.tile--img.ar--1-1.ar-sm--2-1(style="background-image:url(http://placehold.it/600x300)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading Character max - 30 - Title
+											p.tile-caption
+												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							.col-sm-6
+								.tile.tile--animate.ar--1-1.carousel.slide.fillColorGrayDark(data-ride='carousel')
+									ol.carousel-indicators.tile-carouselIndicators
+										li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+										li(data-target='#carouselExampleIndicators', data-slide-to='1')
+										li(data-target='#carouselExampleIndicators', data-slide-to='2')
+									.tile-inner.carousel-inner(role='listbox')
+										.carousel-item.tile-carouselItem.active
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 01
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="", class="tile-fullLink")
+												h3.tile-heading Character max - 30 - Title
+												p.tile-caption
+													| Character max - 48 - Lorem ipsum dolor sit amet.
+										.carousel-item.tile-carouselItem
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 02
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="", class="tile-fullLink")
+												h3.tile-heading Character max - 30 - Title
+												p.tile-caption
+													| Character max - 48 - Lorem ipsum dolor sit amet.
+										.carousel-item.tile-carouselItem
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 03
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="", class="tile-fullLink")
+												h3.tile-heading Character max - 30 - Title
+												p.tile-caption
+													| Character max - 48 - Lorem ipsum dolor sit amet.
+							.col-sm-6
+								.tile.tile--animate.tile--img.ar--1-1(style="background-image:url(http://placehold.it/300x300)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading Character max - 30 - Title
+											p.tile-caption
+												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+				section.actionBar.js-homepage-actionBar.px-4.py-8.py-md-12.fillcolorBrandCyan.fullWidth
+					.row.sm-gutters
+						.col-md
+							.searchBox.mb-2.mb-md-0
+								input.searchBox-textField(type='text', name='', placeholder='Search 360 Health')
+								a.searchBox-submit
+						.col-md
+							label.sr-only(for='topic') Select a Key Topic
+							select#topic.form-control.mb-2.mb-md-0
+								option Select a Key Topic
+								option 2
+								option 3
+								option 4
+								option 5    		
+						.col-md
+							label.sr-only(for='content') Content Type
+							select#content.form-control.mb-2.mb-md-0
+								option Select a Key Topic
+								option 2
+								option 3
+								option 4
+								option 5					
+						.col-md.col-md-auto
+							button.btn.btn-primary.w-100.w-md-auto.px-4 Go
+				section.py-5.coverBg.text-white(style="background-image:url(http://placehold.it/1200x500/404040)")
+					h2.py-3.py-md-5.text-center Premium Insights
+					ul.tileList
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://placehold.it/300x300/696969)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Character max - 30 - Title
+								p.tileList-caption
+									| Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://placehold.it/300x300/707070)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Character max - 30 - Title
+								p.tileList-caption
+									| Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://placehold.it/300x300/696969)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Character max - 30 - Title
+								p.tileList-caption
+									| Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://placehold.it/300x300/707070)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Character max - 30 - Title
+								p.tileList-caption
+									| Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
+					.py-3.py-md-5.text-center
+						button.btn.btn-primary.px-4 View All Insights
+				.pickerChooser
+					h2.pickerChooser-heading Key Topics
+					ul.pickerChooser-list
+						li.selected
+							a(href="", data-target="Medicare") Medicare
+						li
+							a(href="", data-target="Payment and Delivery System Transformation") Payment and Delivery System Transformation
+						li
+							a(href="", data-target="Medicaid") Medicaid
+						li
+							a(href="", data-target="Insurance and Marketplaces") Insurance and Marketplaces
+						li
+							a(href="", data-target="Life Sciences") Life Sciences
+						li
+							a(href="", data-target="Digital Health") Digital Health
+						li
+							a(href="", data-target="Privacy and Security") Privacy and Security
+						li
+							a(href="", data-target="Fraud and Abuse") Fraud and Abuse
+						li
+							a(href="", data-target="Litigation") Litigation
+						li
+							a(href="", data-target="Transactions") Transactions
+					.pickerChooser-content
+						.pickerChooser-choice.is-visible(data-choose="Medicare")
+							.pickerChooser-copy
+								h3.pickerChooser-subHeading Medicare
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								p.pickerChooser-cta
+									a.btn.btn-primary(href="") View Medicare Topics
+							.pickerChooser-img(style="background-image:url(http://placehold.it/280x600/696969)")
+						.pickerChooser-choice(data-choose="Payment and Delivery System Transformation")
+							.pickerChooser-copy
+								h3.pickerChooser-subHeading Payment and Delivery System Transformation
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								p.pickerChooser-cta
+									a.btn.btn-primary(href="") View Payment and Delivery System Transformation Topics
+							.pickerChooser-img(style="background-image:url(http://placehold.it/280x600/707070)")
+						.pickerChooser-choice(data-choose="Medicaid")
+							.pickerChooser-copy
+								h3.pickerChooser-subHeading Medicaid
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								p.pickerChooser-cta
+									a.btn.btn-primary(href="") View Medicaid Topics
+							.pickerChooser-img(style="background-image:url(http://placehold.it/280x600/787878)")
