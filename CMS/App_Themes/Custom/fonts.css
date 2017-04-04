@@ -1,0 +1,339 @@
+/* GENERIC STYLES [START] */
+html {
+	font-size: 100%;
+}
+body {
+    font-family: 'Univers W01',Helvetica,Arial,Sans-Serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 16px;
+}
+.small {
+	font-size: 14px;
+}
+/* TYPOGRAPHY */
+
+i, emph {
+	font-family: 'Univers W01', Helvetica, Arial, Sans-Serif;
+	font-weight: inherit;
+	font-style: italic;
+}
+
+bold, strong {
+	font-family: 'Univers W01', Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6, .serif {
+	font-family:'Clarendon W01', Georgia, serif;
+	font-weight: 200;
+	font-style: normal;
+}
+.articles article .content h1,
+.articles article .content h2,
+.articles article .content h3,
+.articles article .content h4,
+.articles article .content h5,
+.articles article .content h6,
+/*tt #more h1,*/
+#more h2:not(.title), #more h3,
+#more h4, #more h5, #more h6 {
+	font-family: 'Univers W01', Helvetica, Arial, Sans-Serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+[class*='sans'], [class*='sans'] > a {
+	font-family: 'Univers W01', Helvetica, Arial, Sans-Serif;
+	font-weight: inherit;
+	font-style: normal;
+}
+.modal-heading {
+	text-align: left;
+	line-height: 1.4;
+	border-bottom: 2px solid #000;
+	padding-bottom: 0.3em!important;
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+.results .modal-heading {
+	margin-top: 0;
+	padding-top: 0;
+}
+.modal-heading small, .modal-heading span {
+	font-size: 14px;
+}
+a, i, b, emph, span, p, div, h1, h2, h3, h4, h5, h6 {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+a, abbr, address, acronym, cite, label, u, q, strong, span:not(.bs-caret), samp, strike, blockquote, p, p + ul, p + ol, ul, ol, button, .expander-wrapper > ul, .expander-wrapper > ol, .results .page-header h4, .results h4 small, input  {
+/*	font-size: 14px;*/
+}
+address,blockquote, p, p + ul, p + ol, .expander-wrapper > ul, .expander-wrapper > ol, .articles article .content ul, .articles article .content ul {
+	margin-bottom: 1.4em;
+	line-height: 1.714;
+}
+ol, ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+small {
+	margin-bottom: 1.8em;
+	line-height: 1.714;
+}
+/*.articles p, .articles p + ul, .articles p + ul + ul, .articles p + ol, .articles p + ol + ol {*/
+.articles p, .articles ul, .articles ol {
+	line-height: 1.714;
+}
+
+.articles .profile-detail p, .articles .profile-detail ul, .articles .profile-detail ol {
+	line-height: 1.2;
+}
+.quote p {
+	font-size: 24px;
+	margin-bottom: 0.3em;
+}
+.quote .citation {
+	font-size: 18px;
+}
+/* GENERIC STYLES [END] */
+
+/* BUTTON [STYLES] */
+.btn {
+	font-size: 16px!important;
+}
+/* BUTTON [END] */
+
+/* JUMBOTRON [START] */
+.jumbotron .h1, .jumbotron h1 {
+	font-size: 34px;
+}
+.jumbotron .h3, .jumbotron h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+/* JUMBOTRON [END] */
+
+#about-cta h2 {
+    font-size: 34px;
+    margin-top: 0.3em;
+}
+
+/* TILES [START] */
+.mosaic .tile > header * {
+	font-weight: 400;
+}
+.mosaic .tile>header .fa-stack {
+	margin-top: -4px;
+}
+.mosaic .tile:not(#practices):not(.cta):not(.news):not([class*="bg"]) > header h4,
+.mosaic .tile:not(#practices):not(.cta):not(.news):not([class*="bg"]) > header .fa-circle,
+.mosaic .tile:not(#practices):not(.cta):not(.news):not([class*="bg"]) > header h5,
+.mosaic .tile:not(#practices):not(.cta):not(.news):not([class*="bg"]) .caption-box p {
+	text-shadow: 0 0 3px rgba(0,0,0,0.8);
+}
+.mosaic .tile:not(#practices):not(.cta):not(.news) > header h4 .fa:not(.fa-circle) {
+	text-shadow: 0 0 0px rgba(0,0,0,0.8);
+}
+
+.mosaic .tile#practices .lead, .mosaic .tile .lead {
+    font-size: 22px;
+	line-height: 1.2;
+}
+.mosaic .tile.small .lead {
+	font-size: 22px;
+}
+.mosaic .tile.big .lead {
+	font-size: 28px;
+}
+.mosaic .tile p.caption {
+	font-size: 18px;
+}
+.mosaic .tile.big p.caption {
+	font-size: 18px;
+}
+.share h5,
+.mosaic .tile header h4 {
+	font-size: 12px;
+	/* text-transform: uppercase; */
+}
+.mosaic .tile.news header h4.blue {
+	font-size: 24px;
+}
+.mosaic .tile .selects .btn-default .filter-option,
+.mosaic .tile#finder input {
+/*	font-size: 16px;*/
+}
+.mosaic .tile#finder .sort ul {
+/*	font-size: 16px;*/
+}
+.mosaic .tile.cta p, .mosaic .tile.cta * {
+	font-size: 18px;
+}
+.mosaic .tile#practices .lead {
+	font-size: 24px;
+}
+.mosaic .tile.news li a {
+	
+}
+.mosaic .news li a {
+    color: #333;
+	line-height: 1.2;
+	font-size: 18px;
+}
+/* TILES [ EMD ] */
+
+/* HEADERS [ START ] */
+.page-header,
+.sub-menu-header,
+#finder h1.lead {
+	font-size: 30px;
+}
+.sub-menu-sub-header {
+	font-size: 18px;
+}
+#more h1 {
+	color: #efab00;
+}
+/*
+#more h2 {
+	font-size: 20px;
+}
+#more h3 {
+	font-size: 16px;
+}
+#more h5 {
+	font-size: 14px;
+}
+#more h6 {
+	font-size: 12px;
+}
+*/
+#more h2, #more h3, #more h4, #more h5, #more h6 {
+	color: #00909f;
+}
+#more p {
+	font-size: 16px;
+}
+.newsfeed .post .snippet,
+#more .newsfeed p.snippet {
+	font-size: 16px;
+	line-height: 1.3;
+}
+#profile .profile-detail div#info {
+	font-size: 14px;
+}
+#profile #info header .title {
+	font-size: 20px;
+}
+.profile .related-content h3,
+.newsfeed .title {
+	font-size: 22px;
+}
+.profile .related-content h3 {
+   /* font-weight: 600; */
+}
+.newsfeed .title, .profile .newsfeed h3 {
+    font-weight: 200;
+}
+.newsfeed .post .snippet, #more .newsfeed p.snippet {
+    font-size: 15px;
+    font-weight: 400;
+}
+h1, .h1 {
+	font-size: 30px;
+}
+h2, .h2 {
+	font-size: 26px;
+}
+h3, .h3 {
+	font-size: 22px;
+}
+h4, .h4 {
+	font-size: 18px;
+}
+h5, .h5 {
+	font-size: 14px;
+}
+h6, .h6 {
+	font-size: 12px;
+}
+/* HEADERS [ END ] */
+
+/* NAV [ START ] */
+footer .site-map ul li a {
+	font-size: 11px;
+}
+footer a, footer a:link, footer a:visited, footer h6, footer p {
+	color: #999;
+	font-size: 11px;
+}
+footer .share-links a {
+	font-size: 21px;
+}
+.breadcrumbs {
+	font-size: 12px;
+}
+nav.sub {
+	font-size: 18px;
+}
+/* NAV [ END ]   */
+
+/* SAERCH [START] */
+.results a.active {
+	font-weight: bold;
+}
+.results .post-header {
+	font-size: 14px;
+}
+.results .post-header h3 {
+	margin: 0 0;
+	font-size: 22px;
+}
+.results .post-header h3 span {
+	font-size: 24px;
+}
+.results .pager-elem {
+	font-size: 16px;
+}
+.results #search-filter input:not(.datepicker) {
+	font-size: 16px;
+}
+/*
+.results .result-list .articles .sort span,
+.results .result-list .articles .sort a:active,
+.results .result-list .articles .sort a:visited {
+	color: #333!important;
+}
+*/
+/* SAERCH [END] */
+/* BASIC PAGE [START] */
+#basic-page .articles h6 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+	margin: 0 0 0.3em 0;
+}
+#basic-page .location-header h4 {
+	font-size: 16px;
+    font-weight: bold;
+	margin: 0;
+}
+/* BASIC PAGE [END] */
+/* PRACTICE CHAIRS [START] */
+.people-list dl .info * {
+	line-height: 1.2;
+}
+.people-list.stacked .name {
+	font-size: 22px;
+	line-height: 1.2;
+	/*font-weight: bold;*/
+}
+.people-list.stacked dl .info .detail,
+.people-list.stacked dl .info .connect li a {
+	font-size: 16px;
+}
+/* PRACTICE CHAIRS [END] */

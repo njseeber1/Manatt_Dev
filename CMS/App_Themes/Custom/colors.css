@@ -1,0 +1,218 @@
+a {
+    color: #efab00;
+    text-decoration: none
+}
+
+a:focus,a:hover {
+    color: #efab00;
+    text-decoration: underline
+}
+.people-list .detail a, .people-list .detail a:focus, .people-list .detail a:hover {
+	color: #337ab7;
+}
+/* COLORS */
+.yellow, .yellow a, #basic-page h1, .artices article .content h1 {
+	color: #efab00!important;
+}
+.yellow-hover:hover {
+	color: #efab00!important;
+}
+.yellow-bg {
+	background-color: #efab00!important;
+	color: #fff;
+}
+.gold-bg {
+	background-color: #efab00!important;
+	color: #fff;
+}
+.yellow-brd {
+	background-color: transparent!important;
+	border: 2px solid #efab00!important;
+	color: #efab00!important;
+}
+
+.blue, .blue a, .blue a::after, .blue a::before {
+	color: #009ad1!important;
+}
+
+.blue-bg {
+	background-color: #009ad1!important;
+	color: #fff!important;
+}
+.cyan-bg {
+	background-color: #009ad1!important;
+	color: #fff!important;
+}
+.blue-brd {
+	background-color: transparent!important;
+	border: 2px solid #009ad1!important;
+	color: #009ad1!important;
+}
+
+.blue-lt, .blue-lt a, .articles article .content h4, #more h4 {
+	color: #00909f!important;
+}
+
+.nvblue-bg {
+	background-color: #0f3b52;
+	color: #fff;
+}
+
+.nvblue, .nvblue a {
+	color: #0f3b52 !important;
+}
+
+.nvblue-brd {
+	background-color: transparent!important;
+	border: 2px solid #0f3b52!important;
+	color: #0f3b52;
+}
+
+.white-bg {
+	background-color: #fff!important;
+	color: #000!important;
+}
+/*
+.awards-bg {
+	background-color: #eee !important;
+}
+*/
+
+.white, .white a {
+	color: #fff!important;
+}
+
+.shadow-below {
+	text-shadow: 0 2px #000;
+}
+
+.green, .green a {
+	color: #7ab800!important;
+}
+
+.green-bg {
+	background-color: #7ab800!important;
+	color: #fff!important;
+}
+
+.black {
+	color: #000!important;
+}
+.black-bg {
+	background-color: #000!important;
+	color: #fff!important;
+}
+.light-gray-bg {
+	background-color: #f6f6f6!important;
+}
+.light-gray {
+	color: #888!important;
+}
+.gray-bg {
+	background-color: #4d4d4d!important;
+	color: #fff!important;
+}
+.gray {
+	color: #4d4d4d!important;
+}
+.cool-gray-bg {
+	background-color: #5c5e66!important;
+	color: #fff!important;
+}
+.cool-gray, #basic-page .location-header h4 {
+	color: #5c5e66!important;
+}
+.warm-gray-bg {
+	background-color: #675c53!important;
+	color: #fff!important;
+}
+.orange {
+	color: #d5783a!important;
+}
+.turquoise-bg {
+	background-color: #00a8b4!important;
+	color: #fff!important;
+}
+.red-bg {
+	background-color: #d52b1e!important;
+	color: #fff!important;
+}
+.orange-bg {
+	background-color: #e47f2d!important;
+	color: #fff!important;
+}
+.magenta-bg {
+	background-color: #c50084!important;
+	color: #fff!important;
+}
+.sand-bg {
+	background-color: #e2cb9d!important;
+	color: #fff!important;
+}
+.ecru-bg {
+	background-color: #e1d8b7;
+	color: #fff!important;
+}
+.smoke-bg {
+	background-color: #eae5dd;
+	color: #fff!important;
+}
+button.yellow-brd:hover {
+	background-color: #efab00!important;
+	color: #fff!important;
+}
+
+button.blue-brd:hover {
+	background-color: #0095c4!important;
+	color: #fff!important;
+}
+/* COLORS [END] */
+
+/* CLIENT LIST COLORS [START] */
+.blue-bg ~ #clients .no-image {
+	border-color: #009ad1;
+}
+.cyan-bg ~ #clients .no-image {
+	border-color: ##009ad1;
+}
+.yellow-bg ~ #clients .no-image {
+	border-color: #efab00;
+}
+.green-bg ~ #clients .no-image {
+	border-color: #7ab800!important;
+}
+.black-bg ~ #clients .no-image {
+	border-color: #000!important;
+}
+.light-gray-bg ~ #clients .no-image {
+	border-color: #f6f6f6!important;
+}
+.cool-gray-bg ~ #clients .no-image {
+	border-color: #5c5e66!important;
+}
+.warm-gray-bg ~ #clients .no-image {
+	border-color: #675c53!important;
+}
+.turquoise-bg ~ #clients .no-image {
+	border-color: #00a8b4!important;
+}
+.red-bg ~ #clients .no-image {
+	border-color: #d52b1e!important;
+}
+.orange-bg ~ #clients .no-image {
+	border-color: #e47f2d!important;
+}
+.magenta-bg ~ #clients .no-image {
+	border-color: #c50084!important;
+}
+.sand-bg ~ #clients .no-image {
+	border-color: #e2cb9d!important;
+}
+.ecru-bg ~ #clients .no-image {
+	border-color: #e1d8b7;
+}
+.smoke-bg ~ #clients .no-image {
+	border-color: #eae5dd;
+}
+
+/* CLIENT LIST COLORS [END] */

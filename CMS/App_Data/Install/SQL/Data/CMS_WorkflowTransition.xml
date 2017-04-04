@@ -1,0 +1,113 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_WorkflowTransition" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TransitionID" type="xs:int" minOccurs="0" />
+                <xs:element name="TransitionStartStepID" type="xs:int" minOccurs="0" />
+                <xs:element name="TransitionEndStepID" type="xs:int" minOccurs="0" />
+                <xs:element name="TransitionType" type="xs:int" minOccurs="0" />
+                <xs:element name="TransitionLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TransitionSourcePointGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="TransitionWorkflowID" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_WorkflowTransition>
+    <TransitionID>1780</TransitionID>
+    <TransitionStartStepID>5880</TransitionStartStepID>
+    <TransitionEndStepID>5881</TransitionEndStepID>
+    <TransitionType>0</TransitionType>
+    <TransitionLastModified>2012-04-23T10:23:35.41+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>06e97b54-c45d-4225-ba7b-4c52676288ad</TransitionSourcePointGUID>
+    <TransitionWorkflowID>212</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1782</TransitionID>
+    <TransitionStartStepID>5882</TransitionStartStepID>
+    <TransitionEndStepID>5880</TransitionEndStepID>
+    <TransitionType>1</TransitionType>
+    <TransitionLastModified>2012-04-23T10:24:10.097+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>c71a1655-295d-4194-a751-910387cdbbd0</TransitionSourcePointGUID>
+    <TransitionWorkflowID>212</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1783</TransitionID>
+    <TransitionStartStepID>5883</TransitionStartStepID>
+    <TransitionEndStepID>5882</TransitionEndStepID>
+    <TransitionType>0</TransitionType>
+    <TransitionLastModified>2012-04-23T10:24:27.333+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>9999619f-e6c0-47ab-968c-34a419b7186f</TransitionSourcePointGUID>
+    <TransitionWorkflowID>212</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1784</TransitionID>
+    <TransitionStartStepID>5879</TransitionStartStepID>
+    <TransitionEndStepID>5883</TransitionEndStepID>
+    <TransitionType>0</TransitionType>
+    <TransitionLastModified>2012-04-23T10:24:28.937+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>70204426-8569-464d-a2a5-7d062d4bd9e9</TransitionSourcePointGUID>
+    <TransitionWorkflowID>212</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1766</TransitionID>
+    <TransitionStartStepID>5870</TransitionStartStepID>
+    <TransitionEndStepID>5871</TransitionEndStepID>
+    <TransitionType>0</TransitionType>
+    <TransitionLastModified>2012-04-23T09:13:58.193+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>8c087fa0-3f27-4381-983c-8bce419c967e</TransitionSourcePointGUID>
+    <TransitionWorkflowID>211</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1768</TransitionID>
+    <TransitionStartStepID>5873</TransitionStartStepID>
+    <TransitionEndStepID>5870</TransitionEndStepID>
+    <TransitionType>1</TransitionType>
+    <TransitionLastModified>2012-04-23T09:21:19.76+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>271ec955-2630-4a0d-8070-2aa30db80065</TransitionSourcePointGUID>
+    <TransitionWorkflowID>211</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1771</TransitionID>
+    <TransitionStartStepID>5874</TransitionStartStepID>
+    <TransitionEndStepID>5877</TransitionEndStepID>
+    <TransitionType>1</TransitionType>
+    <TransitionLastModified>2012-04-23T09:23:54.583+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>7c1a3c8d-093c-4b93-bc7e-3f68ce3e1f1a</TransitionSourcePointGUID>
+    <TransitionWorkflowID>211</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1772</TransitionID>
+    <TransitionStartStepID>5874</TransitionStartStepID>
+    <TransitionEndStepID>5873</TransitionEndStepID>
+    <TransitionType>1</TransitionType>
+    <TransitionLastModified>2012-04-23T09:25:35.1+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>07001585-607e-4115-9ccf-90cdbd4c05a6</TransitionSourcePointGUID>
+    <TransitionWorkflowID>211</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1773</TransitionID>
+    <TransitionStartStepID>5877</TransitionStartStepID>
+    <TransitionEndStepID>5874</TransitionEndStepID>
+    <TransitionType>1</TransitionType>
+    <TransitionLastModified>2012-04-23T09:27:24.377+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>da4480cb-cfdd-481e-a1a2-5c2b98e478f3</TransitionSourcePointGUID>
+    <TransitionWorkflowID>211</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+  <CMS_WorkflowTransition>
+    <TransitionID>1791</TransitionID>
+    <TransitionStartStepID>5869</TransitionStartStepID>
+    <TransitionEndStepID>5877</TransitionEndStepID>
+    <TransitionType>0</TransitionType>
+    <TransitionLastModified>2012-04-23T13:11:45.76+02:00</TransitionLastModified>
+    <TransitionSourcePointGUID>feb7e072-bac9-4179-a122-9775791e343e</TransitionSourcePointGUID>
+    <TransitionWorkflowID>211</TransitionWorkflowID>
+  </CMS_WorkflowTransition>
+</NewDataSet>

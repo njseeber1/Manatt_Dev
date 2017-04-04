@@ -1,0 +1,30 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[COM_VariantOption](
+	[VariantSKUID] [int] NOT NULL,
+	[OptionSKUID] [int] NOT NULL,
+ CONSTRAINT [PK_COM_VariantOption] PRIMARY KEY CLUSTERED 
+(
+	[VariantSKUID] ASC,
+	[OptionSKUID] ASC
+)
+)
+
+GO
+CREATE NONCLUSTERED INDEX [IX_COM_VariantOption_OptionSKUID] ON [dbo].[COM_VariantOption]
+(
+	[OptionSKUID] ASC
+)
+GO
+ALTER TABLE [dbo].[COM_VariantOption]  WITH CHECK ADD  CONSTRAINT [FK_COM_VariantOption_OptionSKUID_COM_SKU] FOREIGN KEY([OptionSKUID])
+REFERENCES [dbo].[COM_SKU] ([SKUID])
+GO
+ALTER TABLE [dbo].[COM_VariantOption] CHECK CONSTRAINT [FK_COM_VariantOption_OptionSKUID_COM_SKU]
+GO
+ALTER TABLE [dbo].[COM_VariantOption]  WITH CHECK ADD  CONSTRAINT [FK_COM_VariantOption_VariantSKUID_COM_SKU] FOREIGN KEY([VariantSKUID])
+REFERENCES [dbo].[COM_SKU] ([SKUID])
+GO
+ALTER TABLE [dbo].[COM_VariantOption] CHECK CONSTRAINT [FK_COM_VariantOption_VariantSKUID_COM_SKU]
+GO

@@ -1,0 +1,32 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[COM_MultiBuyDiscountSKU](
+	[MultiBuyDiscountID] [int] NOT NULL,
+	[SKUID] [int] NOT NULL,
+ CONSTRAINT [PK_COM_MultiBuyDiscountSKU] PRIMARY KEY CLUSTERED 
+(
+	[MultiBuyDiscountID] ASC,
+	[SKUID] ASC
+)
+)
+
+GO
+CREATE NONCLUSTERED INDEX [IX_COM_MultiBuyDiscountSKU_SKUID] ON [dbo].[COM_MultiBuyDiscountSKU]
+(
+	[SKUID] ASC
+)
+GO
+ALTER TABLE [dbo].[COM_MultiBuyDiscountSKU] ADD  CONSTRAINT [DEFAULT_COM_MultiBuyDiscountSKU_SKUID]  DEFAULT ((0)) FOR [SKUID]
+GO
+ALTER TABLE [dbo].[COM_MultiBuyDiscountSKU]  WITH CHECK ADD  CONSTRAINT [FK_COM_MultiBuyDiscountSKU_MultiBuyDiscountID_COM_MultiBuyDiscount] FOREIGN KEY([MultiBuyDiscountID])
+REFERENCES [dbo].[COM_MultiBuyDiscount] ([MultiBuyDiscountID])
+GO
+ALTER TABLE [dbo].[COM_MultiBuyDiscountSKU] CHECK CONSTRAINT [FK_COM_MultiBuyDiscountSKU_MultiBuyDiscountID_COM_MultiBuyDiscount]
+GO
+ALTER TABLE [dbo].[COM_MultiBuyDiscountSKU]  WITH CHECK ADD  CONSTRAINT [FK_COM_MultiBuyDiscountSKU_SKUID_COM_SKU] FOREIGN KEY([SKUID])
+REFERENCES [dbo].[COM_SKU] ([SKUID])
+GO
+ALTER TABLE [dbo].[COM_MultiBuyDiscountSKU] CHECK CONSTRAINT [FK_COM_MultiBuyDiscountSKU_SKUID_COM_SKU]
+GO

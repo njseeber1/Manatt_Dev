@@ -1,0 +1,47 @@
+/* web font start */
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=20d74cc5-7f7c-49a7-80ae-fa2f389c550d");*/
+@font-face{
+	font-family:"FuturaW01-ExtraBoldCond";
+	src:url("../fonts/bec66ca3-753a-469a-b153-fdd9e3ea7ce4-.eot#iefix");
+	src:url("../fonts/bec66ca3-753a-469a-b153-fdd9e3ea7ce4-.eot#iefix") format("embedded-opentype"),url("../fonts/04733668-9f3f-4f2f-a534-14fb44683f83.woff") format("woff"),url("../fonts/1f9bced0-1224-4785-9553-68fcbac00914.ttf") format("truetype"),url("../fonts/23d05127-305c-4753-8f3a-16d8109db5ca.svg#23d05127-305c-4753-8f3a-16d8109db5ca") format("svg");
+}
+
+
+@font-face
+{
+    font-family: 'whitneybook';
+    src: url('../fonts/whitney-book-bas-webfont.eot');
+    src: url('../fonts/whitney-book-bas-webfont-.eot#iefix') format('embedded-opentype'), url('../fonts/whitney-book-bas-webfont.woff2') format('woff2'), url('../fonts/whitney-book-bas-webfont.woff') format('woff'), url('../fonts/whitney-book-bas-webfont.ttf') format('truetype'), url('../fonts/whitney-book-bas-webfont.svg#whitneybook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'whitneymedium';
+    src: url('../fonts/whitney-medium-bas-webfont.eot');
+    src: url('../fonts/whitney-medium-bas-webfont-.eot#iefix') format('embedded-opentype'), url('../fonts/whitney-medium-bas-webfont.woff2') format('woff2'), url('../fonts/whitney-medium-bas-webfont.woff') format('woff'), url('../fonts/whitney-medium-bas-webfont.ttf') format('truetype'), url('../fonts/whitney-medium-bas-webfont.svg#whitneymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'whitneysemibold';
+    src: url('../fonts/whitney-semibold-bas-webfont.eot');
+    src: url('../fonts/whitney-semibold-bas-webfont-.eot#iefix') format('embedded-opentype'), url('../fonts/whitney-semibold-bas-webfont.woff2') format('woff2'), url('../fonts/whitney-semibold-bas-webfont.woff') format('woff'), url('../fonts/whitney-semibold-bas-webfont.ttf') format('truetype'), url('../fonts/whitney-semibold-bas-webfont.svg#whitneysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face
+{
+    font-family: 'whitney_condensedbold';
+    src: url('../fonts/whitneycond-bold-webfont.eot');
+    src: url('../fonts/whitneycond-bold-webfont-.eot#iefix') format('embedded-opentype'), url('../fonts/whitneycond-bold-webfont.woff2') format('woff2'), url('../fonts/whitneycond-bold-webfont.woff') format('woff'), url('../fonts/whitneycond-bold-webfont.ttf') format('truetype'), url('../fonts/whitneycond-bold-webfont.svg#whitney_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* web font start */

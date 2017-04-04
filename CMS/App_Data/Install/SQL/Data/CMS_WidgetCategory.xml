@@ -1,0 +1,360 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_WidgetCategory" msprop:IsFromCMSDatabase="True" msprop:CMSHasExternalData="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="WidgetCategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="WidgetCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="WidgetCategoryDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="WidgetCategoryParentID" type="xs:int" minOccurs="0" />
+                <xs:element name="WidgetCategoryPath" type="xs:string" minOccurs="0" />
+                <xs:element name="WidgetCategoryLevel" type="xs:int" minOccurs="0" />
+                <xs:element name="WidgetCategoryChildCount" type="xs:int" minOccurs="0" />
+                <xs:element name="WidgetCategoryWidgetChildCount" type="xs:int" minOccurs="0" />
+                <xs:element name="WidgetCategoryImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="WidgetCategoryGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="WidgetCategoryLastModified" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>3</WidgetCategoryID>
+    <WidgetCategoryName>/</WidgetCategoryName>
+    <WidgetCategoryDisplayName>All widgets</WidgetCategoryDisplayName>
+    <WidgetCategoryPath>/</WidgetCategoryPath>
+    <WidgetCategoryLevel>0</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>22</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>0</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryGUID>b51398f0-a113-11de-a93c-048c55d89593</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2014-02-28T16:29:41.7932257+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>128</WidgetCategoryID>
+    <WidgetCategoryName>BannerManagement</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Banner management</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/BannerManagement</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>1</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>44157ba2-1c9c-41ef-bbf5-3450fa606cba</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2011-07-20T15:07:20.68+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>126</WidgetCategoryID>
+    <WidgetCategoryName>Categories</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Categories</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Categories</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>2</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>a3dd14df-f865-41f7-9f08-05e6f35c56d4</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2011-08-17T07:06:41.3+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>55</WidgetCategoryID>
+    <WidgetCategoryName>Community</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Community</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Community</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>12</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>01147d5c-3e9b-4522-a32c-60d259992b25</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-12-04T21:19:05.16+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>76</WidgetCategoryID>
+    <WidgetCategoryName>Content</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Content</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Content</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>7</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>4ea8bea5-6cf0-4a77-81d0-7cf1463fcbc4</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-11-30T12:27:39.157+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>124</WidgetCategoryID>
+    <WidgetCategoryName>CorporateSite</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Corporate Site</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/CorporateSite</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>2</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>74cd4b89-939d-4961-ab52-983e621d5929</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2011-06-07T21:04:45.023+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>90</WidgetCategoryID>
+    <WidgetCategoryName>Dashboard</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Dashboard</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Dashboard</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>14</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>d230ceb4-ca2f-4815-8ada-f344a2394ef8</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-07-14T09:37:56.507+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>138</WidgetCategoryID>
+    <WidgetCategoryName>Ecommerce</WidgetCategoryName>
+    <WidgetCategoryDisplayName>E-commerce</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Ecommerce</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>1</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>2</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>e6208a3a-7ea5-421c-922e-1743e8e0765c</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2012-08-02T19:37:51.22+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>111</WidgetCategoryID>
+    <WidgetCategoryName>Layouts</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Layouts</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Layouts</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>7</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>49738a73-d011-4331-8f26-1861bd9c0cfe</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-08-16T13:55:57.11+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>83</WidgetCategoryID>
+    <WidgetCategoryName>Maps</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Maps</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Maps</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>4</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>87347c1d-8432-4c68-9b43-2f135ba4221e</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-02-22T08:18:55.353+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>51</WidgetCategoryID>
+    <WidgetCategoryName>MediaServices</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Media &amp; services</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/MediaServices</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>4</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>54aa6abe-a8d0-4589-a53a-d6ce1cb306c2</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-10-09T11:46:43.07+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>53</WidgetCategoryID>
+    <WidgetCategoryName>Navigation</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Navigation</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Navigation</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>3</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>539497bc-7780-4701-8d4e-be0128524204</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-10-09T13:37:54.743+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>82</WidgetCategoryID>
+    <WidgetCategoryName>Newsletters</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Email marketing</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Newsletters</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>1</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryGUID>89e446af-1878-4fc3-9b46-5fcda4fd2575</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2014-09-17T14:09:21.3123976+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>154</WidgetCategoryID>
+    <WidgetCategoryName>OnlineMarketing</WidgetCategoryName>
+    <WidgetCategoryDisplayName>On-line Marketing</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/OnlineMarketing</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>1</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryGUID>31a4240c-474f-448d-a1b0-87a59561d632</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2014-02-06T14:07:37.6680281+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>88</WidgetCategoryID>
+    <WidgetCategoryName>Reporting</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Reporting</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Reporting</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>3</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>70afdec1-f9c4-4e02-a98b-879a751cb671</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-07-09T10:51:33.84+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>161</WidgetCategoryID>
+    <WidgetCategoryName>StrandsRecommender</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Strands Recommender</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/StrandsRecommender</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>1</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryGUID>6e40242d-54a8-497b-89b8-385e2e766fc7</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2014-05-28T14:38:48.3479991+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>84</WidgetCategoryID>
+    <WidgetCategoryName>Syndication</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Syndication</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Syndication</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>7</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>c31d87aa-73f3-4b5f-b607-a546575a7775</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-03-30T08:13:43.743+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>123</WidgetCategoryID>
+    <WidgetCategoryName>Text</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Text</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Text</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>5</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>9a002a14-275d-4ad7-87d6-e4de10a7d0c3</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2011-01-24T16:17:34.05+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>125</WidgetCategoryID>
+    <WidgetCategoryName>WebAnalytics</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Web analytics</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/WebAnalytics</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>2</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>c511dbd6-b354-4e8c-a4b5-6edcf5b4911c</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2011-08-03T13:15:58.15+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>81</WidgetCategoryID>
+    <WidgetCategoryName>FormsSurveys</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Forms &amp; Surveys</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/FormsSurveys</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>2</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>114bde88-318c-4868-8d67-83f08c006832</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-11-30T19:18:06.943+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>78</WidgetCategoryID>
+    <WidgetCategoryName>Forums</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Forums</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Forums</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>3</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>329f7a61-e7c5-4a9c-bd36-53aa24fa28f1</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-11-30T14:29:44.603+01:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>52</WidgetCategoryID>
+    <WidgetCategoryName>General</WidgetCategoryName>
+    <WidgetCategoryDisplayName>General</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/General</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>2</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>5f70d8e4-6736-4334-97f0-d1c34b645db5</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2009-10-09T12:41:33.977+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>119</WidgetCategoryID>
+    <WidgetCategoryName>IntranetPortal</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Intranet Portal</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>3</WidgetCategoryParentID>
+    <WidgetCategoryPath>/IntranetPortal</WidgetCategoryPath>
+    <WidgetCategoryLevel>1</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>2</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>13</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>65523f91-9b6f-4e70-9110-62cd05088ec3</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-07-22T12:48:27.15+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>120</WidgetCategoryID>
+    <WidgetCategoryName>Departments</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Departments</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>119</WidgetCategoryParentID>
+    <WidgetCategoryPath>/IntranetPortal/Departments</WidgetCategoryPath>
+    <WidgetCategoryLevel>2</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>5</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>494918e3-7abf-45ab-9922-265e53e3a40c</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-09-06T16:05:49.367+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>122</WidgetCategoryID>
+    <WidgetCategoryName>Workgroups</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Workgroups</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>119</WidgetCategoryParentID>
+    <WidgetCategoryPath>/IntranetPortal/Workgroups</WidgetCategoryPath>
+    <WidgetCategoryLevel>2</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>9</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>e72170d8-9f54-4856-a9ee-710d64d586d6</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2010-09-06T16:06:24.953+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+  <CMS_WidgetCategory>
+    <WidgetCategoryID>139</WidgetCategoryID>
+    <WidgetCategoryName>Reports</WidgetCategoryName>
+    <WidgetCategoryDisplayName>Reports</WidgetCategoryDisplayName>
+    <WidgetCategoryParentID>138</WidgetCategoryParentID>
+    <WidgetCategoryPath>/Ecommerce/Reports</WidgetCategoryPath>
+    <WidgetCategoryLevel>2</WidgetCategoryLevel>
+    <WidgetCategoryChildCount>0</WidgetCategoryChildCount>
+    <WidgetCategoryWidgetChildCount>4</WidgetCategoryWidgetChildCount>
+    <WidgetCategoryImagePath />
+    <WidgetCategoryGUID>e4476aac-fa28-47eb-9ee3-27d2d57d79a9</WidgetCategoryGUID>
+    <WidgetCategoryLastModified>2012-08-03T09:52:20.517+02:00</WidgetCategoryLastModified>
+  </CMS_WidgetCategory>
+</NewDataSet>

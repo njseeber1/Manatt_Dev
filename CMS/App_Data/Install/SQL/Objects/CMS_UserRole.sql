@@ -1,0 +1,48 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[CMS_UserRole](
+	[UserID] [int] NOT NULL,
+	[RoleID] [int] NOT NULL,
+	[ValidTo] [datetime2](7) NULL,
+	[UserRoleID] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_CMS_UserRole] PRIMARY KEY CLUSTERED 
+(
+	[UserRoleID] ASC
+)
+)
+
+GO
+CREATE NONCLUSTERED INDEX [IX_CMS_UserRole_RoleID] ON [dbo].[CMS_UserRole]
+(
+	[RoleID] ASC
+)
+GO
+CREATE NONCLUSTERED INDEX [IX_CMS_UserRole_UserID] ON [dbo].[CMS_UserRole]
+(
+	[RoleID] ASC,
+	[ValidTo] ASC,
+	[UserID] ASC
+)
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [IX_CMS_UserRole_UserID_RoleID] ON [dbo].[CMS_UserRole]
+(
+	[UserID] ASC,
+	[RoleID] ASC
+)
+GO
+ALTER TABLE [dbo].[CMS_UserRole] ADD  CONSTRAINT [DEFAULT_CMS_UserRole_UserID]  DEFAULT ((0)) FOR [UserID]
+GO
+ALTER TABLE [dbo].[CMS_UserRole] ADD  CONSTRAINT [DEFAULT_CMS_UserRole_RoleID]  DEFAULT ((0)) FOR [RoleID]
+GO
+ALTER TABLE [dbo].[CMS_UserRole]  WITH CHECK ADD  CONSTRAINT [FK_CMS_UserRole_RoleID_CMS_Role] FOREIGN KEY([RoleID])
+REFERENCES [dbo].[CMS_Role] ([RoleID])
+GO
+ALTER TABLE [dbo].[CMS_UserRole] CHECK CONSTRAINT [FK_CMS_UserRole_RoleID_CMS_Role]
+GO
+ALTER TABLE [dbo].[CMS_UserRole]  WITH CHECK ADD  CONSTRAINT [FK_CMS_UserRole_UserID_CMS_User] FOREIGN KEY([UserID])
+REFERENCES [dbo].[CMS_User] ([UserID])
+GO
+ALTER TABLE [dbo].[CMS_UserRole] CHECK CONSTRAINT [FK_CMS_UserRole_UserID_CMS_User]
+GO

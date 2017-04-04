@@ -1,0 +1,32 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Integration_Connector" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ConnectorID" type="xs:int" minOccurs="0" />
+                <xs:element name="ConnectorName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConnectorDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConnectorAssemblyName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConnectorClassName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConnectorEnabled" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ConnectorLastModified" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Integration_Connector>
+    <ConnectorID>22</ConnectorID>
+    <ConnectorName>SampleIntegrationConnector</ConnectorName>
+    <ConnectorDisplayName>Sample Integration Connector</ConnectorDisplayName>
+    <ConnectorAssemblyName>CMSAppAppCode</ConnectorAssemblyName>
+    <ConnectorClassName>.SampleIntegrationConnector</ConnectorClassName>
+    <ConnectorEnabled>false</ConnectorEnabled>
+    <ConnectorLastModified>2015-11-12T18:51:14.2488106+01:00</ConnectorLastModified>
+  </Integration_Connector>
+</NewDataSet>

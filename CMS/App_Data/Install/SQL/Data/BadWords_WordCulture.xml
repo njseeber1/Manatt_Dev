@@ -1,0 +1,26 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="BadWords_WordCulture" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="WordID" type="xs:int" minOccurs="0" />
+                <xs:element name="CultureID" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <BadWords_WordCulture>
+    <WordID>78</WordID>
+    <CultureID>1</CultureID>
+  </BadWords_WordCulture>
+  <BadWords_WordCulture>
+    <WordID>177</WordID>
+    <CultureID>1</CultureID>
+  </BadWords_WordCulture>
+</NewDataSet>

@@ -1,0 +1,121 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_Workflow" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="WorkflowID" type="xs:int" minOccurs="0" />
+                <xs:element name="WorkflowDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="WorkflowAutoPublishChanges" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowUseCheckinCheckout" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowType" type="xs:int" minOccurs="0" />
+                <xs:element name="WorkflowSendEmails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowSendApproveEmails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowSendRejectEmails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowSendPublishEmails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowSendArchiveEmails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowApprovedTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowRejectedTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowPublishedTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowArchivedTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowSendReadyForApprovalEmails" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WorkflowReadyForApprovalTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowNotificationTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowAllowedObjects" type="xs:string" minOccurs="0" />
+                <xs:element name="WorkflowEnabled" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_Workflow>
+    <WorkflowID>1</WorkflowID>
+    <WorkflowDisplayName>Default workflow</WorkflowDisplayName>
+    <WorkflowName>default</WorkflowName>
+    <WorkflowGUID>331fd346-2a1b-4a63-bb26-474e75a14807</WorkflowGUID>
+    <WorkflowLastModified>2015-09-22T13:52:42.588941+02:00</WorkflowLastModified>
+    <WorkflowSendApproveEmails>true</WorkflowSendApproveEmails>
+    <WorkflowSendRejectEmails>true</WorkflowSendRejectEmails>
+    <WorkflowSendPublishEmails>true</WorkflowSendPublishEmails>
+    <WorkflowSendArchiveEmails>true</WorkflowSendArchiveEmails>
+    <WorkflowApprovedTemplateName />
+    <WorkflowRejectedTemplateName />
+    <WorkflowPublishedTemplateName />
+    <WorkflowArchivedTemplateName />
+    <WorkflowSendReadyForApprovalEmails>true</WorkflowSendReadyForApprovalEmails>
+    <WorkflowReadyForApprovalTemplateName />
+    <WorkflowNotificationTemplateName />
+    <WorkflowEnabled>true</WorkflowEnabled>
+  </CMS_Workflow>
+  <CMS_Workflow>
+    <WorkflowID>212</WorkflowID>
+    <WorkflowDisplayName>Translation - Default language version</WorkflowDisplayName>
+    <WorkflowName>Translation_workflow</WorkflowName>
+    <WorkflowGUID>64b14868-7767-4ed6-bb5e-7c8b8465b60c</WorkflowGUID>
+    <WorkflowLastModified>2015-10-30T07:35:30.0300578+01:00</WorkflowLastModified>
+    <WorkflowAutoPublishChanges>false</WorkflowAutoPublishChanges>
+    <WorkflowType>1</WorkflowType>
+    <WorkflowSendApproveEmails>true</WorkflowSendApproveEmails>
+    <WorkflowSendRejectEmails>true</WorkflowSendRejectEmails>
+    <WorkflowSendPublishEmails>true</WorkflowSendPublishEmails>
+    <WorkflowSendArchiveEmails>true</WorkflowSendArchiveEmails>
+    <WorkflowApprovedTemplateName />
+    <WorkflowRejectedTemplateName />
+    <WorkflowPublishedTemplateName />
+    <WorkflowArchivedTemplateName />
+    <WorkflowSendReadyForApprovalEmails>true</WorkflowSendReadyForApprovalEmails>
+    <WorkflowReadyForApprovalTemplateName />
+    <WorkflowNotificationTemplateName />
+    <WorkflowAllowedObjects>;##DOCUMENTS##;</WorkflowAllowedObjects>
+    <WorkflowEnabled>true</WorkflowEnabled>
+  </CMS_Workflow>
+  <CMS_Workflow>
+    <WorkflowID>211</WorkflowID>
+    <WorkflowDisplayName>Translation - Import to other language versions</WorkflowDisplayName>
+    <WorkflowName>Import_translation_workflow</WorkflowName>
+    <WorkflowGUID>dec28292-de79-4a52-881c-734d1ce80341</WorkflowGUID>
+    <WorkflowLastModified>2015-10-26T12:04:49.7939295+01:00</WorkflowLastModified>
+    <WorkflowAutoPublishChanges>false</WorkflowAutoPublishChanges>
+    <WorkflowType>1</WorkflowType>
+    <WorkflowSendApproveEmails>true</WorkflowSendApproveEmails>
+    <WorkflowSendRejectEmails>true</WorkflowSendRejectEmails>
+    <WorkflowSendPublishEmails>true</WorkflowSendPublishEmails>
+    <WorkflowSendArchiveEmails>true</WorkflowSendArchiveEmails>
+    <WorkflowApprovedTemplateName />
+    <WorkflowRejectedTemplateName />
+    <WorkflowPublishedTemplateName />
+    <WorkflowArchivedTemplateName />
+    <WorkflowSendReadyForApprovalEmails>true</WorkflowSendReadyForApprovalEmails>
+    <WorkflowReadyForApprovalTemplateName />
+    <WorkflowNotificationTemplateName />
+    <WorkflowAllowedObjects>;##DOCUMENTS##;</WorkflowAllowedObjects>
+    <WorkflowEnabled>true</WorkflowEnabled>
+  </CMS_Workflow>
+  <CMS_Workflow>
+    <WorkflowID>46</WorkflowID>
+    <WorkflowDisplayName>Versioning without workflow</WorkflowDisplayName>
+    <WorkflowName>versioningWithoutWorkflow</WorkflowName>
+    <WorkflowGUID>38bbee58-ba57-438b-a3db-9b0c153315c6</WorkflowGUID>
+    <WorkflowLastModified>2013-07-15T09:54:43.65+02:00</WorkflowLastModified>
+    <WorkflowAutoPublishChanges>true</WorkflowAutoPublishChanges>
+    <WorkflowSendApproveEmails>true</WorkflowSendApproveEmails>
+    <WorkflowSendRejectEmails>true</WorkflowSendRejectEmails>
+    <WorkflowSendPublishEmails>true</WorkflowSendPublishEmails>
+    <WorkflowSendArchiveEmails>true</WorkflowSendArchiveEmails>
+    <WorkflowApprovedTemplateName />
+    <WorkflowRejectedTemplateName />
+    <WorkflowPublishedTemplateName />
+    <WorkflowArchivedTemplateName />
+    <WorkflowSendReadyForApprovalEmails>true</WorkflowSendReadyForApprovalEmails>
+    <WorkflowReadyForApprovalTemplateName />
+    <WorkflowNotificationTemplateName />
+    <WorkflowEnabled>true</WorkflowEnabled>
+  </CMS_Workflow>
+</NewDataSet>

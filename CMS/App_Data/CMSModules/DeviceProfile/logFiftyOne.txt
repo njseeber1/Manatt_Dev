@@ -1,0 +1,452 @@
+2015-12-08T02:56:14.5546547Z - 395316 - Warn - Exception cleaning temporary files
+2015-12-08T02:56:14.5876600Z - 395316 - Warn - 
+2015-12-08T02:56:14.5876600Z - 395316 - Warn - Could not find a part of the path 'C:\inetpub\wwwroot\manattCMS\CMS\App_Data\51Degrees'.
+2015-12-08T02:56:14.5996586Z - 395316 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.DirectoryInfo.InternalGetFiles(String searchPattern, SearchOption searchOption)
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-16T04:45:01.0498893Z - 807404 - Warn - Exception cleaning temporary files
+2016-03-16T04:45:01.0598871Z - 807404 - Warn - 
+2016-03-16T04:45:01.0598871Z - 807404 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-16T04:45:01.0658889Z - 807404 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-16T11:51:34.5997801Z - 569496 - Warn - Exception cleaning temporary files
+2016-03-16T11:51:34.6117805Z - 569496 - Warn - 
+2016-03-16T11:51:34.6117805Z - 569496 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-16T11:51:34.6328335Z - 569496 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-16T19:16:51.5868967Z - 7428 - Warn - Exception cleaning temporary files
+2016-03-16T19:16:51.6449191Z - 7428 - Warn - 
+2016-03-16T19:16:51.6449191Z - 7428 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-16T19:16:51.7389146Z - 7428 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-17T21:59:31.6375596Z - 7428 - Warn - Exception cleaning temporary files
+2016-03-17T21:59:31.6495122Z - 7428 - Warn - 
+2016-03-17T21:59:31.6495122Z - 7428 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-17T21:59:31.6505138Z - 7428 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-17T22:18:47.3768233Z - 7428 - Warn - Exception cleaning temporary files
+2016-03-17T22:18:47.3828247Z - 7428 - Warn - 
+2016-03-17T22:18:47.3828247Z - 7428 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-17T22:18:47.3838264Z - 7428 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-18T00:17:13.0445901Z - 86504 - Warn - Exception cleaning temporary files
+2016-03-18T00:17:13.0515941Z - 86504 - Warn - 
+2016-03-18T00:17:13.0515941Z - 86504 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-18T00:17:13.0635920Z - 86504 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-18T00:50:42.7709011Z - 86504 - Warn - Exception cleaning temporary files
+2016-03-18T00:50:42.7739015Z - 86504 - Warn - 
+2016-03-18T00:50:42.7739015Z - 86504 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-18T00:50:42.7739015Z - 86504 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-18T01:27:09.1978292Z - 86504 - Warn - Exception cleaning temporary files
+2016-03-18T01:27:09.2068046Z - 86504 - Warn - 
+2016-03-18T01:27:09.2068046Z - 86504 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-18T01:27:09.2088023Z - 86504 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-19T05:18:17.5035564Z - 108228 - Warn - Exception cleaning temporary files
+2016-03-19T05:18:17.5105532Z - 108228 - Warn - 
+2016-03-19T05:18:17.5105532Z - 108228 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-19T05:18:17.5135538Z - 108228 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-20T10:24:58.5118193Z - 139668 - Warn - Exception cleaning temporary files
+2016-03-20T10:24:58.5228161Z - 139668 - Warn - 
+2016-03-20T10:24:58.5238216Z - 139668 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-20T10:24:58.5578238Z - 139668 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-21T15:21:19.4446925Z - 146408 - Warn - Exception cleaning temporary files
+2016-03-21T15:21:19.4538067Z - 146408 - Warn - 
+2016-03-21T15:21:19.4546988Z - 146408 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-21T15:21:19.4856964Z - 146408 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-21T21:09:20.0749516Z - 146408 - Warn - Exception cleaning temporary files
+2016-03-21T21:09:20.0829559Z - 146408 - Warn - 
+2016-03-21T21:09:20.0829559Z - 146408 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-21T21:09:20.0849562Z - 146408 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-21T21:22:06.2782717Z - 146408 - Warn - Exception cleaning temporary files
+2016-03-21T21:22:06.2862782Z - 146408 - Warn - 
+2016-03-21T21:22:06.2862782Z - 146408 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-21T21:22:06.2882939Z - 146408 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-21T21:22:25.5518380Z - 146408 - Warn - Exception cleaning temporary files
+2016-03-21T21:22:25.5598411Z - 146408 - Warn - 
+2016-03-21T21:22:25.5598411Z - 146408 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-21T21:22:25.5618662Z - 146408 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-22T20:17:08.3057032Z - 45312 - Warn - Exception cleaning temporary files
+2016-03-22T20:17:08.3146810Z - 45312 - Warn - 
+2016-03-22T20:17:08.3146810Z - 45312 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-22T20:17:08.3337121Z - 45312 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-24T01:16:53.9208680Z - 50000 - Warn - Exception cleaning temporary files
+2016-03-24T01:16:53.9288836Z - 50000 - Warn - 
+2016-03-24T01:16:53.9288836Z - 50000 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-24T01:16:53.9328644Z - 50000 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-24T18:36:35.9579644Z - 50000 - Warn - Exception cleaning temporary files
+2016-03-24T18:36:35.9659662Z - 50000 - Warn - 
+2016-03-24T18:36:35.9659662Z - 50000 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-24T18:36:35.9669664Z - 50000 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-24T18:37:24.1134251Z - 50000 - Warn - Exception cleaning temporary files
+2016-03-24T18:37:24.1224414Z - 50000 - Warn - 
+2016-03-24T18:37:24.1224414Z - 50000 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-24T18:37:24.1243990Z - 50000 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-25T06:17:02.1020455Z - 39052 - Warn - Exception cleaning temporary files
+2016-03-25T06:17:02.1080479Z - 39052 - Warn - 
+2016-03-25T06:17:02.1080479Z - 39052 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-25T06:17:02.1220479Z - 39052 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-26T11:17:30.6010302Z - 168832 - Warn - Exception cleaning temporary files
+2016-03-26T11:17:30.6050528Z - 168832 - Warn - 
+2016-03-26T11:17:30.6050528Z - 168832 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-26T11:17:30.6340467Z - 168832 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-27T16:20:37.7848630Z - 111412 - Warn - Exception cleaning temporary files
+2016-03-27T16:20:37.7928682Z - 111412 - Warn - 
+2016-03-27T16:20:37.7928682Z - 111412 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-27T16:20:37.8208661Z - 111412 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-28T21:17:13.6655533Z - 131280 - Warn - Exception cleaning temporary files
+2016-03-28T21:17:13.6755558Z - 131280 - Warn - 
+2016-03-28T21:17:13.6755558Z - 131280 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-28T21:17:13.6795576Z - 131280 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-30T02:18:26.4689099Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-30T02:18:26.4789107Z - 151068 - Warn - 
+2016-03-30T02:18:26.4789107Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-30T02:18:26.4819094Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-30T20:31:01.4193897Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-30T20:31:01.4313862Z - 151068 - Warn - 
+2016-03-30T20:31:01.4313862Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-30T20:31:01.4333868Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T06:40:20.7266863Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-31T06:40:20.7346897Z - 151068 - Warn - 
+2016-03-31T06:40:20.7346897Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T06:40:20.7366842Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T06:51:21.0768350Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-31T06:51:21.0818347Z - 151068 - Warn - 
+2016-03-31T06:51:21.0818347Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T06:51:21.0828347Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T06:52:05.9538430Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-31T06:52:05.9618487Z - 151068 - Warn - 
+2016-03-31T06:52:05.9618487Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T06:52:05.9628431Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T06:52:36.8729613Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-31T06:52:36.8819601Z - 151068 - Warn - 
+2016-03-31T06:52:36.8819601Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T06:52:36.8839655Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T06:53:13.1788105Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-31T06:53:13.1868096Z - 151068 - Warn - 
+2016-03-31T06:53:13.1868096Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T06:53:13.1888110Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T06:57:31.0632373Z - 151068 - Warn - Exception cleaning temporary files
+2016-03-31T06:57:31.0672356Z - 151068 - Warn - 
+2016-03-31T06:57:31.0672356Z - 151068 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T06:57:31.0682401Z - 151068 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T07:17:33.2227626Z - 139680 - Warn - Exception cleaning temporary files
+2016-03-31T07:17:33.2328235Z - 139680 - Warn - 
+2016-03-31T07:17:33.2337887Z - 139680 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T07:17:33.2377657Z - 139680 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T07:23:19.0749369Z - 139680 - Warn - Exception cleaning temporary files
+2016-03-31T07:23:19.0809277Z - 139680 - Warn - 
+2016-03-31T07:23:19.0809277Z - 139680 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T07:23:19.0819294Z - 139680 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T07:30:40.2378404Z - 139680 - Warn - Exception cleaning temporary files
+2016-03-31T07:30:40.2408509Z - 139680 - Warn - 
+2016-03-31T07:30:40.2408509Z - 139680 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T07:30:40.2418303Z - 139680 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T07:31:31.8507447Z - 139680 - Warn - Exception cleaning temporary files
+2016-03-31T07:31:31.8577582Z - 139680 - Warn - 
+2016-03-31T07:31:31.8577582Z - 139680 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T07:31:31.8587608Z - 139680 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-03-31T13:35:55.7960000Z - 139680 - Warn - Exception cleaning temporary files
+2016-03-31T13:35:55.8019991Z - 139680 - Warn - 
+2016-03-31T13:35:55.8019991Z - 139680 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-03-31T13:35:55.8029901Z - 139680 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T01:16:10.9101321Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T01:16:10.9141291Z - 64848 - Warn - 
+2016-04-01T01:16:10.9141291Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T01:16:10.9161789Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T14:35:02.0817784Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T14:35:02.0897821Z - 64848 - Warn - 
+2016-04-01T14:35:02.0897821Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T14:35:02.0917839Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T14:39:46.4867508Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T14:39:46.4937521Z - 64848 - Warn - 
+2016-04-01T14:39:46.4937521Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T14:39:46.4957551Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T14:52:17.2039909Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T14:52:17.2129913Z - 64848 - Warn - 
+2016-04-01T14:52:17.2129913Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T14:52:17.2149925Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T14:56:45.9688939Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T14:56:45.9768798Z - 64848 - Warn - 
+2016-04-01T14:56:45.9768798Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T14:56:45.9788789Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T15:05:00.5089187Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T15:05:00.5149329Z - 64848 - Warn - 
+2016-04-01T15:05:00.5149329Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T15:05:00.5159161Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T15:07:18.9704183Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T15:07:18.9784024Z - 64848 - Warn - 
+2016-04-01T15:07:18.9784024Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T15:07:18.9804174Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T15:08:00.3099070Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T15:08:00.3149090Z - 64848 - Warn - 
+2016-04-01T15:08:00.3149090Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T15:08:00.3159081Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T15:10:30.9100854Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T15:10:30.9180208Z - 64848 - Warn - 
+2016-04-01T15:10:30.9180208Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T15:10:30.9200245Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T15:17:14.7629413Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T15:17:14.7699417Z - 64848 - Warn - 
+2016-04-01T15:17:14.7699417Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T15:17:14.7719404Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T15:48:52.8361045Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T15:48:52.8451041Z - 64848 - Warn - 
+2016-04-01T15:48:52.8451041Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T15:48:52.8481103Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T16:09:33.5593485Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T16:09:33.5663377Z - 64848 - Warn - 
+2016-04-01T16:09:33.5663377Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T16:09:33.5683386Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T16:21:10.3493790Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T16:21:10.3563776Z - 64848 - Warn - 
+2016-04-01T16:21:10.3563776Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T16:21:10.3573715Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T16:29:53.5513615Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T16:29:53.5602300Z - 64848 - Warn - 
+2016-04-01T16:29:53.5612293Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T16:29:53.5622294Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T20:51:31.1321494Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T20:51:31.1351506Z - 64848 - Warn - 
+2016-04-01T20:51:31.1351506Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T20:51:31.1361503Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T21:04:28.4509432Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T21:04:28.4539426Z - 64848 - Warn - 
+2016-04-01T21:04:28.4539426Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T21:04:28.4549424Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T21:18:48.9078295Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T21:18:48.9108320Z - 64848 - Warn - 
+2016-04-01T21:18:48.9108320Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T21:18:48.9118314Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T22:05:35.4725615Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T22:05:35.4825637Z - 64848 - Warn - 
+2016-04-01T22:05:35.4825637Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T22:05:35.4845652Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-01T22:18:51.6948968Z - 64848 - Warn - Exception cleaning temporary files
+2016-04-01T22:18:51.6978671Z - 64848 - Warn - 
+2016-04-01T22:18:51.6978671Z - 64848 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-01T22:18:51.6988684Z - 64848 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-02T06:16:16.2298662Z - 14228 - Warn - Exception cleaning temporary files
+2016-04-02T06:16:16.2388644Z - 14228 - Warn - 
+2016-04-02T06:16:16.2388644Z - 14228 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-02T06:16:16.2418586Z - 14228 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-03T11:19:41.0749368Z - 31616 - Warn - Exception cleaning temporary files
+2016-04-03T11:19:41.0819380Z - 31616 - Warn - 
+2016-04-03T11:19:41.0819380Z - 31616 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-03T11:19:41.0849369Z - 31616 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-04T16:16:17.0438286Z - 98432 - Warn - Exception cleaning temporary files
+2016-04-04T16:16:17.0548511Z - 98432 - Warn - 
+2016-04-04T16:16:17.0548511Z - 98432 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-04T16:16:17.0587845Z - 98432 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-04T21:27:08.7967545Z - 98432 - Warn - Exception cleaning temporary files
+2016-04-04T21:27:08.8037553Z - 98432 - Warn - 
+2016-04-04T21:27:08.8037553Z - 98432 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-04T21:27:08.8057538Z - 98432 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-05T21:16:20.0833054Z - 115096 - Warn - Exception cleaning temporary files
+2016-04-05T21:16:20.0953073Z - 115096 - Warn - 
+2016-04-05T21:16:20.0953073Z - 115096 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-05T21:16:20.1043005Z - 115096 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-06T19:02:36.2130848Z - 115096 - Warn - Exception cleaning temporary files
+2016-04-06T19:02:36.2210742Z - 115096 - Warn - 
+2016-04-06T19:02:36.2210742Z - 115096 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-06T19:02:36.2230810Z - 115096 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-07T02:16:21.5256860Z - 112508 - Warn - Exception cleaning temporary files
+2016-04-07T02:16:21.5376874Z - 112508 - Warn - 
+2016-04-07T02:16:21.5376874Z - 112508 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-07T02:16:21.5466838Z - 112508 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-07T21:51:26.9588485Z - 112508 - Warn - Exception cleaning temporary files
+2016-04-07T21:51:26.9668309Z - 112508 - Warn - 
+2016-04-07T21:51:26.9668309Z - 112508 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-07T21:51:26.9688813Z - 112508 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-08T07:17:06.8793064Z - 178956 - Warn - Exception cleaning temporary files
+2016-04-08T07:17:06.8863071Z - 178956 - Warn - 
+2016-04-08T07:17:06.8863071Z - 178956 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-08T07:17:06.9093533Z - 178956 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-09T12:21:07.3807889Z - 133044 - Warn - Exception cleaning temporary files
+2016-04-09T12:21:07.3938082Z - 133044 - Warn - 
+2016-04-09T12:21:07.3948116Z - 133044 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-09T12:21:07.4337903Z - 133044 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-10T17:19:58.7084092Z - 125792 - Warn - Exception cleaning temporary files
+2016-04-10T17:19:58.7184116Z - 125792 - Warn - 
+2016-04-10T17:19:58.7184116Z - 125792 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-10T17:19:58.7364106Z - 125792 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-11T22:16:27.7459588Z - 16452 - Warn - Exception cleaning temporary files
+2016-04-11T22:16:27.7549589Z - 16452 - Warn - 
+2016-04-11T22:16:27.7549589Z - 16452 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-11T22:16:27.7589574Z - 16452 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-13T03:16:59.8496037Z - 127220 - Warn - Exception cleaning temporary files
+2016-04-13T03:16:59.8615970Z - 127220 - Warn - 
+2016-04-13T03:16:59.8615970Z - 127220 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-13T03:16:59.8876146Z - 127220 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-13T23:02:37.2346915Z - 127220 - Warn - Exception cleaning temporary files
+2016-04-13T23:02:37.2426300Z - 127220 - Warn - 
+2016-04-13T23:02:37.2426300Z - 127220 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-13T23:02:37.2446326Z - 127220 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-14T08:19:16.3486635Z - 109692 - Warn - Exception cleaning temporary files
+2016-04-14T08:19:16.3566988Z - 109692 - Warn - 
+2016-04-14T08:19:16.3566988Z - 109692 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-14T08:19:16.3606854Z - 109692 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-15T13:17:30.1487839Z - 215608 - Warn - Exception cleaning temporary files
+2016-04-15T13:17:30.1597851Z - 215608 - Warn - 
+2016-04-15T13:17:30.1597851Z - 215608 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-15T13:17:30.1857866Z - 215608 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-15T23:36:10.6867242Z - 215608 - Warn - Exception cleaning temporary files
+2016-04-15T23:36:10.6946721Z - 215608 - Warn - 
+2016-04-15T23:36:10.6946721Z - 215608 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-15T23:36:10.6986147Z - 215608 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-16T18:16:52.6204479Z - 79828 - Warn - Exception cleaning temporary files
+2016-04-16T18:16:52.6304550Z - 79828 - Warn - 
+2016-04-16T18:16:52.6304550Z - 79828 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-16T18:16:52.6564517Z - 79828 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-17T13:30:04.9371570Z - 79828 - Warn - Exception cleaning temporary files
+2016-04-17T13:30:04.9441613Z - 79828 - Warn - 
+2016-04-17T13:30:04.9441613Z - 79828 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-17T13:30:04.9451546Z - 79828 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()
+2016-04-17T13:31:56.1502473Z - 79828 - Warn - Exception cleaning temporary files
+2016-04-17T13:31:56.1578500Z - 79828 - Warn - 
+2016-04-17T13:31:56.1578500Z - 79828 - Warn - Access to the path '51Degrees.dat.eb182554-da4e-4514-bf45-371ddf56fbc1.tmp' is denied.
+2016-04-17T13:31:56.1592576Z - 79828 - Warn -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileInfo.Delete()
+   at FiftyOne.Foundation.Mobile.Detection.WebProvider.CleanTemporaryFiles()

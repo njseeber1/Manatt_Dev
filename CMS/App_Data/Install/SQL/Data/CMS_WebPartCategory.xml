@@ -1,0 +1,1265 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_WebPartCategory" msprop:IsFromCMSDatabase="True" msprop:CMSHasExternalData="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryParentID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CategoryImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryPath" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryLevel" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryChildCount" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryWebPartChildCount" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_WebPartCategory>
+    <CategoryID>249</CategoryID>
+    <CategoryDisplayName>All web parts</CategoryDisplayName>
+    <CategoryName>/</CategoryName>
+    <CategoryGUID>d782b5c3-27f3-45e6-a5cc-86c1944e2c8d</CategoryGUID>
+    <CategoryLastModified>2014-02-28T16:24:42.1712665+01:00</CategoryLastModified>
+    <CategoryPath>/</CategoryPath>
+    <CategoryLevel>0</CategoryLevel>
+    <CategoryChildCount>44</CategoryChildCount>
+    <CategoryWebPartChildCount>0</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>219</CategoryID>
+    <CategoryDisplayName>Abuse report</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>AbuseReport</CategoryName>
+    <CategoryGUID>6054437f-0d27-4465-9302-d5080a079cb8</CategoryGUID>
+    <CategoryLastModified>2009-09-25T12:37:44.483+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/AbuseReport</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>233</CategoryID>
+    <CategoryDisplayName>Attachments</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Attachments</CategoryName>
+    <CategoryGUID>61901043-c196-42b1-8b00-b45a34c41259</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:01:32.253+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Attachments</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>414</CategoryID>
+    <CategoryDisplayName>Banner management</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>BannerManagement</CategoryName>
+    <CategoryGUID>fd859639-12a2-4c79-8ad9-7597c177202f</CategoryGUID>
+    <CategoryLastModified>2013-02-07T14:05:04.837+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/BannerManagement</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>185</CategoryID>
+    <CategoryDisplayName>Forms</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>BizForms</CategoryName>
+    <CategoryGUID>0b4a9270-13de-4b08-9ec4-1073fdef9f58</CategoryGUID>
+    <CategoryLastModified>2011-06-17T15:26:50.39+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/BizForms</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>190</CategoryID>
+    <CategoryDisplayName>Blogs</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Blogs</CategoryName>
+    <CategoryGUID>9d64ed06-94cf-42f6-a178-8d78808ffdb0</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:01:37.38+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Blogs</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>2</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>344</CategoryID>
+    <CategoryDisplayName>Comments</CategoryDisplayName>
+    <CategoryParentID>190</CategoryParentID>
+    <CategoryName>BlogComments</CategoryName>
+    <CategoryGUID>9682b2f5-000d-4b72-84a2-24416f7224af</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:15:04.397+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Blogs/BlogComments</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>345</CategoryID>
+    <CategoryDisplayName>Posts</CategoryDisplayName>
+    <CategoryParentID>190</CategoryParentID>
+    <CategoryName>BlogPosts</CategoryName>
+    <CategoryGUID>40a4fc6c-58b0-459a-aeb4-e17a23186214</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:16:25.457+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Blogs/BlogPosts</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>415</CategoryID>
+    <CategoryDisplayName>Chat</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Chat</CategoryName>
+    <CategoryGUID>68de8907-2d63-4f1f-90a4-57447cf79ea2</CategoryGUID>
+    <CategoryLastModified>2011-07-27T11:10:23.097+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Chat</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>15</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>218</CategoryID>
+    <CategoryDisplayName>Community</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Community</CategoryName>
+    <CategoryGUID>dbeb60eb-49ab-46ad-800d-547ca3f45c23</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:01:42.66+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>10</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>349</CategoryID>
+    <CategoryDisplayName>Groups</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>CommunityGroups</CategoryName>
+    <CategoryGUID>c745ceae-0786-4260-85a5-4558f82c027d</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:20:28.263+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/CommunityGroups</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>229</CategoryID>
+    <CategoryDisplayName>Friends</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>Friends</CategoryName>
+    <CategoryGUID>f9fcb286-b2cd-4f26-b205-cc37f9119693</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:01:46.77+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/Friends</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>8</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>348</CategoryID>
+    <CategoryDisplayName>Forums</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupForums</CategoryName>
+    <CategoryGUID>f0ae85da-bbb5-4e8a-9ce0-c81772ac1731</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:19:24.253+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupForums</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>346</CategoryID>
+    <CategoryDisplayName>Management</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupManagement</CategoryName>
+    <CategoryGUID>35c19d90-c0f0-422e-adb5-9d586164c7d4</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:17:39.017+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupManagement</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>8</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>351</CategoryID>
+    <CategoryDisplayName>Media library</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupMedia</CategoryName>
+    <CategoryGUID>0b9ecdda-bd18-4b68-9c30-a750171fa4e1</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:22:07.483+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupMedia</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>347</CategoryID>
+    <CategoryDisplayName>Members</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupMembers</CategoryName>
+    <CategoryGUID>fde9d969-0d1e-4720-83a4-f7093b413333</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:18:45.447+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupMembers</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>352</CategoryID>
+    <CategoryDisplayName>Message board</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupMessageBoard</CategoryName>
+    <CategoryGUID>20d24a83-b0ce-4431-baca-65b22eddca59</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:22:32.363+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupMessageBoard</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>350</CategoryID>
+    <CategoryDisplayName>Pages</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupPages</CategoryName>
+    <CategoryGUID>23d73e17-6cd5-46d3-ae87-9a14cab7df52</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:21:29.75+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupPages</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>353</CategoryID>
+    <CategoryDisplayName>Polls</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupPolls</CategoryName>
+    <CategoryGUID>59ab8a45-09a8-4fcf-aa41-01fbf4c562f1</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:23:08.15+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupPolls</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>354</CategoryID>
+    <CategoryDisplayName>Security</CategoryDisplayName>
+    <CategoryParentID>218</CategoryParentID>
+    <CategoryName>GroupSecurity</CategoryName>
+    <CategoryGUID>3be83bc1-a16c-4bfb-b105-1c1c2c7e7ccc</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:23:26.047+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Community/GroupSecurity</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>224</CategoryID>
+    <CategoryDisplayName>Content rating</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>ContentRating</CategoryName>
+    <CategoryGUID>a3cd1584-c603-401c-a45a-3ae444d73243</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:01:54.113+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/ContentRating</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>217</CategoryID>
+    <CategoryDisplayName>Custom tables</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>CustomTables</CategoryName>
+    <CategoryGUID>cdadf49c-ed8b-4679-87e1-9cf857b4b121</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:01:58+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/CustomTables</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>331</CategoryID>
+    <CategoryDisplayName>DashBoard</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>DashBoard</CategoryName>
+    <CategoryGUID>cfb44aae-d20d-4415-9662-afe5d8edb4e5</CategoryGUID>
+    <CategoryLastModified>2010-07-15T18:42:15.487+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/DashBoard</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>221</CategoryID>
+    <CategoryDisplayName>Data sources</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>DataSources</CategoryName>
+    <CategoryGUID>36984e99-1ff8-464a-8788-b1ab4afaa585</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:01.583+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/DataSources</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>3</CategoryChildCount>
+    <CategoryWebPartChildCount>16</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>355</CategoryID>
+    <CategoryDisplayName>Community</CategoryDisplayName>
+    <CategoryParentID>221</CategoryParentID>
+    <CategoryName>CommunityDataSources</CategoryName>
+    <CategoryGUID>40b76ae1-211c-47f5-b282-60dffc30d58f</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:25:26.613+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/DataSources/CommunityDataSources</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>467</CategoryID>
+    <CategoryDisplayName>E-commerce</CategoryDisplayName>
+    <CategoryParentID>221</CategoryParentID>
+    <CategoryName>E-commerce</CategoryName>
+    <CategoryGUID>ffac0d01-f2df-4bbf-b110-d8ee88051988</CategoryGUID>
+    <CategoryLastModified>2013-09-10T12:02:33.23+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/DataSources/E-commerce</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>356</CategoryID>
+    <CategoryDisplayName>Syndication</CategoryDisplayName>
+    <CategoryParentID>221</CategoryParentID>
+    <CategoryName>SyndicationDataSources</CategoryName>
+    <CategoryGUID>e59c95b7-0abc-4049-b9f5-45d0fc2a736f</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:26:02.487+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/DataSources/SyndicationDataSources</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>428</CategoryID>
+    <CategoryDisplayName>Device profiles</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Device_profile</CategoryName>
+    <CategoryGUID>953bd274-80bb-4902-b468-dc6d7b4311fe</CategoryGUID>
+    <CategoryLastModified>2012-09-13T07:53:17.703+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Device_profile</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>453</CategoryID>
+    <CategoryDisplayName>Page wizard</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>DocumentWizard</CategoryName>
+    <CategoryGUID>b6f9f350-4564-4886-b53f-d5460dd1dbc0</CategoryGUID>
+    <CategoryLastModified>2014-06-09T10:04:31.9959645+02:00</CategoryLastModified>
+    <CategoryPath>/DocumentWizard</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>166</CategoryID>
+    <CategoryDisplayName>E-commerce</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Ecommerce</CategoryName>
+    <CategoryGUID>afabab19-af7d-49f8-ae0e-340ebe3ea3a1</CategoryGUID>
+    <CategoryLastModified>2009-12-04T11:31:16+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Ecommerce</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>4</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>448</CategoryID>
+    <CategoryDisplayName>Checkout process</CategoryDisplayName>
+    <CategoryParentID>166</CategoryParentID>
+    <CategoryName>Checkout</CategoryName>
+    <CategoryGUID>5e13805d-aaaa-4bc8-b22c-a4474618e315</CategoryGUID>
+    <CategoryLastModified>2013-12-05T15:24:17.6160365+01:00</CategoryLastModified>
+    <CategoryPath>/Ecommerce/Checkout</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>13</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>429</CategoryID>
+    <CategoryDisplayName>Dashboard</CategoryDisplayName>
+    <CategoryParentID>166</CategoryParentID>
+    <CategoryName>ComDashboard</CategoryName>
+    <CategoryGUID>0162eadf-5818-4288-9803-09b968ab7823</CategoryGUID>
+    <CategoryLastModified>2012-08-09T16:34:49.657+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Ecommerce/ComDashboard</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>362</CategoryID>
+    <CategoryDisplayName>Products</CategoryDisplayName>
+    <CategoryParentID>166</CategoryParentID>
+    <CategoryName>ComProducts</CategoryName>
+    <CategoryGUID>629c7495-0973-4df6-9f21-b0a87686a061</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:31:01.377+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Ecommerce/ComProducts</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>482</CategoryID>
+    <CategoryDisplayName>Donations</CategoryDisplayName>
+    <CategoryParentID>166</CategoryParentID>
+    <CategoryName>Donations</CategoryName>
+    <CategoryGUID>178947e3-4ce8-4f09-a1e5-4546e2391dec</CategoryGUID>
+    <CategoryLastModified>2013-12-05T15:29:14.0320365+01:00</CategoryLastModified>
+    <CategoryPath>/Ecommerce/Donations</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>195</CategoryID>
+    <CategoryDisplayName>Events &amp; booking</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>EventsBooking</CategoryName>
+    <CategoryGUID>81176802-75cc-4314-b44f-9e3aa90baa03</CategoryGUID>
+    <CategoryLastModified>2011-03-18T09:02:46.227+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/EventsBooking</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>391</CategoryID>
+    <CategoryDisplayName>Filters</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Filters</CategoryName>
+    <CategoryGUID>b67bb1a5-4c13-4d58-98a3-7eafec237d74</CategoryGUID>
+    <CategoryLastModified>2011-03-24T12:16:03.943+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Filters</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>186</CategoryID>
+    <CategoryDisplayName>Forums</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Forums</CategoryName>
+    <CategoryGUID>02855290-f69a-4f87-bb90-54b4a6ffd4b1</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:12.113+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Forums</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>3</CategoryChildCount>
+    <CategoryWebPartChildCount>6</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>363</CategoryID>
+    <CategoryDisplayName>Posts</CategoryDisplayName>
+    <CategoryParentID>186</CategoryParentID>
+    <CategoryName>ForumPosts</CategoryName>
+    <CategoryGUID>640f6aff-12a6-47de-b5d2-a3cf663c17dd</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:32:08.557+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Forums/ForumPosts</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>360</CategoryID>
+    <CategoryDisplayName>Search</CategoryDisplayName>
+    <CategoryParentID>186</CategoryParentID>
+    <CategoryName>ForumsSearch</CategoryName>
+    <CategoryGUID>7e5421b5-0b0a-42e4-b800-373283b7d722</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:29:50.64+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Forums/ForumsSearch</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>397</CategoryID>
+    <CategoryDisplayName>Layout</CategoryDisplayName>
+    <CategoryParentID>186</CategoryParentID>
+    <CategoryName>Layout</CategoryName>
+    <CategoryGUID>97bd4d31-ac9b-48f6-b0e8-930482153847</CategoryGUID>
+    <CategoryLastModified>2011-06-27T14:35:35.96+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Forums/Layout</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>162</CategoryID>
+    <CategoryDisplayName>Full-text search</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>FulltextSearch</CategoryName>
+    <CategoryGUID>0c130eb6-0414-4355-a04a-0f71860428de</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:15.88+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/FulltextSearch</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>2</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>365</CategoryID>
+    <CategoryDisplayName>Smart search</CategoryDisplayName>
+    <CategoryParentID>162</CategoryParentID>
+    <CategoryName>SmartSearch</CategoryName>
+    <CategoryGUID>60f9b918-8389-44b1-833b-ce0762eb73fb</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:33:19.033+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/FulltextSearch/SmartSearch</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>364</CategoryID>
+    <CategoryDisplayName>SQL Search</CategoryDisplayName>
+    <CategoryParentID>162</CategoryParentID>
+    <CategoryName>SQLSearch</CategoryName>
+    <CategoryGUID>609568eb-68a4-46ca-be98-1589f5454541</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:33:07.567+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/FulltextSearch/SQLSearch</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>184</CategoryID>
+    <CategoryDisplayName>General</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>General</CategoryName>
+    <CategoryGUID>c4dcc9a6-220e-4efe-b264-288b53d08da6</CategoryGUID>
+    <CategoryLastModified>2008-04-09T07:42:47+02:00</CategoryLastModified>
+    <CategoryPath>/General</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>4</CategoryChildCount>
+    <CategoryWebPartChildCount>7</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>367</CategoryID>
+    <CategoryDisplayName>Actions</CategoryDisplayName>
+    <CategoryParentID>184</CategoryParentID>
+    <CategoryName>GeneralActions</CategoryName>
+    <CategoryGUID>00086044-1f49-4574-ab89-9cd537147b34</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:36:39.313+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/General/GeneralActions</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>418</CategoryID>
+    <CategoryDisplayName>Cookies</CategoryDisplayName>
+    <CategoryParentID>184</CategoryParentID>
+    <CategoryName>GeneralCookies</CategoryName>
+    <CategoryGUID>913b74b6-7b34-4af2-b2b3-5db5b5ad4aba</CategoryGUID>
+    <CategoryLastModified>2012-05-14T08:49:51.513+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/General/GeneralCookies</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>368</CategoryID>
+    <CategoryDisplayName>HTML</CategoryDisplayName>
+    <CategoryParentID>184</CategoryParentID>
+    <CategoryName>GeneralHTML</CategoryName>
+    <CategoryGUID>16c890ee-6223-4455-8e5e-0f1fd0472fd6</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:38:24.64+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/General/GeneralHTML</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>369</CategoryID>
+    <CategoryDisplayName>Layout</CategoryDisplayName>
+    <CategoryParentID>184</CategoryParentID>
+    <CategoryName>GeneralLayout</CategoryName>
+    <CategoryGUID>f13dcc2f-c5d8-484b-8786-9e687c62b0f6</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:39:55.197+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/General/GeneralLayout</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>386</CategoryID>
+    <CategoryDisplayName>Intranet portal</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>IntranetPortal</CategoryName>
+    <CategoryGUID>7adb2a2b-c1b8-433c-9e3b-ffc0883ac2f5</CategoryGUID>
+    <CategoryLastModified>2010-09-06T18:17:30.43+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/IntranetPortal</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>326</CategoryID>
+    <CategoryDisplayName>Layouts</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Layouts</CategoryName>
+    <CategoryGUID>d5cb0ae0-d055-437e-829f-e2c09a7bdce3</CategoryGUID>
+    <CategoryLastModified>2010-07-08T14:46:58+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Layouts</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>1</CategoryChildCount>
+    <CategoryWebPartChildCount>8</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>403</CategoryID>
+    <CategoryDisplayName>Wizard</CategoryDisplayName>
+    <CategoryParentID>326</CategoryParentID>
+    <CategoryName>Wizard</CategoryName>
+    <CategoryGUID>f5f00663-844b-4069-a823-4fb748c38952</CategoryGUID>
+    <CategoryLastModified>2011-11-16T08:41:31+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Layouts/Wizard</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>167</CategoryID>
+    <CategoryDisplayName>Listings and viewers</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>ListingsAndViewers</CategoryName>
+    <CategoryGUID>25ea0b9d-7959-4566-b760-adddfbb8c159</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:28.143+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/ListingsAndViewers</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>5</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>342</CategoryID>
+    <CategoryDisplayName>Basic</CategoryDisplayName>
+    <CategoryParentID>167</CategoryParentID>
+    <CategoryName>BasicViewers</CategoryName>
+    <CategoryGUID>9b923a8b-b0c6-48f7-8cad-877830a05b72</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:10:45.59+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/ListingsAndViewers/BasicViewers</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>340</CategoryID>
+    <CategoryDisplayName>Custom query</CategoryDisplayName>
+    <CategoryParentID>167</CategoryParentID>
+    <CategoryName>CustomQuery</CategoryName>
+    <CategoryGUID>2ebba45e-f1fa-4816-a2bf-d8c3e968eb19</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:10:33.17+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/ListingsAndViewers/CustomQuery</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>341</CategoryID>
+    <CategoryDisplayName>Pages</CategoryDisplayName>
+    <CategoryParentID>167</CategoryParentID>
+    <CategoryName>DocumentViewers</CategoryName>
+    <CategoryGUID>46e23e43-a698-4fdb-8898-2526f4dd4e09</CategoryGUID>
+    <CategoryLastModified>2014-06-09T10:24:39.9047433+02:00</CategoryLastModified>
+    <CategoryPath>/ListingsAndViewers/DocumentViewers</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>15</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>393</CategoryID>
+    <CategoryDisplayName>Effects</CategoryDisplayName>
+    <CategoryParentID>167</CategoryParentID>
+    <CategoryName>Effects</CategoryName>
+    <CategoryGUID>b5c63fba-8b88-46a5-a6e5-0e37ddf21ae3</CategoryGUID>
+    <CategoryLastModified>2011-03-30T08:03:59.78+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/ListingsAndViewers/Effects</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>343</CategoryID>
+    <CategoryDisplayName>Images</CategoryDisplayName>
+    <CategoryParentID>167</CategoryParentID>
+    <CategoryName>ImageViewers</CategoryName>
+    <CategoryGUID>e5af6eb8-e1fc-4aae-b573-5a5d2be89461</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:12:07.41+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/ListingsAndViewers/ImageViewers</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>398</CategoryID>
+    <CategoryDisplayName>Localization</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Localization</CategoryName>
+    <CategoryGUID>f06ed0de-7c20-45f0-af6b-dea408ee3711</CategoryGUID>
+    <CategoryLastModified>2011-06-27T16:58:10.063+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Localization</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>318</CategoryID>
+    <CategoryDisplayName>Maps</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Maps</CategoryName>
+    <CategoryGUID>9a393cc4-b4bb-4142-a213-b4460980e768</CategoryGUID>
+    <CategoryLastModified>2010-02-19T16:34:37+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Maps</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>3</CategoryChildCount>
+    <CategoryWebPartChildCount>0</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>388</CategoryID>
+    <CategoryDisplayName>Basic</CategoryDisplayName>
+    <CategoryParentID>318</CategoryParentID>
+    <CategoryName>Basic</CategoryName>
+    <CategoryGUID>a736f41a-e1c9-4ea8-899e-b63a76b9f045</CategoryGUID>
+    <CategoryLastModified>2011-03-08T23:06:59.63+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Maps/Basic</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>390</CategoryID>
+    <CategoryDisplayName>Pages</CategoryDisplayName>
+    <CategoryParentID>318</CategoryParentID>
+    <CategoryName>Documents</CategoryName>
+    <CategoryGUID>be7308ea-3951-4df8-8b11-2e5d0b84201d</CategoryGUID>
+    <CategoryLastModified>2014-06-09T10:25:00.013754+02:00</CategoryLastModified>
+    <CategoryPath>/Maps/Documents</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>389</CategoryID>
+    <CategoryDisplayName>Static</CategoryDisplayName>
+    <CategoryParentID>318</CategoryParentID>
+    <CategoryName>Static</CategoryName>
+    <CategoryGUID>57c27cdc-9b65-4853-b6b4-2b6d387c2193</CategoryGUID>
+    <CategoryLastModified>2011-03-08T23:07:25.077+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Maps/Static</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>202</CategoryID>
+    <CategoryDisplayName>Media</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Media</CategoryName>
+    <CategoryGUID>7a874b11-0b6d-4b6d-856d-e91795a87947</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:33.473+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Media</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>230</CategoryID>
+    <CategoryDisplayName>Media library</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>MediaLibrary</CategoryName>
+    <CategoryGUID>ce9e2c3d-ba37-418a-b722-8748c3081c9f</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:36.427+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/MediaLibrary</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>6</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>164</CategoryID>
+    <CategoryDisplayName>Membership</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Membership</CategoryName>
+    <CategoryGUID>9d58eec4-fb81-4dfb-87bb-e6bfbca98a08</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:39+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>6</CategoryChildCount>
+    <CategoryWebPartChildCount>0</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>387</CategoryID>
+    <CategoryDisplayName>LinkedIn</CategoryDisplayName>
+    <CategoryParentID>164</CategoryParentID>
+    <CategoryName>LinkedIn</CategoryName>
+    <CategoryGUID>4905b50a-5747-4dfa-8fc8-298c6a586089</CategoryGUID>
+    <CategoryLastModified>2011-02-17T09:12:52.96+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership/LinkedIn</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>372</CategoryID>
+    <CategoryDisplayName>Facebook</CategoryDisplayName>
+    <CategoryParentID>164</CategoryParentID>
+    <CategoryName>MembershipFacebook</CategoryName>
+    <CategoryGUID>5e2be9bf-d028-42c4-bea7-1c46d6cf1acf</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:43:40.603+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership/MembershipFacebook</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>371</CategoryID>
+    <CategoryDisplayName>LiveID</CategoryDisplayName>
+    <CategoryParentID>164</CategoryParentID>
+    <CategoryName>MembershipLiveID</CategoryName>
+    <CategoryGUID>6890dd98-65c5-4c32-8261-e2dfc9f4ae77</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:43:29.427+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership/MembershipLiveID</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>374</CategoryID>
+    <CategoryDisplayName>Logon &amp; Registration</CategoryDisplayName>
+    <CategoryParentID>164</CategoryParentID>
+    <CategoryName>MembershipLogonRegistration</CategoryName>
+    <CategoryGUID>d01e7e0e-fa1e-4a29-ac4b-940bfcba4c1e</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:45:09.06+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership/MembershipLogonRegistration</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>11</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>370</CategoryID>
+    <CategoryDisplayName>OpenID</CategoryDisplayName>
+    <CategoryParentID>164</CategoryParentID>
+    <CategoryName>MembershipOpenID</CategoryName>
+    <CategoryGUID>544c59a5-850a-4445-9780-e2c5fdc47a38</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:43:08.617+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership/MembershipOpenID</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>373</CategoryID>
+    <CategoryDisplayName>Users</CategoryDisplayName>
+    <CategoryParentID>164</CategoryParentID>
+    <CategoryName>MembershipUsers</CategoryName>
+    <CategoryGUID>a08d8f1a-7771-4832-95e2-2cfc4ca84695</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:44:49.227+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Membership/MembershipUsers</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>7</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>228</CategoryID>
+    <CategoryDisplayName>Message board</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>MessageBoard</CategoryName>
+    <CategoryGUID>8922d2ca-a89c-4432-bf58-5556e24b4e8c</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:44.3+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/MessageBoard</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>209</CategoryID>
+    <CategoryDisplayName>Messaging</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Messaging</CategoryName>
+    <CategoryGUID>e04cf39b-67c5-4527-b48a-64308124c549</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:02:48.973+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Messaging</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>7</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>161</CategoryID>
+    <CategoryDisplayName>Navigation</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Navigation</CategoryName>
+    <CategoryGUID>9d08bf54-24b5-46aa-b80f-1ebb73ed9018</CategoryGUID>
+    <CategoryLastModified>2009-09-02T08:51:02.547+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Navigation</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>6</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>163</CategoryID>
+    <CategoryDisplayName>Email marketing</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Newsletters</CategoryName>
+    <CategoryGUID>fc9fe123-adb8-4a87-9c79-1f96afb20587</CategoryGUID>
+    <CategoryLastModified>2014-09-17T14:09:07.9580623+02:00</CategoryLastModified>
+    <CategoryPath>/Newsletters</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>7</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>215</CategoryID>
+    <CategoryDisplayName>Notifications</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Notifications</CategoryName>
+    <CategoryGUID>519a8fe2-79c7-4acb-8371-271d593a6082</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:03:03.333+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Notifications</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>396</CategoryID>
+    <CategoryDisplayName>On-line marketing</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>OnlineMarketing</CategoryName>
+    <CategoryGUID>9ef17beb-dbe3-4e94-81ed-d161e1b9542c</CategoryGUID>
+    <CategoryLastModified>2011-06-07T15:10:40.293+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/OnlineMarketing</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>188</CategoryID>
+    <CategoryDisplayName>Polls</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Polls</CategoryName>
+    <CategoryGUID>ebe7103f-1715-4cb8-9b9e-8afb03869568</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:03:07.347+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Polls</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>189</CategoryID>
+    <CategoryDisplayName>Reporting</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Reporting</CategoryName>
+    <CategoryGUID>a097d3c9-6a18-4f54-b407-4c7b742033ad</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:03:11.427+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Reporting</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>319</CategoryID>
+    <CategoryDisplayName>Microsoft SharePoint</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>SharePoint</CategoryName>
+    <CategoryGUID>0b2a6c17-2b06-40f8-8f8e-cb543efebbcf</CategoryGUID>
+    <CategoryLastModified>2010-02-22T13:03:08.923+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/SharePoint</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>466</CategoryID>
+    <CategoryDisplayName>Strands Recommender</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>StrandsRecommender</CategoryName>
+    <CategoryGUID>3dc8216f-0c6e-4709-a2b3-3e071ab6b303</CategoryGUID>
+    <CategoryLastModified>2013-08-07T11:57:55.913+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/StrandsRecommender</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>317</CategoryID>
+    <CategoryDisplayName>Syndication</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Syndication</CategoryName>
+    <CategoryGUID>9ed02567-2d52-4db2-820f-6b3070e4724f</CategoryGUID>
+    <CategoryLastModified>2010-02-19T23:01:40.997+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Syndication</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>3</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>357</CategoryID>
+    <CategoryDisplayName>Atom</CategoryDisplayName>
+    <CategoryParentID>317</CategoryParentID>
+    <CategoryName>SyndicationAtom</CategoryName>
+    <CategoryGUID>5707798e-4842-47ce-8014-ce71f0e9331a</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:27:11.52+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Syndication/SyndicationAtom</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>358</CategoryID>
+    <CategoryDisplayName>RSS</CategoryDisplayName>
+    <CategoryParentID>317</CategoryParentID>
+    <CategoryName>SyndicationRSS</CategoryName>
+    <CategoryGUID>fcec1ff1-21ce-48d3-8a63-3d96de0c5ccf</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:27:34.417+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Syndication/SyndicationRSS</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>12</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>359</CategoryID>
+    <CategoryDisplayName>XML</CategoryDisplayName>
+    <CategoryParentID>317</CategoryParentID>
+    <CategoryName>SyndicationXML</CategoryName>
+    <CategoryGUID>29b2ef5e-34f0-42ff-9173-56cdba275f88</CategoryGUID>
+    <CategoryLastModified>2010-08-13T16:29:28.667+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Syndication/SyndicationXML</CategoryPath>
+    <CategoryLevel>2</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>220</CategoryID>
+    <CategoryDisplayName>Tagging &amp; categories</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>TaggingCategories</CategoryName>
+    <CategoryGUID>2dffdb0b-dd29-451f-b14a-37720a4c9e28</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:04:58.457+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/TaggingCategories</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>165</CategoryID>
+    <CategoryDisplayName>Text &amp; Images</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Text</CategoryName>
+    <CategoryGUID>68d8e65b-a01c-49ae-b9b6-7580bbce4b09</CategoryGUID>
+    <CategoryLastModified>2012-03-16T12:36:08.313+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Text</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>8</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>192</CategoryID>
+    <CategoryDisplayName>User contributions</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>UserContributions</CategoryName>
+    <CategoryGUID>2e2bdcf1-76e8-4c03-a623-fc041aad1284</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:05:13.037+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/UserContributions</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>395</CategoryID>
+    <CategoryDisplayName>Web analytics</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>WebAnalytics</CategoryName>
+    <CategoryGUID>8145fa4a-5499-4cbe-8766-86f32b96b102</CategoryGUID>
+    <CategoryLastModified>2011-05-04T09:05:03.333+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/WebAnalytics</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>3</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>187</CategoryID>
+    <CategoryDisplayName>Web services</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>WebServices</CategoryName>
+    <CategoryGUID>06c6a5b2-cc99-4f58-81f3-c5f9ca63bcac</CategoryGUID>
+    <CategoryLastModified>2009-08-28T11:05:19.443+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/WebServices</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>281</CategoryID>
+    <CategoryDisplayName>Widgets</CategoryDisplayName>
+    <CategoryParentID>249</CategoryParentID>
+    <CategoryName>Widgets</CategoryName>
+    <CategoryGUID>c28ef141-4925-4c4f-a385-1c1b0081041b</CategoryGUID>
+    <CategoryLastModified>2009-10-01T17:43:28.2+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>/Widgets</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>1</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>435</CategoryID>
+    <CategoryDisplayName>UI Webparts</CategoryDisplayName>
+    <CategoryName>UIWebparts</CategoryName>
+    <CategoryGUID>e2799406-594e-4569-a065-5c406aeee479</CategoryGUID>
+    <CategoryLastModified>2013-01-10T16:42:49.503+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>UIWebparts/</CategoryPath>
+    <CategoryLevel>0</CategoryLevel>
+    <CategoryChildCount>4</CategoryChildCount>
+    <CategoryWebPartChildCount>0</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>444</CategoryID>
+    <CategoryDisplayName>Edit</CategoryDisplayName>
+    <CategoryParentID>435</CategoryParentID>
+    <CategoryName>Edit</CategoryName>
+    <CategoryGUID>9d66986a-c04d-463a-ba7d-21afa013f7bf</CategoryGUID>
+    <CategoryLastModified>2013-01-10T15:13:23.36+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>UIWebparts/Edit</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>5</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>447</CategoryID>
+    <CategoryDisplayName>General</CategoryDisplayName>
+    <CategoryParentID>435</CategoryParentID>
+    <CategoryName>General_1</CategoryName>
+    <CategoryGUID>7f843143-91fa-4b99-97c8-26d7a8d22eda</CategoryGUID>
+    <CategoryLastModified>2013-01-10T15:24:07.483+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>UIWebparts/General_1</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>9</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>445</CategoryID>
+    <CategoryDisplayName>Layout</CategoryDisplayName>
+    <CategoryParentID>435</CategoryParentID>
+    <CategoryName>Menu</CategoryName>
+    <CategoryGUID>73a21c54-4b1b-4754-99f8-034c75fb4763</CategoryGUID>
+    <CategoryLastModified>2013-05-28T10:22:58.98+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>UIWebparts/Menu</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>4</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+  <CMS_WebPartCategory>
+    <CategoryID>446</CategoryID>
+    <CategoryDisplayName>Selector</CategoryDisplayName>
+    <CategoryParentID>435</CategoryParentID>
+    <CategoryName>Selector</CategoryName>
+    <CategoryGUID>f1bbda0a-8a2d-4333-82da-6ea14daf48a1</CategoryGUID>
+    <CategoryLastModified>2013-01-10T15:21:25.907+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryPath>UIWebparts/Selector</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryWebPartChildCount>2</CategoryWebPartChildCount>
+  </CMS_WebPartCategory>
+</NewDataSet>

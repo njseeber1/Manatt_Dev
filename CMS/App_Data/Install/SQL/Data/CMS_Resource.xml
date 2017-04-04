@@ -1,0 +1,756 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_Resource" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ResourceID" type="xs:int" minOccurs="0" />
+                <xs:element name="ResourceDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceName" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ShowInDevelopment" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ResourceURL" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ResourceHasFiles" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ResourceVersion" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceAuthor" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceInstallationState" type="xs:string" minOccurs="0" />
+                <xs:element name="ResourceInstalledVersion" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_Resource>
+    <ResourceID>265</ResourceID>
+    <ResourceDisplayName>A/B testing</ResourceDisplayName>
+    <ResourceName>CMS.ABTest</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>f23e944e-1a51-46f0-8a2e-75bcfc2a70ea</ResourceGUID>
+    <ResourceLastModified>2015-09-19T10:46:18.565762+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>130</ResourceID>
+    <ResourceDisplayName>Abuse report</ResourceDisplayName>
+    <ResourceName>CMS.AbuseReport</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>69d64093-d17a-47e2-a08b-71800ac187b2</ResourceGUID>
+    <ResourceLastModified>2014-12-11T16:49:34.575135+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>126</ResourceID>
+    <ResourceDisplayName>Bad words</ResourceDisplayName>
+    <ResourceName>CMS.Badwords</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>09642799-d831-4b69-a95d-28a9bdf496d9</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.6129424+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>137</ResourceID>
+    <ResourceDisplayName>Badges</ResourceDisplayName>
+    <ResourceName>CMS.Badges</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>c431cf4a-3734-447e-8c7b-7e01a7aaa202</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.7009512+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>120</ResourceID>
+    <ResourceDisplayName>Banned IPs</ResourceDisplayName>
+    <ResourceName>CMS.BannedIP</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>0b5a5dd7-ce18-487a-96a3-a71434119b15</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.5599371+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>271</ResourceID>
+    <ResourceDisplayName>Banner management</ResourceDisplayName>
+    <ResourceName>CMS.BannerManagement</ResourceName>
+    <ResourceDescription>In this section, you can manage banners and banner categories. Banner categories can be displayed in Banner rotator webpart.</ResourceDescription>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>69a6884d-789d-4732-bf7c-96da001050d8</ResourceGUID>
+    <ResourceLastModified>2015-10-14T14:36:40.7785758+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>117</ResourceID>
+    <ResourceDisplayName>Blogs</ResourceDisplayName>
+    <ResourceName>CMS.Blog</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>16ff5f79-b1c3-4142-bf28-e9fec523a10e</ResourceGUID>
+    <ResourceLastModified>2014-12-12T14:48:11.0843932+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>260</ResourceID>
+    <ResourceDisplayName>Categories</ResourceDisplayName>
+    <ResourceName>CMS.Categories</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>aafd78f2-91f7-47cc-bf0b-d1a048d9540a</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:33.8660677+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>272</ResourceID>
+    <ResourceDisplayName>Chat</ResourceDisplayName>
+    <ResourceName>CMS.Chat</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>944e7882-1698-4e87-9036-5d8cd4f98592</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:34.0320843+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>325</ResourceID>
+    <ResourceDisplayName>CMS</ResourceDisplayName>
+    <ResourceName>CMS</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02</ResourceGUID>
+    <ResourceLastModified>2015-11-18T18:51:56.1917628+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>270</ResourceID>
+    <ResourceDisplayName>CMS On-site editing</ResourceDisplayName>
+    <ResourceName>CMS.OnSiteEdit</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>e2774a5e-1005-4911-877d-ad4af29a9976</ResourceGUID>
+    <ResourceLastModified>2014-03-06T15:19:32.9523315+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>197</ResourceID>
+    <ResourceDisplayName>Community</ResourceDisplayName>
+    <ResourceName>CMS.Community</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>f1cc54a9-d5bb-4a69-bd8c-8918eb410656</ResourceGUID>
+    <ResourceLastModified>2011-02-03T17:45:13.563+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>253</ResourceID>
+    <ResourceDisplayName>Contact management</ResourceDisplayName>
+    <ResourceName>CMS.ContactManagement</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>0e4beef1-989c-4687-80ca-ae21fec09734</ResourceGUID>
+    <ResourceLastModified>2014-12-17T13:50:08.7261175+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>54</ResourceID>
+    <ResourceDisplayName>Content</ResourceDisplayName>
+    <ResourceName>CMS.Content</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>98c6ee00-230a-4207-a6d3-03677b83b245</ResourceGUID>
+    <ResourceLastModified>2015-11-16T10:49:49.7062581+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>267</ResourceID>
+    <ResourceDisplayName>Content personalization</ResourceDisplayName>
+    <ResourceName>CMS.ContentPersonalization</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>60976a10-849f-49fd-ae87-04688c7c1f80</ResourceGUID>
+    <ResourceLastModified>2014-08-15T15:11:54.5095162+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>409</ResourceID>
+    <ResourceDisplayName>Continuous integration</ResourceDisplayName>
+    <ResourceName>CMS.ContinuousIntegration</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>03687e8b-82dc-479e-9174-38e478a8af45</ResourceGUID>
+    <ResourceLastModified>2015-11-09T11:40:27.6761619+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>393</ResourceID>
+    <ResourceDisplayName>Custom</ResourceDisplayName>
+    <ResourceName>cms.customsystemmodule</ResourceName>
+    <ResourceDescription>The Custom module serves as a container for custom UI elements and other module objects imported from previous versions. Can also be used to perform ad-hoc customizations.</ResourceDescription>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>17649fbe-f972-41f9-b0f1-d6f6f3847f76</ResourceGUID>
+    <ResourceLastModified>2015-10-01T08:02:24.7923758+02:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>129</ResourceID>
+    <ResourceDisplayName>Custom tables</ResourceDisplayName>
+    <ResourceName>CMS.CustomTables</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>99fac5bf-4371-473b-823a-d6f903a78f50</ResourceGUID>
+    <ResourceLastModified>2015-04-15T18:38:47.8371423+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>252</ResourceID>
+    <ResourceDisplayName>Design</ResourceDisplayName>
+    <ResourceName>CMS.Design</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>b755e8fc-a06f-421a-b749-f2d31d1f2570</ResourceGUID>
+    <ResourceLastModified>2015-11-16T10:45:38.9114563+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>273</ResourceID>
+    <ResourceDisplayName>Device profiles</ResourceDisplayName>
+    <ResourceName>CMS.DeviceProfile</ResourceName>
+    <ResourceDescription>This section enables to define device profiles.</ResourceDescription>
+    <ShowInDevelopment>true</ShowInDevelopment>
+    <ResourceURL>~/CMSModules/DeviceProfile/Pages/Development/List.aspx</ResourceURL>
+    <ResourceGUID>6a211ca9-a088-480d-b205-86af12b83935</ResourceGUID>
+    <ResourceLastModified>2014-12-11T16:49:34.8821657+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>111</ResourceID>
+    <ResourceDisplayName>E-commerce</ResourceDisplayName>
+    <ResourceName>CMS.Ecommerce</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>684e021b-8b56-4cbf-8fd5-b7a791fd2dbc</ResourceGUID>
+    <ResourceLastModified>2015-08-10T14:25:53.0192298+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>108</ResourceID>
+    <ResourceDisplayName>Email marketing</ResourceDisplayName>
+    <ResourceName>CMS.Newsletter</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>82445572-642a-4f53-a411-063e5f4b63c0</ResourceGUID>
+    <ResourceLastModified>2015-09-24T13:39:44.0486849+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>236</ResourceID>
+    <ResourceDisplayName>Email templates</ResourceDisplayName>
+    <ResourceName>CMS.EmailTemplates</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>0918154f-3c60-4ac5-8413-c2b4bd619cd0</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:33.7050516+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>338</ResourceID>
+    <ResourceDisplayName>Emails</ResourceDisplayName>
+    <ResourceName>CMS.EmailEngine</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>7675c4a8-a792-4d4c-b83e-38ed24b64eab</ResourceGUID>
+    <ResourceLastModified>2014-09-11T13:20:13.893293+02:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>141</ResourceID>
+    <ResourceDisplayName>Event log</ResourceDisplayName>
+    <ResourceName>CMS.EventLog</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>ff8285c1-9d1a-49b3-8c9d-7502e1e533f7</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.7799591+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>119</ResourceID>
+    <ResourceDisplayName>Events</ResourceDisplayName>
+    <ResourceName>CMS.EventManager</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>67c2d259-8f33-4c1f-b725-5eebcb332fcc</ResourceGUID>
+    <ResourceLastModified>2015-09-21T15:43:59.0169685+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>106</ResourceID>
+    <ResourceDisplayName>Forms</ResourceDisplayName>
+    <ResourceName>CMS.Form</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>385e528a-e013-4a84-bad9-d5956408741a</ResourceGUID>
+    <ResourceLastModified>2015-09-19T08:10:51.9521153+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>109</ResourceID>
+    <ResourceDisplayName>Forums</ResourceDisplayName>
+    <ResourceName>CMS.Forums</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>16e96e6c-f16f-49dc-a640-2357418668b8</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.0408852+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>135</ResourceID>
+    <ResourceDisplayName>Friends</ResourceDisplayName>
+    <ResourceName>CMS.Friends</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>d6f94476-424a-4aed-ad22-c34a32cbc1d8</ResourceGUID>
+    <ResourceLastModified>2014-08-12T17:36:49.4782033+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>259</ResourceID>
+    <ResourceDisplayName>Global permissions</ResourceDisplayName>
+    <ResourceName>CMS.GlobalPermissions</ResourceName>
+    <ResourceDescription>Contains global permissions.</ResourceDescription>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>b8a076ee-2344-4292-af65-a679dfa81b59</ResourceGUID>
+    <ResourceLastModified>2011-05-25T15:36:39.33+02:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>331</ResourceID>
+    <ResourceDisplayName>Globalization</ResourceDisplayName>
+    <ResourceName>CMS.Globalization</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>c171949b-8edd-4bcd-95c2-0d6a0dd5cbbb</ResourceGUID>
+    <ResourceLastModified>2013-03-05T14:31:39.477+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>121</ResourceID>
+    <ResourceDisplayName>Groups</ResourceDisplayName>
+    <ResourceName>CMS.Groups</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>65f419f4-00f1-4905-a344-fc5b94983097</ResourceGUID>
+    <ResourceLastModified>2015-03-02T17:24:15.6157402+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>357</ResourceID>
+    <ResourceDisplayName>Licenses</ResourceDisplayName>
+    <ResourceName>Licenses</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>490ac665-3c73-4db0-8369-ce305fd252ed</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:34.9731784+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>264</ResourceID>
+    <ResourceDisplayName>Localization</ResourceDisplayName>
+    <ResourceName>CMS.Localization</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>4387e6da-cc0f-4a9d-9604-b8dd78234882</ResourceGUID>
+    <ResourceLastModified>2014-12-11T16:49:34.7341509+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>164</ResourceID>
+    <ResourceDisplayName>Media dialog</ResourceDisplayName>
+    <ResourceName>CMS.MediaDialog</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>cb2b7f8d-0517-4d17-95a2-4fd7040bc2b7</ResourceGUID>
+    <ResourceLastModified>2013-01-23T00:18:13.68+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>140</ResourceID>
+    <ResourceDisplayName>Media libraries</ResourceDisplayName>
+    <ResourceName>CMS.MediaLibrary</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>f1ae7bb7-e5e2-4944-b0a6-c92be4f95982</ResourceGUID>
+    <ResourceLastModified>2015-09-21T15:40:00.8879685+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>242</ResourceID>
+    <ResourceDisplayName>Membership</ResourceDisplayName>
+    <ResourceName>CMS.Membership</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>d4b7561a-f188-420c-8f68-63b5c573b2bf</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:33.7240535+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>125</ResourceID>
+    <ResourceDisplayName>Message boards</ResourceDisplayName>
+    <ResourceName>CMS.MessageBoards</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>0011c831-2e12-45bf-87ed-6a17607659f8</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.5899401+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>201</ResourceID>
+    <ResourceDisplayName>Messaging</ResourceDisplayName>
+    <ResourceName>CMS.Messaging</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>2b521e04-6b2d-4422-b1d2-c352e88e3b02</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:33.4000211+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>403</ResourceID>
+    <ResourceDisplayName>Module usage tracking</ResourceDisplayName>
+    <ResourceName>CMS.ModuleUsageTracking</ResourceName>
+    <ResourceDescription>Kentico improvement program</ResourceDescription>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>4deb9523-2bb4-4b88-94cb-557e26cd2824</ResourceGUID>
+    <ResourceLastModified>2014-10-16T10:52:01.9199329+02:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>266</ResourceID>
+    <ResourceDisplayName>MVT testing</ResourceDisplayName>
+    <ResourceName>CMS.MVTest</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>e673e837-394a-45f9-9591-9e75fe757763</ResourceGUID>
+    <ResourceLastModified>2015-09-19T08:04:51.3670604+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>198</ResourceID>
+    <ResourceDisplayName>Notifications</ResourceDisplayName>
+    <ResourceName>CMS.Notifications</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>c5f1114b-f87b-46bc-b169-7f8afaddc394</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:33.2050016+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>196</ResourceID>
+    <ResourceDisplayName>On-line marketing</ResourceDisplayName>
+    <ResourceName>CMS.OnlineMarketing</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>bd03e629-e677-42a6-8b12-5277fa04add7</ResourceGUID>
+    <ResourceLastModified>2015-09-19T08:09:53.1112318+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>339</ResourceID>
+    <ResourceDisplayName>Pages</ResourceDisplayName>
+    <ResourceName>CMS.DocumentEngine</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>83ff58cf-d7ed-4567-a68c-439daf7e85cf</ResourceGUID>
+    <ResourceLastModified>2015-04-21T15:17:30.1709809+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>142</ResourceID>
+    <ResourceDisplayName>Permissions</ResourceDisplayName>
+    <ResourceName>CMS.Permissions</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>80c352ef-06ae-4e2c-acb5-a58dfa35e90c</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.8039615+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>361</ResourceID>
+    <ResourceDisplayName>Personas</ResourceDisplayName>
+    <ResourceName>CMS.Personas</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>904548ca-bed8-45bf-a6d0-42c1bae4d26d</ResourceGUID>
+    <ResourceLastModified>2015-09-19T09:34:08.913762+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>113</ResourceID>
+    <ResourceDisplayName>Polls</ResourceDisplayName>
+    <ResourceName>CMS.Polls</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>587a4ab1-def8-451b-8b55-f885afe3c16b</ResourceGUID>
+    <ResourceLastModified>2015-11-03T08:34:43.8172726+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>342</ResourceID>
+    <ResourceDisplayName>Relationships</ResourceDisplayName>
+    <ResourceName>CMS.Relationships</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>04cc7e6c-110c-4d1d-8d4a-fc74e64e1122</ResourceGUID>
+    <ResourceLastModified>2015-06-18T08:51:08.5607329+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>114</ResourceID>
+    <ResourceDisplayName>Reporting</ResourceDisplayName>
+    <ResourceName>CMS.Reporting</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>6620e618-9925-4297-bcf7-ed6d9e21ba21</ResourceGUID>
+    <ResourceLastModified>2015-01-15T14:17:36.455614+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>143</ResourceID>
+    <ResourceDisplayName>Roles</ResourceDisplayName>
+    <ResourceName>CMS.Roles</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>4dcb3b9b-8bee-4a3e-97dd-610f6e5623a4</ResourceGUID>
+    <ResourceLastModified>2015-06-12T10:42:14.8886461+02:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>144</ResourceID>
+    <ResourceDisplayName>Scheduled tasks</ResourceDisplayName>
+    <ResourceName>CMS.ScheduledTasks</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>1017a016-7671-4bca-a5b0-8ea84dae01fa</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.9229734+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>261</ResourceID>
+    <ResourceDisplayName>Scoring</ResourceDisplayName>
+    <ResourceName>CMS.Scoring</ResourceName>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>65210a3e-5aef-4a10-aa23-17906fcd7039</ResourceGUID>
+    <ResourceLastModified>2015-09-19T09:39:45.774762+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>332</ResourceID>
+    <ResourceDisplayName>Search</ResourceDisplayName>
+    <ResourceName>CMS.Search</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>7a137c8e-394d-4013-a707-ffd1ca1029c7</ResourceGUID>
+    <ResourceLastModified>2015-02-02T16:09:35.1345766+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>394</ResourceID>
+    <ResourceDisplayName>SharePoint</ResourceDisplayName>
+    <ResourceName>CMS.SharePoint</ResourceName>
+    <ResourceDescription>This module extends the capabilities of integration with Microsoft SharePoint.</ResourceDescription>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>978f8972-606c-4f8f-9b01-7b650a5ca31d</ResourceGUID>
+    <ResourceLastModified>2015-03-16T08:21:07.4999717+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>350</ResourceID>
+    <ResourceDisplayName>Social marketing</ResourceDisplayName>
+    <ResourceName>CMS.SocialMarketing</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>66fed7e0-3dfc-4367-9350-0ce620cc1d7e</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:34.8501661+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>359</ResourceID>
+    <ResourceDisplayName>Social media</ResourceDisplayName>
+    <ResourceName>CMS.SocialMedia</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>f3233ad0-50ee-45e3-b50f-6c1d8e90dbb0</ResourceGUID>
+    <ResourceLastModified>2013-10-15T14:56:21.747+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>110</ResourceID>
+    <ResourceDisplayName>Staging</ResourceDisplayName>
+    <ResourceName>CMS.Staging</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>b1640241-8905-4845-ac9a-0301cb60cb63</ResourceGUID>
+    <ResourceLastModified>2015-11-09T13:59:04.6769053+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>352</ResourceID>
+    <ResourceDisplayName>Strands Recommender</ResourceDisplayName>
+    <ResourceName>CMS.StrandsRecommender</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>1235e27c-5b04-4024-9032-d10ea62cafbe</ResourceGUID>
+    <ResourceLastModified>2013-08-02T12:29:44.96+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>333</ResourceID>
+    <ResourceDisplayName>Synchronization</ResourceDisplayName>
+    <ResourceName>CMS.Synchronization</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>0d650be6-b050-46c5-8a4c-b1e8afe2b052</ResourceGUID>
+    <ResourceLastModified>2013-03-05T14:35:01.6+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>336</ResourceID>
+    <ResourceDisplayName>Taxonomy</ResourceDisplayName>
+    <ResourceName>CMS.Taxonomy</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>98145ff3-36e3-43a5-a006-c43bfc764ab0</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:34.709152+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>286</ResourceID>
+    <ResourceDisplayName>Translations</ResourceDisplayName>
+    <ResourceName>CMS.TranslationServices</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>1ab44056-7cc1-4ad2-bc49-3adae489654f</ResourceGUID>
+    <ResourceLastModified>2014-12-11T16:49:33.9270702+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>158</ResourceID>
+    <ResourceDisplayName>UI personalization</ResourceDisplayName>
+    <ResourceName>CMS.UIPersonalization</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>ab8fa139-0db5-4276-b8ad-e408bd981696</ResourceGUID>
+    <ResourceLastModified>2014-12-11T13:35:32.9969808+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>145</ResourceID>
+    <ResourceDisplayName>Users</ResourceDisplayName>
+    <ResourceName>CMS.Users</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>31882975-240a-4bcf-bc38-09a3d21df485</ResourceGUID>
+    <ResourceLastModified>2014-12-14T09:10:38.9722853+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>115</ResourceID>
+    <ResourceDisplayName>Web analytics</ResourceDisplayName>
+    <ResourceName>CMS.WebAnalytics</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>d3c82114-86f7-4aa9-8206-9b006100641c</ResourceGUID>
+    <ResourceLastModified>2015-09-23T14:50:48.1267095+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>335</ResourceID>
+    <ResourceDisplayName>Web farms</ResourceDisplayName>
+    <ResourceName>CMS.WebFarm</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>b8cebc73-6fe5-4428-b522-8c7841d89af8</ResourceGUID>
+    <ResourceLastModified>2015-05-07T13:21:04.1872882+02:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>152</ResourceID>
+    <ResourceDisplayName>Widgets</ResourceDisplayName>
+    <ResourceName>CMS.Widgets</ResourceName>
+    <ResourceDescription>{$cms.widgets.description$}</ResourceDescription>
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>c408448c-9373-42b0-950d-812d5c95f57b</ResourceGUID>
+    <ResourceLastModified>2015-02-17T12:58:02.2671751+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>360</ResourceID>
+    <ResourceDisplayName>WIF integration</ResourceDisplayName>
+    <ResourceName>CMS.WIFIntegration</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>7151f929-7dd0-484a-a107-06e837dda3e5</ResourceGUID>
+    <ResourceLastModified>2013-10-29T17:08:09.5464117+01:00</ResourceLastModified>
+    <ResourceHasFiles>true</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>334</ResourceID>
+    <ResourceDisplayName>Workflow</ResourceDisplayName>
+    <ResourceName>CMS.WorkflowEngine</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceGUID>2b67f370-3df4-4a4d-8734-1974639c5b69</ResourceGUID>
+    <ResourceLastModified>2013-03-05T14:35:51.363+01:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+  <CMS_Resource>
+    <ResourceID>151</ResourceID>
+    <ResourceDisplayName>WYSIWYG editor</ResourceDisplayName>
+    <ResourceName>CMS.WYSIWYGEditor</ResourceName>
+    <ResourceDescription />
+    <ShowInDevelopment>false</ShowInDevelopment>
+    <ResourceURL />
+    <ResourceGUID>8159098b-ea70-40df-ae2e-f7730ea6814e</ResourceGUID>
+    <ResourceLastModified>2014-08-13T13:09:58.9355608+02:00</ResourceLastModified>
+    <ResourceHasFiles>false</ResourceHasFiles>
+  </CMS_Resource>
+</NewDataSet>

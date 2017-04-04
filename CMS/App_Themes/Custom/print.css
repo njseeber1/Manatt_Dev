@@ -1,0 +1,178 @@
+@media print {
+    html, body {
+        height:auto !important;
+        margin: 0 0 0 0  !important;
+    }
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#in {
+		width: 100% !important;
+	}
+	.related-content {
+		float: none !important;
+	}
+    a[href]:after {
+       content:"" !important;
+	   display: none;
+    }
+    .grid-collapse .item {
+        max-width:50%;
+    }
+    .grid-collapse .item:nth-child(even) {
+        padding-right:0;
+    }
+    #clients .client-list>div:not(.tooltip) {
+        min-width:0;
+        width:200px!important;
+        
+    }
+
+	#newsletters .related-content ul.newsfeed, #in .related-content ul.newsfeed, #profile .related-content ul.newsfeed, #work .results .result-list #pro-bono ul.newsfeed > div, #people article.story ul.newsfeed {
+		display: inline !important;
+		flex-wrap: nowrap;
+	}
+
+	.no-print,
+	.mosaic, .breadcr,
+	nav, .navbar,
+	.print-container,
+	#more a.btn.expander,
+	button.expander-toggle,
+	#m, #CMSHeaderDiv, #CMSHeaderPad,
+	#dm_pM_pMP, #ctxM {
+		display: none!important;
+	}
+
+	.print,
+	#more .collapse,
+	.expander-wrapper {
+		display: block!important;
+	}
+	#more > div {
+		padding-top: 16px;
+	}
+	.expander-wrapper {
+		height: auto!important;
+		margin-bottom: 32px;
+		border-bottom: 0 none;
+	}
+	.articles article:first-of-type {
+		margin-top: 0;
+	}
+	#profile .articles figure {
+		width: 35%;
+	}
+	#profile .profile-detail #info {
+		width: 62%;
+		padding-right: 0;
+	}
+	#profile .profile-detail #education {
+		width: 100%;
+		display: block;
+		float: none;
+		clear: both;
+		padding-left: 7px;
+	}
+	#profile .profile-detail .column #related,
+	#profile .profile-detail .column .contact {
+		max-width: 45%;
+		display: inline-block;
+		word-break: break-all;
+		border-top: 2px solid #000;
+	}
+	#profile .profile-detail #related {
+		margin-top: 0;
+	}
+	#profile .profile-detail .contact {
+		margin-right: 10%;
+	}
+	#profile .profile-detail #related ul li {
+		line-height: 1.4;
+	}
+	#profile .profile-detail #education ul li {
+		line-height: 1.8;
+	}
+	footer > article:not(#brand) {
+		display: none;
+	}
+	footer #brand {
+		width: 100%;
+		border-right: 0 none;
+	}
+}
+.print body {
+	margin: 0;
+	padding: 0;
+}
+.print #nav-overlay,
+.print .site-nav,
+.print .print-nav,
+.print .no-print,
+.print .mosaic,
+.print nav,
+.print #more a.btn.expander,
+.print button.expander-toggle {
+	display: none!important;
+}
+
+.print .print,
+.print #more .collapse,
+.print .expander-wrapper {
+	display: block!important;
+}
+.print #more > div {
+	padding-top: 16px;
+}
+.print .expander-wrapper {
+	height: auto!important;
+	margin-bottom: 32px;
+	border-bottom: 0 none;
+}
+.print .articles article:first-of-type {
+	margin-top: 0;
+}
+.print #profile .articles figure {
+	width: 35%;
+}
+.print #profile .profile-detail #info {
+	width: 62%;
+	padding-right: 0;
+}
+.print #profile .profile-detail #education {
+	width: 100%;
+	display: block;
+	float: none;
+	clear: both;
+	padding-left: 7px;
+}
+.print #profile .profile-detail .column #related,
+.print #profile .profile-detail .column .contact {
+	max-width: 45%;
+	display: inline-block;
+	word-break: break-all;
+	border-top: 2px solid #000;
+}
+.print #profile .profile-detail #related {
+	margin-top: 0;
+}
+.print #profile .profile-detail .contact {
+	margin-right: 10%;
+}
+.print #profile .profile-detail #related ul li {
+	line-height: 1.4;
+}
+.print #profile .profile-detail #education ul li {
+	line-height: 1.8;
+}
+.print footer > article:not(#brand) {
+	display: none;
+}
+.print footer #brand {
+	width: 100%;
+	border-right: 0 none;
+}
+.print:last-child {
+     page-break-after: auto;
+}

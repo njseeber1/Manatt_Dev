@@ -1,0 +1,118 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_TranslationService" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TranslationServiceID" type="xs:int" minOccurs="0" />
+                <xs:element name="TranslationServiceAssemblyName" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslationServiceClassName" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslationServiceName" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslationServiceDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslationServiceIsMachine" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TranslationServiceGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslationServiceEnabled" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceSupportsInstructions" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceSupportsPriority" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceSupportsDeadline" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceGenerateTargetTag" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceParameter" type="xs:string" minOccurs="0" />
+                <xs:element name="TranslationServiceSupportsStatusUpdate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TranslationServiceSupportsCancel" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_TranslationService>
+    <TranslationServiceID>2</TranslationServiceID>
+    <TranslationServiceAssemblyName>CMS.TranslationServices</TranslationServiceAssemblyName>
+    <TranslationServiceClassName>CMS.TranslationServices.TranslationsComService</TranslationServiceClassName>
+    <TranslationServiceName>TranslationsCom</TranslationServiceName>
+    <TranslationServiceDisplayName>Translations.com</TranslationServiceDisplayName>
+    <TranslationServiceIsMachine>false</TranslationServiceIsMachine>
+    <TranslationServiceLastModified>2014-12-11T09:23:00.9219031+01:00</TranslationServiceLastModified>
+    <TranslationServiceGUID>9c05c042-39e7-44ff-bd54-a2bdb334cae0</TranslationServiceGUID>
+    <TranslationServiceEnabled>true</TranslationServiceEnabled>
+    <TranslationServiceSupportsInstructions>true</TranslationServiceSupportsInstructions>
+    <TranslationServiceSupportsPriority>true</TranslationServiceSupportsPriority>
+    <TranslationServiceSupportsDeadline>true</TranslationServiceSupportsDeadline>
+    <TranslationServiceGenerateTargetTag>true</TranslationServiceGenerateTargetTag>
+    <TranslationServiceSupportsStatusUpdate>false</TranslationServiceSupportsStatusUpdate>
+    <TranslationServiceSupportsCancel>false</TranslationServiceSupportsCancel>
+  </CMS_TranslationService>
+  <CMS_TranslationService>
+    <TranslationServiceID>6</TranslationServiceID>
+    <TranslationServiceAssemblyName>CMS.TranslationServices</TranslationServiceAssemblyName>
+    <TranslationServiceClassName>CMS.TranslationServices.GoogleTranslatorService</TranslationServiceClassName>
+    <TranslationServiceName>GoogleTranslator</TranslationServiceName>
+    <TranslationServiceDisplayName>Google Translator</TranslationServiceDisplayName>
+    <TranslationServiceIsMachine>true</TranslationServiceIsMachine>
+    <TranslationServiceLastModified>2014-12-11T09:22:42.8357866+01:00</TranslationServiceLastModified>
+    <TranslationServiceGUID>37a818b3-0e12-46b8-afb3-51b692863cd3</TranslationServiceGUID>
+    <TranslationServiceEnabled>true</TranslationServiceEnabled>
+    <TranslationServiceSupportsInstructions>false</TranslationServiceSupportsInstructions>
+    <TranslationServiceSupportsPriority>false</TranslationServiceSupportsPriority>
+    <TranslationServiceSupportsDeadline>false</TranslationServiceSupportsDeadline>
+    <TranslationServiceGenerateTargetTag>false</TranslationServiceGenerateTargetTag>
+    <TranslationServiceSupportsStatusUpdate>false</TranslationServiceSupportsStatusUpdate>
+    <TranslationServiceSupportsCancel>false</TranslationServiceSupportsCancel>
+  </CMS_TranslationService>
+  <CMS_TranslationService>
+    <TranslationServiceID>7</TranslationServiceID>
+    <TranslationServiceAssemblyName>CMS.TranslationServices</TranslationServiceAssemblyName>
+    <TranslationServiceClassName>CMS.TranslationServices.BingTranslatorService</TranslationServiceClassName>
+    <TranslationServiceName>MicrosoftTranslator</TranslationServiceName>
+    <TranslationServiceDisplayName>Microsoft Translator</TranslationServiceDisplayName>
+    <TranslationServiceIsMachine>true</TranslationServiceIsMachine>
+    <TranslationServiceLastModified>2014-12-11T09:22:50.6368465+01:00</TranslationServiceLastModified>
+    <TranslationServiceGUID>bcbaecd3-f974-4561-b989-72af93066817</TranslationServiceGUID>
+    <TranslationServiceEnabled>true</TranslationServiceEnabled>
+    <TranslationServiceSupportsInstructions>false</TranslationServiceSupportsInstructions>
+    <TranslationServiceSupportsPriority>false</TranslationServiceSupportsPriority>
+    <TranslationServiceSupportsDeadline>false</TranslationServiceSupportsDeadline>
+    <TranslationServiceGenerateTargetTag>false</TranslationServiceGenerateTargetTag>
+    <TranslationServiceSupportsStatusUpdate>false</TranslationServiceSupportsStatusUpdate>
+    <TranslationServiceSupportsCancel>false</TranslationServiceSupportsCancel>
+  </CMS_TranslationService>
+  <CMS_TranslationService>
+    <TranslationServiceID>10</TranslationServiceID>
+    <TranslationServiceAssemblyName>CMS.TranslationServices</TranslationServiceAssemblyName>
+    <TranslationServiceClassName>CMS.TranslationServices.ManualTranslationService</TranslationServiceClassName>
+    <TranslationServiceName>ManualTranslation</TranslationServiceName>
+    <TranslationServiceDisplayName>Manual translation</TranslationServiceDisplayName>
+    <TranslationServiceIsMachine>false</TranslationServiceIsMachine>
+    <TranslationServiceLastModified>2013-07-18T12:25:11+02:00</TranslationServiceLastModified>
+    <TranslationServiceGUID>48ff15f8-d234-47f3-a0d8-78b1b5de5546</TranslationServiceGUID>
+    <TranslationServiceEnabled>true</TranslationServiceEnabled>
+    <TranslationServiceSupportsInstructions>true</TranslationServiceSupportsInstructions>
+    <TranslationServiceSupportsPriority>true</TranslationServiceSupportsPriority>
+    <TranslationServiceSupportsDeadline>true</TranslationServiceSupportsDeadline>
+    <TranslationServiceGenerateTargetTag>false</TranslationServiceGenerateTargetTag>
+    <TranslationServiceParameter />
+    <TranslationServiceSupportsStatusUpdate>true</TranslationServiceSupportsStatusUpdate>
+    <TranslationServiceSupportsCancel>true</TranslationServiceSupportsCancel>
+  </CMS_TranslationService>
+  <CMS_TranslationService>
+    <TranslationServiceID>11</TranslationServiceID>
+    <TranslationServiceAssemblyName>CMS.TranslationServices</TranslationServiceAssemblyName>
+    <TranslationServiceClassName>CMS.TranslationServices.EmailTranslationService</TranslationServiceClassName>
+    <TranslationServiceName>EmailTranslationService</TranslationServiceName>
+    <TranslationServiceDisplayName>Translation via e-mail</TranslationServiceDisplayName>
+    <TranslationServiceIsMachine>false</TranslationServiceIsMachine>
+    <TranslationServiceLastModified>2014-12-11T09:22:56.0659321+01:00</TranslationServiceLastModified>
+    <TranslationServiceGUID>b6673be3-2567-4abf-865d-18b40f860f41</TranslationServiceGUID>
+    <TranslationServiceEnabled>true</TranslationServiceEnabled>
+    <TranslationServiceSupportsInstructions>true</TranslationServiceSupportsInstructions>
+    <TranslationServiceSupportsPriority>true</TranslationServiceSupportsPriority>
+    <TranslationServiceSupportsDeadline>true</TranslationServiceSupportsDeadline>
+    <TranslationServiceGenerateTargetTag>false</TranslationServiceGenerateTargetTag>
+    <TranslationServiceSupportsStatusUpdate>true</TranslationServiceSupportsStatusUpdate>
+    <TranslationServiceSupportsCancel>false</TranslationServiceSupportsCancel>
+  </CMS_TranslationService>
+</NewDataSet>

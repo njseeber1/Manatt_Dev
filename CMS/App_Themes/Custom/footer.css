@@ -1,0 +1,61 @@
+/* FOOTER [START] */
+footer.full.row {
+    padding: 50px 0;
+	margin-top: 50px!important;
+}
+#litigation ~ footer.full.row,
+#standard_practice ~ footer.full.row {
+	border-top: 1px solid #ddd;
+}
+footer a, footer a:link, footer a:visited, footer h6 {
+	text-transform: uppercase;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer a:hover {
+	color: #efab00;
+}
+
+footer [class*="col"] {
+	border-right: 1px solid #e5e5e5;
+}
+
+footer #brand {
+	text-align: center;
+	width: 34%;
+	padding: 1.9em 1em;
+}
+
+footer .site-map {
+	width: 24%;
+    padding: 0 60px 0;
+}
+
+footer .share-links {
+	width: 16%;
+	border-right: 0 none;
+	padding: 1em 2.7em;
+}
+footer .share-links a {
+	font-size: 25px;
+}
+
+footer .share-links ul li {
+	line-height: 2;
+}
+
+footer #brand img {
+	margin: 0 auto 1.8em;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer .site-map ul li {
+	line-height: 3;
+}
+/* FOOTER [END] */

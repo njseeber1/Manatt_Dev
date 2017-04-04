@@ -1,0 +1,102 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_DeviceProfile" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProfileID" type="xs:int" minOccurs="0" />
+                <xs:element name="ProfileName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProfileDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProfileOrder" type="xs:int" minOccurs="0" />
+                <xs:element name="ProfileMacro" type="xs:string" minOccurs="0" />
+                <xs:element name="ProfileUserAgents" type="xs:string" minOccurs="0" />
+                <xs:element name="ProfileDevices" type="xs:string" minOccurs="0" />
+                <xs:element name="ProfileEnabled" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ProfilePreviewWidth" type="xs:int" minOccurs="0" />
+                <xs:element name="ProfilePreviewHeight" type="xs:int" minOccurs="0" />
+                <xs:element name="ProfileGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="ProfileLastModified" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_DeviceProfile>
+    <ProfileID>81</ProfileID>
+    <ProfileName>SmallDevice</ProfileName>
+    <ProfileDisplayName>Smartphone (320 x 480)</ProfileDisplayName>
+    <ProfileOrder>1</ProfileOrder>
+    <ProfileMacro>{%maxSideSize = 480;
+
+width = CurrentDevice.ScreenPixelsWidth;
+height = CurrentDevice.ScreenPixelsHeight;
+
+if (!CurrentDevice.IsMobile 
+    || ((width &gt; maxSideSize)||(height &gt; maxSideSize))){
+    return false;
+}
+
+return true;|(user)administrator|(hash)1ef3c8b1bd6f12a19f1e9cdc41af60bed52a06013b29217fda141d9c584c31b2%}</ProfileMacro>
+    <ProfileUserAgents>iphone
+ipod
+blackberry
+iemobile
+googlebot-mobile
+</ProfileUserAgents>
+    <ProfileEnabled>true</ProfileEnabled>
+    <ProfilePreviewWidth>320</ProfilePreviewWidth>
+    <ProfilePreviewHeight>480</ProfilePreviewHeight>
+    <ProfileGUID>764e2796-dc5b-49a0-8ef1-167d296f0ba1</ProfileGUID>
+    <ProfileLastModified>2014-02-13T20:56:46.1461836+01:00</ProfileLastModified>
+  </CMS_DeviceProfile>
+  <CMS_DeviceProfile>
+    <ProfileID>82</ProfileID>
+    <ProfileName>MediumDevice</ProfileName>
+    <ProfileDisplayName>Tablet (1024 x 768)</ProfileDisplayName>
+    <ProfileOrder>5</ProfileOrder>
+    <ProfileMacro>{%maxSideSize = 1024;
+
+width = CurrentDevice.ScreenPixelsWidth;
+height = CurrentDevice.ScreenPixelsHeight;
+
+if (!CurrentDevice.IsMobile 
+    || ((width &gt; maxSideSize)||(height &gt; maxSideSize))){
+    return false;
+}
+
+return true;|(user)administrator|(hash)491cd3e1ebe274b9e63a82c848f317b9e69d17f8389db539bc3ee19c22533a7d%}</ProfileMacro>
+    <ProfileUserAgents>ipad
+playbook</ProfileUserAgents>
+    <ProfileEnabled>true</ProfileEnabled>
+    <ProfilePreviewWidth>1024</ProfilePreviewWidth>
+    <ProfilePreviewHeight>768</ProfilePreviewHeight>
+    <ProfileGUID>544837d0-5c27-4f5d-a19e-91894b6b1f17</ProfileGUID>
+    <ProfileLastModified>2014-02-13T20:56:46.2161837+01:00</ProfileLastModified>
+  </CMS_DeviceProfile>
+  <CMS_DeviceProfile>
+    <ProfileID>83</ProfileID>
+    <ProfileName>LargeDevice</ProfileName>
+    <ProfileDisplayName>Laptop (1366 x 768)</ProfileDisplayName>
+    <ProfileOrder>7</ProfileOrder>
+    <ProfileMacro>{%maxSideSize = 1366;
+
+width = CurrentDevice.ScreenPixelsWidth;
+height = CurrentDevice.ScreenPixelsHeight;
+
+if (!CurrentDevice.IsMobile 
+    || ((width &gt; maxSideSize)||(height &gt; maxSideSize))){
+    return false;
+}
+
+return true;|(user)administrator|(hash)0b1e1d1e9eb4727a8f0a7e8b99fd21979eabc7b1c4ff6c2c91d72adcc0a59f9a%}</ProfileMacro>
+    <ProfileEnabled>true</ProfileEnabled>
+    <ProfilePreviewWidth>1366</ProfilePreviewWidth>
+    <ProfilePreviewHeight>768</ProfilePreviewHeight>
+    <ProfileGUID>c8a95123-0685-4fa2-aa20-9fa00f4ec3ee</ProfileGUID>
+    <ProfileLastModified>2014-02-13T20:56:46.2261837+01:00</ProfileLastModified>
+  </CMS_DeviceProfile>
+</NewDataSet>

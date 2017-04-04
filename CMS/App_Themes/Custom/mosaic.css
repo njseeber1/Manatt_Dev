@@ -1,0 +1,826 @@
+/* mosaic [START] */
+.image-gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 2;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 20%, rgba(0,0,0,0.6) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 20%,rgba(0,0,0,0.6) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 20%,rgba(0,0,0,0.6) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#99000000',GradientType=0 );
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.jumbotron .image-gradient {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 38%, rgba(0,0,0,0.8) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 38%,rgba(0,0,0,0.8) 100%);
+	background: linear-gradient(to bottom,rgba(255,255,255,0) 38%,rgba(0,0,0,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#99000000',GradientType=0 );
+}
+
+.news .image-gradient {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 65%, rgba(0,0,0,0.8) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 65%,rgba(0,0,0,0.8) 100%);
+	background: linear-gradient(to bottom,rgba(255,255,255,0) 65%,rgba(0,0,0,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#99000000',GradientType=0 );
+}
+
+.mosaic .tile {
+	background: #000;
+	position: relative;
+/*    min-height: 170px;*/
+	min-height: 0;
+	max-height: 600px;
+	padding: 26px;
+	overflow: hidden;
+	color: #fff;
+}
+/*.mosaic .tile .background:after {
+    content: "";
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    background: -moz-linear-gradient(top,rgba(255,255,255,0) 20%,rgba(0,0,0,.6) 100%);
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 20%,rgba(0,0,0,.6) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,0) 20%,rgba(0,0,0,.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#99000000',GradientType=0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}*/
+.mosaic .tile#practices {
+	max-height: none;
+}
+.mosaic .tile#practices .caption-box .lead {
+	margin: 0;
+}
+.mosaic .tile.slider {
+	background: #fff;
+}
+
+.mosaic .tile.news {
+	background: inherit;
+}
+
+.mosaic .tile.news h4 {
+	/* color: #00909f; */
+	margin-top: 0;
+}
+
+.mosaic .outer .big .caption-box .lead {
+/*	font-size: 33px;*/
+    padding-bottom: 54px;
+}
+.share h5, .mosaic .tile header h4 {
+	margin-top: 11px;
+}
+.mosaic .tile p {
+	line-height: 1.4;
+}
+
+.mosaic .tile#finder p:not(.lead) {
+	line-height: 1.2;
+	margin-bottom: 1.2em;
+}
+.mosaic .tile#finder .submit a {
+	color: #fff;
+}
+.mosaic .news header {
+	margin-bottom: 1.5em;
+}
+
+.mosaic .news li {
+	margin: 1.8em 0;
+	padding: 1.8em 0 0;
+	border-top: 1px solid #ccc;
+}
+#litigation .mosaic .news li {
+	/*margin-top: 1em;
+	padding-top: 1em;*/
+}
+.mosaic .news .tile.big .share li {
+	margin: 0 !important;
+	padding: 0 !important;
+    border:0;
+}
+.mosaic.short-practices .tile.news li {
+	margin: 0.6em 0;
+	padding: 0.6em 0 0;
+}
+
+.mosaic.short-practices .tile.news li:nth-last-child(3),
+.mosaic.short-practices .tile.news li:nth-last-child(2),
+.mosaic.short-practices .tile.news li:nth-last-child(1){
+	display: none;
+}
+
+.mosaic .tile.health_btn .caption-box {
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: 1em;
+	padding: 1em;
+}
+
+.mosaic .tile.health_btn .caption-box .lead {
+	font-weight: bold;
+	min-height: 0;
+	line-height: 1.2;
+	margin-bottom: 0;
+}
+
+.mosaic .tile.health_btn .caption-box hr {
+	margin: 0 0 0.4em 0;
+	border-top: 6px solid #fff;
+	max-width: 3.5em;
+}
+.mosaic .tile.health_btn .caption-box .btn {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	color: #7ab800;
+	text-transform: uppercase;
+	padding: 0.5em 0.5em 0.5em 0.6em;
+}
+
+.mosaic [class*='col'] {
+	padding: 0;
+}
+
+.mosaic .carousel-inner img {
+	position: relative;
+	margin: 0 auto;
+	width: auto;
+	max-width: none;
+	height: auto;
+}
+
+#people .mosaic .carousel-inner img.centered {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.mosaic .img-responsive {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	min-height: 100%;
+	min-width: 100%;
+	max-width: 500%;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: 1;
+}
+.mosaic.ratio .img-responsive {
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	min-height: none;
+	min-width: 0;
+	max-width: none;
+	width: auto;
+	height: auto;
+}
+.rratio img, .rratio picture {
+	  width: 100% !important;
+	  height: auto !important;
+  }
+.mosaic.rratio .img-responsive {
+	position: relative;
+	top: 0;
+	left: 0%;
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	-o-transform: translateX(0%);
+	transform: translateX(0%);
+	min-height: 0%;
+	min-width: 100%;
+	max-width: 500%;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: 1;
+}
+.mosaic.simplefix .img-responsive {
+	max-width: none;
+	max-height: 100%;
+}
+.mosaic.simplefix .big .img-responsive {
+	max-width: none;
+	max-height: 100%;
+}
+.mosaic.simplefix .small .img-responsive {
+	max-width: 100%;
+	min-height: 0;
+	max-height: none;
+}
+.mosaic #tile-slider {
+	position: relative;
+	z-index: 100;
+	background: #eee;
+}
+#people .mosaic #tile-slider {
+	background: #000;
+}
+.mosaic #tile-slider .item .caption-box {
+	top: 0;
+	height: auto;
+}
+.mosaic #tile-slider .img-responsive {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.mosaic.rratio #tile-slider .img-responsive {
+	position: relative;
+	top: 0%;
+	left: 0%;
+	-webkit-transform: translate(0%,0%);
+	-moz-transform: translate(0%,0%);
+	-o-transform: translate(0%,0%);
+	transform: translate(0%,0%);
+}
+.mosaic .tile .invisilink {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 3;
+}
+
+.mosaic .tile > header {
+	position: absolute;
+	top: 6%;
+	left: 0;
+	width: 100%;
+	padding: 0 26px;
+	text-align: left;
+	z-index: 4;
+}
+
+.mosaic .tile header .share {
+	position: absolute;
+	top: 19%;
+	left: 0;
+	padding: 0 26px;
+	text-transform: uppercase;
+	opacity: 0;
+}
+
+.mosaic .tile.small header {
+	top: 6.5%;
+}
+
+
+.mosaic .tile.hover .caption-box, .mosaic .tile.hover header h4, .mosaic .tile.hover .share, .mosaic .tile.hover img, .mosaic .tile.hover p {
+	-webkit-transition: all 250ms ease-out 300ms!important;
+	-moz-transition: all 250ms ease-out 300ms!important;
+	-o-transition: all 250ms ease-out 300ms!important;
+	transition: all 250ms ease-out 300ms!important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+/*
+.mosaic .tile:not(.news) header h4 {
+	padding-left: 24px;
+}
+.mosaic .tile:not(.news) header h4.no-icon {
+	padding-left:0;
+}
+*/
+.mosaic .tile.small header h4 {
+	opacity: 1;
+}
+.mosaic .tile header h4 i {
+	margin-right: 4px;
+    font-size: 16px;
+}
+.mosaic .outer .tile#finder .caption-box p {
+	font-size: 21px;
+    padding-bottom: 57px;
+}
+.mosaic .tile.tall header {
+	top: 2%;
+}
+.mosaic .tile#finder header h4 i {
+	position: absolute;
+    font-size: 14px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	width: 100%;
+	vertical-align: top;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.mosaic .tile#finder header h4 i.fa-stack-2x {
+    font-size: 23px;
+}
+.mosaic .tile.tall {
+/*	min-height: 300px;*/
+}
+
+.mosaic .tile.news {
+	overflow: hidden;
+}
+.mosaic.rratio .tile.news {
+	overflow: hidden;
+	max-height: none;
+}
+.mosaic.no-slider .tile.cta {
+	width: 100%;
+}
+.mosaic .tile.cta {
+	text-align: center;
+/*	border-right: 3px solid #f6f6f6;*/
+}
+.mosaic .tile.award-bg
+.mosaic .tile.cta .form {
+	-webkit-display: flex;
+	-ms-display: flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	width: 50%;
+	margin: 3.7em auto 0;
+	text-align: left;
+}
+.mosaic .tile.cta .caption-box {
+	top: 50%;
+	bottom: auto;
+	padding: 0 12%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.mosaic .tile.cta.login .caption-box {
+	padding: 0 5%;
+}
+
+.mosaic.no-slider .tile.cta .caption-box {
+	padding: 0 10%;
+}
+.mosaic .tile.cta .lead {
+	margin-bottom: 1.2em
+}
+
+.mosaic .tile.cta p {
+	margin-bottom: 1em;
+}
+.mosaic .tile.cta p a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.mosaic .tile.cta .btn {
+	/*padding: 0.5em 2.7em 0.7em;*/
+	/*padding: 12px 48px; */
+	width: 165px;
+  height: 40px;
+}
+
+.mosaic .tile.cta .more-link {
+	margin: 1em 0 0 0;
+}
+.mosaic .tile#finder .caption-box {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 2em 2em;
+}
+.mosaic.rratio .tile#finder .caption-box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding-top: 0;
+    top: 22.5%;
+}
+.mosaic.rratio .tile#finder .caption-box p {
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+}
+.mosaic.rratio .tile#finder .caption-box .lead {
+    font-size: 34px;
+    margin-bottom: 0px;
+    padding-bottom: 0 !important;
+}
+#people .mosaic.rratio .tile#finder .caption-box .lead {
+    font-size: 24px;
+    margin-top:50px;
+}
+.mosaic .tile .caption-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 26px;
+	text-align: left;
+	z-index: 2;
+}
+
+.mosaic .tile.hover .caption-box {
+	top: 0;
+	bottom: 0;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+#careers .mosaic .tile.large.hover .caption-box {
+	top: auto;
+	bottom: 41%;
+}
+#people .mosaic .tile#finder .caption-box {
+	top: 3%;
+}
+.mosaic .tile.wide .caption-box {
+	text-align: left;
+}
+.mosaic .tile .caption-box .form input {
+	padding: 0.5em;
+	margin: 0;
+	border: 1px solid #ccc;
+}
+#healthcare .mosaic .tile .caption-box .form {
+	display: block;
+	width: 100%;
+}
+#healthcare .mosaic .tile .caption-box .form input {
+	margin: 0 1em 0 0;
+}
+#healthcare .mosaic .tile .caption-box .form input,
+#healthcare .mosaic .tile .caption-box .form button {
+	height: 40px;
+}
+.mosaic .tile.cta .caption-box .form input {
+	width: 18em;
+}
+.mosaic .tile .caption-box .form button {
+	padding: 0.4em 2em;
+}
+.mosaic .tile p.caption {
+	position: absolute;
+	top: 90%;
+	height: auto;
+	overflow: hidden;
+	opacity: 0;
+	padding-right: 15%;
+}
+.mosaic .tile:not(#practices):not(#finder) .lead,
+.mosaic .tile.video .lead {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 36px 0 26px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	-webkit-align-self: flex-end;
+/*	flex-align: end;*/
+	height: 100%;
+/*	width: 300px;*/
+	margin-bottom: 12px;
+	padding-bottom: 52px;
+	opacity: 1;
+	-webkit-transition: .4s opacity ease-out;
+	-moz-transition: .4s opacity ease-out;
+	-o-transition: .4s opacity ease-out;
+	transition: .4s opacity ease-out;
+}
+.mosaic .tile:not(#practices):not(#finder) .carousel .lead {
+	margin-bottom: 35px;
+}
+.mosaic .tile.video .lead{
+	height: auto !important;
+}
+.mosaic .tile.big:not(#practices):not(#finder) p {
+	padding-right: 66px;
+}
+.mosaic .tile#practices .lead {
+	margin-top: 0;
+	margin-bottom: 0.3em;
+}
+
+.mosaic .tile.tall .lead {
+	min-height: 1px;
+	margin-bottom: 0.2em;
+}
+.mosaic #finder.tall p:only-of-type {
+	margin-bottom: 0.5em;
+}
+.mosaic .tile .copy {
+	position: relative;
+	padding: 26px;
+}
+.mosaic .tile .copy h3 {
+	margin-top: 0;
+}
+/*
+#litigation .mosaic .tile.news .copy {
+	padding: 1em 2em;
+}
+*/
+/*
+#standard_practice .mosaic .tile .copy {
+	padding: 1.9em 1.8em 1em;
+}
+*/
+
+.mosaic .tile .copy header {
+	position: relative;
+	top: 0; left: 0;
+}
+
+.mosaic .fa-inverse {
+	color: #000;
+}
+
+.mosaic .tile .caption-box {
+	z-index: 2;
+}
+
+.mosaic .tile .dropdown-toggle,
+.mosaic .tile input {
+	z-index: 1;
+	margin: 0;
+	padding: 0 40px 0 0;
+	border-radius: 0;
+	border: 0 none transparent;
+}
+.mosaic .tile .dropdown-toggle:focus span,
+.mosaic .tile .dropdown-toggle:hover span {
+	color: #fff;
+}
+.mosaic .tile .dropdown-toggle .caret {
+	right: 16px;
+}
+
+.mosaic .tile .selects  {
+	width: 100%;
+	z-index: 2;
+    margin-top: 14px;
+}
+
+#people .mosaic .tile .selects  {
+	top: 15%;
+}
+
+#people .mosaic .tile .selects .submit a {
+	color: #fff;
+	text-decoration: underline;
+}
+#people .mosaic .tile .selects .submit p.pull-left,
+.mosaic.rratio .tile#finder .caption-box p.pull-left {
+    margin-top: 18px;
+}
+#people .mosaic .tile .selects .submit p.pull-left a {
+    margin-right: 26px;
+	text-decoration: none;
+}
+
+#people .tile#finder .sort,
+#people-search .sort {
+/*	margin-top: 4em;*/
+	width: 100%;
+	line-height: 0;
+}
+#people .tile#finder .sort ul,
+#people-search .sort ul {
+	text-align: justify;
+    width: 100%;
+}
+#people .tile#finder .sort ul {
+	padding-right: 40px;
+}
+/* #people .tile#finder .sort ul::after,
+#people-search .sort ul::after {
+	display: inline-block;
+	width: 100%;
+	content: ' ';
+}*/
+
+#people .tile#finder .sort ul li,
+#people-search .sort ul li {
+	display: inline-block;
+	margin: 0;
+}
+#people .tile#finder .sort ul li {
+	width: 4%;
+}
+#people-search .sort ul li {
+	width: 19px;
+}
+#people .tile#finder .sort ul li:first-of-type,
+#people-search .sort ul li:first-of-type {
+	margin-left: 0;
+}
+#finder .dropdown-menu,
+#finder .dropup .dropdown-menu {
+	top: 0;
+}
+@media (max-width: 768px) and (min-width: 500px) {
+  #people-search .sort ul {
+	display: inline-block;
+	width: 49%;
+  }
+  #search_result #people-search .sort ul {
+    width: 100%;
+  }
+  #people-search .sort ul:first-of-type {
+	margin-right: .7%;
+  }
+}
+
+#people .tile#finder .sort ul li a,
+#people-search .sort ul li a {
+	display: block;
+	/*font-size: 1em;*/
+  text-transform: uppercase;
+	padding-bottom: 0.3em;
+}
+#people .tile#finder .sort ul li a:hover,
+#people-search .sort ul li a:hover,
+#people-search .sort ul li a.active {
+	color: #efab00 !important;
+	border-bottom-color: #efab00;
+	text-decoration: none;
+	font-weight: normal;
+}
+.mosaic .tile .selects .btn-default .filter-option,
+.mosaic .tile#finder input {
+	background: #fff;
+	color: #000;
+	border-color: #000;
+	border-radius: 0;
+	height: 40px;
+	padding: 0.5em 1em;
+    font-size: 16px !important;
+    padding: 9px 18px !important;
+    font-weight:100;
+}
+
+.mosaic .tile .selects .dropdown-toggle.btn-default .caret {
+	right:16px;
+}
+.mosaic .tile#finder input {
+	margin-bottom: 0.6em;
+	border: none 0;
+}
+input::-webkit-input-placeholder {
+	color: #000;
+	opacity: 1;
+}
+input::-moz-placeholder {
+	color: #000;
+	opacity: 1;
+	opacity: 1;
+}
+input:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+	opacity: 1;
+}
+input:-ms-placeholder {
+	color: #000;
+	opacity: 1;
+}
+input:placeholder-shown {
+	color: #000;
+	opacity: 1;
+}
+.mosaic #finder .bootstrap-select,
+.mosaic #finder input {
+	width: 100%!important;
+	background: transparent;
+	height: 40px;
+  margin: 7px 0 3px 0!important;
+}
+.mosaic #finder div.bootstrap-select:last-child button {
+	margin-bottom: 17px;
+}
+.mosaic .tile input {
+	margin: 0;
+	padding: 0.5em 0.8em;
+	border: 1px solid #ccc;
+}
+
+.mosaic .tile:not(#finder) input:-webkit-input-placeholder {
+	color: #000;
+	opacity: 0.5;
+}
+.mosaic .tile:not(#finder) input:-moz-placeholder {
+	color: #000;
+	opacity: 0.5;
+}
+.mosaic .tile:not(#finder) input::-moz-placeholder {
+	color: #000;
+	opacity: 0.5;
+}
+.mosaic .tile:not(#finder) input:-ms-placeholder {
+	color: #000;
+	opacity: 0.5;
+}
+.mosaic .tile:not(#finder) input::-ms-placeholder {
+	color: #000;
+	opacity: 0.5;
+}
+.mosaic .tile:not(#finder) input::placeholder-shown {
+	color: #000;
+	opacity: 0.5;
+}
+
+.mosaic .tile .submit .btn, .sit-nav .btn, .mosaic .tile#finder input[type='submit'] {
+	float: right;
+	margin: 0 0 0.5em;
+	padding: 0.643em 0;
+	min-width: 30%;
+	width: 30%!important;
+}
+#people .mosaic .tile#finder input[type='submit'] {
+    font-weight: 100;
+    padding:8px !important;
+}
+
+.mosaic .tile#practices {
+	background: #4d4d4d;
+	padding: 26px;
+}
+.mosaic .tile#practices.min300 {
+	min-height: 300px;
+}
+nav.sub-nav {
+	padding: 4% 9.5%;
+}
+.mosaic .tile#practices.narrow {
+	background: #4d4d4d;
+	padding: 2%;
+}
+
+.mosaic .tile#practices .lead {
+	min-height: 1px;
+}
+
+.mosaic .tile#practices ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 1.7em 0 0;
+}
+
+.mosaic .tile#practices a,
+.mosaic .tile#practices button,
+.mosaic .tile#practices button a {
+	display: block;
+	color: #fff;
+	line-height: 1.2;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.mosaic .tile.social {
+	color: #fff;
+}
+/* mosaic [END] */

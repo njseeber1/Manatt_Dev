@@ -1,0 +1,337 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_WebPartLayout" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="WebPartLayoutID" type="xs:int" minOccurs="0" />
+                <xs:element name="WebPartLayoutCodeName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutCode" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutVersionGUID" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutWebPartID" type="xs:int" minOccurs="0" />
+                <xs:element name="WebPartLayoutGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="WebPartLayoutCSS" type="xs:string" minOccurs="0" />
+                <xs:element name="WebPartLayoutIsDefault" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>121</WebPartLayoutID>
+    <WebPartLayoutCodeName>filter</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>filter</WebPartLayoutDisplayName>
+    <WebPartLayoutDescription />
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="true"  Inherits="CMSWebParts_Search_cmscompletesearchdialog"    CodeFile="~/CMSWebParts/Search/cmscompletesearchdialog.ascx.cs" %&gt;
+&lt;div class="SearchDialog"&gt;
+    &lt;cms:CMSSearchDialog ID="srchDialog" runat="server" /&gt;
+&lt;/div&gt;
+&lt;div class="SearchResults"&gt;
+    &lt;cms:CMSSearchResults ID="srchResults" runat="server" FilterName="SearchDialog" /&gt;
+&lt;/div&gt;</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>57cc6f3f-8b2f-4bc3-b992-d93eff99c357</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>173</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>3239ff22-011a-4bc9-b35d-7d967dcc7b47</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2012-08-28T14:38:37.65+02:00</WebPartLayoutLastModified>
+  </CMS_WebPartLayout>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>379</WebPartLayoutID>
+    <WebPartLayoutCodeName>EcommerceLogon</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>E-commerce - Logon</WebPartLayoutDisplayName>
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_Membership_Logon_LogonForm"
+CodeFile="~/CMSWebParts/Membership/Logon/logonform.ascx.cs" %&gt;
+  &lt;asp:Panel ID="pnlBody" runat="server" CssClass="LogonPageBackground"&gt;
+    &lt;asp:Login ID="Login1" runat="server" DestinationPageUrl="~/Default.aspx"&gt;
+      &lt;LayoutTemplate&gt;
+        &lt;asp:Panel runat="server" ID="pnlLogin" DefaultButton="LoginButton"&gt;
+          &lt;table class="logon"&gt;
+            &lt;tr&gt;
+				&lt;td colspan="3"&gt;
+					&lt;cms:LocalizedLabel ID="lblTokenInfo" runat="server" EnableViewState="False" Visible="false" /&gt;
+				&lt;/td&gt;
+            &lt;/tr&gt;
+			&lt;asp:PlaceHolder runat="server" ID="plcTokenInfo" Visible="false"&gt;
+				&lt;tr&gt;
+					&lt;td class="logon-label"&gt;
+						&lt;cms:LocalizedLabel ID="lblTokenIDlabel" runat="server" ResourceString="mfauthentication.label.token" /&gt;
+					&lt;/td&gt;
+					&lt;td class="token-label"&gt;
+						&lt;cms:LocalizedLabel ID="lblTokenID" runat="server" /&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/asp:PlaceHolder&gt;
+			&lt;asp:PlaceHolder runat="server" ID="plcLoginInputs"&gt;
+				&lt;tr&gt;
+				  &lt;td class="label"&gt;&lt;cms:LocalizedLabel ID="lblUserName" runat="server" Text="E-mail (user name)" AssociatedControlID="UserName" EnableViewState="false" /&gt;&lt;/td&gt;
+				  &lt;td class="input"&gt;&lt;cms:CMSTextBox ID="UserName" runat="server" MaxLength="100" CssClass="LogonTextBox" /&gt;&lt;cms:CMSRequiredFieldValidator ID="rfvUserNameRequired" runat="server" ControlToValidate="UserName" EnableViewState="false" Display="Dynamic"&gt;*&lt;/cms:CMSRequiredFieldValidator&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+				  &lt;td class="label"&gt;&lt;cms:LocalizedLabel ID="lblPassword" runat="server" AssociatedControlID="Password" EnableViewState="false" Text="Password" /&gt;&lt;/td&gt;
+				  &lt;td class="input"&gt;&lt;cms:CMSTextBox ID="Password" runat="server" TextMode="Password" MaxLength="110" CssClass="LogonTextBox" /&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/asp:PlaceHolder&gt;
+            &lt;asp:PlaceHolder runat="server" ID="plcPasscodeBox" Visible="false"&gt;
+				&lt;tr&gt;
+					&lt;td style="white-space: nowrap;"&gt;
+						&lt;cms:LocalizedLabel ID="lblPasscode" runat="server" AssociatedControlID="txtPasscode" ResourceString="mfauthentication.label.passcode" /&gt;
+					&lt;/td&gt;
+					&lt;td&gt;
+						&lt;cms:CMSTextBox ID="txtPasscode" runat="server" MaxLength="110" /&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/asp:PlaceHolder&gt;
+			&lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td class="remember"&gt;&lt;cms:CMSCheckBox ID="chkRememberMe" runat="server" Visible="true" Text="Stay signed in" /&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td colspan="2"&gt;&lt;cms:LocalizedLabel ID="FailureText" runat="server" EnableViewState="False" CssClass="ErrorLabel" /&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;&lt;/td&gt;
+              &lt;td&gt;&lt;cms:LocalizedButton ID="LoginButton" runat="server" CommandName="Login" Text="Sign in" EnableViewState="false" /&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/asp:Panel&gt;
+      &lt;/LayoutTemplate&gt;
+    &lt;/asp:Login&gt;
+    &lt;div class="forgottenPwd"&gt;
+      &lt;cms:CMSUpdatePanel runat="server" ID="pnlUpdatePasswordRetrievalLink" UpdateMode="Conditional"&gt;
+        &lt;ContentTemplate&gt;
+          &lt;asp:LinkButton ID="lnkPasswdRetrieval" runat="server" EnableViewState="false" onclick="lnkPasswdRetrieval_Click" /&gt;
+        &lt;/ContentTemplate&gt;
+      &lt;/cms:CMSUpdatePanel&gt;   
+      &lt;cms:CMSUpdatePanel runat="server" ID="pnlUpdatePasswordRetrieval" UpdateMode="Conditional"&gt;
+        &lt;ContentTemplate&gt;
+          &lt;asp:Panel ID="pnlPasswdRetrieval" runat="server" CssClass="LoginPanelPasswordRetrieval" DefaultButton="btnPasswdRetrieval" Visible="False"&gt;
+            &lt;asp:Label ID="lblPasswdRetrieval" runat="server" EnableViewState="false" AssociatedControlID="txtPasswordRetrieval" /&gt;
+            &lt;cms:CMSTextBox ID="txtPasswordRetrieval" runat="server" /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;cms:CMSButton ID="btnPasswdRetrieval" runat="server" EnableViewState="false" /&gt;&lt;br /&gt;
+            &lt;cms:CMSRequiredFieldValidator ID="rqValue" runat="server" ControlToValidate="txtPasswordRetrieval" EnableViewState="false" /&gt;&lt;br /&gt;
+            &lt;span class="ErrorLabel"&gt;&lt;asp:Label ID="lblResult" runat="server" Visible="false" EnableViewState="false" /&gt;&lt;/span&gt;
+          &lt;/asp:Panel&gt;
+        &lt;/ContentTemplate&gt;
+        &lt;Triggers&gt;
+          &lt;asp:AsyncPostBackTrigger EventName="Click" ControlID="lnkPasswdRetrieval" /&gt;
+        &lt;/Triggers&gt;
+      &lt;/cms:CMSUpdatePanel&gt;
+    &lt;/div&gt;
+  &lt;/asp:Panel&gt;</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>2e2c9248-ebf3-4587-83ec-409426e92f5c</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>178</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>36b6e10a-937a-4c2c-a7d1-38193360b7c3</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2015-07-09T13:30:07.4152946+02:00</WebPartLayoutLastModified>
+  </CMS_WebPartLayout>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>384</WebPartLayoutID>
+    <WebPartLayoutCodeName>EcommerceSiteRegister</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>E-commerce Site - Register</WebPartLayoutDisplayName>
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_Membership_Registration_RegistrationForm"
+        CodeFile="~/CMSWebParts/Membership/Registration/registrationform.ascx.cs" %&gt;
+&lt;%@ Register Src="~/CMSFormControls/Captcha/SecurityCode.ascx" TagName="SecurityCode"
+    TagPrefix="cms" %&gt;
+&lt;%@ Register Src="~/CMSModules/Membership/FormControls/Passwords/PasswordStrength.ascx" TagName="PasswordStrength"
+    TagPrefix="cms" %&gt;
+&lt;span class="font12 mLeft20" style="display:block;"&gt;&lt;asp:Label ID="lblError" runat="server" ForeColor="red" EnableViewState="false" /&gt;&lt;/span&gt;
+&lt;asp:Label ID="lblText" runat="server" Visible="false" EnableViewState="false" /&gt;
+&lt;asp:Panel ID="pnlForm" runat="server" DefaultButton="btnOK"&gt;
+    &lt;table class="logon"&gt;
+        &lt;tr&gt;
+            &lt;td class="label"&gt;
+                &lt;asp:Label ID="lblFirstName" runat="server" AssociatedControlID="txtFirstName" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+            &lt;td class="input"&gt;
+                &lt;cms:CMSTextBox ID="txtFirstName" EnableEncoding="true" runat="server" CssClass="LogonTextBox"
+                    MaxLength="100" /&gt;&lt;br /&gt;
+                &lt;cms:CMSRequiredFieldValidator ID="rfvFirstName" runat="server" ControlToValidate="txtFirstName"
+                    Display="Dynamic" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="label"&gt;
+                &lt;asp:Label ID="lblLastName" runat="server" AssociatedControlID="txtLastName" /&gt;
+            &lt;/td&gt;
+            &lt;td class="input"&gt;
+                &lt;cms:CMSTextBox ID="txtLastName" EnableEncoding="true" runat="server" CssClass="LogonTextBox"
+                    MaxLength="100" /&gt;&lt;br /&gt;
+                &lt;cms:CMSRequiredFieldValidator ID="rfvLastName" runat="server" ControlToValidate="txtLastName"
+                    Display="Dynamic" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="label"&gt;
+                &lt;asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+            &lt;td class="input"&gt;
+                &lt;cms:CMSTextBox ID="txtEmail" runat="server" CssClass="LogonTextBox" MaxLength="100" /&gt;&lt;br /&gt;
+                &lt;cms:CMSRequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail"
+                    Display="Dynamic" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="label" style="vertical-align:top;"&gt;
+               &lt;cms:LocalizedLabel ID="lblPassword" runat="server" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+            &lt;td class="input"&gt;               
+                &lt;cms:PasswordStrength runat="server" ID="passStrength" ShowValidationOnNewLine="true" TextBoxClass="LogonTextBox" /&gt;               
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="label"&gt;
+                &lt;asp:Label ID="lblConfirmPassword" runat="server" AssociatedControlID="txtConfirmPassword"
+                    EnableViewState="false" /&gt;
+            &lt;/td&gt;
+            &lt;td class="input"&gt;
+                &lt;cms:CMSTextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="LogonTextBox"
+                    MaxLength="100" /&gt;&lt;br /&gt;
+                &lt;cms:CMSRequiredFieldValidator ID="rfvConfirmPassword" runat="server" ControlToValidate="txtConfirmPassword"
+                    Display="Dynamic" EnableViewState="false" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;asp:PlaceHolder runat="server" ID="plcMFIsRequired" Visible="false"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;
+          &lt;/td&gt;
+          &lt;td class="input"&gt;
+            &lt;cms:CMSCheckBox ID="chkUseMultiFactorAutentization" runat="server" ResourceString="webparts_membership_registrationform.mfrequired" /&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/asp:PlaceHolder&gt;
+        &lt;asp:PlaceHolder runat="server" ID="plcCaptcha"&gt;
+            &lt;tr&gt;
+                &lt;td class="label"&gt;
+                    &lt;asp:Label ID="lblCaptcha" runat="server" AssociatedControlID="scCaptcha" EnableViewState="false" /&gt;
+                &lt;/td&gt;
+                &lt;td class="input"&gt;
+                    &lt;cms:SecurityCode ID="scCaptcha" GenerateNumberEveryTime="false" runat="server" /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/asp:PlaceHolder&gt;
+        &lt;tr&gt;
+            &lt;td style="height: 26px"&gt;
+            &lt;/td&gt;
+            &lt;td style="height: 26px"&gt;
+                &lt;cms:CMSButton ID="btnOk" runat="server" OnClick="btnOK_Click" CssClass="ContentButton"
+                    EnableViewState="false" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/asp:Panel&gt;</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>63967b17-77ce-4d8f-a01d-1a51c7f768e2</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>179</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>bdbb26c6-6d5d-414e-b78a-ded5ee2bb16b</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2014-03-14T10:09:09.1234863+01:00</WebPartLayoutLastModified>
+  </CMS_WebPartLayout>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>223</WebPartLayoutID>
+    <WebPartLayoutCodeName>Simple</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>Simple</WebPartLayoutDisplayName>
+    <WebPartLayoutDescription />
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_Ecommerce_Wishlist"    CodeFile="~/CMSWebParts/Ecommerce/Wishlist.ascx.cs" %&gt;
+&lt;div class="WishlistTable"&gt;                          
+  &lt;div class="CartStepBody"&gt;
+    &lt;asp:Label ID="lblTitle" runat="server" Visible="false" EnableViewState="false" /&gt;
+    &lt;asp:Panel ID="pnlWishlist" runat="server" CssClass="CartStepPanel"&gt;
+    &lt;asp:Panel ID="pnlWishlistInner" runat="server" CssClass="CartStepInnerPanel" &gt;
+      &lt;asp:Label ID="lblInfo" runat="server" CssClass="WishlistInfo" EnableViewState="false" Visible="false" /&gt;
+        &lt;cms:queryrepeater id="repeater" runat="server" /&gt;
+      &lt;/asp:Panel&gt;
+    &lt;/asp:Panel&gt;
+  &lt;/div&gt;
+  &lt;div class="btnContinue"&gt;
+    &lt;cms:CMSButton ID="btnContinue" runat="server" OnClick="btnContinue_Click" CssClass="LongButton" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;asp:Literal ID="ltlScript" runat="server" EnableViewState="false" /&gt;</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>dd795023-b59d-4cef-9518-a9519c2254ac</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>239</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>6c1a98c7-ed73-4c0b-b0a2-df0efdc877c1</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2012-08-28T14:38:38.63+02:00</WebPartLayoutLastModified>
+    <WebPartLayoutCSS xml:space="preserve">
+</WebPartLayoutCSS>
+  </CMS_WebPartLayout>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>124</WebPartLayoutID>
+    <WebPartLayoutCodeName>Block</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>Block</WebPartLayoutDisplayName>
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="True"
+    Inherits="CMSWebParts_Membership_Logon_LogonMiniForm" CodeFile="~/CMSWebParts/Membership/Logon/LogonMiniForm.ascx.cs" %&gt;
+&lt;asp:Login ID="loginElem" runat="server" DestinationPageUrl="~/Default.aspx" EnableViewState="true"&gt;
+    &lt;LayoutTemplate&gt;
+        &lt;asp:Panel ID="pnlLogonMiniForm" runat="server" DefaultButton="btnLogon" EnableViewState="true"&gt;
+            &lt;asp:PlaceHolder runat="server" ID="plcTokenInfo" Visible="false" &gt;
+                &lt;div class="label"&gt;
+                    &lt;cms:LocalizedLabel ID="lblTokenInfo" runat="server" ResourceString="mfauthentication.minilogon.token.get" /&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;cms:LocalizedLabel ID="lblTokenID" runat="server" /&gt;
+                &lt;/div&gt;
+            &lt;/asp:PlaceHolder&gt;
+
+            &lt;asp:PlaceHolder runat="server" ID="plcLoginInputs"&gt;
+                &lt;cms:LocalizedLabel ID="lblUserName" runat="server" AssociatedControlID="UserName" EnableViewState="false" DisplayColon="true" /&gt;
+                &lt;cms:CMSTextBox ID="UserName" runat="server" EnableViewState="true" /&gt;
+                &lt;cms:CMSRequiredFieldValidator ID="rfvUserNameRequired" runat="server" ControlToValidate="UserName"
+                    Display="Dynamic" EnableViewState="false" /&gt;
+                &lt;cms:LocalizedLabel ID="lblPassword" runat="server" AssociatedControlID="Password" EnableViewState="false" DisplayColon="true" /&gt;
+                &lt;cms:CMSTextBox ID="Password" runat="server" TextMode="Password" EnableViewState="true" /&gt;
+            &lt;/asp:PlaceHolder&gt;
+
+            &lt;asp:PlaceHolder runat="server" ID="plcPasscodeBox" Visible="false"&gt;
+                &lt;cms:LocalizedLabel ID="lblPasscode" runat="server" AssociatedControlID="txtPasscode" ResourceString="mfauthentication.label.passcode" /&gt;
+                &lt;cms:CMSTextBox ID="txtPasscode" runat="server"  MaxLength="100" /&gt;
+            &lt;/asp:PlaceHolder&gt;
+            &lt;cms:LocalizedButton ID="btnLogon" runat="server" ResourceString="LogonForm.LogOnButton" CommandName="Login"  EnableViewState="false" /&gt;
+            &lt;asp:ImageButton ID="btnImageLogon" runat="server" Visible="false" CommandName="Login"
+                EnableViewState="false" /&gt;
+            &lt;cms:LocalizedLabel ID="FailureText" CssClass="ErrorLabel" runat="server" EnableViewState="false" /&gt;
+        &lt;/asp:Panel&gt;
+    &lt;/LayoutTemplate&gt;
+&lt;/asp:Login&gt;
+</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>9b18be88-911f-4647-88b4-a70b9bfb69d5</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>525</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>100f8305-87b9-4d28-bd8f-08bd1d9497a5</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2014-02-13T15:41:31.5292944+01:00</WebPartLayoutLastModified>
+  </CMS_WebPartLayout>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>483</WebPartLayoutID>
+    <WebPartLayoutCodeName>StyleLayout</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>StyleLayout</WebPartLayoutDisplayName>
+    <WebPartLayoutDescription />
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_SmartSearch_SearchAccelerator"    CodeFile="~/CMSWebParts/SmartSearch/SearchAccelerator.ascx.cs" %&gt;
+&lt;cms:CMSButton runat="server" ID="btnAcc" EnableViewState="false" /&gt;</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>982a1e11-10a8-49fa-9e0d-f77af09e0d3d</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>691</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>144e57e9-9414-4713-96da-48c4e7f8a4f8</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2012-08-28T14:38:39.107+02:00</WebPartLayoutLastModified>
+    <WebPartLayoutCSS>.AcceleratorContent input[type=submit]
+{
+  width:220px;
+}</WebPartLayoutCSS>
+  </CMS_WebPartLayout>
+  <CMS_WebPartLayout>
+    <WebPartLayoutID>649</WebPartLayoutID>
+    <WebPartLayoutCodeName>E-commerceSite-Totals</WebPartLayoutCodeName>
+    <WebPartLayoutDisplayName>E-commerce Site - Totals</WebPartLayoutDisplayName>
+    <WebPartLayoutDescription />
+    <WebPartLayoutCode>&lt;%@ Control Language="C#" AutoEventWireup="true" Inherits="CMSWebParts_Ecommerce_Checkout_Viewers_ShoppingCartTotals" CodeFile="~/CMSWebParts/Ecommerce/Checkout/Viewers/ShoppingCartTotals.ascx.cs" %&gt;
+
+&lt;div id="totalViewer" class="TotalViewer" runat="server" visible="false"&gt;
+        &lt;asp:Label ID="lblLabel" Visible="false" runat="server" /&gt;
+        &lt;asp:Label ID="lblValue" CssClass="right" runat="server" /&gt;
+&lt;/div&gt;
+&lt;cms:BasicUniView runat="server" ID="uvMultiBuySummary" Visible="false" /&gt;</WebPartLayoutCode>
+    <WebPartLayoutVersionGUID>ce309aed-e5cb-47a5-b7fb-3e2e14210239</WebPartLayoutVersionGUID>
+    <WebPartLayoutWebPartID>1363</WebPartLayoutWebPartID>
+    <WebPartLayoutGUID>bd28e5b4-a495-492d-90da-c12d204d351e</WebPartLayoutGUID>
+    <WebPartLayoutLastModified>2014-07-25T14:56:30.5896358+02:00</WebPartLayoutLastModified>
+  </CMS_WebPartLayout>
+</NewDataSet>

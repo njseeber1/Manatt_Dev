@@ -1,0 +1,129 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_PageTemplateCategory" msprop:IsFromCMSDatabase="True" msprop:CMSHasExternalData="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryParentID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CategoryImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryChildCount" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryTemplateChildCount" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryPath" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryLevel" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_PageTemplateCategory>
+    <CategoryID>43</CategoryID>
+    <CategoryDisplayName>All page templates</CategoryDisplayName>
+    <CategoryName>/</CategoryName>
+    <CategoryGUID>532264bf-95e9-4035-b4ce-fe403c81781a</CategoryGUID>
+    <CategoryLastModified>2015-11-13T17:21:28.9068282+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>1</CategoryChildCount>
+    <CategoryTemplateChildCount>0</CategoryTemplateChildCount>
+    <CategoryPath>/</CategoryPath>
+    <CategoryLevel>0</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>78</CategoryID>
+    <CategoryDisplayName>Dashboard pages</CategoryDisplayName>
+    <CategoryParentID>43</CategoryParentID>
+    <CategoryName>DashboardPages</CategoryName>
+    <CategoryGUID>753a26e7-677b-46d5-b912-9390f80c1524</CategoryGUID>
+    <CategoryLastModified>2010-07-23T06:47:22.167+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryTemplateChildCount>7</CategoryTemplateChildCount>
+    <CategoryPath>/DashboardPages</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>142</CategoryID>
+    <CategoryDisplayName>UI templates</CategoryDisplayName>
+    <CategoryName>UITemplates</CategoryName>
+    <CategoryGUID>c1d43f2c-4886-4a7b-9681-291b272bbdd0</CategoryGUID>
+    <CategoryLastModified>2013-01-10T17:10:28.867+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>5</CategoryChildCount>
+    <CategoryTemplateChildCount>0</CategoryTemplateChildCount>
+    <CategoryPath>UITemplates/</CategoryPath>
+    <CategoryLevel>0</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>153</CategoryID>
+    <CategoryDisplayName>Ad-hoc</CategoryDisplayName>
+    <CategoryParentID>142</CategoryParentID>
+    <CategoryName>AdhocUI</CategoryName>
+    <CategoryGUID>ddf11e15-66c2-456a-a034-67a3c64833ac</CategoryGUID>
+    <CategoryLastModified>2013-05-07T13:01:29.223+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryTemplateChildCount>2</CategoryTemplateChildCount>
+    <CategoryPath>UITemplates/AdhocUI</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>148</CategoryID>
+    <CategoryDisplayName>Edit</CategoryDisplayName>
+    <CategoryParentID>142</CategoryParentID>
+    <CategoryName>Edit</CategoryName>
+    <CategoryGUID>e5cdae1e-c865-444b-9c52-e9ac1661131a</CategoryGUID>
+    <CategoryLastModified>2013-01-10T15:50:18.383+01:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryTemplateChildCount>3</CategoryTemplateChildCount>
+    <CategoryPath>UITemplates/Edit</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>147</CategoryID>
+    <CategoryDisplayName>Layout</CategoryDisplayName>
+    <CategoryParentID>142</CategoryParentID>
+    <CategoryName>Layout</CategoryName>
+    <CategoryGUID>bf5678e9-7f87-4cd2-a9dd-f97cd77c5b7c</CategoryGUID>
+    <CategoryLastModified>2013-05-20T13:52:24.89+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryTemplateChildCount>7</CategoryTemplateChildCount>
+    <CategoryPath>UITemplates/Layout</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>149</CategoryID>
+    <CategoryDisplayName>Listing</CategoryDisplayName>
+    <CategoryParentID>142</CategoryParentID>
+    <CategoryName>Listing</CategoryName>
+    <CategoryGUID>0cd9d6f5-4393-4f6d-9273-c7e667809496</CategoryGUID>
+    <CategoryLastModified>2013-10-18T10:38:59.167+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryTemplateChildCount>3</CategoryTemplateChildCount>
+    <CategoryPath>UITemplates/Listing</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+  </CMS_PageTemplateCategory>
+  <CMS_PageTemplateCategory>
+    <CategoryID>193</CategoryID>
+    <CategoryDisplayName>Special</CategoryDisplayName>
+    <CategoryParentID>142</CategoryParentID>
+    <CategoryName>Special</CategoryName>
+    <CategoryGUID>1dc9aaf6-aaaf-4e0f-8d77-1a4b39b756b9</CategoryGUID>
+    <CategoryLastModified>2013-10-18T10:36:18.757+02:00</CategoryLastModified>
+    <CategoryImagePath />
+    <CategoryChildCount>0</CategoryChildCount>
+    <CategoryTemplateChildCount>3</CategoryTemplateChildCount>
+    <CategoryPath>UITemplates/Special</CategoryPath>
+    <CategoryLevel>1</CategoryLevel>
+  </CMS_PageTemplateCategory>
+</NewDataSet>

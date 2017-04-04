@@ -1,0 +1,413 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="OM_ActivityType" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ActivityTypeID" type="xs:int" minOccurs="0" />
+                <xs:element name="ActivityTypeDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="ActivityTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ActivityTypeEnabled" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ActivityTypeIsCustom" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ActivityTypeDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="ActivityTypeManualCreationAllowed" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ActivityTypeMainFormControl" type="xs:string" minOccurs="0" />
+                <xs:element name="ActivityTypeDetailFormControl" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <OM_ActivityType>
+    <ActivityTypeID>30</ActivityTypeID>
+    <ActivityTypeDisplayName>Custom activity</ActivityTypeDisplayName>
+    <ActivityTypeName>customactivity</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>true</ActivityTypeIsCustom>
+    <ActivityTypeDescription>Custom activity.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>true</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>##default##</ActivityTypeMainFormControl>
+    <ActivityTypeDetailFormControl>##default##</ActivityTypeDetailFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>31</ActivityTypeID>
+    <ActivityTypeDisplayName>Blog post subscription</ActivityTypeDisplayName>
+    <ActivityTypeName>blogpostsubscription</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor subscribed to blog post comments.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeDetailFormControl>selectdocument</ActivityTypeDetailFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>32</ActivityTypeID>
+    <ActivityTypeDisplayName>Forum post subscription</ActivityTypeDisplayName>
+    <ActivityTypeName>forumpostsubscription</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor subscribed to a forum post.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>ForumSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>33</ActivityTypeID>
+    <ActivityTypeDisplayName>Message board subscription</ActivityTypeDisplayName>
+    <ActivityTypeName>messageboardsubscription</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor subscribed to a  message board.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>MessageBoardNameSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>34</ActivityTypeID>
+    <ActivityTypeDisplayName>User contribution - content deleted</ActivityTypeDisplayName>
+    <ActivityTypeName>usercontributiondelete</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor deleted content using the User Contributions module.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>35</ActivityTypeID>
+    <ActivityTypeDisplayName>User contribution - content updated</ActivityTypeDisplayName>
+    <ActivityTypeName>usercontributionupdate</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor updated content using the User Contribution module.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>36</ActivityTypeID>
+    <ActivityTypeDisplayName>User contribution - content created</ActivityTypeDisplayName>
+    <ActivityTypeName>usercontributioninsert</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor created new content using the User Contributions module.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>37</ActivityTypeID>
+    <ActivityTypeDisplayName>Form submission</ActivityTypeDisplayName>
+    <ActivityTypeName>bizformsubmit</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor submitted an on-line form.
+</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>BizFormSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>38</ActivityTypeID>
+    <ActivityTypeDisplayName>Poll voting</ActivityTypeDisplayName>
+    <ActivityTypeName>pollvoting</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor voted in a poll.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>pollselector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>39</ActivityTypeID>
+    <ActivityTypeDisplayName>Event booking</ActivityTypeDisplayName>
+    <ActivityTypeName>eventbooking</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor signed up for an event using the Booking system.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>40</ActivityTypeID>
+    <ActivityTypeDisplayName>Content rating</ActivityTypeDisplayName>
+    <ActivityTypeName>rating</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor rated some content.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>41</ActivityTypeID>
+    <ActivityTypeDisplayName>Abuse report</ActivityTypeDisplayName>
+    <ActivityTypeName>abusereport</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor reported an abuse using the Abuse Report module.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl />
+    <ActivityTypeDetailFormControl />
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>42</ActivityTypeID>
+    <ActivityTypeDisplayName>Message board comment</ActivityTypeDisplayName>
+    <ActivityTypeName>messageboardcomment</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor posted a comment on a message board.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>MessageBoardNameSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>43</ActivityTypeID>
+    <ActivityTypeDisplayName>Forum post</ActivityTypeDisplayName>
+    <ActivityTypeName>forumpost</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor posted on the forum.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>ForumSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>44</ActivityTypeID>
+    <ActivityTypeDisplayName>Blog comment</ActivityTypeDisplayName>
+    <ActivityTypeName>blogcomment</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor commented on a blog post.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeDetailFormControl>selectdocument</ActivityTypeDetailFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>45</ActivityTypeID>
+    <ActivityTypeDisplayName>Internal search</ActivityTypeDisplayName>
+    <ActivityTypeName>internalsearch</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor searched for text using the on-site search.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>46</ActivityTypeID>
+    <ActivityTypeDisplayName>External search</ActivityTypeDisplayName>
+    <ActivityTypeName>externalsearch</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor came to the website after searching on a search engine, such as Google.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>47</ActivityTypeID>
+    <ActivityTypeDisplayName>Clicked email campaign link</ActivityTypeDisplayName>
+    <ActivityTypeName>newsletterclickthrough</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The subscriber clicked a tracked link in an email campaign.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>NewsletterSelectorSimple</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>48</ActivityTypeID>
+    <ActivityTypeDisplayName>Opened email</ActivityTypeDisplayName>
+    <ActivityTypeName>newsletteropen</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The subscriber opened a tracked email campaign.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>NewsletterSelectorSimple</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>49</ActivityTypeID>
+    <ActivityTypeDisplayName>Unsubscription from a single email campaign</ActivityTypeDisplayName>
+    <ActivityTypeName>newsletterunsubscription</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor unsubscribed from a single email campaign.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>NewsletterSelectorSimple</ActivityTypeMainFormControl>
+    <ActivityTypeDetailFormControl>NewsletterIssueSelector</ActivityTypeDetailFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>50</ActivityTypeID>
+    <ActivityTypeDisplayName>Subscription to an email campaign</ActivityTypeDisplayName>
+    <ActivityTypeName>newslettersubscription</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor subscribed to an email campaign.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>NewsletterSelectorSimple</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>51</ActivityTypeID>
+    <ActivityTypeDisplayName>Customer registration</ActivityTypeDisplayName>
+    <ActivityTypeName>customerregistration</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The customer registered during the checkout process.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>52</ActivityTypeID>
+    <ActivityTypeDisplayName>Purchase</ActivityTypeDisplayName>
+    <ActivityTypeName>purchase</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor made a purchase.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>53</ActivityTypeID>
+    <ActivityTypeDisplayName>Product added to wishlist</ActivityTypeDisplayName>
+    <ActivityTypeName>productaddedtowishlist</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor added a product to the wishlist.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>SKUSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>54</ActivityTypeID>
+    <ActivityTypeDisplayName>Product removed from shopping cart</ActivityTypeDisplayName>
+    <ActivityTypeName>productremovedfromshoppingcart</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor removed a product from the shoppingcart.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>SKUSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>55</ActivityTypeID>
+    <ActivityTypeDisplayName>Product added to shopping cart</ActivityTypeDisplayName>
+    <ActivityTypeName>productaddedtoshoppingcart</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor added a product to the shopping cart.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>SKUSelector</ActivityTypeMainFormControl>
+    <ActivityTypeDetailFormControl />
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>56</ActivityTypeID>
+    <ActivityTypeDisplayName>Leaving a group</ActivityTypeDisplayName>
+    <ActivityTypeName>leavegroup</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor left a community group or a workgroup.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>CommunityGroupSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>57</ActivityTypeID>
+    <ActivityTypeDisplayName>Joining a group</ActivityTypeDisplayName>
+    <ActivityTypeName>joingroup</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor joined a community group or a workgroup.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>CommunityGroupSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>59</ActivityTypeID>
+    <ActivityTypeDisplayName>User registration</ActivityTypeDisplayName>
+    <ActivityTypeName>userregistration</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor registered as a member of the site.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>60</ActivityTypeID>
+    <ActivityTypeDisplayName>User login</ActivityTypeDisplayName>
+    <ActivityTypeName>userlogin</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor logged in to a site.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>62</ActivityTypeID>
+    <ActivityTypeDisplayName>Landing page</ActivityTypeDisplayName>
+    <ActivityTypeName>landingpage</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor came to this page as the first page.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>63</ActivityTypeID>
+    <ActivityTypeDisplayName>Page visit</ActivityTypeDisplayName>
+    <ActivityTypeName>pagevisit</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor visited a page.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>82</ActivityTypeID>
+    <ActivityTypeDisplayName>Purchased product</ActivityTypeDisplayName>
+    <ActivityTypeName>purchasedproduct</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor bought a product.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>SKUSelector</ActivityTypeMainFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>91</ActivityTypeID>
+    <ActivityTypeDisplayName>Chat request support</ActivityTypeDisplayName>
+    <ActivityTypeName>chatrequestsupport</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>User requests support using live chat.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>92</ActivityTypeID>
+    <ActivityTypeDisplayName>Chat request support using offline form</ActivityTypeDisplayName>
+    <ActivityTypeName>chatrequestsupportofflineform</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>User requested support on site using offline form - form used when there are no online supporters.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>93</ActivityTypeID>
+    <ActivityTypeDisplayName>Accept initated chat request</ActivityTypeDisplayName>
+    <ActivityTypeName>chatacceptinitiatedchat</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>User accepted request to chat (intiated chat).</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>94</ActivityTypeID>
+    <ActivityTypeDisplayName>Accept automatically initated chat request</ActivityTypeDisplayName>
+    <ActivityTypeName>chatacceptautomaticallyinitiatedchat</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>User accepted request to chat issued automatically (using web part Automatically initiated chat).</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>105</ActivityTypeID>
+    <ActivityTypeDisplayName>Custom table form submit</ActivityTypeDisplayName>
+    <ActivityTypeName>customtablesubmit</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor submitted an custom table form.
+</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+    <ActivityTypeMainFormControl>##default##</ActivityTypeMainFormControl>
+    <ActivityTypeDetailFormControl>CustomTableItemSelector</ActivityTypeDetailFormControl>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>114</ActivityTypeID>
+    <ActivityTypeDisplayName>Unsubscription from all email campaigns</ActivityTypeDisplayName>
+    <ActivityTypeName>newsletterunsubscriptionfromall</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The visitor unsubscribed from all email campaigns.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+  <OM_ActivityType>
+    <ActivityTypeID>116</ActivityTypeID>
+    <ActivityTypeDisplayName>Shopping cart abandoned</ActivityTypeDisplayName>
+    <ActivityTypeName>ShoppingCartAbandoned</ActivityTypeName>
+    <ActivityTypeEnabled>true</ActivityTypeEnabled>
+    <ActivityTypeIsCustom>false</ActivityTypeIsCustom>
+    <ActivityTypeDescription>The shopping cart is marked as abandoned using the scheduled task.</ActivityTypeDescription>
+    <ActivityTypeManualCreationAllowed>false</ActivityTypeManualCreationAllowed>
+  </OM_ActivityType>
+</NewDataSet>

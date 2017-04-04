@@ -1,0 +1,2629 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_Permission" msprop:IsFromCMSDatabase="True" msprop:CMSHasExternalData="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PermissionID" type="xs:int" minOccurs="0" />
+                <xs:element name="PermissionDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="PermissionName" type="xs:string" minOccurs="0" />
+                <xs:element name="ClassID" type="xs:int" minOccurs="0" />
+                <xs:element name="ResourceID" type="xs:int" minOccurs="0" />
+                <xs:element name="PermissionGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="PermissionLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="PermissionDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="PermissionDisplayInMatrix" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PermissionOrder" type="xs:int" minOccurs="0" />
+                <xs:element name="PermissionEditableByGlobalAdmin" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_Permission>
+    <PermissionID>1996</PermissionID>
+    <PermissionDisplayName>{$permissionnames.read$}</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>2df1a7ae-ff00-41c8-b254-f2cb0ec7b9d8</PermissionGUID>
+    <PermissionLastModified>2008-03-13T09:35:00+01:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.read$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1997</PermissionID>
+    <PermissionDisplayName>{$permissionnames.modify$}</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>e95138bf-8837-466e-9bd0-801a32952c4f</PermissionGUID>
+    <PermissionLastModified>2008-03-13T09:35:00+01:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.modify$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1998</PermissionID>
+    <PermissionDisplayName>{$permissionnames.createanywhere$}</PermissionDisplayName>
+    <PermissionName>Create</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>afd715da-a040-41e9-96d6-573834827ae3</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:48.443+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.createanywhere$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1999</PermissionID>
+    <PermissionDisplayName>{$general.delete$}</PermissionDisplayName>
+    <PermissionName>Delete</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>9cb45cb6-54cd-4d04-a2a2-43d9af6d94d4</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:48.473+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.delete$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2000</PermissionID>
+    <PermissionDisplayName>{$permissionnames.destroy$}</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>1a131cfd-b1fb-4453-b045-0c7205d72bb5</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:48.49+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.destroy$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2001</PermissionID>
+    <PermissionDisplayName>{$permissionnames.exploretree$}</PermissionDisplayName>
+    <PermissionName>ExploreTree</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>69b02532-2b26-45b0-9927-042722ecdce7</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:48.503+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.exploretree$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2002</PermissionID>
+    <PermissionDisplayName>{$permissionnames.modifypermissions$}</PermissionDisplayName>
+    <PermissionName>ModifyPermissions</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>92ba1cdf-2235-4e1b-a8c5-24a04bf817d3</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:48.503+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.modifypermissions$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2017</PermissionID>
+    <PermissionDisplayName>{$permissionnames.read$}</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>5a4d678c-0782-4915-96c8-501a66c58114</PermissionGUID>
+    <PermissionLastModified>2008-03-13T09:35:00+01:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.read$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2018</PermissionID>
+    <PermissionDisplayName>{$permissionnames.modify$}</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>3efc4b6c-7d0f-4092-9793-124b8868610d</PermissionGUID>
+    <PermissionLastModified>2008-03-13T09:35:00+01:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.modify$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2019</PermissionID>
+    <PermissionDisplayName>{$permissionnames.createanywhere$}</PermissionDisplayName>
+    <PermissionName>Create</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>78aaee00-a8de-44bd-9e19-fef7d126b133</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:45.493+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.createanywhere$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2020</PermissionID>
+    <PermissionDisplayName>{$general.delete$}</PermissionDisplayName>
+    <PermissionName>Delete</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>0eb47afd-32e8-497b-b90c-63f802ae8b7b</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:45.51+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.delete$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2021</PermissionID>
+    <PermissionDisplayName>{$permissionnames.destroy$}</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>774c9f6e-46ff-4916-9a9a-c5c88f65b118</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:45.523+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.destroy$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2022</PermissionID>
+    <PermissionDisplayName>{$permissionnames.exploretree$}</PermissionDisplayName>
+    <PermissionName>ExploreTree</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>317a0f0e-7e4f-4ef6-93cb-6966a44158aa</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:45.54+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.exploretree$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2023</PermissionID>
+    <PermissionDisplayName>{$permissionnames.modifypermissions$}</PermissionDisplayName>
+    <PermissionName>ModifyPermissions</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>56c1b934-a331-40ad-a062-eba5b4ebaa2b</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:45.557+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.modifypermissions$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7269</PermissionID>
+    <PermissionDisplayName>{$permissionnames.create$}</PermissionDisplayName>
+    <PermissionName>CreateSpecific</PermissionName>
+    <ClassID>1685</ClassID>
+    <PermissionGUID>d3a6770c-a4f5-4e62-878b-d96f54921440</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:45.573+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.create$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7295</PermissionID>
+    <PermissionDisplayName>{$permissionnames.create$}</PermissionDisplayName>
+    <PermissionName>CreateSpecific</PermissionName>
+    <ClassID>1095</ClassID>
+    <PermissionGUID>794d4ea9-598b-4d92-8612-fb479711e5e9</PermissionGUID>
+    <PermissionLastModified>2011-08-23T12:36:48.52+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.create$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8101</PermissionID>
+    <PermissionDisplayName>{$permissionnames.createanywhere$}</PermissionDisplayName>
+    <PermissionName>Create</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>a5153204-ce84-4179-8910-a88da9e60082</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.237+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.createanywhere$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8102</PermissionID>
+    <PermissionDisplayName>Delete</PermissionDisplayName>
+    <PermissionName>Delete</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>1bbfd4ce-386d-4e59-aaf1-ffcb1b5d9bb0</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.25+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8103</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>1ce41cbe-684b-4eec-80bc-f0227eba1bd5</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.263+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8104</PermissionID>
+    <PermissionDisplayName>Browse tree</PermissionDisplayName>
+    <PermissionName>ExploreTree</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>ce115758-2ee5-4f08-9ddc-f76b24af437d</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.28+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8105</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>0fc9cba5-3c50-4e4c-9780-8f9ee038f43d</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.223+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8106</PermissionID>
+    <PermissionDisplayName>Modify permissions</PermissionDisplayName>
+    <PermissionName>ModifyPermissions</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>486ce528-142d-402c-bea7-2064353eabaf</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.297+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8107</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>3076fc84-87ae-48d4-8d5f-69af8ceccb69</PermissionGUID>
+    <PermissionLastModified>2011-07-27T10:40:58.167+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10173</PermissionID>
+    <PermissionDisplayName>{$permissionnames.create$}</PermissionDisplayName>
+    <PermissionName>CreateSpecific</PermissionName>
+    <ClassID>3140</ClassID>
+    <PermissionGUID>0fb41f14-a0c3-4de6-ac0e-34aecf1fe3d6</PermissionGUID>
+    <PermissionLastModified>2013-07-24T10:18:31.347+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.document.create$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>54</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>c64b8b34-cdee-4e0c-9ddd-752c704a7913</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:58:32.196647+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionReadDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>72</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>fb3ef8e5-785e-4061-b3e6-d7c29ae3f491</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:58:43.5987871+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionModifyDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>605</PermissionID>
+    <PermissionDisplayName>{$content.permissionCheckInAnyPage$}</PermissionDisplayName>
+    <PermissionName>CheckInAll</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>c3b775b9-e762-494f-9c5a-5dd503743351</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:58:56.5940865+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionCheckInAnyPageDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>606</PermissionID>
+    <PermissionDisplayName>Create</PermissionDisplayName>
+    <PermissionName>Create</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>37225a01-07a2-4b05-84e1-06000701461c</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:59:10.63049+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionCreateDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>607</PermissionID>
+    <PermissionDisplayName>Delete</PermissionDisplayName>
+    <PermissionName>Delete</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>edc71136-9865-444d-86de-a1fe08d7524d</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:59:22.8897158+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionDeleteDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>608</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>3a01f81b-83d3-4b09-accf-ce91165c9beb</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:56:55.7740057+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionDestroyDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>609</PermissionID>
+    <PermissionDisplayName>Manage workflow</PermissionDisplayName>
+    <PermissionName>ManageWorkflow</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>153d87b2-68bc-4a7b-bb4f-976c6296a9c1</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:59:33.9278195+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionManageWorkflowDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>610</PermissionID>
+    <PermissionDisplayName>Modify permissions</PermissionDisplayName>
+    <PermissionName>modifypermissions</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>809b5c59-602c-434f-bd89-f36e5934c550</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:57:22.1776458+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionModifyPermissionsDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>9</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>611</PermissionID>
+    <PermissionDisplayName>Browse tree</PermissionDisplayName>
+    <PermissionName>ExploreTree</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>eef5b47f-565b-4606-a12e-1528a980cefa</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:58:18.9583233+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionBrowseTreeDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>984</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>108</ResourceID>
+    <PermissionGUID>be3ac7cf-e068-4f95-89e1-f58a528aae6a</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:54:47.1679143+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to view email campaign in the administration interface.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>986</PermissionID>
+    <PermissionDisplayName>Author campaign emails</PermissionDisplayName>
+    <PermissionName>AuthorIssues</PermissionName>
+    <ResourceID>108</ResourceID>
+    <PermissionGUID>fbcc0e19-905e-4854-83d3-7df629fa2881</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:54:05.2187198+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete and modify campaign emails.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>987</PermissionID>
+    <PermissionDisplayName>Configure email campaigns</PermissionDisplayName>
+    <PermissionName>Configure</PermissionName>
+    <ResourceID>108</ResourceID>
+    <PermissionGUID>583567e5-5420-4e40-8314-df3765717090</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:53:18.4780462+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to configure email campaign settings.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>988</PermissionID>
+    <PermissionDisplayName>Manage templates </PermissionDisplayName>
+    <PermissionName>ManageTemplates</PermissionName>
+    <ResourceID>108</ResourceID>
+    <PermissionGUID>e690ee9e-3c0b-4308-a509-a2c07c62dd87</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:54:34.6216598+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete and modify email campaign templates.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>990</PermissionID>
+    <PermissionDisplayName>Manage subscribers</PermissionDisplayName>
+    <PermissionName>ManageSubscribers</PermissionName>
+    <ResourceID>108</ResourceID>
+    <PermissionGUID>e829bb6a-0364-4130-94b5-5886fee7b1f9</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:42:12.95448+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to add, delete and modify newsletter subscribers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1082</PermissionID>
+    <PermissionDisplayName>Create form</PermissionDisplayName>
+    <PermissionName>CreateForm</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>4ae4ae83-1696-45c1-a71b-90357a2475a7</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:34:27.3139206+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create new forms.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1083</PermissionID>
+    <PermissionDisplayName>Delete data</PermissionDisplayName>
+    <PermissionName>DeleteData</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>91f0e3c2-736c-4a17-a22b-9cf09d27fdff</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:36:32.6984578+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete existing form records.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1084</PermissionID>
+    <PermissionDisplayName>Delete form including data</PermissionDisplayName>
+    <PermissionName>DeleteFormAndData</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>f7ab439e-4432-4fd5-bb8c-1dab1b436e10</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:35:22.7374624+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete forms including stored records.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1085</PermissionID>
+    <PermissionDisplayName>Edit data</PermissionDisplayName>
+    <PermissionName>EditData</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>9b0100d4-5491-4647-8d7d-c83e53c08da8</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:36:11.6603542+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create and edit form records.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1086</PermissionID>
+    <PermissionDisplayName>Edit form</PermissionDisplayName>
+    <PermissionName>EditForm</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>64140368-713a-41b7-8750-692c0ad96ff5</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:34:51.4133303+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify form configuration, fields and layout (not the actual records).</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1087</PermissionID>
+    <PermissionDisplayName>Read data</PermissionDisplayName>
+    <PermissionName>ReadData</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>bdfaead6-c7cf-4a74-b1df-da7864c5261f</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:35:44.2466131+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view form records.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1088</PermissionID>
+    <PermissionDisplayName>Read form</PermissionDisplayName>
+    <PermissionName>ReadForm</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>bf13b283-e4e5-4b55-a476-ccc3e990edae</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:34:15.1337027+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view form configuration, fields and layout (not the actual records).</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1215</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>d2960e42-b8b7-4987-ac4b-75485718e385</PermissionGUID>
+    <PermissionLastModified>2008-07-10T14:19:06.183+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to access the Forums in tools tab.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1237</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>b09c26de-2aa0-4666-93ea-47b8e352ecc4</PermissionGUID>
+    <PermissionLastModified>2008-07-10T14:18:43.12+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete, modify the Forums.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1238</PermissionID>
+    <PermissionDisplayName>Read configuration</PermissionDisplayName>
+    <PermissionName>ConfigurationRead</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>5a1d2858-f648-40d9-a4bc-56e4651de93a</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:24:49.1761126+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view E-commerce configuration.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1239</PermissionID>
+    <PermissionDisplayName>Modify configuration</PermissionDisplayName>
+    <PermissionName>ConfigurationModify</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>8a7111ee-da40-4efa-94ee-3c0adad1fcb0</PermissionGUID>
+    <PermissionLastModified>2010-10-27T08:07:07.933+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify E-commerce configuration.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1240</PermissionID>
+    <PermissionDisplayName>Read data</PermissionDisplayName>
+    <PermissionName>EcommerceRead</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>67f0b6f9-6d99-44cc-9cac-32a30f2e4ca3</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:26:53.5835521+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view configuration and data of all E-commerce objects. Does not allow to view the Configuration tab.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1241</PermissionID>
+    <PermissionDisplayName>Modify data</PermissionDisplayName>
+    <PermissionName>EcommerceModify</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>2eb62a92-33cc-40b2-9e21-aa8d070c4183</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:28:21.3033232+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete and modify all E-commerce objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1242</PermissionID>
+    <PermissionDisplayName>{$staging.permissionManagePageTasks$}</PermissionDisplayName>
+    <PermissionName>ManageDocumentsTasks</PermissionName>
+    <ResourceID>110</ResourceID>
+    <PermissionGUID>786729f9-aa30-45ea-afa0-37db8ea8532d</PermissionGUID>
+    <PermissionLastModified>2015-10-22T09:14:22.2205825+02:00</PermissionLastModified>
+    <PermissionDescription>{$staging.permissionManagePageTasksDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1243</PermissionID>
+    <PermissionDisplayName>Manage servers</PermissionDisplayName>
+    <PermissionName>ManageServers</PermissionName>
+    <ResourceID>110</ResourceID>
+    <PermissionGUID>478b4ad5-f506-408b-b5f2-393296c85c9c</PermissionGUID>
+    <PermissionLastModified>2015-10-22T09:13:21.4217452+02:00</PermissionLastModified>
+    <PermissionDescription>Allows managing and configuring of staging servers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1406</PermissionID>
+    <PermissionDisplayName>Read global</PermissionDisplayName>
+    <PermissionName>GlobalRead</PermissionName>
+    <ResourceID>113</ResourceID>
+    <PermissionGUID>e5e59070-eb51-49b7-be43-a92789467f54</PermissionGUID>
+    <PermissionLastModified>2011-04-19T09:49:02.88+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to access the Polls in tools tab.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1437</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>9791c4ec-2311-44ab-b420-b0903ab0357e</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:46:57.2249042+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1438</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>f45dfd02-d154-4cec-95fe-0c6e7713a281</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:47:49.2421054+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, modify and delete reports. Also allows to subscribe to reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1439</PermissionID>
+    <PermissionDisplayName>Save reports</PermissionDisplayName>
+    <PermissionName>SaveReports</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>57a21b01-4eb2-474c-874f-fe529ae7b3a8</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:47:13.9905806+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to save reports into the report archive.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1461</PermissionID>
+    <PermissionDisplayName>Manage comments</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>117</ResourceID>
+    <PermissionGUID>bb99dca6-8e3f-4666-ae3b-d15b8df0a4ce</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:41:45.1740654+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage blog comments.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1469</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>115</ResourceID>
+    <PermissionGUID>3028cf79-5836-4af1-bef7-a407255e6e2f</PermissionGUID>
+    <PermissionLastModified>2014-01-18T10:14:05.0326687+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to access the web analytics interface and view web analytics reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1470</PermissionID>
+    <PermissionDisplayName>Save reports</PermissionDisplayName>
+    <PermissionName>SaveReports</PermissionName>
+    <ResourceID>115</ResourceID>
+    <PermissionGUID>037c64a1-683f-4032-ac72-5fc6e13e4d15</PermissionGUID>
+    <PermissionLastModified>2014-01-18T10:14:18.7340387+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to save web analytics reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1541</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>119</ResourceID>
+    <PermissionGUID>d353b0c7-17ea-4398-994d-95f2c8848af4</PermissionGUID>
+    <PermissionLastModified>2008-07-10T15:37:03.323+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to access the Booking system in tools tab.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1542</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>119</ResourceID>
+    <PermissionGUID>d3de6c0b-a776-421d-8cea-8101066e2b3b</PermissionGUID>
+    <PermissionLastModified>2008-07-10T15:37:31.997+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete, modify the Events.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1700</PermissionID>
+    <PermissionDisplayName>Modify global</PermissionDisplayName>
+    <PermissionName>GlobalModify</PermissionName>
+    <ResourceID>113</ResourceID>
+    <PermissionGUID>5e6361c6-65d2-404f-a6e4-d0a740b46150</PermissionGUID>
+    <PermissionLastModified>2011-04-19T09:49:11.547+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete, modify the Polls.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>1788</PermissionID>
+    <PermissionDisplayName>Manage object tasks</PermissionDisplayName>
+    <PermissionName>ManageObjectsTasks</PermissionName>
+    <ResourceID>110</ResourceID>
+    <PermissionGUID>e6c3ae8a-829e-474d-9d67-051fcc484165</PermissionGUID>
+    <PermissionLastModified>2015-10-22T09:14:49.74524+02:00</PermissionLastModified>
+    <PermissionDescription>Allows synchronization and deleting of object staging tasks.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2379</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>120</ResourceID>
+    <PermissionGUID>2eb8851c-84a0-47fe-8631-6ac4c4001bc5</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:18:04.6860308+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view banned IPs.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2380</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>120</ResourceID>
+    <PermissionGUID>20397d13-799e-4a3c-b8a2-c9f0ca05901e</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:31:22.8388381+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage banned IP addresses.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2440</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>125</ResourceID>
+    <PermissionGUID>cf1c3489-103f-49e3-9978-925f0d3bc1d9</PermissionGUID>
+    <PermissionLastModified>2008-08-25T23:30:53.21+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify the module content.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2441</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>125</ResourceID>
+    <PermissionGUID>f8e457c9-b882-46d2-bc6b-46c8968f14a7</PermissionGUID>
+    <PermissionLastModified>2008-08-25T23:31:20.037+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read the module content. </PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2865</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>129</ResourceID>
+    <PermissionGUID>1139b40d-55a3-40f8-93b9-10c77e71c3ac</PermissionGUID>
+    <PermissionLastModified>2014-01-17T16:10:50.864617+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view custom tables and data in them.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2866</PermissionID>
+    <PermissionDisplayName>Create</PermissionDisplayName>
+    <PermissionName>Create</PermissionName>
+    <ResourceID>129</ResourceID>
+    <PermissionGUID>88edf947-badb-4a4d-b4cd-58096796e704</PermissionGUID>
+    <PermissionLastModified>2014-01-17T16:11:31.9337235+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create data in custom tables.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2867</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>129</ResourceID>
+    <PermissionGUID>0d0dd7e2-eafa-4077-8b9a-77dca5539511</PermissionGUID>
+    <PermissionLastModified>2014-01-17T16:11:18.4023705+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify data in custom tables.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2868</PermissionID>
+    <PermissionDisplayName>Delete</PermissionDisplayName>
+    <PermissionName>Delete</PermissionName>
+    <ResourceID>129</ResourceID>
+    <PermissionGUID>610c3f6f-7761-4cd7-8626-d9aca13fa2f9</PermissionGUID>
+    <PermissionLastModified>2014-01-17T16:11:50.8156115+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete data in custom tables.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2908</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>135</ResourceID>
+    <PermissionGUID>5cc80a1d-0d4a-4889-9200-694bf5c8b0cc</PermissionGUID>
+    <PermissionLastModified>2008-09-16T15:57:35.373+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read data of friends module.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2909</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>135</ResourceID>
+    <PermissionGUID>03a00d1e-e798-47be-a920-c77ab99b14d8</PermissionGUID>
+    <PermissionLastModified>2008-09-16T15:56:36.26+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage friends module.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2969</PermissionID>
+    <PermissionDisplayName>Reply</PermissionDisplayName>
+    <PermissionName>Reply</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>e4a846d1-b332-4165-ae12-9235a0819346</PermissionGUID>
+    <PermissionLastModified>2008-11-28T10:37:22.867+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to reply to posts of the Forum.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2970</PermissionID>
+    <PermissionDisplayName>Mark as answer</PermissionDisplayName>
+    <PermissionName>MarkAsAnswer</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>b0d84c04-f3a7-4751-a07d-b38f8c0e2af3</PermissionGUID>
+    <PermissionLastModified>2008-11-28T10:38:06.6+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to mark the post of the forum as answer.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2971</PermissionID>
+    <PermissionDisplayName>Subscribe</PermissionDisplayName>
+    <PermissionName>Subscribe</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>84dbfc14-176a-436d-bf57-374bb2ed1823</PermissionGUID>
+    <PermissionLastModified>2008-11-28T10:38:11.677+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to subscribe to posts of the forum.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2972</PermissionID>
+    <PermissionDisplayName>Attach files</PermissionDisplayName>
+    <PermissionName>AttachFiles</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>ca05072e-45c5-4c31-9995-60b2bd1e5252</PermissionGUID>
+    <PermissionLastModified>2008-11-28T10:37:09.397+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to attach files to the forum post.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2973</PermissionID>
+    <PermissionDisplayName>Post</PermissionDisplayName>
+    <PermissionName>Post</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>0cbb5eff-099a-4bdd-ac0b-b4ed4d6020be</PermissionGUID>
+    <PermissionLastModified>2008-11-28T10:37:18.367+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to add posts to the Forum.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>2999</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>ee4150b0-3879-409e-86d9-17eb899853d1</PermissionGUID>
+    <PermissionLastModified>2011-05-09T08:36:25.757+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to access the  media library in tools tab.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3000</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>d9db7847-6dab-45a4-8564-654cd86989eb</PermissionGUID>
+    <PermissionLastModified>2008-12-03T11:18:46.913+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete, modify the media library.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3003</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>121</ResourceID>
+    <PermissionGUID>56e9bb59-90b3-489d-85fc-7a54aba140d4</PermissionGUID>
+    <PermissionLastModified>2008-10-09T11:16:02.313+02:00</PermissionLastModified>
+    <PermissionDescription>Indicates whether the user from specific role can read the module content.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3004</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>121</ResourceID>
+    <PermissionGUID>0370b817-718a-47fa-8e51-4c6ed312b695</PermissionGUID>
+    <PermissionLastModified>2008-10-09T11:16:53.967+02:00</PermissionLastModified>
+    <PermissionDescription>Indicates whether the user from specific role is allowed to manage the group.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3033</PermissionID>
+    <PermissionDisplayName>Manage data</PermissionDisplayName>
+    <PermissionName>ManageData</PermissionName>
+    <ResourceID>115</ResourceID>
+    <PermissionGUID>68e17caa-b476-4daf-8317-5014ddf84b04</PermissionGUID>
+    <PermissionLastModified>2014-01-18T10:14:55.1166766+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage data logged for web analytics statistics.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3086</PermissionID>
+    <PermissionDisplayName>Access to forum</PermissionDisplayName>
+    <PermissionName>AccessToForum</PermissionName>
+    <ResourceID>109</ResourceID>
+    <PermissionGUID>3115ad47-2213-441f-ab02-cab21d46637a</PermissionGUID>
+    <PermissionLastModified>2008-11-28T10:37:05.023+01:00</PermissionLastModified>
+    <PermissionDescription>Allows the user access to the forum.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3095</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>130</ResourceID>
+    <PermissionGUID>7f2f05dc-e2c6-49ed-b652-39eb74f14a23</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:07:23.3048991+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view abuse reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3096</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>130</ResourceID>
+    <PermissionGUID>119064c6-09a4-4b45-8f58-e044fc4ae6d9</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:07:34.5200205+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage abuse reports. </PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3157</PermissionID>
+    <PermissionDisplayName>Create file</PermissionDisplayName>
+    <PermissionName>FileCreate</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>20afbdcc-f9f2-4aef-a1eb-d8cd9376a39b</PermissionGUID>
+    <PermissionLastModified>2009-01-14T12:14:58.943+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, copy or upload files.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3158</PermissionID>
+    <PermissionDisplayName>Modify file</PermissionDisplayName>
+    <PermissionName>FileModify</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>ac95653b-39a7-4d1e-a72f-c8f63c981936</PermissionGUID>
+    <PermissionLastModified>2009-01-14T12:15:28.583+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify or move files.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3159</PermissionID>
+    <PermissionDisplayName>Delete file</PermissionDisplayName>
+    <PermissionName>FileDelete</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>bf445be9-9682-49b6-81c8-b80c2d98607b</PermissionGUID>
+    <PermissionLastModified>2009-01-14T12:15:16.16+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete files.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3160</PermissionID>
+    <PermissionDisplayName>Create folder</PermissionDisplayName>
+    <PermissionName>FolderCreate</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>c99531b9-2c23-4713-841f-a18d67b25a48</PermissionGUID>
+    <PermissionLastModified>2009-01-14T12:15:43.503+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create or copy folders.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3161</PermissionID>
+    <PermissionDisplayName>Delete folder</PermissionDisplayName>
+    <PermissionName>FolderDelete</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>8e974d31-12cb-444d-ac5c-f096e332e6ed</PermissionGUID>
+    <PermissionLastModified>2009-01-14T12:15:57.91+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete folders.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3162</PermissionID>
+    <PermissionDisplayName>Modify folder</PermissionDisplayName>
+    <PermissionName>FolderModify</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>c7e6df9c-0bc7-45f2-a06f-007dc7f6bc6a</PermissionGUID>
+    <PermissionLastModified>2009-01-14T12:16:15.77+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to rename or move folders.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>9</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3163</PermissionID>
+    <PermissionDisplayName>See library content</PermissionDisplayName>
+    <PermissionName>LibraryAccess</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>ea5dbef3-f8a0-4610-aa93-91e31399d567</PermissionGUID>
+    <PermissionLastModified>2011-08-15T14:19:24.65+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to access media library from live site if permanent links are used.</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>10</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3196</PermissionID>
+    <PermissionDisplayName>Use bad words</PermissionDisplayName>
+    <PermissionName>UseBadWords</PermissionName>
+    <ResourceID>126</ResourceID>
+    <PermissionGUID>98883b65-afbe-4628-a353-ed466c87b364</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:15:58.8274462+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to use words, which are considered as bad. Only global administrators can configure bad words.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3198</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>117</ResourceID>
+    <PermissionGUID>6e5ae289-a7db-47a3-b624-4c56c75bfc9c</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:41:27.9193401+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view blog posts and blog comments via the administration interface.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3200</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>141</ResourceID>
+    <PermissionGUID>faf6eee4-542c-428d-ac25-91e0e19d97f2</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:31:53.1805088+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view the event log.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3201</PermissionID>
+    <PermissionDisplayName>Clear log</PermissionDisplayName>
+    <PermissionName>ClearLog</PermissionName>
+    <ResourceID>141</ResourceID>
+    <PermissionGUID>4cc78727-def9-4b72-92fa-d24ddd77b14a</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:32:31.2003104+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to clear the content of event log.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3203</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>142</ResourceID>
+    <PermissionGUID>825f6478-6f4a-44d9-9cb9-21f9c33e725b</PermissionGUID>
+    <PermissionLastModified>2008-11-26T16:58:49.923+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to manage the permissions.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3204</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>142</ResourceID>
+    <PermissionGUID>3a2fd8d7-0dcb-4560-8df4-0b403c1e5409</PermissionGUID>
+    <PermissionLastModified>2008-11-26T16:59:10.047+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to read the permission settings.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3206</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>143</ResourceID>
+    <PermissionGUID>9a97cc8e-c2ec-442a-9537-c3dfd3978989</PermissionGUID>
+    <PermissionLastModified>2008-11-26T17:00:15.547+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to read the roles.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3207</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>143</ResourceID>
+    <PermissionGUID>6171a429-e0f4-4e33-a6c8-532c7a0a2ebd</PermissionGUID>
+    <PermissionLastModified>2008-11-26T17:07:24.45+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to modify the roles.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3209</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>144</ResourceID>
+    <PermissionGUID>17bc0cf5-e3a9-41a2-b6e7-1efa593e57ba</PermissionGUID>
+    <PermissionLastModified>2008-11-26T17:08:39.793+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to read the Scheduled tasks.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3210</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>144</ResourceID>
+    <PermissionGUID>a9247644-7342-42c5-a698-d1e8d6df913d</PermissionGUID>
+    <PermissionLastModified>2008-11-26T17:08:59.607+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to modify the scheduled tasks.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3212</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>145</ResourceID>
+    <PermissionGUID>0aef3f97-7e56-431b-9e11-7633a1e6fb1f</PermissionGUID>
+    <PermissionLastModified>2008-11-26T17:10:55.7+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to read the users.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3213</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>145</ResourceID>
+    <PermissionGUID>47083d97-68c3-4505-85b3-dea60247e95a</PermissionGUID>
+    <PermissionLastModified>2008-11-26T17:11:10.387+01:00</PermissionLastModified>
+    <PermissionDescription>Allows user to modify the users.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3272</PermissionID>
+    <PermissionDisplayName>Create pages</PermissionDisplayName>
+    <PermissionName>CreatePages</PermissionName>
+    <ResourceID>121</ResourceID>
+    <PermissionGUID>670ed23d-dd8c-40f0-b91d-52c02d213049</PermissionGUID>
+    <PermissionLastModified>2008-12-09T20:35:47.43+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create new pages</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3273</PermissionID>
+    <PermissionDisplayName>Edit pages</PermissionDisplayName>
+    <PermissionName>EditPages</PermissionName>
+    <ResourceID>121</ResourceID>
+    <PermissionGUID>3dc76a0e-057d-40d6-871f-2d412ae12a87</PermissionGUID>
+    <PermissionLastModified>2008-12-09T20:36:08.633+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to edit pages</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>3274</PermissionID>
+    <PermissionDisplayName>Delete pages</PermissionDisplayName>
+    <PermissionName>DeletePages</PermissionName>
+    <ResourceID>121</ResourceID>
+    <PermissionGUID>c32319ff-c638-484b-b2ff-8bc601f90e85</PermissionGUID>
+    <PermissionLastModified>2008-12-09T20:36:32.273+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete pages</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>4307</PermissionID>
+    <PermissionDisplayName>Allowed for</PermissionDisplayName>
+    <PermissionName>AllowedFor</PermissionName>
+    <ResourceID>152</ResourceID>
+    <PermissionGUID>7dd36bdc-8734-4788-8ac6-0849533d532d</PermissionGUID>
+    <PermissionLastModified>2009-09-23T16:01:28.497+02:00</PermissionLastModified>
+    <PermissionDescription>Allows widget for</PermissionDescription>
+    <PermissionDisplayInMatrix>false</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>4315</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>158</ResourceID>
+    <PermissionGUID>3d69266c-05ae-4f12-8cb2-2567d6ad8f5a</PermissionGUID>
+    <PermissionLastModified>2009-09-29T14:42:13.103+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to read the UI profiles.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>4316</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>158</ResourceID>
+    <PermissionGUID>9f36545c-66cc-4c63-8f9d-9b381fd81d19</PermissionGUID>
+    <PermissionLastModified>2009-09-29T14:41:52.913+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to modify the UI profiles.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>4362</PermissionID>
+    <PermissionDisplayName>Manage data tasks</PermissionDisplayName>
+    <PermissionName>ManageDataTasks</PermissionName>
+    <ResourceID>110</ResourceID>
+    <PermissionGUID>db1ffd44-226b-4bfb-855c-08ed3a660c98</PermissionGUID>
+    <PermissionLastModified>2015-10-22T09:15:07.147092+02:00</PermissionLastModified>
+    <PermissionDescription>Allows synchronization and deleting of custom table data staging tasks.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>4699</PermissionID>
+    <PermissionDisplayName>Manage all tasks</PermissionDisplayName>
+    <PermissionName>ManageAllTasks</PermissionName>
+    <ResourceID>110</ResourceID>
+    <PermissionGUID>1456ed38-04c3-4f6a-b2c9-7df5ce446617</PermissionGUID>
+    <PermissionLastModified>2015-10-22T09:14:33.6085106+02:00</PermissionLastModified>
+    <PermissionDescription>Allows synchronization and deleting of all types of staging tasks.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5155</PermissionID>
+    <PermissionDisplayName>Read products</PermissionDisplayName>
+    <PermissionName>ReadProducts</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>393de603-b45d-4f22-ba99-46cd2a299154</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:29:46.2938214+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view products and product options.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>13</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5156</PermissionID>
+    <PermissionDisplayName>Modify products</PermissionDisplayName>
+    <PermissionName>ModifyProducts</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>7f131e12-f4aa-41eb-83aa-91f5b68998b8</PermissionGUID>
+    <PermissionLastModified>2010-07-13T10:55:41.02+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify products and product options.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>14</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5157</PermissionID>
+    <PermissionDisplayName>Read discounts</PermissionDisplayName>
+    <PermissionName>ReadDiscounts</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>0d519597-6bb2-4435-bf52-58820ee434ac</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:30:04.5476466+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view discount coupons.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>15</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5158</PermissionID>
+    <PermissionDisplayName>Modify discounts</PermissionDisplayName>
+    <PermissionName>ModifyDiscounts</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>81304564-e96f-4c3f-b263-8be92dabae1f</PermissionGUID>
+    <PermissionLastModified>2010-07-13T10:56:10.54+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify discount coupons.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>16</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5159</PermissionID>
+    <PermissionDisplayName>Read orders</PermissionDisplayName>
+    <PermissionName>ReadOrders</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>c0872a96-f14c-4861-8afd-f76976f20439</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:28:40.5682495+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view orders.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5160</PermissionID>
+    <PermissionDisplayName>Modify orders</PermissionDisplayName>
+    <PermissionName>ModifyOrders</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>b8113638-ab4d-43e1-b4f5-d747e1fe8cc8</PermissionGUID>
+    <PermissionLastModified>2010-07-14T13:45:42.927+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify orders.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5161</PermissionID>
+    <PermissionDisplayName>Read customers</PermissionDisplayName>
+    <PermissionName>ReadCustomers</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>bc7c892c-b33e-4883-ab6e-3a31f9ef9e27</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:29:23.3355258+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view customers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>10</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5162</PermissionID>
+    <PermissionDisplayName>Modify customers</PermissionDisplayName>
+    <PermissionName>ModifyCustomers</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>c9e34455-6189-4570-9dc7-021980ff5118</PermissionGUID>
+    <PermissionLastModified>2010-07-13T10:57:03.257+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify customers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>11</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5163</PermissionID>
+    <PermissionDisplayName>Read manufacturers</PermissionDisplayName>
+    <PermissionName>ReadManufacturers</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>68e27ca2-b1fd-4d6f-857b-c8abb9cbd61b</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:30:26.4748391+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view manufacturers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>17</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5164</PermissionID>
+    <PermissionDisplayName>Modify manufacturers</PermissionDisplayName>
+    <PermissionName>ModifyManufacturers</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>2596893b-9200-41bc-b0f2-b96d3fc5100d</PermissionGUID>
+    <PermissionLastModified>2010-07-13T10:57:30.627+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify manufacturers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>18</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5165</PermissionID>
+    <PermissionDisplayName>Read suppliers</PermissionDisplayName>
+    <PermissionName>ReadSuppliers</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>1f61807c-26d1-4245-9c2f-b832d81afe40</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:30:42.0773992+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view suppliers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>19</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5166</PermissionID>
+    <PermissionDisplayName>Modify suppliers</PermissionDisplayName>
+    <PermissionName>ModifySuppliers</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>23161480-4c7d-480c-9148-16e4c4bdbfb5</PermissionGUID>
+    <PermissionLastModified>2010-08-12T15:38:47.92+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify suppliers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>20</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5298</PermissionID>
+    <PermissionDisplayName>Read reports</PermissionDisplayName>
+    <PermissionName>ReadReports</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>bf8b7b08-553c-42bf-9df0-76d6ddd7aebc</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:28:59.6341559+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view E-commerce reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>9</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5310</PermissionID>
+    <PermissionDisplayName>Access all departments</PermissionDisplayName>
+    <PermissionName>AccessAllDepartments</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>ccfbeedc-756b-46c8-8843-cb56a99fa9f1</PermissionGUID>
+    <PermissionLastModified>2010-08-09T13:08:55.713+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to access products from all departments.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>12</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5594</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>ef88a969-4306-47c3-aa0d-c20fd44614b3</PermissionGUID>
+    <PermissionLastModified>2010-10-05T10:32:27.267+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read module content. </PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>5595</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>4ef94030-95c9-4a45-a43b-f39f6fd2c384</PermissionGUID>
+    <PermissionLastModified>2010-10-05T10:32:39.057+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage module content. </PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6009</PermissionID>
+    <PermissionDisplayName>Modify global&amp;nbsp;data</PermissionDisplayName>
+    <PermissionName>EcommerceGlobalModify</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>721261b1-7b78-43e3-8885-9732abce377e</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:28:03.0624993+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, delete and modify all global E-commerce objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6010</PermissionID>
+    <PermissionDisplayName>Modify global configuration</PermissionDisplayName>
+    <PermissionName>ConfigurationGlobalModify</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>e6198aea-7908-4eca-8ec5-9b05a071b965</PermissionGUID>
+    <PermissionLastModified>2011-05-02T07:31:42.977+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify E-commerce global configuration.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6870</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>236</ResourceID>
+    <PermissionGUID>a18dd227-af00-4b43-92a7-8c5dd3c000c5</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:55:24.7596731+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to read the email templates.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6871</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>236</ResourceID>
+    <PermissionGUID>fd83ff50-6c67-41fc-bad4-a44b97e68fb0</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:55:30.7542725+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to modify the email templates.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6898</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>242</ResourceID>
+    <PermissionGUID>8202092f-b5ec-4b96-b5c1-40ed10f58958</PermissionGUID>
+    <PermissionLastModified>2011-02-23T15:56:53.57+01:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6899</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>242</ResourceID>
+    <PermissionGUID>33b23e14-3f7c-4def-b484-038a198d907d</PermissionGUID>
+    <PermissionLastModified>2011-02-23T15:56:57.177+01:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6921</PermissionID>
+    <PermissionDisplayName>Manage user roles</PermissionDisplayName>
+    <PermissionName>ManageUserRoles</PermissionName>
+    <ResourceID>145</ResourceID>
+    <PermissionGUID>5bad2abb-2af4-4e20-89c8-9c938df0f064</PermissionGUID>
+    <PermissionLastModified>2011-03-04T15:27:38.7+01:00</PermissionLastModified>
+    <PermissionDescription>Allows users to add(remove) roles (memberships).</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6945</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ResourceID>236</ResourceID>
+    <PermissionGUID>0fa72772-2d47-41c8-a04e-e8f97802b7b0</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:55:35.7037674+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to destroy the email templates history.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6947</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ResourceID>140</ResourceID>
+    <PermissionGUID>870b1e8b-fe7b-4c1f-958c-e9577fdfde6e</PermissionGUID>
+    <PermissionLastModified>2011-03-17T11:53:13.12+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to destroy media library version history.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6948</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ResourceID>108</ResourceID>
+    <PermissionGUID>8ce8b7ec-c27c-4b66-954c-3488f1043a68</PermissionGUID>
+    <PermissionLastModified>2014-09-16T15:54:57.6239598+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete version history of email campaigns.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6949</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>22c12f66-a02b-4dfd-9e3d-89a18cf93250</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:48:06.4708281+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to destroy the version history of reporting objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6950</PermissionID>
+    <PermissionDisplayName>Destroy</PermissionDisplayName>
+    <PermissionName>Destroy</PermissionName>
+    <ResourceID>111</ResourceID>
+    <PermissionGUID>e871a101-f488-448f-a1b0-515b1372e2ff</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:31:12.8004712+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete version history of E-commerce objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>21</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6951</PermissionID>
+    <PermissionDisplayName>Destroy transformations</PermissionDisplayName>
+    <PermissionName>DestroyCMSTransformation</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>b66f8d38-8d16-4be8-8c6e-0c7a174d4c29</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:16:07.8459848+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of transformations.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6952</PermissionID>
+    <PermissionDisplayName>Destroy CSS stylesheets</PermissionDisplayName>
+    <PermissionName>DestroyCMSCSSStylesheet</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>da94b5e3-43bd-441a-ba1f-ad2692b3aec1</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:16:19.8911892+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of CSS stylesheets.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6954</PermissionID>
+    <PermissionDisplayName>Destroy page layouts</PermissionDisplayName>
+    <PermissionName>DestroyCMSLayout</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>9f8ee0b3-b8fc-4385-bfdd-b3e5506a5161</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:16:25.9937994+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of page layouts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6955</PermissionID>
+    <PermissionDisplayName>Destroy page templates</PermissionDisplayName>
+    <PermissionName>DestroyCMSPageTemplate</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>6be85766-3db6-4e27-9296-20ee31d0d4b2</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:16:33.5945594+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of page templates.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6956</PermissionID>
+    <PermissionDisplayName>Destroy web part containers</PermissionDisplayName>
+    <PermissionName>DestroyCMSWebPartContainer</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>3bd2fd16-b3e8-48fc-b307-12fffd0320b9</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:16:39.7221721+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of web part containers.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>9</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6957</PermissionID>
+    <PermissionDisplayName>Destroy web part layouts</PermissionDisplayName>
+    <PermissionName>DestroyCMSWebPartLayout</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>a3745b94-bc66-4f37-8241-4a7729dac806</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:16:46.7508749+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of web part layouts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>10</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6958</PermissionID>
+    <PermissionDisplayName>Design website</PermissionDisplayName>
+    <PermissionName>Design</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>525dd841-8724-48dc-865a-e22c32c87f87</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:12:10.0302056+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to edit page templates in the Design mode. Also allows to edit web part properties through on-site editing.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6961</PermissionID>
+    <PermissionDisplayName>Destroy form</PermissionDisplayName>
+    <PermissionName>DestroyForm</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>21715dbf-3029-4e73-a938-4e306c03c122</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:37:07.3999276+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to delete the version history of forms.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>9</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6978</PermissionID>
+    <PermissionDisplayName>Read contacts</PermissionDisplayName>
+    <PermissionName>ReadContacts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>1261bb1c-74c5-48c1-b812-3f845b47cdfc</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:14:59.987+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to display Contacts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6979</PermissionID>
+    <PermissionDisplayName>Modify contacts</PermissionDisplayName>
+    <PermissionName>ModifyContacts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>f5affcd7-9fde-48f3-8ecd-32cb39d36082</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:15:49.85+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify Contacts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6980</PermissionID>
+    <PermissionDisplayName>Read accounts</PermissionDisplayName>
+    <PermissionName>ReadAccounts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>58952da8-6ff3-4c52-95b4-966204988f04</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:16:47.197+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read Accounts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6981</PermissionID>
+    <PermissionDisplayName>Modify accounts</PermissionDisplayName>
+    <PermissionName>ModifyAccounts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>4f173d1f-0320-45cb-9aa4-e83568dde6a4</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:17:37.55+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify Accounts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6982</PermissionID>
+    <PermissionDisplayName>Read contact groups</PermissionDisplayName>
+    <PermissionName>ReadContactGroups</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>7a6e4b84-002b-451a-9049-aae235689b0a</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:18:32.81+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read contact groups.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>9</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6983</PermissionID>
+    <PermissionDisplayName>Modify contact groups</PermissionDisplayName>
+    <PermissionName>ModifyContactGroups</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>2b12e3bc-fea3-45ab-8390-9a8f78886c6b</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:18:44.717+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify contact groups.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>11</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6984</PermissionID>
+    <PermissionDisplayName>Read configuration</PermissionDisplayName>
+    <PermissionName>ReadConfiguration</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>aa05daaf-3bf4-40a6-9aec-70427862cb7b</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:18:51.573+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read configuration settings.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>13</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6985</PermissionID>
+    <PermissionDisplayName>Modify configuration</PermissionDisplayName>
+    <PermissionName>ModifyConfiguration</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>0ce967ba-7f53-4da1-9bcd-077a018a966c</PermissionGUID>
+    <PermissionLastModified>2011-04-21T08:18:58.283+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify configuration settings.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>15</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6989</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>113</ResourceID>
+    <PermissionGUID>f5bb5bd8-6017-4510-9c51-4ad1657cb353</PermissionGUID>
+    <PermissionLastModified>2011-04-12T12:04:59.187+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>6990</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>113</ResourceID>
+    <PermissionGUID>d51f7afe-e182-42cc-bf3d-df51f4593f56</PermissionGUID>
+    <PermissionLastModified>2011-04-12T12:05:07.45+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7020</PermissionID>
+    <PermissionDisplayName>Edit SQL Queries</PermissionDisplayName>
+    <PermissionName>EditSQLQueries</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>ffcc6e54-bea5-48f9-962c-c304fab9c32a</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:49:42.7144515+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to edit SQL queries used to retrieve data for reporting components (graphs, tables and values). This permission is needed to create new reports, but it can pose a security risk.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7025</PermissionID>
+    <PermissionDisplayName>Edit SQL Queries</PermissionDisplayName>
+    <PermissionName>EditSQLQueries</PermissionName>
+    <ResourceID>106</ResourceID>
+    <PermissionGUID>ec72846f-757d-4a50-b1a9-3014485cdd43</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:39:28.0199882+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to edit SQL queries in fields which offer this possibility. Can be configured by global administrator only for security reasons.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>10</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7026</PermissionID>
+    <PermissionDisplayName>Read global contacts</PermissionDisplayName>
+    <PermissionName>ReadGlobalContacts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>537c0e06-14f5-4958-844d-7059c6ef0e2c</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:46:25.3757847+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to display global contacts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7027</PermissionID>
+    <PermissionDisplayName>Modify global contacts</PermissionDisplayName>
+    <PermissionName>ModifyGlobalContacts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>81fb1a52-69c8-461a-9e35-938c2401835c</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:46:41.290376+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify global contacts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7028</PermissionID>
+    <PermissionDisplayName>Read global accounts</PermissionDisplayName>
+    <PermissionName>ReadGlobalAccounts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>72ac4859-b218-4d2c-bc2e-c9f0914205dd</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:50:08.7031152+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to read global accounts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7029</PermissionID>
+    <PermissionDisplayName>Modify global accounts</PermissionDisplayName>
+    <PermissionName>ModifyGlobalAccounts</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>dcdca4c1-83b7-458a-afd7-57abf5fe1a8f</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:47:34.4746939+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify global accounts.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>8</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7066</PermissionID>
+    <PermissionDisplayName>Read global contact groups</PermissionDisplayName>
+    <PermissionName>ReadGlobalContactGroups</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>bc452f94-43ec-4e33-aa5b-3c05e3a8ecfc</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:47:45.6908154+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to read global contact groups.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>10</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7067</PermissionID>
+    <PermissionDisplayName>Modify global contact groups</PermissionDisplayName>
+    <PermissionName>ModifyGlobalContactGroups</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>75eb8d1b-f0a1-4f5f-ab01-6f527232e329</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:47:57.0749537+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify global contact groups.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>12</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7068</PermissionID>
+    <PermissionDisplayName>Read global configuration</PermissionDisplayName>
+    <PermissionName>ReadGlobalConfiguration</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>1c32c622-a1fc-45bf-8676-32346f3232c5</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:48:08.9711432+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to read global configuration objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>14</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7069</PermissionID>
+    <PermissionDisplayName>Modify global configuration</PermissionDisplayName>
+    <PermissionName>ModifyGlobalConfiguration</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>1f323f6b-3125-4e3b-a10a-3e6872c421fd</PermissionGUID>
+    <PermissionLastModified>2014-12-17T13:48:28.4180877+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to modify global configuration objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>16</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7077</PermissionID>
+    <PermissionDisplayName>Read activities</PermissionDisplayName>
+    <PermissionName>ReadActivities</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>b3aae30a-f799-4609-bea9-64e025b6d1e9</PermissionGUID>
+    <PermissionLastModified>2011-05-06T15:55:46.997+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read/display activities.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>17</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7078</PermissionID>
+    <PermissionDisplayName>Manage activities</PermissionDisplayName>
+    <PermissionName>ManageActivities</PermissionName>
+    <ResourceID>253</ResourceID>
+    <PermissionGUID>5cdbb0d9-8e75-405d-adb5-c74a23f812c6</PermissionGUID>
+    <PermissionLastModified>2011-05-06T16:13:38.057+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage activities.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>18</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7102</PermissionID>
+    <PermissionDisplayName>Destroy objects</PermissionDisplayName>
+    <PermissionName>DestroyObjects</PermissionName>
+    <ResourceID>259</ResourceID>
+    <PermissionGUID>d8eb644b-8b80-436e-a14a-06836c6c0cdc</PermissionGUID>
+    <PermissionLastModified>2011-05-25T15:33:25.003+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to destroy objects and their version history.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7103</PermissionID>
+    <PermissionDisplayName>Backup objects</PermissionDisplayName>
+    <PermissionName>BackupObjects</PermissionName>
+    <ResourceID>259</ResourceID>
+    <PermissionGUID>062e1f5b-d4af-4964-9bc2-b4d44593a813</PermissionGUID>
+    <PermissionLastModified>2011-05-25T15:33:41.083+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to backup objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7104</PermissionID>
+    <PermissionDisplayName>Restore objects</PermissionDisplayName>
+    <PermissionName>RestoreObjects</PermissionName>
+    <ResourceID>259</ResourceID>
+    <PermissionGUID>4190f89f-043a-4cab-9fe8-22ae7ec39e24</PermissionGUID>
+    <PermissionLastModified>2011-05-25T15:34:43.457+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to restore objects and their version history.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7105</PermissionID>
+    <PermissionDisplayName>Export objects</PermissionDisplayName>
+    <PermissionName>ExportObjects</PermissionName>
+    <ResourceID>259</ResourceID>
+    <PermissionGUID>b26e75f4-9bca-4973-acd6-0662cc2d7436</PermissionGUID>
+    <PermissionLastModified>2011-05-25T15:34:57.573+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to export objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7113</PermissionID>
+    <PermissionDisplayName>Manage user membership</PermissionDisplayName>
+    <PermissionName>ManageUserMembership</PermissionName>
+    <ResourceID>242</ResourceID>
+    <PermissionGUID>ad5fb705-0805-42b2-9ac4-c884e2cbc8e5</PermissionGUID>
+    <PermissionLastModified>2011-06-20T10:04:12.937+02:00</PermissionLastModified>
+    <PermissionDescription>Allows manage user membership.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7118</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>260</ResourceID>
+    <PermissionGUID>f038c43e-15e0-4f5a-9435-0ccab8c683e4</PermissionGUID>
+    <PermissionLastModified>2011-07-27T12:20:42.883+02:00</PermissionLastModified>
+    <PermissionDescription>Required to access category management. This permission is not required to use category selector.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7119</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>260</ResourceID>
+    <PermissionGUID>e20dde80-9ce9-428b-b8a7-dc0af7f1872d</PermissionGUID>
+    <PermissionLastModified>2011-07-01T15:15:14.263+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage site-specific categories.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7120</PermissionID>
+    <PermissionDisplayName>Modify global categories</PermissionDisplayName>
+    <PermissionName>GlobalModify</PermissionName>
+    <ResourceID>260</ResourceID>
+    <PermissionGUID>8c89cc74-cf83-4fd3-b596-3205a4362ff3</PermissionGUID>
+    <PermissionLastModified>2011-07-01T15:18:42.487+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage global categories and delete underlying site-specific categories.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7163</PermissionID>
+    <PermissionDisplayName>Manage campaigns</PermissionDisplayName>
+    <PermissionName>ManageCampaigns</PermissionName>
+    <ResourceID>115</ResourceID>
+    <PermissionGUID>565e753c-8801-4fc4-8f7e-cf293e606a68</PermissionGUID>
+    <PermissionLastModified>2014-01-18T10:15:44.145579+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create, modify and delete campaign tracking objects and their properties.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7164</PermissionID>
+    <PermissionDisplayName>Manage conversions</PermissionDisplayName>
+    <PermissionName>ManageConversions</PermissionName>
+    <ResourceID>115</ResourceID>
+    <PermissionGUID>a5128d39-2a92-43b2-83ee-acad96ec935a</PermissionGUID>
+    <PermissionLastModified>2014-01-18T10:16:01.2612904+01:00</PermissionLastModified>
+    <PermissionDescription>Allows create, modify and delete conversions.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7165</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>261</ResourceID>
+    <PermissionGUID>24504a04-403b-4ba8-875b-9faf1da55d26</PermissionGUID>
+    <PermissionLastModified>2011-08-09T09:27:39.343+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7166</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>261</ResourceID>
+    <PermissionGUID>cebe4a3e-6799-4d2f-b31d-c15bcfbe0a4c</PermissionGUID>
+    <PermissionLastModified>2011-08-09T09:27:51.393+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7541</PermissionID>
+    <PermissionDisplayName>Edit ASCX code</PermissionDisplayName>
+    <PermissionName>EditCode</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>fcc565d6-4efa-4e3c-b744-e2299f7a3eb3</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:14:14.0736087+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to edit the ASPX/ASCX code of page layouts and transformations. Can be assigned only by global administrators for security reasons.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7570</PermissionID>
+    <PermissionDisplayName>Edit SQL code</PermissionDisplayName>
+    <PermissionName>EditSQLCode</PermissionName>
+    <ResourceID>252</ResourceID>
+    <PermissionGUID>0f94d969-578b-4897-b760-7dd2dba30ca3</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:15:34.7606766+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to create and edit queries or edit fields containing SQL code ('Where condition', 'Order by' or 'Columns' properties). Can be assigned only by global administrators for security reasons.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7571</PermissionID>
+    <PermissionDisplayName>Localize strings</PermissionDisplayName>
+    <PermissionName>LocalizeStrings</PermissionName>
+    <ResourceID>264</ResourceID>
+    <PermissionGUID>6eaa6b21-2d36-4c6c-aafa-5becedcf4d35</PermissionGUID>
+    <PermissionLastModified>2011-09-23T13:17:30.067+02:00</PermissionLastModified>
+    <PermissionDescription>If assigned, the user is able to localize names and descriptions of the system objects.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7572</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>265</ResourceID>
+    <PermissionGUID>2b8d1681-2245-47cc-8fdc-63ef15c97b30</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:06:31.0136705+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to view A/B tests configuration.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7573</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>265</ResourceID>
+    <PermissionGUID>101569d0-5388-478b-b63d-15f28a5b6058</PermissionGUID>
+    <PermissionLastModified>2014-01-17T15:06:48.8074497+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage A/B tests.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7574</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>266</ResourceID>
+    <PermissionGUID>a4fc1b10-fb3c-45bb-8704-4015affbfc62</PermissionGUID>
+    <PermissionLastModified>2011-10-05T11:26:28.063+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7575</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>266</ResourceID>
+    <PermissionGUID>841a894f-d3bb-4fc0-8ba1-8d688a4e2ab1</PermissionGUID>
+    <PermissionLastModified>2011-10-05T11:26:38.857+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7576</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>267</ResourceID>
+    <PermissionGUID>efae7a05-8504-432e-ad3a-158413018928</PermissionGUID>
+    <PermissionLastModified>2011-10-05T11:30:30.613+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7577</PermissionID>
+    <PermissionDisplayName>Manage</PermissionDisplayName>
+    <PermissionName>Manage</PermissionName>
+    <ResourceID>267</ResourceID>
+    <PermissionGUID>071c873c-0f6e-4811-861b-9094664d28a7</PermissionGUID>
+    <PermissionLastModified>2014-08-15T15:11:54.4925179+02:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>7888</PermissionID>
+    <PermissionDisplayName>Submit for translation</PermissionDisplayName>
+    <PermissionName>SubmitForTranslation</PermissionName>
+    <ResourceID>54</ResourceID>
+    <PermissionGUID>161c56cb-f21a-4cd7-a90b-24c52dbf4f8a</PermissionGUID>
+    <PermissionLastModified>2014-06-11T12:57:54.6868964+02:00</PermissionLastModified>
+    <PermissionDescription>{$content.permissionSubmitForTranslationDesc$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>10</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8046</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>271</ResourceID>
+    <PermissionGUID>c24614f9-d840-4f73-bd32-c7bd605ab2ae</PermissionGUID>
+    <PermissionLastModified>2012-07-26T15:14:27.707+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8047</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>271</ResourceID>
+    <PermissionGUID>b449fadf-52d4-4613-91a5-f2689b71539c</PermissionGUID>
+    <PermissionLastModified>2012-07-26T13:19:39.023+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8096</PermissionID>
+    <PermissionDisplayName>Create room from live site</PermissionDisplayName>
+    <PermissionName>CreateRoomsFromLiveSite</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>139465db-e606-4351-b289-6375a9131a16</PermissionGUID>
+    <PermissionLastModified>2011-09-16T09:43:30.547+02:00</PermissionLastModified>
+    <PermissionDescription>User with this permission will be able to create chat rooms from the live site.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8097</PermissionID>
+    <PermissionDisplayName>Enter support</PermissionDisplayName>
+    <PermissionName>EnterSupport</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>4a626881-9275-4168-8eab-2c7a0a242a9c</PermissionGUID>
+    <PermissionLastModified>2012-07-29T11:30:57.69+02:00</PermissionLastModified>
+    <PermissionDescription>Allows user to enter support chat as support engineer.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8098</PermissionID>
+    <PermissionDisplayName>Manage rooms</PermissionDisplayName>
+    <PermissionName>ManageRooms</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>da3c3f76-cc18-4278-abc1-6d0a9c15fbdc</PermissionGUID>
+    <PermissionLastModified>2012-07-29T11:27:59.71+02:00</PermissionLastModified>
+    <PermissionDescription>User with this permission will be able to manage rooms and have administrative rights in all rooms on the live site.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8099</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>e48b6c1b-48ff-4f63-9a4d-4ddce9ca8a06</PermissionGUID>
+    <PermissionLastModified>2012-07-29T11:31:42.193+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.chat.modify$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8100</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>37dd77ec-12a9-4bbe-ab40-20185bdfbfd0</PermissionGUID>
+    <PermissionLastModified>2012-07-29T11:30:32.747+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.chat.read$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8108</PermissionID>
+    <PermissionDisplayName>Global read</PermissionDisplayName>
+    <PermissionName>GlobalRead</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>d25c00a0-4c81-4124-95ee-93beb84a92cd</PermissionGUID>
+    <PermissionLastModified>2012-07-19T14:40:49.707+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.chat.globalread$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8109</PermissionID>
+    <PermissionDisplayName>Global modify</PermissionDisplayName>
+    <PermissionName>GlobalModify</PermissionName>
+    <ResourceID>272</ResourceID>
+    <PermissionGUID>b6b47559-928b-46e3-baac-8f562d310466</PermissionGUID>
+    <PermissionLastModified>2012-07-29T11:24:52.643+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.chat.globalmodify$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>true</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>8862</PermissionID>
+    <PermissionDisplayName>Subscribe</PermissionDisplayName>
+    <PermissionName>Subscribe</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>97b3c8ac-f81c-430e-972f-e730bf61f64e</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:49:59.6441443+01:00</PermissionLastModified>
+    <PermissionDescription>Allows users to subscribe to reports.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9007</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>286</ResourceID>
+    <PermissionGUID>0707f0f0-2d51-4e11-aa18-58034bba3981</PermissionGUID>
+    <PermissionLastModified>2012-06-13T08:14:43.3+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9008</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>286</ResourceID>
+    <PermissionGUID>88a0cc44-a20f-4363-8eb5-912418fa0442</PermissionGUID>
+    <PermissionLastModified>2012-06-13T08:15:03.113+02:00</PermissionLastModified>
+    <PermissionDescription />
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9253</PermissionID>
+    <PermissionDisplayName>Manage processes</PermissionDisplayName>
+    <PermissionName>ManageProcesses</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>b89aace0-e905-43db-b9fd-c4721d77ad44</PermissionGUID>
+    <PermissionLastModified>2012-07-19T14:14:47.323+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to manage automation processes.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9262</PermissionID>
+    <PermissionDisplayName>Start process</PermissionDisplayName>
+    <PermissionName>StartProcess</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>b8f63313-b45e-4c66-87f3-2ec76b6a5432</PermissionGUID>
+    <PermissionLastModified>2012-07-19T14:14:35.843+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to start automation processes.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9263</PermissionID>
+    <PermissionDisplayName>Remove process</PermissionDisplayName>
+    <PermissionName>RemoveProcess</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>ed460898-21bc-4db8-94ea-621d8a2f8987</PermissionGUID>
+    <PermissionLastModified>2012-07-20T12:01:13.48+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to remove automation processes.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9272</PermissionID>
+    <PermissionDisplayName>Global read</PermissionDisplayName>
+    <PermissionName>GlobalRead</PermissionName>
+    <ResourceID>271</ResourceID>
+    <PermissionGUID>0328bb0d-d314-43e7-9df2-b6c8ebe63d3e</PermissionGUID>
+    <PermissionLastModified>2012-07-30T16:00:21.953+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.bannermanagement.globalread$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9273</PermissionID>
+    <PermissionDisplayName>Global modify</PermissionDisplayName>
+    <PermissionName>GlobalModify</PermissionName>
+    <ResourceID>271</ResourceID>
+    <PermissionGUID>895fd5e3-e0c1-428d-a046-eeabd43e37a8</PermissionGUID>
+    <PermissionLastModified>2012-07-30T16:00:27.26+02:00</PermissionLastModified>
+    <PermissionDescription>{$permissiondescription.bannermanagement.globalmodify$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9305</PermissionID>
+    <PermissionDisplayName>Set connection string</PermissionDisplayName>
+    <PermissionName>SetConnectionString</PermissionName>
+    <ResourceID>114</ResourceID>
+    <PermissionGUID>5a8e437f-477d-4d2a-9bed-c921a73818dd</PermissionGUID>
+    <PermissionLastModified>2014-01-18T09:51:27.199899+01:00</PermissionLastModified>
+    <PermissionDescription>Allows to change the connection string of reports, which is used to access the database when loading data.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9398</PermissionID>
+    <PermissionDisplayName>Move to specific step</PermissionDisplayName>
+    <PermissionName>MoveToSpecificStep</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>7111eada-abac-45ba-b85c-be803d78d8d5</PermissionGUID>
+    <PermissionLastModified>2012-08-30T12:02:51.94+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to move process to specific step.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>7</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>9519</PermissionID>
+    <PermissionDisplayName>Read processes</PermissionDisplayName>
+    <PermissionName>ReadProcesses</PermissionName>
+    <ResourceID>196</ResourceID>
+    <PermissionGUID>1c9329f9-e834-4237-9090-044a407b8963</PermissionGUID>
+    <PermissionLastModified>2012-09-25T11:16:14.88+02:00</PermissionLastModified>
+    <PermissionDescription>Allows to read automation processes.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10032</PermissionID>
+    <PermissionDisplayName>{$permissionnames.read$}</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>350</ResourceID>
+    <PermissionGUID>5cd17e50-d4db-4752-9e56-2c71dd8fdc8e</PermissionGUID>
+    <PermissionLastModified>2013-05-29T16:28:11.527+02:00</PermissionLastModified>
+    <PermissionDescription>{$sm.permission.read.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10033</PermissionID>
+    <PermissionDisplayName>{$permissionnames.modify$}</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>350</ResourceID>
+    <PermissionGUID>9359a1ab-6000-434f-bc20-cba66b183d51</PermissionGUID>
+    <PermissionLastModified>2013-05-29T16:29:54.207+02:00</PermissionLastModified>
+    <PermissionDescription>{$sm.permission.modify.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10034</PermissionID>
+    <PermissionDisplayName>{$sm.permission.modifyapplications$}</PermissionDisplayName>
+    <PermissionName>ModifyApplications</PermissionName>
+    <ResourceID>350</ResourceID>
+    <PermissionGUID>fb9a75fe-04ba-4ec4-92aa-05632e1637bd</PermissionGUID>
+    <PermissionLastModified>2013-05-29T16:32:39.48+02:00</PermissionLastModified>
+    <PermissionDescription>{$sm.permission.modifyapplications.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>5</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10035</PermissionID>
+    <PermissionDisplayName>{$sm.permission.modifyaccounts$}</PermissionDisplayName>
+    <PermissionName>ModifyAccounts</PermissionName>
+    <ResourceID>350</ResourceID>
+    <PermissionGUID>76d90c76-3d5c-4aae-805f-35d360cafab8</PermissionGUID>
+    <PermissionLastModified>2013-05-29T16:35:09.313+02:00</PermissionLastModified>
+    <PermissionDescription>{$sm.permission.modifyaccounts.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>4</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10036</PermissionID>
+    <PermissionDisplayName>{$sm.permission.modifyposts$}</PermissionDisplayName>
+    <PermissionName>ModifyPosts</PermissionName>
+    <ResourceID>350</ResourceID>
+    <PermissionGUID>94baefc0-d95d-4fd4-be2b-b90ad025f89b</PermissionGUID>
+    <PermissionLastModified>2013-05-29T16:35:58.38+02:00</PermissionLastModified>
+    <PermissionDescription>{$sm.permission.modifyposts.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>3</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10447</PermissionID>
+    <PermissionDisplayName>Read</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>361</ResourceID>
+    <PermissionGUID>b8306dd9-4ac7-4752-8cc8-2625bf31295e</PermissionGUID>
+    <PermissionLastModified>2013-11-14T09:49:24.4578263+01:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>10448</PermissionID>
+    <PermissionDisplayName>Modify</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>361</ResourceID>
+    <PermissionGUID>c9898b88-1565-411a-9129-72911482d75b</PermissionGUID>
+    <PermissionLastModified>2013-11-14T15:12:01.3220093+01:00</PermissionLastModified>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>11779</PermissionID>
+    <PermissionDisplayName>{$permissionnames.read$}</PermissionDisplayName>
+    <PermissionName>Read</PermissionName>
+    <ResourceID>394</ResourceID>
+    <PermissionGUID>062fb1d7-ff67-4395-b4df-0f18c77ebf55</PermissionGUID>
+    <PermissionLastModified>2014-04-08T16:18:57.5631203+02:00</PermissionLastModified>
+    <PermissionDescription>{$sharepoint.permission.read.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>1</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>11780</PermissionID>
+    <PermissionDisplayName>{$permissionnames.modify$}</PermissionDisplayName>
+    <PermissionName>Modify</PermissionName>
+    <ResourceID>394</ResourceID>
+    <PermissionGUID>9ebf8bfd-6887-4058-b753-6015150b0947</PermissionGUID>
+    <PermissionLastModified>2014-04-08T16:23:01.604522+02:00</PermissionLastModified>
+    <PermissionDescription>{$sharepoint.permission.modify.description$}</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>2</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+  <CMS_Permission>
+    <PermissionID>13828</PermissionID>
+    <PermissionDisplayName>Manage task groups</PermissionDisplayName>
+    <PermissionName>ManageTaskGroups</PermissionName>
+    <ResourceID>110</ResourceID>
+    <PermissionGUID>e0bdfbc5-288b-4a36-8f04-88d2ef120760</PermissionGUID>
+    <PermissionLastModified>2015-10-22T09:12:32.2141976+02:00</PermissionLastModified>
+    <PermissionDescription>Allows creating, editing and deleting of staging task groups (globally for all sites). NOT required to switch to the context of existing task groups in the administration interface header.</PermissionDescription>
+    <PermissionDisplayInMatrix>true</PermissionDisplayInMatrix>
+    <PermissionOrder>6</PermissionOrder>
+    <PermissionEditableByGlobalAdmin>false</PermissionEditableByGlobalAdmin>
+  </CMS_Permission>
+</NewDataSet>

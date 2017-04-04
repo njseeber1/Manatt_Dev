@@ -1,0 +1,30 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[CMS_RoleUIElement](
+	[RoleID] [int] NOT NULL,
+	[ElementID] [int] NOT NULL,
+ CONSTRAINT [PK_CMS_RoleUIElement] PRIMARY KEY CLUSTERED 
+(
+	[RoleID] ASC,
+	[ElementID] ASC
+)
+)
+
+GO
+CREATE NONCLUSTERED INDEX [IX_CMS_RoleUIElement_ElementID] ON [dbo].[CMS_RoleUIElement]
+(
+	[ElementID] ASC
+)
+GO
+ALTER TABLE [dbo].[CMS_RoleUIElement]  WITH CHECK ADD  CONSTRAINT [FK_CMS_RoleUIElement_ElementID_CMS_UIElement] FOREIGN KEY([ElementID])
+REFERENCES [dbo].[CMS_UIElement] ([ElementID])
+GO
+ALTER TABLE [dbo].[CMS_RoleUIElement] CHECK CONSTRAINT [FK_CMS_RoleUIElement_ElementID_CMS_UIElement]
+GO
+ALTER TABLE [dbo].[CMS_RoleUIElement]  WITH CHECK ADD  CONSTRAINT [FK_CMS_RoleUIElement_RoleID_CMS_Role] FOREIGN KEY([RoleID])
+REFERENCES [dbo].[CMS_Role] ([RoleID])
+GO
+ALTER TABLE [dbo].[CMS_RoleUIElement] CHECK CONSTRAINT [FK_CMS_RoleUIElement_RoleID_CMS_Role]
+GO

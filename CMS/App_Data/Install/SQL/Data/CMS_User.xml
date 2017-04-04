@@ -1,0 +1,93 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_User" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="UserID" type="xs:int" minOccurs="0" />
+                <xs:element name="UserName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FullName" type="xs:string" minOccurs="0" />
+                <xs:element name="Email" type="xs:string" minOccurs="0" />
+                <xs:element name="UserPassword" type="xs:string" minOccurs="0" />
+                <xs:element name="PreferredCultureCode" type="xs:string" minOccurs="0" />
+                <xs:element name="PreferredUICultureCode" type="xs:string" minOccurs="0" />
+                <xs:element name="UserEnabled" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserIsEditor" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserIsGlobalAdministrator" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserIsExternal" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserPasswordFormat" type="xs:string" minOccurs="0" />
+                <xs:element name="UserCreated" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LastLogon" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="UserStartingAliasPath" type="xs:string" minOccurs="0" />
+                <xs:element name="UserGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="UserLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="UserIsHidden" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserVisibility" type="xs:string" minOccurs="0" />
+                <xs:element name="UserIsDomain" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserHasAllowedCultures" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserSiteManagerDisabled" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UserMFRequired" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_User>
+    <UserID>53</UserID>
+    <UserName>administrator</UserName>
+    <FirstName>Global</FirstName>
+    <MiddleName />
+    <LastName>Administrator</LastName>
+    <FullName>Global Administrator</FullName>
+    <Email>administrator@localhost.local</Email>
+    <UserPassword />
+    <PreferredCultureCode />
+    <PreferredUICultureCode>en-US</PreferredUICultureCode>
+    <UserEnabled>true</UserEnabled>
+    <UserIsEditor>false</UserIsEditor>
+    <UserIsGlobalAdministrator>true</UserIsGlobalAdministrator>
+    <UserIsExternal>false</UserIsExternal>
+    <UserPasswordFormat>SHA2SALT</UserPasswordFormat>
+    <LastLogon>2016-02-02T18:28:58.9291903+01:00</LastLogon>
+    <UserStartingAliasPath />
+    <UserGUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</UserGUID>
+    <UserLastModified>2016-02-02T18:34:05.4971903+01:00</UserLastModified>
+    <UserIsHidden>true</UserIsHidden>
+    <UserVisibility />
+    <UserIsDomain>false</UserIsDomain>
+    <UserHasAllowedCultures>true</UserHasAllowedCultures>
+    <UserSiteManagerDisabled>false</UserSiteManagerDisabled>
+    <UserMFRequired>false</UserMFRequired>
+  </CMS_User>
+  <CMS_User>
+    <UserID>65</UserID>
+    <UserName>public</UserName>
+    <FirstName />
+    <MiddleName />
+    <LastName />
+    <FullName>Public Anonymous User</FullName>
+    <Email />
+    <UserPassword />
+    <PreferredCultureCode>en-US</PreferredCultureCode>
+    <PreferredUICultureCode>en-us</PreferredUICultureCode>
+    <UserEnabled>true</UserEnabled>
+    <UserIsEditor>false</UserIsEditor>
+    <UserIsGlobalAdministrator>false</UserIsGlobalAdministrator>
+    <UserIsExternal>false</UserIsExternal>
+    <UserPasswordFormat>SHA1</UserPasswordFormat>
+    <UserStartingAliasPath />
+    <UserGUID>3758b9b5-045c-4b7d-b020-80f9b068d990</UserGUID>
+    <UserLastModified>2015-02-03T12:28:59.3273145+01:00</UserLastModified>
+    <UserIsHidden>true</UserIsHidden>
+    <UserVisibility />
+    <UserIsDomain>false</UserIsDomain>
+    <UserSiteManagerDisabled>false</UserSiteManagerDisabled>
+  </CMS_User>
+</NewDataSet>

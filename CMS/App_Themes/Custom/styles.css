@@ -1,0 +1,25 @@
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Reset");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=ui");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Footer");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Jumbotron");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Modals");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Mosaic");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Navs");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Profile");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Articles");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Basicpage");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Search");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Print");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Colors");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=New");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Fonts");
+@import url("/CMSPages/GetResource.ashx?stylesheetname=Responsive");
+/* COLORS
+
+Logo Yellow : rgba(293,171,0) / #efab00
+Litigate Blue : #0095c4
+Blue Light : #00909f
+Navy Blue : #0f3b52
+Healthy Green : #7ab800
+Orange : #e47f2d
+*/

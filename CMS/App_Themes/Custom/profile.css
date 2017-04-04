@@ -1,0 +1,236 @@
+/* PROFILE [START] */
+.profile-header {
+	margin-bottom:1em;
+	margin-top:1em;
+}
+section.profile .content h2 {
+	margin-top:1.2em;
+	margin-bottom:.7em;
+}
+.articles.profile article:not(.related-content) {
+	max-width: 999px;
+/*	font-size: 0.9em;*/
+}
+.profile .related-content {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 16px;
+	float: none;
+	clear: both;
+}
+.profile .related-content .slide h3, .profile .related-content .no-slider h3 {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	max-width: 35%;
+}
+.profile .related-content .no-slider, .profile .related-content .item {
+	text-align: center;
+	margin-bottom: 2.4em;
+}
+.profile .related-content .item img{
+     margin:10px 16px 10px 0;
+}
+.profile .related-content .item h3{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    max-width: 35%;
+}
+.profile .related-content .no-slider img,
+.profile .carousel-inner > .item img {
+	margin-right: 16px;
+	max-height: 130px;
+}
+.profile .related-content .no-slider img + span,
+.profile .carousel-inner > .item img + span {
+/*	font-size: 22px;*/
+}
+.profile .carousel-inner > .item {
+	padding-top:3em;
+}
+/*
+.profile ~ aside#more {
+	padding-top:0;
+}
+*/
+.articles.profile .carousel-inner, .profile .carousel-inner > .item {
+	min-height:230px;
+}
+#profile .profile-detail .column {
+	display: block;
+
+}
+#profile .profile-detail #info {
+	margin-left: 0;
+	padding-left: 0;
+}
+#profile .profile-detail [class*='col-'] .column,
+#profile .profile-detail ul, #profile .profile-detail ol,
+#profile .profile-detail ul li[class*='col-'], #profile .profile-detail ol li[class*='col-'] {
+/*	font-size: 0.987em;*/
+	padding: 0; margin: 0;
+}
+#profile .profile-detail .contact ul .location:first-of-type {
+	margin-top: 2em;
+}
+#profile .profile-detail .contact ul > .location:nth-last-child(-1n-1) {
+	/*margin-top: 2em;*/
+}
+#profile .profile-detail .columns header {
+	margin-left: 0;
+	padding-left: 0;
+}
+#profile .profile-detail .column > header h3 {
+/*	font-size: 1.4em;*/
+	line-height: 0.7;
+}
+#profile .profile-detail .column > header h4 {
+/*	font-size: 14px!important;*/
+	margin-bottom: 0;
+/*	font-weight: bold;*/
+}
+#profile .profile-detail .column > header {
+	margin-bottom: 0.9em!important;
+}
+#profile .profile-detail .column .border-top {
+	border-top: 2px solid #000;
+}
+#profile .profile-detail .contact,
+#profile .profile-detail #bar {
+	border-top: 2px solid #000;
+}
+#profile .profile-detail .contact {
+	padding: 0 0 0.75em 0!important;
+/*	margin: 0 0 0.75em 0!important;*/
+}
+#profile .profile-detail .contact + .contact {
+	margin-left: 0!important;
+	padding-left: 0!important;
+}
+
+/*
+#profile .profile-detail .contact ul li a[href^="/"] {
+	color: #efab00!important;
+}
+*/
+/*
+#profile .profile-detail header {
+	margin: 0;
+	padding: 0;
+}
+*/
+#profile .profile-detail div#info {
+  padding-right:0;
+}
+#profile .profile-detail div#info > div {
+  box-sizing: border-box;
+}
+
+#profile .profile-detail div#info header,
+#profile .profile-detail div#info  > div[class*="col-"] {
+	margin: 0;
+	padding: 0;
+}
+#profile .profile-detail div#info  > div[class*="col-"] > div[class*="col-"] {
+	padding: 0;
+}
+/*
+#profile .profile-detail div#info div.center-block {
+	margin-left: 0;
+}
+#profile .profile-detail #info #education {
+	margin-left: 16px;
+}
+*/
+
+#profile .profile-detail .contact > div {
+/*	border-top: 2px solid #000;*/
+	padding-bottom: 0.5em!important;
+	margin: 0!important;
+}
+/*#profile .profile-detail .contact > div:only-of-type {
+    min-height: 200px;
+}*/
+#profile .profile-detail .related > div,
+#profile .profile-detail .related > div + div,
+#profile .profile-detail .related > div,
+#profile .profile-detail #education,
+#profile .profile-detail #languages {
+	border-top: 1px solid #ddd;
+	margin-top: 8px!important;
+    padding-top: 8px!important;
+}
+#profile .profile-detail div > ul li {
+	margin-bottom: 0.9em!important;
+	padding-right: 16px;
+}
+#profile .profile-detail div>ul li:only-child {
+    min-height: 48px;
+}
+#profile .profile-detail .no-header {
+	margin-top: 2.6em;
+	margin-bottom: 1em;
+}
+#profile .profile-detail a {
+	color: #000;
+}
+#profile .profile-detail h5 {
+	font-weight: bold;
+}
+#profile .profile-detail ul.languages li {
+	float: left;
+}
+#profile .profile-detail .column * {
+	padding: 0;
+/*	font-size: 0.995em;*/
+	line-height: 1.2;
+}
+#profile .profile-detail .column h5 {
+	margin-bottom: 0.7em;
+}
+#profile .profile-detail .column li:only-of-type {
+	margin: 0;
+	line-height: 1;
+}
+#profile .profile-detail #education ul {
+	margin-bottom: 1em;
+}
+#profile .profile-detail #related {
+	margin-top: 1.2em;
+}
+
+/*to fix texxt overflow issue on profile pages */
+#profile-text p {
+    width: 100%;
+    white-space: pre-wrap;
+    /*overflow: auto;*/
+}
+
+.profile .related-content ul li p {
+    width: 100%;
+    /*overflow: visible;*/
+    
+}
+
+.profile-text {
+   /*word-wrap: normal !important;*/
+}
+
+.newsfeed {
+    display: flex;
+    flex-wrap: wrap;
+    /*word-wrap: normal !important;*/
+}
+
+.newsfeed p {
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    flex: 1;
+    /*word-wrap: normal !important;*/
+}
+
+
+
+/* PROFILE [END] */

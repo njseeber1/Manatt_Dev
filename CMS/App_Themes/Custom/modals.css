@@ -1,0 +1,411 @@
+/* SHARE MODAL [START] */
+.share {
+	padding: 1em;
+}
+
+.share h5 {
+/*	font-size: 0.85em;*/
+	margin: 0 0 0 0 !important;
+	text-transform: capitalize;
+}
+
+.share h5,
+.share ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.share ul li {
+	display: inline-block;
+	vertical-align: baseline;
+    margin-left: 5px;
+}
+
+.share ul li a {
+	color: #efab00;
+}
+/* SHARE MODAL [END] */
+
+/* VIDEO RULES [START] */
+.video .video-container .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	font-size: 4em;
+	text-shadow: 0 0 13px rgba(0,0,0,1);
+	opacity: 0.6;
+	z-index: 999;
+}
+
+.video .video-container .btn:hover,
+.video .video-container .btn:focus {
+	opacity: 1;
+}
+
+.mosaic .video .fa-stack.vide-btn {
+	position: absolute;
+	z-index: 9;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.mosaic .video .fa-stack.vide-btn .fa-stack-2x {
+	top: 50%;
+	left: 0%;
+	-webkit-transform: translate(-200%,-50%);
+	-moz-transform: translate(-200%,-50%);
+	-o-transform: translate(-200%,-50%);
+	transform: translate(-200%,-50%);
+}
+
+.mosaic .video .vide-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	/*border: 4px solid #fff;*/
+	border: 3px solid #fff;
+	border-radius: 5em;
+	/*padding: 1.6em 2em;*/
+	padding: 9px 14px;
+	z-index: 4;
+	cursor: pointer;
+}
+
+.articles article .video .caption,
+.articles article figure figcaption {
+	background-color: #f6f6f6;
+	padding: 1em;
+}
+/* VIDEO RULES [END] */
+
+/* CTA [START] */
+#about-cta {
+	padding-top: 60px;
+	padding-bottom: 68px;
+	text-align: center;
+}
+
+#about-cta h2 {
+	margin: 11px 0 0 0;
+}
+
+#about-cta p {
+    font-size: 16px!important;
+    width: 70%;
+    margin: 3px auto 6px;
+}
+
+#about-cta .btn {
+    line-height: 1;
+    margin: 11px 0;
+    /*padding: 11px 52px;*/
+		/*padding: 12px 48px;*/
+		width: 165px;
+    height: 40px;
+    line-height: 1.62857143;
+    text-transform: capitalize;
+}
+/* CTA [END] */
+
+/* PEOPLE LIST MODAL [START] */
+.people-list {
+	margin: 1em 1.9em 0;
+	padding: 0 26px;
+}
+#more .collapse .people-list {
+	margin: 0;
+}
+.people-list > div {
+	padding-left: 0;
+	padding-right: 0;
+}
+.people-list dt, .people-list dd {
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+}
+.people-list hr {
+	border-color: #333;
+	border-width: 1px;
+	margin: 0 0 0.8em 0;
+}
+.people-list .list-container {
+	position: relative;
+	padding: 0.3em 0 0 0;
+}
+.people-list dl {
+	max-width: 100%;
+	margin: 8px 0;
+	padding: 0;
+}
+.people-list dt, .people-list dd {
+	margin: 0;
+	padding: 0;
+}
+.mosaic ~ .people-list:not(.stacked) dt {
+	width: 34.043%;
+}
+/*#insights .people-list:not(.stacked) dt {
+	width: 34.043%;
+}
+.articles#insights section.people-list dl:nth-child(even) {
+    margin-left: 0;
+}*/
+.people-list.stacked dt, .people-list.stacked dd {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.people-list .connect {
+	margin-top: 0.5em;
+}
+
+.people-list:not(.stacked) dl {
+	background: #f6f6f6;
+}
+
+.people-list img {
+	width: 100%;
+	height: auto;
+}
+
+.people-list dl.single {
+	display: block;
+	float: none;
+}
+.people-list dl.col-md-6:nth-child(even),
+.people-list dl.col-md-6:last-of-type {
+	margin-right: 0;
+}
+
+.people-list:not(.stacked) dl .info {
+	padding: 16px;
+	width: 58%;
+}
+.mosaic ~ .people-list:not(.stacked) dl .info .connect {
+	width: 100%;
+	max-width: none;
+}
+/*
+.people-list:not(.stacked) dl .info > h4 {
+	margin-top: 0;
+}
+*/
+.people-list dl .info p {
+	margin: 0.1em 0 0;
+	padding: 0;
+}
+.people-list dl .info p.links {
+	margin: 1em 0;
+}
+.people-list dl .info p.links a {
+	color: #d09827;
+}
+.people-list dl .info p.links a::after {
+	content: '|';
+	padding: 0 0.5em 0 0.8em;
+}
+.people-list dl .info p.links a:last-of-type::after {
+	content: '';
+	padding: 0;
+}
+.articles .story .story-image figcaption ul,
+.people-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.articles .story .story-image figcaption ul li,
+.people-list dl ul li {
+	display: inline-block;
+}
+.articles .story .story-image figcaption ul li::after,
+.people-list dl ul li::after,
+.people-list dl ul li a{
+	content: '|';
+	color: #337ab7;
+}
+.articles .story .story-image figcaption ul li:last-of-type::after,
+.people-list dl ul li:last-of-type::after {
+	content: ' ';
+}
+
+/*
+#peopleSlider > ul {
+  width: 5000% !important;
+}
+*/
+.people-list ul li a {
+	font-weight: 400;
+}
+.people-list.stacked ul:not(.connect) > li {
+	margin: 0 26px 0 0;
+	max-width: 324px;
+	padding: 0;
+}
+.mosaic ~ .people-list dd {
+    transform: translateY(0)!important;
+    top: 0;
+}
+.mosaic ~ .people-list dd h4 {
+	margin-top: 0;
+}
+/* PEOPLE LIST MODAL VERTICAL VERSION */
+.people-list.stacked {
+	position: relative;
+	margin: 1em 0 0;
+}
+
+.people-list.stacked header {
+	max-width: 1025px;
+	margin: 1.3em auto 1.5em;
+}
+.people-list.stacked div[class*='col']:not(.wrapper) {
+	margin: 0 auto;
+	padding: 0;
+	float: none;
+    max-width:1200px;
+}
+.people-list.stacked div.wrapper {
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+  max-width:1025px;
+}
+
+.people-list.stacked dt, .people-list.stacked dd {
+	display: block;
+	float: none;
+}
+
+.people-list.stacked dl {
+	float: none;
+	margin-bottom: 1.45%;
+	margin-right: 1.1em;
+	display: inline-block;
+}
+
+.people-list.stacked dl:last-of-type {
+	margin-right: 0;
+}
+
+.people-list.stacked .carousel-inner .active.left  { left: -33%; }
+.people-list.stacked .carousel-inner .active.right { left: 33%;              }
+.people-list.stacked .carousel-inner .next         { left: 33%               }
+.people-list.stacked .carousel-inner .prev         { left: -33%              }
+.people-list.stacked .carousel-control.left        { background-image: none; margin-left: -2.8em; width: auto; }
+.people-list.stacked .carousel-control.right       { background-image: none; margin-right: -2.8em; width: auto; }
+
+.people-list.stacked [class*='slide'] .glyphicon-chevron-right::before,
+.people-list.stacked [class*='slide'] .glyphicon-chevron-left::before {
+	display: inline-block;
+	font: normal normal normal 2em/1 FontAwesome;
+	text-rendering: auto;
+	color: #fff;
+}
+.people-list.stacked .carousel-control {
+	opacity: 1;
+}
+.people-list.stacked .controls {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.people-list.stacked .controls li {
+	position: absolute;
+	cursor: pointer;
+}
+
+.people-list.stacked .controls li.prev {
+	left: 0;
+}
+
+.people-list.stacked .controls li.next {
+	right: 0;
+}
+.people-list.stacked div dl {
+	background: #f6f6f6;
+	width: 100%;
+	vertical-align: top;
+}
+
+.people-list.stacked dl {
+	text-align: left;
+}
+
+.people-list.stacked .controls a {
+	appearance: none;
+	-webkit-appearance: none;
+	background: #efab00;
+	border: none;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	padding: 0.15em 1em;
+}
+.people-list.stacked .controls a.next-slide {
+	padding: 8px 26px 8px 29px;
+}
+.people-list.stacked .controls a.prev-slide {
+	padding: 8px 29px 8px 26px;
+}
+.people-list.stacked .controls a,
+.people-list.stacked .controls a:active,
+.people-list.stacked .controls a:hover,
+.people-list.stacked .controls a:focus {
+	text-decoration: none;
+}
+.people-list.stacked .controls a::before {
+	font-family: 'FontAwesome';
+	font-size: 2em;
+}
+.people-list.stacked .controls a.prev-slide::before {
+	content: '\f104';
+}
+.people-list.stacked .controls a.next-slide::before {
+	content: '\f105';
+}
+
+.people-list.stacked .controls a.prev-slide {
+	left: 0;
+}
+
+.people-list.stacked .controls a.next-slide {
+	right: 0;
+}
+
+.people-list.stacked dl .info {
+	padding: 1.1em 1.3em 1.4em;
+}
+.people-list.stacked dl .info p.detail {
+	margin: 0.7em 0 0;
+	line-height: 1.5;
+}
+
+.people-list.stacked ul.connect li a {
+	color: #0095c4;
+}
+
+.people-list.stacked .name {
+	margin: 0;
+}
+.people-list .lightblue a, .people-list .lightblue {
+	color:#2f626e;}
+.people-list .name.lightblue {
+    font-size: 18px;
+}
+/* PEOPLE LIST MODAL [END] */

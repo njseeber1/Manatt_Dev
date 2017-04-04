@@ -1,0 +1,921 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Reporting_ReportValue" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ValueID" type="xs:int" minOccurs="0" />
+                <xs:element name="ValueName" type="xs:string" minOccurs="0" />
+                <xs:element name="ValueDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="ValueQuery" type="xs:string" minOccurs="0" />
+                <xs:element name="ValueQueryIsStoredProcedure" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ValueFormatString" type="xs:string" minOccurs="0" />
+                <xs:element name="ValueReportID" type="xs:int" minOccurs="0" />
+                <xs:element name="ValueGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="ValueLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ValueSettings" type="xs:string" minOccurs="0" />
+                <xs:element name="ValueConnectionString" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Reporting_ReportValue>
+    <ValueID>3</ValueID>
+    <ValueName>UserCount</ValueName>
+    <ValueDisplayName>UserCount</ValueDisplayName>
+    <ValueQuery>select count(userid) from CMS_User</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>142</ValueReportID>
+    <ValueGUID>748d38d8-9f62-41df-b229-80280f94072b</ValueGUID>
+    <ValueLastModified>2012-03-23T11:16:04.423+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>28</ValueID>
+    <ValueName>DocumentCount</ValueName>
+    <ValueDisplayName>PageCount</ValueDisplayName>
+    <ValueQuery>SELECT Count(NodeId)
+FROM View_CMS_Tree_Joined
+WHERE (@OnlyPublished = 0 OR ([DocumentCanBePublished] = @OnlyPublished AND ([DocumentPublishFrom] IS NULL OR [DocumentPublishFrom] &lt;= @CMSContextCurrentTime) AND ([DocumentPublishTo] IS NULL OR [DocumentPublishTo] &gt;= @CMSContextCurrentTime)))  
+AND (NodeSiteID = @CMSContextCurrentSiteID)
+AND (@ModifiedFrom IS NULL OR DocumentModifiedWhen &gt;= @ModifiedFrom)
+AND (@ModifiedTo IS NULL OR DocumentModifiedWhen &lt; @ModifiedTo) 
+AND (NodeAliasPath LIKE @path)
+AND (@Language IS NULL OR @Language = '-1' OR DocumentCulture = @Language)
+AND (@name IS NULL OR DocumentName LIKE '%'+@name+'%')</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>186</ValueReportID>
+    <ValueGUID>526030e0-b87b-4f0c-bc2a-54d12e485a38</ValueGUID>
+    <ValueLastModified>2015-11-03T14:50:55.4617822+01:00</ValueLastModified>
+    <ValueSettings>&lt;CustomData&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/CustomData&gt;</ValueSettings>
+    <ValueConnectionString />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>88</ValueID>
+    <ValueName>SampleValue</ValueName>
+    <ValueDisplayName>Sample value</ValueDisplayName>
+    <ValueQuery>Select 20</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString>Report value: {0}</ValueFormatString>
+    <ValueReportID>361</ValueReportID>
+    <ValueGUID>01ccf6f3-e3e9-4fc2-912b-8f0ae4cb19b7</ValueGUID>
+    <ValueLastModified>2012-05-04T15:51:15.183+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>142</ValueID>
+    <ValueName>BannerHitsValue</ValueName>
+    <ValueDisplayName>Banner Hits</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE 
+(t1.StatisticsCode = 'bannerhit') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>801</ValueReportID>
+    <ValueGUID>47f3a145-52cd-4025-8a9d-baff3201494f</ValueGUID>
+    <ValueLastModified>2012-03-23T11:16:06.603+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>143</ValueID>
+    <ValueName>BannerClicksValue</ValueName>
+    <ValueDisplayName>Banner Clicks</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE (t1.StatisticsCode = 'bannerclick') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>801</ValueReportID>
+    <ValueGUID>d9643eb1-220e-4ab0-85e9-f9827dfc156c</ValueGUID>
+    <ValueLastModified>2012-03-23T11:16:06.67+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>144</ValueID>
+    <ValueName>NotAvailableCaption</ValueName>
+    <ValueDisplayName>Report not available caption</ValueDisplayName>
+    <ValueQuery>IF (@BannerId IS NULL)
+BEGIN
+  SELECT '{$bannermanagement.reportnotavailable.caption$}: {$bannermanagement.reportnotavailable.description$}'
+END</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>801</ValueReportID>
+    <ValueGUID>6f323505-5077-4ab3-a03e-99f0e4a2cf07</ValueGUID>
+    <ValueLastModified>2012-05-17T18:26:49.3+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>145</ValueID>
+    <ValueName>BannerClicksValue_1</ValueName>
+    <ValueDisplayName>Banner Clicks</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE (t1.StatisticsCode = 'bannerclick') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>802</ValueReportID>
+    <ValueGUID>580fa3e9-aeef-4c9a-b1fd-f710b760b0a5</ValueGUID>
+    <ValueLastModified>2012-03-23T11:16:06.747+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>146</ValueID>
+    <ValueName>BannerHitsValue_1</ValueName>
+    <ValueDisplayName>Banner Hits</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE 
+(t1.StatisticsCode = 'bannerhit') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>802</ValueReportID>
+    <ValueGUID>f4a69c2e-c0fd-41c9-b706-9f619f71489e</ValueGUID>
+    <ValueLastModified>2012-03-23T11:16:06.783+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>147</ValueID>
+    <ValueName>NotAvailableCaption</ValueName>
+    <ValueDisplayName>Report not available caption</ValueDisplayName>
+    <ValueQuery>IF (@BannerId IS NULL)
+BEGIN
+  SELECT '{$bannermanagement.reportnotavailable.caption$}: {$bannermanagement.reportnotavailable.description$}'
+END</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>802</ValueReportID>
+    <ValueGUID>ee7cbc73-3e73-41d1-9c20-62c305149c02</ValueGUID>
+    <ValueLastModified>2012-03-23T11:16:06.813+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>154</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Selects the total amount of donations */
+SELECT 
+   CAST(ISNULL(SUM(OrderItemTotalPriceInMainCurrency),0) AS DECIMAL(38,1))
+FROM 
+   COM_OrderItem
+   LEFT JOIN COM_Order
+      ON OrderItemOrderID = OrderID
+   LEFT JOIN COM_SKU
+      ON OrderItemSKUID = SKUID
+WHERE 
+   (SKUProductType = 'DONATION') 
+   AND (OrderSiteID = @CMSContextCurrentSiteID)
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>825</ValueReportID>
+    <ValueGUID>44711aea-608d-47f2-ab2d-6ed334bd88aa</ValueGUID>
+    <ValueLastModified>2012-04-05T16:08:54.763+02:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>155</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Selects the total amount of donations */
+SELECT 
+   CAST(ISNULL(SUM(OrderItemTotalPriceInMainCurrency),0) AS DECIMAL(38,1))
+FROM 
+   COM_OrderItem
+   LEFT JOIN COM_Order
+      ON OrderItemOrderID = OrderID
+   LEFT JOIN COM_SKU
+      ON OrderItemSKUID = SKUID
+WHERE 
+   (SKUProductType = 'DONATION') 
+   AND (OrderSiteID = @CMSContextCurrentSiteID)
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>826</ValueReportID>
+    <ValueGUID>a7821442-4c20-4932-abc2-cf4e3d878eff</ValueGUID>
+    <ValueLastModified>2012-04-05T15:52:27.567+02:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>156</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Selects the total amount of donations */
+SELECT 
+   CAST(ISNULL(SUM(OrderItemTotalPriceInMainCurrency),0) AS DECIMAL(38,1))
+FROM 
+   COM_OrderItem
+   LEFT JOIN COM_Order
+      ON OrderItemOrderID = OrderID
+   LEFT JOIN COM_SKU
+      ON OrderItemSKUID = SKUID
+WHERE 
+   (SKUProductType = 'DONATION') 
+   AND (OrderSiteID = @CMSContextCurrentSiteID)
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>827</ValueReportID>
+    <ValueGUID>0774b8df-766f-45d4-92ce-4157a5c943e5</ValueGUID>
+    <ValueLastModified>2012-04-05T16:14:40.347+02:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>157</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Selects the total amount of donations */
+SELECT 
+   CAST(ISNULL(SUM(OrderItemTotalPriceInMainCurrency),0) AS DECIMAL(38,1))
+FROM 
+   COM_OrderItem
+   LEFT JOIN COM_Order
+      ON OrderItemOrderID = OrderID
+   LEFT JOIN COM_SKU
+      ON OrderItemSKUID = SKUID
+WHERE 
+   (SKUProductType = 'DONATION') 
+   AND (OrderSiteID = @CMSContextCurrentSiteID)
+   AND (dateadd(hour,datediff(hour,0,@FromDate),0) &lt;= OrderDate OR @FromDate IS NULL)
+   AND (dateadd(hour,datediff(hour,0,dateadd(hour,1,@ToDate)),0) &gt; OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>828</ValueReportID>
+    <ValueGUID>65ae8918-6f40-47f1-a784-34540ee4b9ab</ValueGUID>
+    <ValueLastModified>2012-04-10T14:49:02.223+02:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>158</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Selects the total amount of donations */
+SELECT 
+   CAST(ISNULL(SUM(OrderItemTotalPriceInMainCurrency),0) AS DECIMAL(38,1))
+FROM 
+   COM_OrderItem
+   LEFT JOIN COM_Order
+      ON OrderItemOrderID = OrderID
+   LEFT JOIN COM_SKU
+      ON OrderItemSKUID = SKUID
+WHERE 
+   (SKUProductType = 'DONATION') 
+   AND (OrderSiteID = @CMSContextCurrentSiteID)
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>829</ValueReportID>
+    <ValueGUID>8e86a453-2880-42bd-9dad-7b9bffb2d33c</ValueGUID>
+    <ValueLastModified>2012-04-05T15:49:55.287+02:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>159</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the number of products meeting the conditions from the filter */
+DECLARE @GlobalProducts bit;
+SET @GlobalProducts = {%Settings.CMSStoreAllowGlobalProducts?1:0|(user)administrator|(hash)bce17da0ca0110e5881bd0e3c90c3a74cddfb1c291e64591dd13041a705a75eb%};
+DECLARE @GlobalOptions bit;
+SET @GlobalOptions = {%Settings.CMSStoreAllowGlobalProductOptions?1:0|(user)administrator|(hash)2a2742ee8aa469e7ddbdc886b6b592b752c193f3d93c7e3f3e981db361ebf414%};
+
+SELECT
+   CAST(COUNT(product.SKUID) AS DECIMAL(38,0)) 
+FROM 
+   COM_SKU product
+   LEFT JOIN COM_Department department
+      ON department.DepartmentID = product.SKUDepartmentID
+   LEFT JOIN COM_Supplier supplier
+      ON supplier.SupplierID = SKUSupplierID 
+   LEFT JOIN COM_Manufacturer manufacturer
+      ON manufacturer.ManufacturerID = product.SKUManufacturerID 
+   LEFT JOIN COM_PublicStatus publicStatus
+      ON publicStatus.PublicStatusID = product.SKUPublicStatusID 
+   LEFT JOIN COM_InternalStatus internalStatus
+      ON internalStatus.InternalStatusID = product.SKUInternalStatusID
+   LEFT JOIN COM_OptionCategory 
+      ON CategoryID = SKUOptionCategoryID
+   LEFT JOIN COM_SKU parent
+      ON product.SKUParentSKUID = parent.SKUID
+   LEFT JOIN COM_Department parentDepartment
+      ON parentDepartment.DepartmentID = parent.SKUDepartmentID
+   LEFT JOIN COM_Supplier parentSupplier
+      ON parentSupplier.SupplierID = parent.SKUSupplierID 
+   LEFT JOIN COM_Manufacturer parentManufacturer
+      ON parentManufacturer.ManufacturerID = parent.SKUManufacturerID 
+   LEFT JOIN COM_PublicStatus parentPublicStatus
+      ON parentPublicStatus.PublicStatusID = parent.SKUPublicStatusID
+   LEFT JOIN COM_InternalStatus parentInternalStatus
+      ON parentInternalStatus.InternalStatusID = parent.SKUInternalStatusID
+WHERE
+   (@ProductName IS NULL OR @ProductName = '' OR product.SKUName LIKE '%'+@ProductName+'%')
+   AND (@ProductNumber IS NULL OR @ProductNumber = '' OR product.SKUNumber LIKE '%'+@ProductNumber+'%')
+   AND (@DepartmentID &lt; 0 OR product.SKUDepartmentID = @DepartmentID OR (@DepartmentID IS NULL AND product.SKUDepartmentID IS NULL AND parent.SKUDepartmentID IS NULL) OR parent.SKUDepartmentID = @DepartmentID) 
+   AND (@SupplierID &lt; 0 OR product.SKUSupplierID = @SupplierID OR (@SupplierID IS NULL AND product.SKUSupplierID IS NULL AND parent.SKUSupplierID IS NULL) OR parent.SKUSupplierID = @SupplierID) 
+   AND (ISNULL(@NeedsReordered,0) = 0 OR (ISNULL(product.SKUAvailableItems,0) &lt;= product.SKUReOrderAt))
+   AND (@Limit IS NULL OR (ISNULL(product.SKUAvailableItems,0) &lt; @Limit))
+   AND (product.SKUOptionCategoryID IS NULL OR ((@GlobalOptions = 1 AND product.SKUSiteID IS NULL) OR product.SKUSiteID = @CMSContextCurrentSiteID))
+   AND (product.SKUOptionCategoryID IS NOT NULL OR ((@GlobalProducts = 1 AND product.SKUSiteID IS NULL) OR product.SKUSiteID = @CMSContextCurrentSiteID))
+   AND (product.SKUOptionCategoryID IS NULL OR (CategoryType = 'PRODUCTS'))
+   AND (@ManufacturerID &lt;0 OR product.SKUManufacturerID = @ManufacturerID OR (@ManufacturerID IS NULL AND product.SKUManufacturerID IS NULL AND parent.SKUManufacturerID IS NULL ) OR parent.SKUManufacturerID = @ManufacturerID)
+   AND (@InternalStatusID &lt; 0 OR product.SKUInternalStatusID = @InternalStatusID OR (@InternalStatusID IS NULL AND product.SKUInternalStatusID IS NULL AND parent.SKUInternalStatusID IS NULL) OR parent.SKUInternalStatusID = @InternalStatusID)
+   AND (@PublicStatusID &lt;0 OR product.SKUPublicStatusID = @PublicStatusID OR (@PublicStatusID IS NULL AND product.SKUPublicStatusID IS NULL AND parent.SKUPublicStatusID IS NULL) OR parent.SKUPublicStatusID = @PublicStatusID) 
+   AND product.SKUEnabled = 1
+   AND (parent.SKUEnabled IS NULL OR parent.SKUEnabled = 1)
+   AND (product.SKUTrackInventory = 'ByProduct' OR parent.SKUTrackInventory = 'ByVariants')</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>105</ValueReportID>
+    <ValueGUID>c728b8a1-c8c6-448c-9171-00d73d8556e6</ValueGUID>
+    <ValueLastModified>2014-02-13T20:56:58.2262005+01:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+    <ValueConnectionString />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>160</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Selects the number of donations which meet the filter conditions */
+SELECT
+   COUNT( DISTINCT OrderItemID)
+FROM 
+   COM_OrderItem
+   JOIN COM_SKU 
+      ON SKUID = OrderItemSKUID
+   JOIN COM_Order 
+      ON OrderID = OrderItemOrderID
+   JOIN COM_Customer 
+      ON CustomerID = OrderCustomerID
+WHERE 
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND COM_SKU.SKUProductType = 'DONATION'
+   AND (@DonationName IS NULL OR @DonationName = '' OR COM_OrderItem.OrderItemSKUName LIKE ('%' + @DonationName + '%'))
+   AND (@DonationAmountFrom IS NULL OR COM_OrderItem.OrderItemTotalPriceInMainCurrency &gt;= @DonationAmountFrom)
+   AND (@DonationAmountTo IS NULL OR COM_OrderItem.OrderItemTotalPriceInMainCurrency &lt;= @DonationAmountTo)
+   AND (@DonationIsPrivate &lt; 0 OR CAST(ISNULL(COM_OrderItem.OrderItemIsPrivate, 0) AS NVARCHAR) = @DonationIsPrivate)
+   AND (@Donor IS NULL OR @Donor = '' OR COM_Customer.CustomerFirstName LIKE ('%' + @Donor + '%') OR COM_Customer.CustomerLastName LIKE ('%' + @Donor + '%'))
+   AND (@DonorCompany IS NULL OR @DonorCompany = '' OR COM_Customer.CustomerCompany LIKE ('%' + @DonorCompany + '%'))
+   AND (@OrderDateFrom IS NULL OR COM_Order.OrderDate &gt;= @OrderDateFrom)
+   AND (@OrderDateTo IS NULL OR COM_Order.OrderDate &lt;= DATEADD(day,1,@OrderDateTo))
+   AND (ISNULL(@Onlypaid,0) = 0 OR COM_Order.OrderIsPaid = 1)
+   AND (@Email IS NULL OR @Email = '' OR COM_Customer.CustomerEmail LIKE ('%' + @Email + '%'))</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>741</ValueReportID>
+    <ValueGUID>08d7382b-fc93-41a2-860e-e67709297a9e</ValueGUID>
+    <ValueLastModified>2012-12-05T14:39:43.69+01:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+    <ValueConnectionString />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>161</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the number of orders from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(COUNT(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,0)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>754</ValueReportID>
+    <ValueGUID>b56beb49-228b-41d4-bded-aaec2a950140</ValueGUID>
+    <ValueLastModified>2012-01-23T10:03:06.307+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>162</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the number of orders from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(COUNT(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,0)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (dateadd(hour,datediff(hour,0,@FromDate),0) &lt;= OrderDate OR @FromDate IS NULL)
+   AND (dateadd(hour,datediff(hour,0,dateadd(hour,1,@ToDate)),0) &gt; OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>490</ValueReportID>
+    <ValueGUID>b8f9923d-a570-4b8f-bc70-9db9c29d4787</ValueGUID>
+    <ValueLastModified>2012-04-10T14:51:44.28+02:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>163</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the number of orders from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(COUNT(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,0)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>753</ValueReportID>
+    <ValueGUID>b67a581b-8e55-493c-b662-3b15c3c9925f</ValueGUID>
+    <ValueLastModified>2012-01-23T10:04:31.06+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>164</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the number of orders from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(COUNT(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,0)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>489</ValueReportID>
+    <ValueGUID>32bdbc12-24d6-4965-9ba7-14ff9c6abcf6</ValueGUID>
+    <ValueLastModified>2012-01-23T10:05:16.28+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>165</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the number of orders from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(COUNT(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,0)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>752</ValueReportID>
+    <ValueGUID>bee30906-a786-46b4-82eb-9f8324c8b4a1</ValueGUID>
+    <ValueLastModified>2012-01-23T10:05:43.35+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>166</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the volume of sales from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(SUM(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,1)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>500</ValueReportID>
+    <ValueGUID>7d7cf742-47f9-45cc-a06d-be115374c538</ValueGUID>
+    <ValueLastModified>2012-01-23T14:10:09.997+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>167</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the volume of sales from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(SUM(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,1)) 
+FROM 
+   COM_Order
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (dateadd(hour,datediff(hour,0,@FromDate),0) &lt;= OrderDate)
+   AND (dateadd(hour,datediff(hour,0,dateadd(hour,1,@ToDate)),0) &gt; OrderDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>499</ValueReportID>
+    <ValueGUID>9ebc9f68-464a-4ec6-addc-5a140b45c997</ValueGUID>
+    <ValueLastModified>2012-04-12T11:53:12.347+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>168</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the volume of sales from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(SUM(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,1)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>498</ValueReportID>
+    <ValueGUID>79b50223-e3bd-4762-9cd5-0181fef9789d</ValueGUID>
+    <ValueLastModified>2012-01-23T14:10:28.157+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>169</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the volume of sales from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(SUM(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,1)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>497</ValueReportID>
+    <ValueGUID>49302fdb-d747-4715-ac97-ca83ad9e95fa</ValueGUID>
+    <ValueLastModified>2012-01-23T14:10:36.35+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>170</ValueID>
+    <ValueName>value</ValueName>
+    <ValueDisplayName>value</ValueDisplayName>
+    <ValueQuery>/* Returns the volume of sales from @FromDate to @ToDate */ 
+SELECT
+   CAST(ISNULL(SUM(OrderTotalPriceInMainCurrency),0) AS DECIMAL(38,1)) 
+FROM 
+   COM_Order  
+WHERE
+   OrderSiteID = @CMSContextCurrentSiteID
+   AND (@FromDate &lt;= OrderDate OR @FromDate IS NULL)
+   AND (@ToDate &gt;= OrderDate OR @ToDate IS NULL)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>496</ValueReportID>
+    <ValueGUID>14415140-ba67-4372-9459-5efd5da93e39</ValueGUID>
+    <ValueLastModified>2012-01-23T14:10:49.44+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>171</ValueID>
+    <ValueName>from1</ValueName>
+    <ValueDisplayName>from1</ValueDisplayName>
+    <ValueQuery>DECLARE @from1 datetime;
+DECLARE @from2 datetime;
+DECLARE @to1 datetime;
+DECLARE @to2 datetime;
+
+IF (@Period1 = 'custom')
+	BEGIN
+		SET @from1 = @Period1From;
+		SET @to1 = @Period1To;
+        END
+ELSE
+	BEGIN
+		SET @from1 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period1);
+		SET @to1 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period1);
+        END
+
+IF (@Period2 = 'custom')
+	BEGIN
+		SET @from2 = @Period2From;
+		SET @to2 = @Period2To;
+        END
+ELSE
+	BEGIN
+		SET @from2 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period2);
+		SET @to2 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period2);
+        END
+        
+SELECT @from1</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>849</ValueReportID>
+    <ValueGUID>8a71be04-0a79-4898-8da4-37d7ea61a823</ValueGUID>
+    <ValueLastModified>2012-01-30T08:12:51.003+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>172</ValueID>
+    <ValueName>from2</ValueName>
+    <ValueDisplayName>from2</ValueDisplayName>
+    <ValueQuery>DECLARE @from1 datetime;
+DECLARE @from2 datetime;
+DECLARE @to1 datetime;
+DECLARE @to2 datetime;
+
+IF (@Period1 = 'custom')
+	BEGIN
+		SET @from1 = @Period1From;
+		SET @to1 = @Period1To;
+        END
+ELSE
+	BEGIN
+		SET @from1 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period1);
+		SET @to1 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period1);
+        END
+
+IF (@Period2 = 'custom')
+	BEGIN
+		SET @from2 = @Period2From;
+		SET @to2 = @Period2To;
+        END
+ELSE
+	BEGIN
+		SET @from2 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period2);
+		SET @to2 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period2);
+        END
+
+SELECT @from2</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>849</ValueReportID>
+    <ValueGUID>797bbb62-2752-4094-acb5-0d393ffab8fb</ValueGUID>
+    <ValueLastModified>2012-01-30T08:12:51.033+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>173</ValueID>
+    <ValueName>to1</ValueName>
+    <ValueDisplayName>to1</ValueDisplayName>
+    <ValueQuery>DECLARE @from1 datetime;
+DECLARE @from2 datetime;
+DECLARE @to1 datetime;
+DECLARE @to2 datetime;
+
+IF (@Period1 = 'custom')
+	BEGIN
+		SET @from1 = @Period1From;
+		SET @to1 = @Period1To;
+        END
+ELSE
+	BEGIN
+		SET @from1 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period1);
+		SET @to1 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period1);
+        END
+
+IF (@Period2 = 'custom')
+	BEGIN
+		SET @from2 = @Period2From;
+		SET @to2 = @Period2To;
+        END
+ELSE
+	BEGIN
+		SET @from2 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period2);
+		SET @to2 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period2);
+        END
+
+SELECT @to1</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>849</ValueReportID>
+    <ValueGUID>663794ce-4a5f-4cbf-94b0-1cd08c595fab</ValueGUID>
+    <ValueLastModified>2012-01-30T08:12:51.11+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>174</ValueID>
+    <ValueName>to2</ValueName>
+    <ValueDisplayName>to2</ValueDisplayName>
+    <ValueQuery>DECLARE @from1 datetime;
+DECLARE @from2 datetime;
+DECLARE @to1 datetime;
+DECLARE @to2 datetime;
+
+IF (@Period1 = 'custom')
+	BEGIN
+		SET @from1 = @Period1From;
+		SET @to1 = @Period1To;
+        END
+ELSE
+	BEGIN
+		SET @from1 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period1);
+		SET @to1 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period1);
+        END
+
+IF (@Period2 = 'custom')
+	BEGIN
+		SET @from2 = @Period2From;
+		SET @to2 = @Period2To;
+        END
+ELSE
+	BEGIN
+		SET @from2 ={%DatabaseSchema%}.Func_Analytics_StartingDate(@Period2);
+		SET @to2 ={%DatabaseSchema%}.Func_Analytics_EndingDate(@Period2);
+        END
+
+SELECT @to2</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>849</ValueReportID>
+    <ValueGUID>d435adc5-3b97-4883-936f-02d32988acc7</ValueGUID>
+    <ValueLastModified>2012-01-30T08:12:51.137+01:00</ValueLastModified>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>193</ValueID>
+    <ValueName>BannerClicksValue</ValueName>
+    <ValueDisplayName>Banner Clicks</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE (t1.StatisticsCode = 'bannerclick') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>872</ValueReportID>
+    <ValueGUID>d4ffa329-dda6-4508-8473-9adfb9d9ab34</ValueGUID>
+    <ValueLastModified>2012-05-28T13:47:13.71+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>194</ValueID>
+    <ValueName>BannerHitsValue</ValueName>
+    <ValueDisplayName>Banner Hits</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE 
+(t1.StatisticsCode = 'bannerhit') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>872</ValueReportID>
+    <ValueGUID>4c300077-308d-4da6-adad-0784d1ed96bc</ValueGUID>
+    <ValueLastModified>2012-05-28T13:47:13.763+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>195</ValueID>
+    <ValueName>NotAvailableCaption</ValueName>
+    <ValueDisplayName>Report not available caption</ValueDisplayName>
+    <ValueQuery>IF (@BannerId IS NULL)
+BEGIN
+  SELECT '{$bannermanagement.reportnotavailable.caption$}: {$bannermanagement.reportnotavailable.description$}'
+END</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>872</ValueReportID>
+    <ValueGUID>db7d8f28-cb84-4515-9946-b538cd342132</ValueGUID>
+    <ValueLastModified>2012-05-28T13:47:13.807+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>196</ValueID>
+    <ValueName>BannerClicksValue</ValueName>
+    <ValueDisplayName>Banner Clicks</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE (t1.StatisticsCode = 'bannerclick') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>873</ValueReportID>
+    <ValueGUID>f5c32b64-e11c-47f8-bfb7-b22e4e389d39</ValueGUID>
+    <ValueLastModified>2012-05-28T15:50:23.757+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>197</ValueID>
+    <ValueName>BannerHitsValue</ValueName>
+    <ValueDisplayName>Banner Hits</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE 
+(t1.StatisticsCode = 'bannerhit') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>873</ValueReportID>
+    <ValueGUID>54f4ec3b-77fd-40c6-afa8-07dda76b4a38</ValueGUID>
+    <ValueLastModified>2012-05-28T15:50:23.79+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>198</ValueID>
+    <ValueName>NotAvailableCaption</ValueName>
+    <ValueDisplayName>Report not available caption</ValueDisplayName>
+    <ValueQuery>IF (@BannerId IS NULL)
+BEGIN
+  SELECT '{$bannermanagement.reportnotavailable.caption$}: {$bannermanagement.reportnotavailable.description$}'
+END</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>873</ValueReportID>
+    <ValueGUID>d7e539e1-ad6c-4615-a7d5-ed2e4066ad7a</ValueGUID>
+    <ValueLastModified>2012-05-28T15:50:23.833+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>199</ValueID>
+    <ValueName>BannerClicksValue_1</ValueName>
+    <ValueDisplayName>Banner Clicks</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE (t1.StatisticsCode = 'bannerclick') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>874</ValueReportID>
+    <ValueGUID>bb89c181-0757-4374-a9ec-298be56e9ca8</ValueGUID>
+    <ValueLastModified>2012-05-28T15:51:09.017+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>200</ValueID>
+    <ValueName>BannerHitsValue_1</ValueName>
+    <ValueDisplayName>Banner Hits</ValueDisplayName>
+    <ValueQuery>SELECT sum(t2.HitsCount)
+FROM Analytics_Statistics as t1, Analytics_HourHits as t2
+WHERE 
+(t1.StatisticsCode = 'bannerhit') 
+AND (t1.StatisticsObjectID = @BannerId) 
+AND (t1.StatisticsID = t2.HitsStatisticsID) 
+AND (@FromDate IS NULL OR t2.HitsStartTime &gt;= @FromDate) 
+AND (@ToDate IS NULL OR t2.HitsEndTime &lt;= @ToDate)</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>874</ValueReportID>
+    <ValueGUID>059a2f14-fead-41dd-aae3-c675f7da1f14</ValueGUID>
+    <ValueLastModified>2012-05-28T15:51:09.053+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>201</ValueID>
+    <ValueName>NotAvailableCaption</ValueName>
+    <ValueDisplayName>Report not available caption</ValueDisplayName>
+    <ValueQuery>IF (@BannerId IS NULL)
+BEGIN
+  SELECT '{$bannermanagement.reportnotavailable.caption$}: {$bannermanagement.reportnotavailable.description$}'
+END</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>874</ValueReportID>
+    <ValueGUID>2df1e481-72c2-4956-b2e1-c1adf76c7737</ValueGUID>
+    <ValueLastModified>2012-05-28T15:51:09.087+02:00</ValueLastModified>
+    <ValueSettings />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>211</ValueID>
+    <ValueName>NumberOfDocumentsInWorkflow</ValueName>
+    <ValueDisplayName>NumberOfPagesInWorkflow</ValueDisplayName>
+    <ValueQuery>SELECT COUNT(DocumentID)
+FROM View_CMS_Tree_Joined
+WHERE DocumentWorkflowStepID IN (
+    SELECT StepID FROM CMS_WorkflowStep WHERE StepWorkflowID = @WorkflowID
+) AND NodeSiteID = @CMSContextCurrentSiteID</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>882</ValueReportID>
+    <ValueGUID>93812c92-3be3-48f8-87db-84847fb50746</ValueGUID>
+    <ValueLastModified>2014-06-23T10:02:07.7234682+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+    <ValueConnectionString />
+  </Reporting_ReportValue>
+  <Reporting_ReportValue>
+    <ValueID>212</ValueID>
+    <ValueName>NumberOfContactsInProcess</ValueName>
+    <ValueDisplayName>NumberOfContactsInProcess</ValueDisplayName>
+    <ValueQuery>SELECT COUNT(StateObjectID)
+FROM CMS_AutomationState
+WHERE StateObjectType = 'om.contact' AND StateStepID IN (
+  SELECT StepID FROM CMS_WorkflowStep WHERE StepWorkflowID = @AutomationProcessID
+) AND ((@SiteID = -1) OR ((@SiteID = -4) AND (StateSiteID IS NULL)) OR (StateSiteID = @SiteID) OR ((@SiteID = -5) AND ((StateSiteID IS NULL) OR (StateSiteID = @CMSContextCurrentSiteID))))</ValueQuery>
+    <ValueQueryIsStoredProcedure>false</ValueQueryIsStoredProcedure>
+    <ValueFormatString />
+    <ValueReportID>883</ValueReportID>
+    <ValueGUID>9c7aadc5-b805-4aec-ac09-d8b3f0dbb5c7</ValueGUID>
+    <ValueLastModified>2012-08-29T17:22:21.4+02:00</ValueLastModified>
+    <ValueSettings>&lt;customdata&gt;&lt;subscriptionenabled&gt;True&lt;/subscriptionenabled&gt;&lt;/customdata&gt;</ValueSettings>
+    <ValueConnectionString />
+  </Reporting_ReportValue>
+</NewDataSet>

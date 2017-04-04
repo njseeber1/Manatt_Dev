@@ -1,0 +1,125 @@
+/* BASIC PAGE [START] */
+#basic-page .articles h3 {
+	margin: 1em 0;
+	clear: both;
+	float: none;
+}
+#basic-page .articles .location {
+	padding: 2% 0.5%;
+	margin: 2% 1%;
+	border-right: 1px solid #ccc;
+}
+#basic-page .articles .location a.city,
+#basic-page .articles .location a.contact-link {
+	display: block;
+}
+#basic-page .articles .location a.city,
+#basic-page .articles .location .block h4 {
+    font-weight: 500;
+    font-family: 'Univers W01', Helvetica, Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 22px;
+    color: #333 !important;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+}
+#basic-page .articles .location p {
+	line-height: 1.4;
+	margin-bottom: 0;
+}
+#basic-page .articles address,
+#basic-page .articles ul li {
+	line-height: 1.4;
+	margin-bottom: 0;
+}
+#basic-page .articles .content ul li::before {
+	content: ' ';
+	display: none;
+}
+#basic-page .articles .location .block {
+	margin-bottom: 1em;
+}
+#basic-page .jumbotron {
+	max-height: 423px;
+	overflow: hidden;
+}
+#basic-page .location-header.well {
+	background: rgba(230,230,230,0.5);
+	border-radius: 0;
+}
+#basic-page .articles .location-header {
+	margin-bottom: 0;
+}
+#basic-page .articles figure {
+	position: relative;
+	margin: 0;
+	padding: 0 16px 0 0;
+	min-height: 250px;
+	max-height: 250px;
+	overflow: hidden;
+}
+#basic-page .articles figure img {
+	display: block;
+	height: auto;
+	width: 100%;
+	min-height: 100%;
+}
+#basic-page .articles ul.location-info li {
+	margin:0;
+	padding: 0;
+}
+#basic-page .articles ul.location-info li.nomargin {
+    margin:0;
+}
+#basic-page .articles ul.location-info li.phone {
+	margin: 0;
+	padding: 0;
+}
+#basic-page .articles ul.location-info li.address {
+	margin-top: 1em;
+    margin-bottom: 1em;
+}
+#basic-page .articles ul.location-info li:last-of-type {
+	border-bottom: 0 none;
+}
+#basic-page .articles ul.location-info li::before {
+	content: ' ';
+	display: none;
+}
+#basic-page .articles .location-header ul.location-info li {
+	margin: 0 0 1em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #ccc;
+}
+#basic-page #clients .client.no-image {
+	margin-bottom: 1em;
+}
+#basic-page #clients .client.no-image a {
+	margin: 0;
+	padding: 0;
+}
+#basic-page #clients .client.no-image a span {
+	display: block;
+}
+#basic-page #clients .client {
+	padding-left: 0;
+}
+#basic-page .location h4{
+	font-size: 22px;
+	color: #5c5e66!important;
+}
+#basic-page .articles p:empty {
+	display: none;
+}
+#basic-page .people-list header.col-md-12 {
+	padding-left: 0;
+	padding-right: 0;
+}
+#basic-page .people-list h3 {
+	margin: 10px 0;
+	color: #333 !important;
+}
+#basic-page .info.small {
+	padding: 16px 16px 0 16px !important;
+}
+/* BASIC PAGE [END] */

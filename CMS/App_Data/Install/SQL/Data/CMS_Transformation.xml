@@ -1,0 +1,1193 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_Transformation" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TransformationID" type="xs:int" minOccurs="0" />
+                <xs:element name="TransformationName" type="xs:string" minOccurs="0" />
+                <xs:element name="TransformationCode" type="xs:string" minOccurs="0" />
+                <xs:element name="TransformationType" type="xs:string" minOccurs="0" />
+                <xs:element name="TransformationClassID" type="xs:int" minOccurs="0" />
+                <xs:element name="TransformationVersionGUID" type="xs:string" minOccurs="0" />
+                <xs:element name="TransformationGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="TransformationLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TransformationIsHierarchical" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TransformationHierarchicalXML" type="xs:string" minOccurs="0" />
+                <xs:element name="TransformationCSS" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_Transformation>
+    <TransformationID>676</TransformationID>
+    <TransformationName>Attachment</TransformationName>
+    <TransformationCode>&lt;div&gt;
+&lt;a target="_blank" href="&lt;%# GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) %&gt;"&gt;
+&lt;%# IfCompare(ImageHelper.IsImage((string)Eval("AttachmentExtension")), true, GetAttachmentIcon("AttachmentGUID"), "&lt;img style=\"border: none;\" src=\"" + GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) + "?maxsidesize=150\" alt=\"" + Eval("AttachmentName", true) + "\" /&gt;") %&gt;
+&lt;/a&gt;
+&lt;%# IfCompare(ImageHelper.IsImage((string)Eval("AttachmentExtension")), true, "&lt;br /&gt;" + ResHelper.GetString("attach.openfile"), "") %&gt;
+&lt;br /&gt;
+&lt;%# Eval("AttachmentName",true) %&gt;
+&lt;br /&gt;
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>833b6db3-2567-41cc-be17-8362dda4a834</TransformationVersionGUID>
+    <TransformationGUID>6eba21c8-7c1a-49a6-937e-974627c9224b</TransformationGUID>
+    <TransformationLastModified>2014-03-07T09:35:02.8684921+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>1739</TransformationID>
+    <TransformationName>AttachmentCarousel3D</TransformationName>
+    <TransformationCode>&lt;%# IfCompare(ImageHelper.IsImage((string)Eval("AttachmentExtension")), true,
+
+"&lt;div style=\"text-align:center;width: 350px;\"&gt;&lt;div style=\"font-size: 11px;line-height: 12px;position:relative;z-index:1000;margin:auto;width:140px;\"&gt;&lt;a target=\"_blank\" href=\"" + GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) + "\"&gt;" + GetAttachmentIcon("AttachmentGUID") + "&lt;/a&gt;&lt;p&gt;" + ResHelper.GetString("attach.openfile") + "&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;",
+
+"&lt;img src=\"" + GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) + "?maxsidesize=150\" class=\"cloudcarousel3d\" alt=\"" + Eval("AttachmentTitle", true) + "\" title=\"" + Eval("AttachmentDescription", true) + "\" /&gt;") %&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>ab154dd3-47bf-4ff3-b0ab-a928e839b019</TransformationVersionGUID>
+    <TransformationGUID>49c7568b-113e-41eb-b183-4712344811a3</TransformationGUID>
+    <TransformationLastModified>2014-03-06T16:36:11.0751924+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>713</TransformationID>
+    <TransformationName>AttachmentLightbox</TransformationName>
+    <TransformationCode>&lt;a style="text-decoration: none;" href="&lt;%# GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) %&gt;" rel="lightbox" rev="&lt;%# Eval("AttachmentID") %&gt;" title="&lt;%# Eval("AttachmentName", true) %&gt;"&gt;
+&lt;%# IfCompare(ImageHelper.IsImage((string)Eval("AttachmentExtension")), true, GetAttachmentIcon("AttachmentGUID"), "&lt;img style=\"border: none;\" src=\"" + GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) + "?maxsidesize=150\" alt=\"" + Eval("AttachmentTitle", true) + "\" /&gt;") %&gt;
+&lt;/a&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>21974d48-e810-4f47-afdd-34230a93d85f</TransformationVersionGUID>
+    <TransformationGUID>f0460e74-2509-4b1e-8665-5e68cf947e86</TransformationGUID>
+    <TransformationLastModified>2014-08-13T12:38:44.7818804+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>5077</TransformationID>
+    <TransformationName>AttachmentLightboxDetail</TransformationName>
+    <TransformationCode>&lt;%# IfCompare(ImageHelper.IsImage((string)Eval("AttachmentExtension")), true,
+
+"&lt;div style=\"text-align:center;width: 350px;\"&gt;&lt;div style=\"position:relative;z-index:1000;margin:16px;width:32px;height:32px\"&gt;&lt;a target=\"_blank\" href=\"" + GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) + "\"&gt;" + GetAttachmentIcon("AttachmentGUID") + "&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;",
+
+"&lt;img src=\"" + GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), Eval&lt;int&gt;("AttachmentSiteID")) + "?maxsidesize=1000\" alt=\"" + Eval("AttachmentTitle", true) + "\" title=\"" + Eval("AttachmentDescription", true) + "\" /&gt;") %&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>829d50db-36aa-4003-a1fa-4ebb6f7b6438</TransformationVersionGUID>
+    <TransformationGUID>fdad8271-1293-4444-9151-e74af81dcda6</TransformationGUID>
+    <TransformationLastModified>2014-03-06T15:51:41.2908609+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>841</TransformationID>
+    <TransformationName>AttachmentList</TransformationName>
+    <TransformationCode>&lt;div&gt;
+&lt;%# GetAttachmentIcon("AttachmentGUID") %&gt;
+&lt;a target="_blank" href="&lt;%# GetAbsoluteUrl(GetAttachmentUrl(Eval("AttachmentName"), Eval("NodeAliasPath")), EvalInteger("AttachmentSiteID")) %&gt;"&gt;
+&lt;%# Eval("AttachmentName",true) %&gt;
+&lt;/a&gt;
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>d99e2018-afb9-4878-bbc5-3b1b214ad357</TransformationVersionGUID>
+    <TransformationGUID>4455961a-e81f-419b-8a68-19d1cdcef2a1</TransformationGUID>
+    <TransformationLastModified>2014-03-06T11:28:54.6023252+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>415</TransformationID>
+    <TransformationName>CategoryList</TransformationName>
+    <TransformationCode>&lt;asp:PlaceHolder ID="plcCategoryList" runat="server" EnableViewState="false"&gt;&lt;/asp:PlaceHolder&gt;&lt;br /&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>ededcb60-d056-490c-ad40-56aa213d6e43</TransformationVersionGUID>
+    <TransformationGUID>4b6c6f44-ac26-45c1-920f-df48f92e94d0</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.84+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>915</TransformationID>
+    <TransformationName>CMSDeskSmartSearchResults</TransformationName>
+    <TransformationCode>&lt;div class="smart-search"&gt;
+  &lt;div class="title"&gt;
+    &lt;strong&gt;
+      &lt;a href="&lt;%# "javascript:SelectItem(" + CMS.ExtendedControls.ControlsHelper.RemoveDynamicControls(ValidationHelper.GetString(GetSearchValue("nodeId"), "")) + ", '"+ ValidationHelper.GetString(GetSearchValue("DocumentCulture"), "") + "')" %&gt;"&gt;
+        &lt;%#SearchHighlight(HTMLHelper.HTMLEncode(DataHelper.GetNotEmpty(Eval("Title"), "/")), "&lt;span class=\"highlight\"&gt;", "&lt;/span&gt;")%&gt; (&lt;%#ValidationHelper.GetString(GetSearchValue("DocumentCulture"), "")%&gt;)
+      &lt;/a&gt;
+    &lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="text"&gt;
+    &lt;%#SearchHighlight(HTMLHelper.HTMLEncode(TextHelper.LimitLength(HttpUtility.HtmlDecode(HTMLHelper.StripTags(CMS.ExtendedControls.ControlsHelper.RemoveDynamicControls(GetSearchedContent(DataHelper.GetNotEmpty(Eval("Content"), ""))), false, " ")), 280, "...")), "&lt;span class=\"highlight\"&gt;", "&lt;/span&gt;")%&gt;
+  &lt;/div&gt;
+  &lt;div class="footer"&gt;
+    &lt;span class="url"&gt;
+      &lt;%# SearchHighlight(SearchResultUrl(true),"&lt;span class=\"highlight\"&gt;","&lt;/span&gt;") %&gt;
+    &lt;/span&gt;
+    &lt;span class="date"&gt;
+      &lt;%# GetDateTimeString(ValidationHelper.GetDateTime(Eval("Created"), DateTimeHelper.ZERO_TIME), true) %&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>229edd4e-0ea9-4ef6-ae11-b2b207b15c24</TransformationVersionGUID>
+    <TransformationGUID>aadecc4c-1909-4804-b0bb-990c093fc4e0</TransformationGUID>
+    <TransformationLastModified>2014-02-04T08:35:39.3551679+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>916</TransformationID>
+    <TransformationName>CMSDeskSQLSearchResults</TransformationName>
+    <TransformationCode>&lt;div class="sql-search"&gt;
+  &lt;div class="title"&gt;
+    &lt;strong&gt;
+      &lt;a href="&lt;%# "javascript:SelectItem(" + Eval("NodeID") + ", \'" + Eval("DocumentCulture") + "\')" %&gt;"&gt;&lt;%# IfEmpty(Eval("NodeName"), "/", HTMLHelper.HTMLEncode(ValidationHelper.GetString(Eval("DocumentName"), null))) %&gt; (&lt;%# Eval("DocumentCulture") %&gt;)&lt;/a&gt;
+    &lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="footer"&gt;
+    &lt;span class="url"&gt;&lt;%# GetAbsoluteUrl(GetDocumentUrl()) %&gt;&lt;/span&gt;
+    &lt;span class="date"&gt;
+      &lt;%# GetDateTimeString(ValidationHelper.GetDateTime(Eval("DocumentCreatedWhen"), DateTimeHelper.ZERO_TIME), true) %&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>4eab46a2-9440-4d75-9da8-5a67651e76b0</TransformationVersionGUID>
+    <TransformationGUID>914377c1-21ad-443e-956f-0b9646e5520b</TransformationGUID>
+    <TransformationLastModified>2014-02-03T10:11:44.6371639+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2226</TransformationID>
+    <TransformationName>Empty</TransformationName>
+    <TransformationCode />
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>679bd9ab-b211-4b75-8a62-053c18c3c2b0</TransformationVersionGUID>
+    <TransformationGUID>8fe2f25d-5319-4c07-a9a1-1cc8c70aecdb</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.867+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>668</TransformationID>
+    <TransformationName>GoogleSiteMap</TransformationName>
+    <TransformationCode>&lt;url&gt;
+&lt;%# GetSitemapItem("loc") %&gt;
+&lt;%# GetSitemapItem("lastmod") %&gt;
+&lt;%# GetSitemapItem("changefreq") %&gt;
+&lt;%# GetSitemapItem("priority") %&gt;
+&lt;/url&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>927c0bcd-63fd-44e7-9b86-b2ab21848847</TransformationVersionGUID>
+    <TransformationGUID>8d5a6991-b2bf-436d-ba82-5159eb98fc71</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.87+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>153</TransformationID>
+    <TransformationName>Newsletter_Archive</TransformationName>
+    <TransformationCode>&lt;%#  FormatDateTime(Eval("IssueMailoutTime"),"d") %&gt; - &lt;a href="~/CMSModules/Newsletters/CMSPages/GetNewsletterIssue.aspx?issueId=&lt;%# Eval("IssueID")%&gt;" target="_blank"&gt;&lt;%# Eval("IssueSubject",true) %&gt;&lt;/a&gt; &lt;br /&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>2516ee44-b5b6-4ff8-a1a2-a2f7dc50d8c7</TransformationVersionGUID>
+    <TransformationGUID>62116172-2118-4676-98eb-373c79fa6cc6</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.88+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>559</TransformationID>
+    <TransformationName>OnLineUsers</TransformationName>
+    <TransformationCode>&lt;%# Eval("UserName", true) %&gt;&amp;nbsp;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>26da0dfa-0436-470e-a547-bddeb248255d</TransformationVersionGUID>
+    <TransformationGUID>3b16b39e-3020-485d-8bae-6e7617e13894</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.89+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>3371</TransformationID>
+    <TransformationName>Parameters</TransformationName>
+    <TransformationCode>&lt;br /&gt;</TransformationCode>
+    <TransformationType>text</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>0968b31c-c73a-4101-8a85-e086bc475027</TransformationVersionGUID>
+    <TransformationGUID>14585af1-bf3a-4b68-8ad1-3aa5f40dda92</TransformationGUID>
+    <TransformationLastModified>2013-09-12T10:09:28.123+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>283</TransformationID>
+    <TransformationName>Print</TransformationName>
+    <TransformationCode>&lt;h3&gt;Print transformation is missing&lt;/h3&gt;
+&lt;div&gt;The transformation of the current page type is missing. You have to define the transformation in the Page types application.&lt;/div&gt;</TransformationCode>
+    <TransformationType>text</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>921a1073-d66a-4a28-a008-0817d8fbcdf5</TransformationVersionGUID>
+    <TransformationGUID>dfba986c-38de-431c-89df-8ad3e8c7b451</TransformationGUID>
+    <TransformationLastModified>2014-06-23T08:52:16.932431+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>15</TransformationID>
+    <TransformationName>RelatedDocuments</TransformationName>
+    <TransformationCode>&lt;strong&gt;&lt;a href="&lt;%# ResolveUrl(GetUrl( Eval("NodeAliasPath"), null)) %&gt;"&gt;
+&lt;%# Eval("DocumentName",true) %&gt;&lt;/a&gt;&lt;/strong&gt;
+&lt;br /&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>6d973ef8-2aec-48c5-a16b-378f2679d295</TransformationVersionGUID>
+    <TransformationGUID>b96f0a40-8fb6-4ed5-8eaa-309867a18283</TransformationGUID>
+    <TransformationLastModified>2013-02-08T11:03:17.003+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>1019</TransformationID>
+    <TransformationName>RSSItem</TransformationName>
+    <TransformationCode>&lt;item&gt;
+     &lt;guid isPermaLink="false"&gt;&lt;%# Eval("NodeGUID") %&gt;&lt;/guid&gt;
+     &lt;title&gt;&lt;%# EvalCDATA("DocumentName") %&gt;&lt;/title&gt;
+     &lt;description&gt;&lt;%# EvalCDATA("NodeAliasPath") %&gt;&lt;/description&gt;
+     &lt;pubDate&gt;&lt;%# GetRSSDateTime(Eval("DocumentCreatedWhen")) %&gt;&lt;/pubDate&gt;
+     &lt;link&gt;&lt;![CDATA[&lt;%# GetAbsoluteUrl(GetDocumentUrlForFeed(), Eval&lt;int&gt;("NodeSiteID")) %&gt;]]&gt;&lt;/link&gt;     	
+&lt;/item&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>1a15194b-d966-4d49-b366-8b58591518a3</TransformationVersionGUID>
+    <TransformationGUID>e38315ed-fcef-46a9-b82a-b33d6902649b</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.923+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>20</TransformationID>
+    <TransformationName>SearchResults</TransformationName>
+    <TransformationCode>&lt;div class="SearchResult"&gt;
+  &lt;div class="ResultTitle"&gt;
+    &lt;a href="&lt;%# GetDocumentUrl()%&gt;"&gt;&lt;%# IfEmpty(Eval("SearchResultName",true), "/", Eval("SearchResultName",true)) %&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="ResultPath"&gt;
+    Path: &lt;%# Eval("DocumentNamePath",true) %&gt;&lt;br /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>7d0cbd5c-a793-427e-aa92-907d21a704fc</TransformationVersionGUID>
+    <TransformationGUID>a3c543c8-b855-4acd-9c03-9302a02f8f74</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:54.933+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>3803</TransformationID>
+    <TransformationName>SmartSearchPredictiveResults</TransformationName>
+    <TransformationCode>&lt;a style="display: block; color: black" href='&lt;%# SearchResultUrl() %&gt;'&gt;
+  &lt;%# HTMLHelper.HTMLEncode(DataHelper.GetNotEmpty(Eval("Title"), "/")) %&gt;
+&lt;/a&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>a7f70a6a-7e65-4a53-9dd9-569c9c8be8ea</TransformationVersionGUID>
+    <TransformationGUID>9ef70277-4b54-4e5c-9956-71963ad6d4b1</TransformationGUID>
+    <TransformationLastModified>2013-09-10T13:14:46.887+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>801</TransformationID>
+    <TransformationName>SmartSearchResults</TransformationName>
+    <TransformationCode>&lt;div style="margin-bottom: 30px;"&gt;
+        &lt;%-- Search result title --%&gt;
+        &lt;div&gt;
+            &lt;a style="font-weight: bold" href='&lt;%# SearchResultUrl() %&gt;'&gt;
+                &lt;%#SearchHighlight(HTMLHelper.HTMLEncode(CMS.ExtendedControls.ControlsHelper.RemoveDynamicControls(DataHelper.GetNotEmpty(Eval("Title"), "/"))), "&lt;span style='font-weight:bold;'&gt;", "&lt;/span&gt;")%&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;%-- Search result content --%&gt;
+        &lt;div style="margin-top: 5px; width: 590px;"&gt;
+            &lt;%#SearchHighlight(HTMLHelper.HTMLEncode(TextHelper.LimitLength(HttpUtility.HtmlDecode(HTMLHelper.StripTags(CMS.ExtendedControls.ControlsHelper.RemoveDynamicControls(GetSearchedContent(DataHelper.GetNotEmpty(Eval("Content"), ""))), false, " ")), 280, "...")), "&lt;span style='background-color: #FEFF8F'&gt;", "&lt;/span&gt;")%&gt;&lt;br /&gt;
+        &lt;/div&gt;
+        &lt;%-- Relevance, URL, Creattion --%&gt;
+        &lt;div style="margin-top: 5px;"&gt;
+            &lt;%-- Relevance --%&gt;
+            &lt;div title="Relevance: &lt;%# Convert.ToInt32(ValidationHelper.GetDouble(Eval("Score"), 0) * 100) %&gt;%"
+                style="width: 50px; border: solid 1px #aaaaaa; margin-top: 7px; margin-right: 6px; float: left; color: #0000ff; font-size: 2pt; line-height: 4px; height: 4px;"&gt;
+                &lt;div style='&lt;%# "background-color:#a7d3a7;width:" + Convert.ToString(Convert.ToInt32(ValidationHelper.GetDouble(Eval("Score"), 0) * 50)) + "px;height:4px;line-height: 4px;" %&gt;'&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;%-- URL --%&gt;
+            &lt;span style="color: #008000"&gt;
+                &lt;%# SearchHighlight(SearchResultUrl(),"&lt;strong&gt;","&lt;/strong&gt;")%&gt;
+            &lt;/span&gt;
+            &lt;%-- Creation --%&gt;
+            &lt;span style="color: #888888; font-size: 9pt"&gt;
+                &lt;%# GetDateTimeString(ValidationHelper.GetDateTime(Eval("Created"), DateTimeHelper.ZERO_TIME), true) %&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>20561381-4f18-4192-bdb3-e2a203929354</TransformationVersionGUID>
+    <TransformationGUID>63b96721-59ae-4462-a842-10fedfc282e1</TransformationGUID>
+    <TransformationLastModified>2014-10-14T10:47:19.6236312+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>846</TransformationID>
+    <TransformationName>SmartSearchResultsWithImages</TransformationName>
+    <TransformationCode>&lt;div style="margin-bottom: 30px;"&gt;
+  &lt;%-- Search result image --%&gt;
+        &lt;div style="float: left; border: solid 1px #eeeeee; width: 90px; height:90px; margin-right: 5px;"&gt;
+           &lt;img src="&lt;%# GetSearchImageUrl("/CMSModules/CMS_SmartSearch/no_image.gif",90) %&gt;" alt="" /&gt;
+        &lt;/div&gt;
+        &lt;div style="float: left"&gt;
+            &lt;%-- Search result title --%&gt;
+            &lt;div&gt;
+                &lt;a style="font-weight: bold" href='&lt;%# SearchResultUrl() %&gt;'&gt;
+                    &lt;%#SearchHighlight(HTMLHelper.HTMLEncode(CMS.ExtendedControls.ControlsHelper.RemoveDynamicControls(DataHelper.GetNotEmpty(Eval("Title"), "/"))), "&lt;span style='font-weight:bold;'&gt;", "&lt;/span&gt;")%&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;%-- Search result content --%&gt;
+            &lt;div style="margin-top: 5px; width: 590px;min-height:40px"&gt;
+                &lt;%#SearchHighlight(HTMLHelper.HTMLEncode(TextHelper.LimitLength(HttpUtility.HtmlDecode(HTMLHelper.StripTags(CMS.ExtendedControls.ControlsHelper.RemoveDynamicControls(GetSearchedContent(DataHelper.GetNotEmpty(Eval("Content"), ""))), false, " ")), 280, "...")), "&lt;span style='background-color: #FEFF8F'&gt;", "&lt;/span&gt;")%&gt;&lt;br /&gt;
+            &lt;/div&gt;
+            &lt;%-- Relevance, URL, Creattion --%&gt;
+            &lt;div style="margin-top: 5px;"&gt;
+                &lt;%-- Relevance --%&gt;
+                &lt;div title="Relevance: &lt;%# Convert.ToInt32(ValidationHelper.GetDouble(Eval("Score"), 0) * 100) %&gt;%"
+                    style="width: 50px; border: solid 1px #aaaaaa; margin-top: 7px; margin-right: 6px;
+                    float: left; color: #0000ff; font-size: 2pt; line-height: 4px; height: 4px;"&gt;
+                    &lt;div style="&lt;%# "background-color:#a7d3a7;width:" + Convert.ToString(Convert.ToInt32(ValidationHelper.GetDouble(Eval("Score"), 0) * 50)) + "px;height:4px;line-height: 4px;" %&gt;"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;%-- URL --%&gt;
+                &lt;span style="color: #008000"&gt;
+                    &lt;%# TextHelper.BreakLine(SearchHighlight(SearchResultUrl(),"&lt;strong&gt;","&lt;/strong&gt;"),75,"&lt;br /&gt;") %&gt;
+                &lt;/span&gt;
+                &lt;%-- Creation --%&gt;
+                &lt;span style="padding-left:5px;color: #888888; font-size: 9pt"&gt;
+                    &lt;%# GetDateTimeString(ValidationHelper.GetDateTime(Eval("Created"), DateTimeHelper.ZERO_TIME), true) %&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style="clear: both"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1095</TransformationClassID>
+    <TransformationVersionGUID>83160a14-9374-4a22-ac90-0392fe6d9263</TransformationVersionGUID>
+    <TransformationGUID>fa253f7c-6705-4995-bb27-96c0042dee5b</TransformationGUID>
+    <TransformationLastModified>2013-09-10T13:16:53.387+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>299</TransformationID>
+    <TransformationName>AttachmentList</TransformationName>
+    <TransformationCode>&lt;a target="_blank" href="&lt;%# GetFileUrl("FileAttachment") %&gt;"&gt;
+&lt;%# IfImage("FileAttachment", GetImage("FileAttachment", 400, 400, 400, Eval("FileDescription")), "") %&gt;
+&lt;br /&gt;&lt;%# Eval("FileName",true) %&gt;&lt;/a&gt;&lt;br /&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>547c875a-0f55-41e4-93e9-87f68131d5d3</TransformationVersionGUID>
+    <TransformationGUID>74f430bc-627c-4867-b21c-dbe6134e54c3</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.503+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>296</TransformationID>
+    <TransformationName>ImageGallery_detail400</TransformationName>
+    <TransformationCode>&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileName", true) + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=400' /&gt;")%&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>fda53c27-62d8-44a0-b860-443325562e03</TransformationVersionGUID>
+    <TransformationGUID>9f9fda7c-4695-48d3-8014-88a3bc670a76</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.523+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>302</TransformationID>
+    <TransformationName>ImageGallery_detail500</TransformationName>
+    <TransformationCode>&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileDescription") + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=500' /&gt;")%&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>a6385255-e371-4118-8a5e-1dc873eda13b</TransformationVersionGUID>
+    <TransformationGUID>b7ce1195-a490-4808-b9c9-802922f35b7b</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.54+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>297</TransformationID>
+    <TransformationName>ImageGallery_detail600</TransformationName>
+    <TransformationCode>&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileDescription") + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=600' /&gt;")%&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>809c1327-db18-46f9-9e33-2a006d74e255</TransformationVersionGUID>
+    <TransformationGUID>f08449f5-74a0-4e73-a777-63e2ec95cb4e</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.56+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>293</TransformationID>
+    <TransformationName>ImageGallery_thumbnails100</TransformationName>
+    <TransformationCode>&lt;a href="?imagepath=&lt;%# System.Web.HttpUtility.UrlEncode(DataBinder.Eval(Container, "DataItem.NodeAliasPath").ToString()) %&gt;"&gt;
+
+&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileName", true) + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=100' border='0' /&gt;")%&gt;
+
+&lt;/a&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>a2374b34-5679-44b9-b7ee-4175993d3109</TransformationVersionGUID>
+    <TransformationGUID>c8365347-59be-4353-88d0-9ae8fde751db</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.61+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>303</TransformationID>
+    <TransformationName>ImageGallery_thumbnails180</TransformationName>
+    <TransformationCode>&lt;a href="?imagepath=&lt;%# System.Web.HttpUtility.UrlEncode(DataBinder.Eval(Container, "DataItem.NodeAliasPath").ToString()) %&gt;"&gt;
+&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileDescription") + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=180' border='0' /&gt;")%&gt;
+&lt;/a&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>6e279d2c-2316-4d33-8ee5-e3c6753f6b4b</TransformationVersionGUID>
+    <TransformationGUID>376eb9e5-13a8-4baf-a9e9-f20d11dfea2a</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.63+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>294</TransformationID>
+    <TransformationName>ImageGallery_thumbnails200</TransformationName>
+    <TransformationCode>&lt;a href="?imagepath=&lt;%# System.Web.HttpUtility.UrlEncode(DataBinder.Eval(Container, "DataItem.NodeAliasPath").ToString()) %&gt;"&gt;
+&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileName", true) + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=200' border='0' /&gt;")%&gt;
+&lt;/a&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>900a763c-b398-4cf9-87e7-554c9f41db02</TransformationVersionGUID>
+    <TransformationGUID>bc05b40a-fba1-4f66-9730-6bb35fc85e85</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.65+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>295</TransformationID>
+    <TransformationName>ImageGallery_thumbnails300</TransformationName>
+    <TransformationCode>&lt;a href="?imagepath=&lt;%# System.Web.HttpUtility.UrlEncode(DataBinder.Eval(Container, "DataItem.NodeAliasPath").ToString()) %&gt;"&gt;
+
+&lt;%#IfEmpty(Eval("FileAttachment"), "no image", "&lt;img alt='" + Eval("FileName") + "' src='" + GetFileUrl("FileAttachment") + "?maxsidesize=300' border='0' /&gt;")%&gt;
+
+&lt;/a&gt;</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>33594609-5666-4051-abf8-2732566b5ff4</TransformationVersionGUID>
+    <TransformationGUID>10a47820-4a54-4fec-8a69-0e04853155c7</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.67+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS xml:space="preserve">
+</TransformationCSS>
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>300</TransformationID>
+    <TransformationName>Lightbox</TransformationName>
+    <TransformationCode>&lt;a href="&lt;%# GetDocumentUrl() %&gt;" rel="lightbox" rev="&lt;%# Eval("NodeAliasPath") %&gt;" title="&lt;%# Eval("FileDescription", true) %&gt;"&gt;&lt;img src="&lt;%# GetFileUrl("FileAttachment") %&gt;?maxsidesize=150" alt="&lt;%# Eval("FileName", true) %&gt;" /&gt;&lt;/a&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>ffaf98e0-381a-4cf5-893d-69fcada7f155</TransformationVersionGUID>
+    <TransformationGUID>2673a82a-c87b-47aa-bc33-544d5c8bbc79</TransformationGUID>
+    <TransformationLastModified>2014-03-11T13:21:43.1479162+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>301</TransformationID>
+    <TransformationName>LightboxSelected</TransformationName>
+    <TransformationCode>&lt;img src="&lt;%# GetFileUrl("FileAttachment") %&gt;" title="&lt;%# Eval("FileName",true) %&gt;" alt="" /&gt;
+</TransformationCode>
+    <TransformationType>ascx</TransformationType>
+    <TransformationClassID>1685</TransformationClassID>
+    <TransformationVersionGUID>5e608953-2ac1-4dd2-8695-4dc9ac71baa2</TransformationVersionGUID>
+    <TransformationGUID>6440767f-166e-4e66-960a-41048df70eb6</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:35:55.71+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2646</TransformationID>
+    <TransformationName>ChatError</TransformationName>
+    <TransformationCode>&lt;span style="color:#FF0000"&gt;{{html Message}}&lt;/span&gt; 
+    &lt;a href="#" onclick="${Delete}" &gt; [X]&lt;/a&gt;
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>29741d1d-e336-406a-892b-240d72818356</TransformationVersionGUID>
+    <TransformationGUID>4a59194f-bd11-4351-bd38-de1ce84f7f1e</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.717+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2647</TransformationID>
+    <TransformationName>ChatErrorDeleteAllBtn</TransformationName>
+    <TransformationCode>&lt;a href="#" onclick="${DeleteAll}"&gt;{$chat.closeall$}&lt;/a&gt;
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>eac68d35-9a68-4bc7-8627-7d7cc1e5dff4</TransformationVersionGUID>
+    <TransformationGUID>70e881e1-3189-4241-8369-214fa81147d6</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.727+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2648</TransformationID>
+    <TransformationName>ChatMessage</TransformationName>
+    <TransformationCode>&lt;div class="ChatMessage"&gt;
+{{if System}}
+	&lt;span class="System"&gt;${LastModified.toLocaleTimeString()}:
+	&lt;span class="Message System{{if (System == 7) || (System == 10)}} Greeting{{/if}}"&gt; ${MessageText}&lt;/span&gt; &lt;/span&gt;
+{{else}}
+	{{if RejectMessage}}
+        	&lt;div class="RejectButton"&gt;
+                	&lt;a href="#" onclick="${RejectMessage}"&gt;
+                        	&lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/reject.png")|(user)administrator|(hash)bb2f2ef09a8fd49ce2034655ca877eefc7ed757b062b7fa0fcbf0a2f957e72a5%}' alt="{$chat.rejectmessage$}" title="{$chat.rejectmessage$}" width="8px" height="8px"/&gt;
+                	&lt;/a&gt;
+        	&lt;/div&gt;
+        {{/if}}
+  	&lt;span class="PostedTime"&gt;${PostedTime.toLocaleTimeString()}&lt;/span&gt;
+
+        {{if Modified}}
+        	&lt;span class="Modified"&gt;({$chat.messagemodified$} ${LastModified.toLocaleTimeString()})&lt;/span&gt;
+        {{/if}}
+        
+        {{if (Whisper &amp;&amp; !IsOneOnOne)}}
+        	&lt;span class="Whisper"&gt;
+                &lt;strong&gt;
+                	{{if SelectRecipient}}
+                		{$chat.from$} 
+                         &lt;a href="#" onclick="${SelectRecipient}"&gt;${Nickname}&lt;/a&gt;   
+                     {{else}}
+                        {$chat.to$}
+                          {{if (SelectPrevRecipient)}}
+                             &lt;a href="#" onclick="${SelectPrevRecipient}"&gt;${Recipient}&lt;/a&gt;
+                          {{else}}
+                              ${Recipient}
+                          {{/if}}
+                     {{/if}}
+                &lt;/strong&gt;
+                        	
+        {{else}}
+        	&lt;strong&gt;
+                	{{if (SelectRecipient &amp;&amp; !IsOneOnOne)}}
+                        	&lt;a href="#" onclick="${SelectRecipient}"&gt;${Nickname}&lt;/a&gt;
+                        {{else}}
+                        	${Nickname}
+                        {{/if}}
+                &lt;/strong&gt;
+        {{/if}}:
+        {{if Rejected}}
+        	&lt;span class="Rejected"&gt;{$chat.messagerejected$}&lt;/span&gt;
+        {{else}}
+        	&lt;span class="Message"&gt;${MessageText}&lt;/span&gt;
+        {{/if}}
+        
+        {{if (Whisper &amp;&amp; !IsOneOnOne)}}
+        	&lt;/span&gt;
+        {{/if}}
+{{/if}}
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>4e34810e-ebfb-4a11-ae7c-28e2f25ed8a4</TransformationVersionGUID>
+    <TransformationGUID>ca883224-656b-4018-afd6-0abeab006458</TransformationGUID>
+    <TransformationLastModified>2014-02-13T20:56:47.3861853+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2649</TransformationID>
+    <TransformationName>ChatNotification</TransformationName>
+    <TransformationCode>{{if NotificationType == 0}}
+	&lt;td&gt;{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt;
+	{{if IsOneToOne}}
+        	{$chat.invitedyoutoaprivateconversation$}.
+        {{else}}
+	 	{$chat.invitedyou$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.
+        {{/if}}
+        &lt;/td&gt;&lt;td class="ChatNotificationButtons"&gt;&lt;input class="SubmitButton ChatNotificationButton" onclick="${AcceptEvent}" type="button" value="{$chat.accept$}" /&gt;&lt;input class="SubmitButton ChatNotificationButton" onclick="${DeclineEvent}" type="button" value="{$chat.decline$}" /&gt;&lt;/td&gt;
+{{else}}
+	&lt;td&gt;
+	{{if NotificationType == 1}}
+        	{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; 
+                {{if IsOneToOne}}
+                	{$chat.declinedprivate$}.
+                {{else}}
+                	{$chat.declined$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.
+                {{/if}}
+        {{/if}}
+        {{if NotificationType == 2}}
+        	{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; 
+                {{if IsOneToOne}}
+                	{$chat.acceptedprivate$}.
+                {{else}}
+                	{$chat.accepted$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.
+                {{/if}}
+        {{/if}}
+        {{if NotificationType == 3}}{$chat.nicknamechanged$}.{{/if}}
+        {{if NotificationType == 4}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.kicked$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;. {{if KickTime}} {$chat.kickreturn$} &lt;b&gt;${KickTime}&lt;/b&gt;.{{/if}}{{/if}}
+        {{if NotificationType == 5}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.kickedperm$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.{{/if}}
+        {{if NotificationType == 6}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.adminadded$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.{{/if}}
+        {{if NotificationType == 7}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.admindeleted$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.{{/if}}
+        &lt;/td&gt;
+        &lt;td class="ChatNotificationButtons"&gt;
+        	&lt;input class="SubmitButton ChatNotificationButton" onclick="${CloseEvent}" type="button" value="{$chat.delete$}" /&gt;
+        &lt;/td&gt;
+{{/if}}
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>1ef63daf-9568-4a59-bb56-e76ecaafb315</TransformationVersionGUID>
+    <TransformationGUID>96c1e946-bde9-490d-ada9-e29c20b32e57</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.747+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2650</TransformationID>
+    <TransformationName>ChatOnlineUser</TransformationName>
+    <TransformationCode>{{if IsCurrentUser}}&lt;span style="color:#0000FF"&gt;${Nickname}&lt;/span&gt; {{else}}&lt;a href="#" onclick="${OnClick}" target="_blank"&gt;${Nickname}&lt;/a&gt;{{/if}}</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>08c62bed-d1dd-40a5-9b64-9ceaf81fbe00</TransformationVersionGUID>
+    <TransformationGUID>de0784dd-6b73-4188-84c3-3d9bf8700dd4</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.757+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2651</TransformationID>
+    <TransformationName>ChatRooms</TransformationName>
+    <TransformationCode>&lt;div class="ChatRoomListItem"&gt;
+        {{if Abandon}}
+        &lt;div class="AbandonButton"&gt;
+        	&lt;a href="#" onclick="${Abandon}"&gt;
+                	&lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/delete.png")|(user)administrator|(hash)12013fd04cd9a837575f4411c4e47702af88be9a3a9602c580c099e5a6eaceea%}' alt="{$chat.abandon$}" title="{$chat.abandon$}" width="12px" height="12px"/&gt;
+                &lt;/a&gt;
+        &lt;/div&gt;        
+        {{/if}}
+        
+        {{if Delete}}
+        &lt;div class="DeleteButton"&gt;
+        	&lt;a href="#" onclick="${Delete}"&gt;
+                	&lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/reject.png")|(user)administrator|(hash)bb2f2ef09a8fd49ce2034655ca877eefc7ed757b062b7fa0fcbf0a2f957e72a5%}' alt="{$general.disable$}" title="{$general.disable$}" width="12px" height="12px"/&gt;
+                &lt;/a&gt;
+        &lt;/div&gt;        
+        {{/if}}
+        
+        {{if Edit}}
+        &lt;div class="EditButton"&gt;
+        	&lt;a href="#" onclick="${Edit}"&gt;
+                	&lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/edit.png")|(user)administrator|(hash)945b9310cbdefdd079b94229a44cf61b1d286fbba1a39f0446fbd79e13560270%}' alt="{$general.edit$}" title="{$general.edit$}" width="12px" height="12px"/&gt;
+                &lt;/a&gt;
+        &lt;/div&gt;        
+        {{/if}}
+        
+        &lt;div class="ChatRoomTitle"&gt;&lt;!-- Do not change this class name --&gt;
+	    {{if IsCurrentRoom}}
+        	&lt;strong&gt;&lt;span style="color: blue;"&gt;
+        {{else}}
+        	&lt;a href="#" title="{$chat.enter$}" class="JoinRoom"&gt; &lt;!-- Do not change this class name --&gt;
+                {{if IsCurrentUserIn}}
+                	&lt;strong&gt;
+                {{/if}}
+        {{/if}}
+	        
+        ${DisplayName}
+        (${OnlineUsersCount})
+                
+        {{if IsCurrentRoom}}
+        	&lt;/span&gt;&lt;/strong&gt;
+        {{else}}
+        	{{if IsCurrentUserIn}}
+        		&lt;/strong&gt;
+            {{/if}}
+            &lt;/a&gt;
+        {{/if}}  
+  
+        &lt;span class="ChatRoomInfoIcons"&gt;   
+        {{if IsPrivate}}
+            &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/private_room16.png")|(user)administrator|(hash)860c9787717054f7cc89eb4a4acf5bcafcf696f5886a9f6525b669f63c2b51f6%}' alt="{$chat.privateroom$}" title="{$chat.privateroom$}" width="12px" height="12px"/&gt;
+        {{/if}}
+        {{if HasPassword}}
+            &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/password.png")|(user)administrator|(hash)514e2d30458d293277ff85bca3475f9c4d49f9357862feb4ce59495455238165%}' alt="{$chat.passwordprotected$}" title="{$chat.passwordprotected$}" width="12px" height="12px"/&gt;
+        {{/if}}
+        &lt;/span&gt;
+        &lt;/div&gt;
+        
+        {{if Description != ""}}
+        	&lt;div class="ChatRoomListItemDescription"&gt;${Description}&lt;/div&gt;
+        {{/if}}
+&lt;/div&gt; 
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>b48e6d00-9f52-475a-b57a-82c6fef0b0f7</TransformationVersionGUID>
+    <TransformationGUID>d2396311-25ad-4f54-9c44-c80d071c72ac</TransformationGUID>
+    <TransformationLastModified>2014-02-13T20:56:47.6261856+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2652</TransformationID>
+    <TransformationName>ChatRoomUser</TransformationName>
+    <TransformationCode>&lt;div class="ChatRoomUser {{if IsOnline}}OnlineUser{{else}}OfflineUser{{/if}}"&gt;
+  {{if KickUserPerm}}
+      &lt;div class="PermaKickButton"&gt;
+              &lt;a href="#" onclick="${KickUserPerm}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/permakick.png")|(user)administrator|(hash)a736993cd1ecf12d4a729fcfaf13034c84d9f6bdd484666ea6f80c2fcd137ef5%}' title="{$chat.kickuserperm$}" alt="{$chat.kickuserperm$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  {{if KickUser}}
+      &lt;div class="KickButton"&gt;
+              &lt;a href="#" onclick="${KickUser}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/kick.png")|(user)administrator|(hash)9fc5e9dce0873ccea3d3a0fb2bc8b4240570a46b6b641216e617403e18324c7a%}' title="{$chat.kick$}" alt="{$chat.kick$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  {{if DeleteAdmin}}
+      &lt;div class="DeleteAdminButton"&gt;
+              &lt;a href="#" onclick="${DeleteAdmin}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent_delete.png")|(user)administrator|(hash)fedacff6ce5bdb8241102707a5633c9c8ad576be8b2d7a99fc05f20bce5bf05f%}' title="{$chat.deleteadmin$}" alt="{$chat.deleteadmin$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  {{if AddAdmin}}
+      &lt;div class="AddAdminButton"&gt;
+              &lt;a href="#" onclick="${AddAdmin}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent_add.png")|(user)administrator|(hash)ff43aa37eda26978257b58d5761ad22624ebfd8e2d8a703297de3a6205aec8a5%}' title="{$chat.addadmin$}" alt="{$chat.addadmin$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  &lt;div class="ChatRoomUserName"&gt; &lt;!-- Do not change this class name --&gt;
+    {{if IsOnline}}
+        {{if IsCurrentUser}}&lt;span class="CurrentUser"&gt;&lt;strong&gt;${Nickname}&lt;/strong&gt;&lt;/span&gt; 
+        {{else}}
+            {{if OneOnOneChat}}
+                &lt;a href="#" onclick="${OneOnOneChat}" target="_blank"&gt;${Nickname}&lt;/a&gt;
+            {{else}}
+                ${Nickname}
+            {{/if}}
+        {{/if}}
+    {{else}}
+        &lt;span&gt;
+            &lt;a href="#" onclick="return false;" title="{$chat.notpresent$}" style="text-decoration:none; cursor:default"&gt;${Nickname}&lt;/a&gt;
+        &lt;/span&gt;
+    {{/if}} 
+    {{if IsAdmin &amp;&amp; !IsCreator}} &lt;span class="UserAdmin"&gt; &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent.png")|(user)administrator|(hash)ba4f92697e3c9e1ad89d93995cc479444f8edc5138730a3f59020d8a39004342%}' title="{$chat.livesite.admin$}" alt="{$chat.livesite.admin$}" width="12px" height="12px"/&gt;&lt;/span&gt;{{/if}}
+    {{if IsCreator}} &lt;span class="UserCreator"&gt; &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent_creator.png")|(user)administrator|(hash)af9deac7c6d8647c1fcba3cf4d1d5301283d6c11a853dc36962e21c0fbd108d7%}' title="{$chat.livesite.creator$}" alt="{$chat.livesite.creator$}" width="12px" height="12px"/&gt;&lt;/span&gt;{{/if}}
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>7ca74fe4-f9f3-4b27-93af-bae9d7604e40</TransformationVersionGUID>
+    <TransformationGUID>07675e70-c478-4651-8f77-cf98d145409c</TransformationGUID>
+    <TransformationLastModified>2014-02-13T20:56:47.7061857+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2653</TransformationID>
+    <TransformationName>ChatSupportRequest</TransformationName>
+    <TransformationCode>{{if LiveSupport}}
+    &lt;input type="button" value="{$chat.supportrequest.openchat$}" /&gt;
+{{else}}
+    {{if EmailEnabled}}
+      &lt;input type="button" value="{$chat.supportrequest.emailavailable$}" /&gt;
+    {{else}}
+      &lt;input type="button" value="{$chat.supportrequest.unavailable$}" /&gt;
+    {{/if}}
+{{/if}}
+
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>81e626e0-0f18-478e-982c-e99c4a2f3042</TransformationVersionGUID>
+    <TransformationGUID>daa06eca-9fe1-40ef-ab51-c8b72b09a5a7</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.78+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2654</TransformationID>
+    <TransformationName>CMSChatError</TransformationName>
+    <TransformationCode>&lt;span style="color:#FF0000"&gt;Error message: {{html Message}}&lt;/span&gt;&lt;a href="#" onclick="${Delete}" &gt; [X]&lt;/a&gt;
+
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>96917f79-e90c-45a9-a235-dc7ccb440227</TransformationVersionGUID>
+    <TransformationGUID>3d226508-ef50-4740-b47d-08af0688585b</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.787+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2655</TransformationID>
+    <TransformationName>CMSChatErrorDeleteAllButton</TransformationName>
+    <TransformationCode>&lt;br/&gt;&lt;a href="#" onclick="${DeleteAll}"&gt;Close all errors.&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>d5e5c488-9d58-4534-8a2a-b686aa577a5b</TransformationVersionGUID>
+    <TransformationGUID>d550a6ea-2f94-47aa-9d8a-8e5008df78f9</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.797+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2656</TransformationID>
+    <TransformationName>CMSChatMessage</TransformationName>
+    <TransformationCode>&lt;div class="ChatMessage"&gt;
+	{{if System}}
+		&lt;span class="System"&gt;${LastModified.toLocaleTimeString()}:
+			&lt;span class="Message System{{if (System == 7) || (System == 10)}} Greeting{{/if}}"&gt; ${MessageText}&lt;/span&gt; 
+		&lt;/span&gt;
+	{{else}}
+		&lt;div class="ChatMessageHeader"&gt;
+			{{if (Modified)}}
+				&lt;span class="Modified"&gt;({$chat.messagemodified$} ${LastModified.toLocaleTimeString()})&lt;/span&gt;
+			{{/if}}
+			&lt;span class="PostedTime"&gt;${PostedTime.toLocaleTimeString()}&lt;/span&gt;
+			{{if (RejectMessage)}}
+				&lt;div class="RejectButton"&gt;
+					&lt;a href="#" onclick="${RejectMessage}"&gt;
+						&lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/reject.png")|(user)administrator|(hash)bb2f2ef09a8fd49ce2034655ca877eefc7ed757b062b7fa0fcbf0a2f957e72a5%}' alt="{$chat.rejectmessage$}" title="{$chat.rejectmessage$}" width="8px" height="8px"/&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+			{{/if}}
+			{{if (Whisper &amp;&amp; !IsOneOnOne)}}
+				&lt;span class="Whisper"&gt;
+					&lt;strong&gt;
+						{{if (SelectRecipient)}}
+							{$chat.from$} 
+							&lt;a href="#" onclick="${SelectRecipient}"&gt;${Nickname}&lt;/a&gt;   
+						{{else}}
+							{$chat.to$}
+							{{if (SelectPrevRecipient)}}
+								&lt;a href="#" onclick="${SelectPrevRecipient}"&gt;${Recipient}&lt;/a&gt;
+							{{else}}
+								${Recipient}
+							{{/if}}
+						{{/if}}
+					&lt;/strong&gt;
+				{{else}}
+					&lt;strong&gt;
+						&lt;span class="{{if (!IsAuthorCurrentUser) }}Sender{{else}}MeSender{{/if}}" &gt;
+							{{if (SelectRecipient &amp;&amp; !IsOneOnOne)}}
+								&lt;a href="#" onclick="${SelectRecipient}"&gt;${Nickname}&lt;/a&gt;
+							{{else}}
+								${Nickname}
+							{{/if}}
+						&lt;/span&gt;
+					&lt;/strong&gt;
+				&lt;/span&gt;
+			{{/if}}
+		&lt;/div&gt;
+		&lt;div class="ChatMessageBody"&gt;
+			{{if Rejected}}
+				&lt;span class="Rejected"&gt;{$chat.messagerejected$}&lt;/span&gt;
+			{{else}}
+				&lt;span class="Message"&gt;${MessageText}&lt;/span&gt;
+			{{/if}}
+		&lt;/div&gt;
+	{{/if}}
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>c5c12804-6b7a-4a4c-9a49-bb1ce41ce55e</TransformationVersionGUID>
+    <TransformationGUID>f2210e38-139b-42ab-ba5d-f69f0063a231</TransformationGUID>
+    <TransformationLastModified>2014-02-13T20:56:48.2861865+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2657</TransformationID>
+    <TransformationName>CMSChatNotification</TransformationName>
+    <TransformationCode>{{if NotificationType == 0}}
+	&lt;td&gt;{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt;
+	{{if IsOneToOne}}
+        	{$chat.invitedyoutoaprivateconversation$}.
+        {{else}}
+	 	{$chat.invitedyou$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.
+        {{/if}}
+        &lt;/td&gt;&lt;td&gt;&lt;input class="SubmitButton ChatNotificationButton" onclick="${AcceptEvent}" type="button" value="{$chat.accept$}" /&gt;&lt;input class="SubmitButton ChatNotificationButton" onclick="${DeclineEvent}" type="button" value="{$chat.decline$}" /&gt;&lt;/td&gt;
+{{else}}
+	&lt;td&gt;
+	{{if NotificationType == 1}}
+        	{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; 
+                {{if IsOneToOne}}
+                	{$chat.declinedprivate$}.
+                {{else}}
+                	{$chat.declined$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.
+                {{/if}}
+        {{/if}}
+        {{if NotificationType == 2}}
+        	{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; 
+                {{if IsOneToOne}}
+                	{$chat.acceptedprivate$}.
+                {{else}}
+                	{$chat.accepted$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.
+                {{/if}}
+        {{/if}}
+        {{if NotificationType == 3}}{$chat.nicknamechanged$}.{{/if}}
+        {{if NotificationType == 4}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.kicked$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;. {{if KickTime}} {$chat.kickreturn$} &lt;b&gt;${KickTime}&lt;/b&gt;.{{/if}}{{/if}}
+        {{if NotificationType == 5}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.kickedperm$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.{{/if}}
+        {{if NotificationType == 6}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.adminadded$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.{{/if}}
+        {{if NotificationType == 7}}{$chat.user$} &lt;b&gt;&lt;span&gt;${SenderNickname}&lt;/span&gt;&lt;/b&gt; {$chat.admindeleted$} &lt;b&gt;&lt;span&gt;${RoomName}&lt;/span&gt;&lt;/b&gt;.{{/if}}
+        &lt;/td&gt;
+        &lt;td class="ChatNotificationButtons"&gt;
+        	&lt;input class="SubmitButton ChatNotificationButton" onclick="${CloseEvent}" type="button" value="{$chat.delete$}" /&gt;
+        &lt;/td&gt;
+{{/if}}
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>d4680d2f-088b-4507-85ba-4206dfbdbc6e</TransformationVersionGUID>
+    <TransformationGUID>5f569586-f6f1-447a-a640-8010f7c4156b</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.813+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2658</TransformationID>
+    <TransformationName>CMSChatRoomUser</TransformationName>
+    <TransformationCode>&lt;div class="ChatRoomUser {{if IsOnline}}OnlineUser{{else}}OfflineUser{{/if}}"&gt;
+  {{if KickUserPerm}}
+      &lt;div class="PermaKickButton"&gt;
+              &lt;a href="#" onclick="${KickUserPerm}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/permakick.png")|(user)administrator|(hash)a736993cd1ecf12d4a729fcfaf13034c84d9f6bdd484666ea6f80c2fcd137ef5%}' title="{$chat.kickuserperm$}" alt="{$chat.kickuserperm$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  {{if KickUser}}
+      &lt;div class="KickButton"&gt;
+              &lt;a href="#" onclick="${KickUser}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/kick.png")|(user)administrator|(hash)9fc5e9dce0873ccea3d3a0fb2bc8b4240570a46b6b641216e617403e18324c7a%}' title="{$chat.kick$}" alt="{$chat.kick$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  {{if DeleteAdmin}}
+      &lt;div class="DeleteAdminButton"&gt;
+              &lt;a href="#" onclick="${DeleteAdmin}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent_delete.png")|(user)administrator|(hash)fedacff6ce5bdb8241102707a5633c9c8ad576be8b2d7a99fc05f20bce5bf05f%}' title="{$chat.deleteadmin$}" alt="{$chat.deleteadmin$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  {{if AddAdmin}}
+      &lt;div class="AddAdminButton"&gt;
+              &lt;a href="#" onclick="${AddAdmin}"&gt;
+                      &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent_add.png")|(user)administrator|(hash)ff43aa37eda26978257b58d5761ad22624ebfd8e2d8a703297de3a6205aec8a5%}' title="{$chat.addadmin$}" alt="{$chat.addadmin$}" width="12px" height="12px"/&gt;
+                  &lt;/a&gt;
+          &lt;/div&gt;
+  {{/if}}
+  
+  &lt;div class="ChatRoomUserName"&gt; &lt;!-- Do not change this class name --&gt;
+    {{if IsOnline}}
+        {{if IsCurrentUser}}&lt;span class="CurrentUser"&gt;&lt;strong&gt;${Nickname}&lt;/strong&gt;&lt;/span&gt; 
+        {{else}}
+            {{if OneOnOneChat}}
+                &lt;a href="#" onclick="${OneOnOneChat}" target="_blank"&gt;${Nickname}&lt;/a&gt;
+            {{else}}
+                ${Nickname}
+            {{/if}}
+        {{/if}}
+    {{else}}
+        &lt;span&gt;
+            &lt;a href="#" onclick="return false;" title="{$chat.notpresent$}" style="text-decoration:none; cursor:default"&gt;${Nickname}&lt;/a&gt;
+        &lt;/span&gt;
+    {{/if}} 
+    {{if IsAdmin &amp;&amp; !IsCreator}} &lt;span class="UserAdmin"&gt; &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent.png")|(user)administrator|(hash)ba4f92697e3c9e1ad89d93995cc479444f8edc5138730a3f59020d8a39004342%}' title="{$chat.livesite.admin$}" alt="{$chat.livesite.admin$}" width="12px" height="12px"/&gt;&lt;/span&gt;{{/if}}
+    {{if IsCreator}} &lt;span class="UserCreator"&gt; &lt;img src='{%GetImageUrl("CMSModules/CMS_Chat/security_agent_creator.png")|(user)administrator|(hash)af9deac7c6d8647c1fcba3cf4d1d5301283d6c11a853dc36962e21c0fbd108d7%}' title="{$chat.livesite.creator$}" alt="{$chat.livesite.creator$}" width="12px" height="12px"/&gt;&lt;/span&gt;{{/if}}
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>816654da-891a-41d4-a5f1-59461a01dfaa</TransformationVersionGUID>
+    <TransformationGUID>abfda7d0-4571-4523-bfbd-9183085b58c2</TransformationGUID>
+    <TransformationLastModified>2014-02-13T20:56:48.3561866+01:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2659</TransformationID>
+    <TransformationName>CMSRoomName</TransformationName>
+    <TransformationCode>&lt;h1&gt;${RoomName}&lt;/h1&gt;</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>fc57f427-a90c-498d-9e98-4f6d69fec469</TransformationVersionGUID>
+    <TransformationGUID>781c93b4-6dbf-4080-8b0e-2fe0ca848903</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.83+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2694</TransformationID>
+    <TransformationName>InitiatedChat</TransformationName>
+    <TransformationCode>{{if MessagesTemplate}}
+  &lt;div class="InitiateChatMessage"&gt;${Text}&lt;/div&gt;
+{{else}}
+&lt;div class="InitiatedChatBubble"&gt;
+  &lt;div class="InitiateChatSupporterName"&gt;
+    ${InitiatorName}
+  &lt;/div&gt;
+  &lt;div class="InitiateChatMessages"&gt;
+    {{html Messages}}
+  &lt;/div&gt;
+  &lt;div class="InitiateChatButtons"&gt;
+      &lt;a href="#" onclick="${Accept}" class="InitiateChatAcceptButton"&gt;{$chat.initiatechat.accept$}&lt;/a&gt;
+      &lt;a href="#" onclick="${Reject}" class="InitiateChatRejectButton"&gt;{$chat.initiatechat.reject$}&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+{{/if}}</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>351fcf82-5d08-44c6-83a4-818b7ed5e055</TransformationVersionGUID>
+    <TransformationGUID>69b4a850-dce7-43a8-bd68-7f0fd49203e8</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.837+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>2660</TransformationID>
+    <TransformationName>RoomName</TransformationName>
+    <TransformationCode>&lt;h1&gt;${RoomName}&lt;/h1&gt;</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>87d1dfa7-aa55-4cd5-9d07-aa3614def570</TransformationVersionGUID>
+    <TransformationGUID>445871e0-ed65-4db6-bddb-3c8b18d42e61</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.847+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+  <CMS_Transformation>
+    <TransformationID>3398</TransformationID>
+    <TransformationName>RoomNameWebPartsExamples</TransformationName>
+    <TransformationCode>&lt;div style="border: 2px solid gray; padding: 8px; background:#DADADA;"&gt;
+&lt;span style="font-size: 14px; font-weight: bold"&gt;${RoomName}&lt;/span&gt;
+&lt;/div&gt;</TransformationCode>
+    <TransformationType>jquery</TransformationType>
+    <TransformationClassID>3140</TransformationClassID>
+    <TransformationVersionGUID>590832da-33c7-4658-b1d9-ce20ae040cf2</TransformationVersionGUID>
+    <TransformationGUID>fbdb3524-b3e1-44fb-a9e2-37e3e85cf055</TransformationGUID>
+    <TransformationLastModified>2012-08-28T10:36:03.857+02:00</TransformationLastModified>
+    <TransformationIsHierarchical>false</TransformationIsHierarchical>
+    <TransformationHierarchicalXML />
+    <TransformationCSS />
+  </CMS_Transformation>
+</NewDataSet>

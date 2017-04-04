@@ -1,0 +1,12 @@
+.print-head{ display: none; }
+/*.print-wrapper .logo-wrapper { border-bottom: 3px solid #000000; }*/
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+  	margin-top: 20mm;
+	margin-bottom: 20mm;
+} 
+#footer-wrapper{display:none;}
+/* 20-02-14  11:48 */

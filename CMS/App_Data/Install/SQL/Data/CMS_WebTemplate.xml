@@ -1,0 +1,152 @@
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:IsReadOnly="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CMS_WebTemplate" msprop:IsFromCMSDatabase="True">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="WebTemplateID" type="xs:int" minOccurs="0" />
+                <xs:element name="WebTemplateDisplayName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateFileName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateLastModified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="WebTemplateName" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateOrder" type="xs:int" minOccurs="0" />
+                <xs:element name="WebTemplateLicenses" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplatePackages" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateThumbnailGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="WebTemplateShortDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CMS_WebTemplate>
+    <WebTemplateID>102</WebTemplateID>
+    <WebTemplateDisplayName>Dancing Goat</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\DancingGoat</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.dancinggoat.description$}</WebTemplateDescription>
+    <WebTemplateGUID>96cc6b9d-4b14-40ab-9c70-e175d5ca6091</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:17:47.0536783+01:00</WebTemplateLastModified>
+    <WebTemplateName>DancingGoat</WebTemplateName>
+    <WebTemplateOrder>1</WebTemplateOrder>
+    <WebTemplateLicenses>X</WebTemplateLicenses>
+    <WebTemplateThumbnailGUID>3ab53aba-a241-41c5-b5fd-e18b322fa189</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>A coffee seller's website which is excellent for evaluation purposes. It has a fully responsive design and loads of sample data.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>79</WebTemplateID>
+    <WebTemplateDisplayName>E-commerce Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\EcommerceSite</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.ecommercesite.description$}</WebTemplateDescription>
+    <WebTemplateGUID>23cdbe82-802b-4c38-82cd-95f510e2876d</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:18:05.7455473+01:00</WebTemplateLastModified>
+    <WebTemplateName>ECommerceSite</WebTemplateName>
+    <WebTemplateOrder>2</WebTemplateOrder>
+    <WebTemplateLicenses>B;N;E;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>ECM</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>a2b40114-91c4-4877-b46e-40235c8800d6</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The E-commerce Site is a ready-to-use template for on-line stores.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>80</WebTemplateID>
+    <WebTemplateDisplayName>Personal Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\PersonalSite</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.personalsite.description$}</WebTemplateDescription>
+    <WebTemplateGUID>f2022396-1508-42c3-8d0f-9a41d7c7be57</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:18:26.1055831+01:00</WebTemplateLastModified>
+    <WebTemplateName>PersonalSite</WebTemplateName>
+    <WebTemplateOrder>3</WebTemplateOrder>
+    <WebTemplateLicenses>F;S;B;N;C;P;R;E;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>ECM;SCN;ADV;DOC;ADV7</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>9ef55a42-2959-4946-952d-8d964cc62be9</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The Personal Site is perfect for your own personal persentation.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>81</WebTemplateID>
+    <WebTemplateDisplayName>Community Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\CommunitySite</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.communitysite.description$}</WebTemplateDescription>
+    <WebTemplateGUID>872ccfbc-3b4a-4c91-b99d-a5b15bcea3c3</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:18:44.866459+01:00</WebTemplateLastModified>
+    <WebTemplateName>CommunitySite</WebTemplateName>
+    <WebTemplateOrder>4</WebTemplateOrder>
+    <WebTemplateLicenses>B;N;E;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>SCN</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>8ac077cc-1eac-403f-9abe-c9c96c0af32f</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The Community Site demonstrates the capabilities of the social media features.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>75</WebTemplateID>
+    <WebTemplateDisplayName>Corporate Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\CorporateSite</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.corporatesite.description$}</WebTemplateDescription>
+    <WebTemplateGUID>48f74a3f-3447-409e-aeec-9aa402a764bc</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:18:59.7019424+01:00</WebTemplateLastModified>
+    <WebTemplateName>CorporateSite</WebTemplateName>
+    <WebTemplateOrder>5</WebTemplateOrder>
+    <WebTemplateLicenses>X</WebTemplateLicenses>
+    <WebTemplateThumbnailGUID>d2625d7e-8951-4c40-b063-4c5d5edd9e64</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The Corporate Site displays the general capabilities of Kentico.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>86</WebTemplateID>
+    <WebTemplateDisplayName>Intranet Portal</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\IntranetPortal</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.intranetportal.description$}</WebTemplateDescription>
+    <WebTemplateGUID>7cab38db-8c2d-4bd6-95b9-d451ac08fbab</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:19:14.6254346+01:00</WebTemplateLastModified>
+    <WebTemplateName>IntranetPortal</WebTemplateName>
+    <WebTemplateOrder>6</WebTemplateOrder>
+    <WebTemplateLicenses>B;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>SCN;DOC</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>d7d4e0eb-44b8-4c3a-b148-4bf637ad6f3a</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The Intranet Portal provides a ready-to-use intranet solution.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>21</WebTemplateID>
+    <WebTemplateDisplayName>Blank Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\BlankSite</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.blanksite.description$}</WebTemplateDescription>
+    <WebTemplateGUID>1925540f-4765-4159-8f1a-cd8c28f35ad9</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:19:30.1559875+01:00</WebTemplateLastModified>
+    <WebTemplateName>BlankSite</WebTemplateName>
+    <WebTemplateOrder>7</WebTemplateOrder>
+    <WebTemplateLicenses>F;S;B;N;C;P;R;E;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>ECM;SCN;ADV;DOC;ADV7</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>a928c1d2-1bcd-459c-abcb-9f5a08978017</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The Blank Site provides a template for creating new websites from scratch, based on the portal engine.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>77</WebTemplateID>
+    <WebTemplateDisplayName>ASPX Blank Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\BlankSiteASPX</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.blanksiteaspx.description$}</WebTemplateDescription>
+    <WebTemplateGUID>762b1a36-8d31-4df4-beb8-cfe242703620</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:19:45.3585076+01:00</WebTemplateLastModified>
+    <WebTemplateName>BlankSiteASPX</WebTemplateName>
+    <WebTemplateOrder>8</WebTemplateOrder>
+    <WebTemplateLicenses>F;S;B;N;C;P;R;E;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>ECM;SCN;ADV;DOC;ADV7</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>e9672fde-067a-48d6-ae11-26e9149fe833</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The ASPX Blank Site provides a template for creating new websites from scratch, based on ASPX page templates.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+  <CMS_WebTemplate>
+    <WebTemplateID>103</WebTemplateID>
+    <WebTemplateDisplayName>MVC Blank Site</WebTemplateDisplayName>
+    <WebTemplateFileName>~\App_Data\Templates\BlankSiteMvc</WebTemplateFileName>
+    <WebTemplateDescription>{$webtemplate.blanksitemvc.description$}</WebTemplateDescription>
+    <WebTemplateGUID>5d036eab-08a1-4312-b6f9-3e4a80c635c9</WebTemplateGUID>
+    <WebTemplateLastModified>2015-11-10T16:20:01.7631479+01:00</WebTemplateLastModified>
+    <WebTemplateName>BlankSiteMvc</WebTemplateName>
+    <WebTemplateOrder>9</WebTemplateOrder>
+    <WebTemplateLicenses>F;S;B;N;C;P;R;E;U;X;V</WebTemplateLicenses>
+    <WebTemplatePackages>ECM;SCN;ADV;DOC;ADV7</WebTemplatePackages>
+    <WebTemplateThumbnailGUID>b841d45b-2c89-4baa-959e-8650ba8caced</WebTemplateThumbnailGUID>
+    <WebTemplateShortDescription>The MVC Blank Site provides a template used for sites that use an MVC application for their presentation.</WebTemplateShortDescription>
+  </CMS_WebTemplate>
+</NewDataSet>

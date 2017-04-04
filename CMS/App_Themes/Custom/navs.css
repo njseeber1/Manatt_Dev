@@ -1,0 +1,239 @@
+/* NAVS [START] */
+
+.navbar-wrapper .navbar-inner {
+   margin-left:139px;
+}
+.navbar-wrapper .navbar-inner .container-fluid{
+       padding-left: 0px;
+}
+nav.page-nav .breadcrumb {
+	background: #fff;
+	margin-bottom: 0;
+	padding: 15px 21px;
+	float: left;
+}
+nav.page-nav aside.share {
+	float: right;
+    padding-right: 21px;
+}
+nav.page-nav aside.share .fa-stack .fa-stack-2x {
+    font-size: 25px;
+}
+nav.page-nav .breadcrumb,
+nav.page-nav aside.share {
+	max-width: 80%;
+    line-height: 2;
+}
+.breadcrumb>li+li::before {
+	display: inline-block;
+	content: '\e258';
+	color: #282828;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+    font-size:10px;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-transform: translateY(12%);
+		-ms-transform: translateY(12%);
+			transform: translateY(12%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.breadcrumb a {
+	color: #282828;
+}
+#people .tile#finder .sort,
+.nav-pills,
+nav.sub.radio > span {
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+#people .tile#finder .sort ul li a,
+#people-search .sort ul li a,
+.nav-pills > li > a {
+	background-color: transparent;
+	padding: 1px 0 .6em;
+	margin-bottom: 0;
+	border-bottom: 3px solid transparent;
+	color: rgba(255,255,255,0.8);
+	border-radius: 0;
+	text-align: center;
+	line-height: 1.4;
+}
+#people .tile#finder .sort ul li a:first-of-type,
+#people-search .sort ul li a:first-of-type,
+.nav-pills > li > a:first-of-type {
+	text-align: left;
+}
+.sub .nav-pills > li > a {
+	font-weight: 500;
+}
+#people-search .sort ul li a {
+	color: #333;
+	letter-spacing: -2px;
+	line-height: 1.2;
+}
+
+.long .nav-pills > li > a {
+	margin-bottom: -.4em;
+}
+nav.sub.radio label {
+	text-align: justify;
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom: 2px solid transparent;
+	padding: 0;
+}
+#people .tile#finder .sort ul li a:hover,
+/*#people-search .sort ul li a:hover,*/
+.nav-pills>li>a:focus, .nav-pills>li>a:hover,
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: transparent;
+	color: rgba(255,255,255,1);
+	font-weight: bold;
+	border-bottom: 3px solid #fff;
+	border-radius: 0!important;
+}
+/* HOVER WIGGLE FIX */
+.nav-pills>li>a::before {
+	display: block;
+	content: attr(title);
+	font-weight: bold;
+	visibility: hidden;
+	height: 1px;
+	overflow: hidden;
+}
+.sub > .panel {
+	border-bottom: 1px solid #fff;
+}
+.sub .panel-title a {
+	display: block;
+	padding: 0.8em;
+}
+/* NAVS [END] */
+
+/* HORIZONTAL DROP MENU [START] */
+.dropdown-submenu {
+	position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+	top:5px;
+	left:100%;
+	margin-top:-6px;
+	margin-left:-1px;
+}
+.dropdown-submenu > .dropdown-menu {
+	display:block;
+}
+
+.dropdown-submenu.open {
+	z-index: 999;
+}
+
+.dropdown-submenu>a::after {
+	display:block;
+	content:" ";
+	float:right;
+	width:0;
+	height:0;
+	border-color:transparent;
+	border-style:solid;
+	border-width:5px 0 5px 5px;
+	border-left-color:#cccccc;
+	margin-top:5px;
+	margin-right:-10px;
+}
+.dropdown-submenu:hover>a::after {
+/*    border-left-color:#ffffff;*/
+}
+.dropdown-submenu.pull-left {
+	float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left:-100%;
+	margin-left:10px;
+	-webkit-border-radius:6px 0 6px 6px;
+	-moz-border-radius:6px 0 6px 6px;
+	border-radius:6px 0 6px 6px;
+}
+
+.sub-menu .dropdown-submenu>a::after {
+	margin-top: 10px;
+}
+
+.sub-menu .dropdown-menu-level2 {
+	z-index: 9999;
+	top: -72px;
+	margin-left: -36px;
+	display: none;
+}
+
+.dropdown-menu>li>a {
+	padding: 11px 20px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: #efab00;
+	color: #fff;
+}
+
+/* removed - submenu is broken *Raisa
+.dropdown-menu li ul[class*="sub"] {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}*/
+/* HORIZONTAL DROP MENU [END] */
+/* PRINT NAV [START] */
+.print-nav {
+/*	position: fixed;*/
+	padding: 3px 0;
+	width: 100%;
+}
+.print-nav nav {
+	width: 450px;
+}
+.print-nav,
+.print-nav a,
+.print-nav .nav > li > a {
+	color: #000;
+	font-weight: bold;
+	padding: 0;
+}
+.print-nav .open > a:focus, .print-nav .open > a:hover,
+.print-nav .nav > li > a:focus, .print-nav .nav > li > a:hover,
+.print-nav .open > a {
+	background: transparent;
+}
+.print-nav .nav .btn {
+	border-radius: 2em!important;
+	background: rgba(100%,100%,100%,0.4);
+	border: 2px solid #000;
+	color: #000;
+	font-size: 18px;
+	padding: 0.2em 0.5em;
+}
+.print-nav .nav.pull-right {
+	padding: 7px 20px 0 0;
+}
+.print-nav .dropdown-menu {
+	top: 0;
+	border-top: 0;
+	width: 250px;
+	padding: 16px 16px;
+	border-radius: 0;
+	border-left: 0 none;
+	-webkit-transform: translateY(8.3%);
+	-moz-transform: translateY(8.3%);
+	-o-transform: translateY(8.3%);
+	transform: translateY(8.3%);
+}
+.print-nav ul.nav {
+    padding: 0 22px;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+/* PRINT NAV [END]  */

@@ -1,0 +1,168 @@
+.print-wrapper .white-container { padding-top: 0px; padding-bottom: 0; }
+.print-wrapper .container { width: 800px; }
+.print-wrapper h1.main-head { font-size: 36px; }
+.print-wrapper p{ color: #414042; font-size: 14px; }
+.container {padding-left: 0;padding-right: 0;}
+.print-wrapper .container .col-r{ display: none; }
+.print-wrapper .container .col-l{ width: 100%; }
+
+
+.print-wrapper .collapse-box { margin: 0; }
+.print-wrapper .social-media-link-ls{ display: none; }
+.print-wrapper ul.li-list > li { background: none; color: #414042!important; font-size: 14px; padding-left: 30px; }
+
+.print-wrapper .person-depart-info > ul > li > a { /*background: none;*/ font-size: 14px; padding-left: 20px; }
+.print-wrapper .contact-list .show-more-link { display: none; }
+.print-wrapper .list-block.hide{ display: block; }
+
+
+
+.print-head{ background: #efab00; border-bottom: 3px solid #000000; }
+.print-head .container{ height: 43px; }
+.print-head .container .left{ float: left; position: relative;  }
+.print-head .container .left span{  color: #ffffff; cursor: pointer; display: block;font-family: "FuturaW01-ExtraBoldCond",arial; font-size: 13px; line-height: 44px; padding-right: 20px; text-transform: uppercase; }
+
+.filter-option{ background: #efab00; display: none; padding: 10px; position: absolute; left: 0; top: 43px; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000; width: 250px; z-index: 999; }
+.filter-option ul li{ float: left; padding-bottom: 5px; width: 100%; display: none; }
+.filter-option .checkbox { float: left; height: 20px; margin-right: 7px; width: 20px; }
+.filter-option .checkbox input{ opacity: 1; }
+.filter-option label { color: #fff; font-family: arial, arial; float: left; font-size: 12px; line-height: 17px; text-transform: uppercase; width: 220px; }
+
+
+.print-head .container .right{ float: right; padding-top: 8px; }
+.print-head .container .right ul li{ float: left; margin-left: 17px; }
+.print-head .container .right ul li a{ display: block; }
+
+.print-wrapper .logo-wrapper{ padding-bottom: 40px; text-align: center; }
+
+.print-wrapper .contact-list .thumbnail-detail { padding-top: 0px; }
+.print-wrapper .contact-list .thumbnail-detail h3 { font-size: 15px; }
+.print-wrapper .contact-list .thumbnail-detail p{ font-size: 13px; }
+
+.container .col-r .location-det{ display: none; }
+.location-det-ls.location-det{ border: none; margin-top: 0px; }
+.location-det-ls.location-det p a{ text-decoration: none; }
+
+.print-wrapper .location-det-ls.location-det { display:block; }
+.print-wrapper .btn-area{ display: none; }
+.print-wrapper .bottom-banner { background: none; padding-bottom: 0; }
+/*.print-wrapper .col-l{  width:  100%; }
+.print-wrapper-two-col .col-l{  width:  66%; }*/
+.print-wrapper .person-heading { margin-left: 0; padding-bottom: 0; }
+.print-wrapper .collapse-expand-a .block { padding-bottom: 16px; }
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont { display: block; margin-top: 5px; }
+.print-wrapper .no-border .block h2 { background: none; color: #efab00; cursor: default; font-size: 16px; padding-left: 0; line-height: 1; }
+.print-wrapper .collapse-expand-a .print-extent-p h2 { background: none; color:black; cursor: default; font-size: 18px; padding-left: 0; line-height: 1; }
+.print-wrapper .collapse-expand-a .remove-heading .collapse-expand-cont p, .print-wrapper .collapse-expand-a .remove-heading .print-wrapper .collapse-expand-cont{ font-size: 16px; }
+.print-wrapper .people-intro { padding-bottom: 0; }
+.print-wrapper .purple-para p.heading-brief{ margin-bottom: 10px; line-height:18px; }
+.print-wrapper .collapse-box .people-intro p.heading-brief { color: #414042 !important; font-family: arial !important; line-height: 21px !important;
+  margin-bottom: 0 !important;}
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont { padding-left: 0; font-size: 14px; color: #414042!important; }
+
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont > ul > li > a { background: none; font-size: 14px; padding-left: 0px; color: #414042; }
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont > ul > li > a:hover{ background: none; }
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont > ul.with-bullet > li { font-family: arial!important; font-size: 14px; padding-left: 18px; color: #414042; }
+.print-wrapper  #owl-example-outer-contaier, .print-wrapper .hero-ban, .print-wrapper .bread-crumb, .print-wrapper p.v-card{ display: none; }
+
+.print-wrapper .collapse-box .people-intro p.heading-brief{  font-size: 16px;  padding-bottom: 10px; }
+.print-wrapper .bioSideBar .collapse-box .people-intro p.heading-brief{ padding-bottom: 5px; }
+.print-wrapper .add-det-print { padding-bottom: 15px; }
+
+.print-wrapper .block{ float: left; width: 100%; }
+
+.print-wrapper .block .person-depart-info{ float: left; padding-bottom: 16px; width: 100%; }
+.print-wrapper .block .person-depart-info h2 { padding-bottom: 6px; }
+.print-wrapper .block .person-depart-info > ul > li{ padding-bottom: 2px; }
+.print-wrapper .block .person-depart-info > ul > li > a{ color: #414042!important; font-family: arial; font-size: 14px; /*padding-left: 0;*/ }
+
+.add-det-print p{ margin-bottom: 5px;}
+.add-det-print p span.sep{ margin: 0 5px; }
+.add-det-print p.contact-info{ font-size: 16px; }
+.add-det-print p.contact-info strong{ font-family: arial; margin-right: 20px; }
+.add-det-print p.contact-info span.num{ font-family: arial; margin-right: 15px; margin-left: 5px; }
+.add-det-print p.contact-info span.region{ font-family: arial;  margin-right: 20px; }
+.add-det-print p a, .add-det-print p a:hover{ text-decoration: none; }
+
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont > ul > li { padding-bottom: 0px; background: none; font-size: 14px; color: #414042!important; }
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont p{ margin-bottom: 5px; }
+
+p.email-print{ padding-top: 9px; }
+p.email-print a{ font-family: arial; font-size: 16px; }
+
+.person-det-print{ padding-bottom: 15px; }
+.person-det-print .img-people-print{ float: left; margin-right: 18px; width: 160px; height: 157px; }
+.person-det-print .img-people-print img{ width: 100%; height: 100%; }
+
+.print-wrapper .intro-space{ padding-bottom: 16px; }
+
+.print-wrapper .collapse-expand-a .block h2.expand:hover, .collapse-expand-a .block h2.expand:focus { background: none; color: #efab00; }
+
+.collapse-expand-cont p a{ color: #414042 !important; }
+/* MORGANMS-106 commnet above line and uncomment below
+.collapse-expand-cont p a{ color: #414042 !important; text-decoration: none!important; }*/
+
+.collapse-expand-cont p a:hover{  color: #efab00!important; text-decoration: none!important; }
+/* 02-03-15  6:03 */
+
+.print-wrapper .collapse-expand-a .block .person-heading h2 { color: #000; font-family: "FuturaW01-ExtraBoldCond",arial; font-size: 24px; line-height: 30px;  text-transform: uppercase; }
+
+.print-wrapper .tbl-date-detail{ margin-bottom: 0; }
+.print-wrapper .keycontact-print{ font-family: arial, Arial; padding-bottom: 15px; }
+.print-wrapper .keycontact-print a{ text-decoration: underline; }
+.print-wrapper .pub-heading {  padding-bottom: 0px; }
+
+.keycontact-print u{ color: #000000; }
+.keycontact-print span{ margin-right: 5px; color: #efab00;font-size: 16px;text-transform: uppercase;font-family: "FuturaW01-ExtraBoldCond",arial; }
+
+.print-selected-represent .collapse-expand-cont ul{ padding-bottom: 10px; }
+
+.print-Publication .collapse-expand-cont p a, .print-event .collapse-expand-cont p a, .print-Article .collapse-expand-cont p a{ text-decoration: none; }
+
+#page-wrapper a, #page-wrapper a:hover{ text-decoration: none!important; }
+
+.print-wrapper .checkbox input, .radio input{ width: auto; height: auto; }
+
+.print-wrapper .collapse-expand-a .print-relatedResource, .print-wrapper .collapse-expand-a .block .collapse-expand-cont ul li ul li{ padding-bottom:0px; }
+
+.print-wrapper .print-selected-represent .collapse-expand-cont ul.ulRemoveSpace {margin-top:-10px;}
+
+.print-wrapper .show-more-link1{ display: none; }
+.print-wrapper .hidden-cont{ display: block; }
+.print-wrapper ul li,.print-wrapper ol li{ font-size: 14px; }
+
+
+
+.print-wrapper .collapse-box .people-intro h1{ font-size: 36px; line-height: 1; padding-bottom: 30px; }
+.print-wrapper  h2.print-head-h2{ color: #efab00; font-family: "FuturaW01-ExtraBoldCond",arial; font-size: 16px; line-height: 15px; padding-bottom: 2px; text-transform: uppercase; }
+.print-wrapper .num-f{ font-family: "whitneysemibold",arial; margin-right: 12px; }
+.print-wrapper .add-block-p{ margin-bottom: 5px; }
+.print-wrapper .add-block-p p{ margin-bottom: 0; }
+.print-wrapper .add-block-p p.ph-fax{ font-size: 16px; }
+.print-wrapper .add-block-p p span{ margin: 0 5px; }
+.print-wrapper .print-footer{ padding-top:24px}
+.print-wrapper .footer-inner-wrapper{ width: 650px; margin: 0 auto; }
+.print-wrapper .print-footer p{ font-size: 14px; }
+.print-wrapper .collapse-box{border-bottom:none;}
+.print-wrapper .tile-wrapper{ display: none; }
+.print-wrapper .content-wrapper{ min-height: inherit; }
+.print-wrapper .address-block{ padding: 0px 0 19px 0; }
+.print-wrapper .collapse-expand-a .block .collapse-expand-cont h3{ font-size: 14px; padding-bottom: 3px; }
+
+.print-wrapper .content-wrapper .subsection-list, .print-wrapper .content-wrapper .print-extent-p, .print-wrapper .content-wrapper .person-depart-info {border-bottom:none; padding-bottom:16px; margin-bottom:0;}
+.print-wrapper .content-wrapper .collapse-expand-a  ul > li > a { font-family:arial; color: #414042 !important; font-size:14px; }
+.print-wrapper .content-wrapper ul, .print-wrapper .content-wrapper .subsection-list > ul > li, .print-wrapper .content-wrapper .person-depart-info > ul > li{ padding-bottom: 0; }
+.print-wrapper .content-wrapper .person-depart-info h2,.print-wrapper .content-wrapper .subsection-list h2 {padding-bottom:6px; }
+
+.print-wrapper .tbl-date-detail, .print-wrapper .small-head-next{padding-bottom: 15px;}
+.print-wrapper .bottomSpace{padding-bottom: 15px; margin-bottom: 0; }
+.print-wrapper .collapse-box  .intro-space p.heading-brief{font-size: 14px;}
+.print-wrapper .purple-para p.heading-brief{  font-family: arial!important ; }
+.print-wrapper .subGroupRelatedPeople {display:none;}
+.print-wrapper ul li {position: relative;}
+.print-wrapper .subsection-list ul  li span.li-arrow, .print-wrapper  ul  li span.li-arrow-print { position: absolute; left:0; top: 2px; width: 8px; height: 14px; padding-top: -1px; }
+.print-wrapper .person-depart-info > ul > li span.li-arrow{ top: 1px; }
+.print-wrapper .subsection-list { margin-top: 0px; }
+.print-wrapper ul { margin-bottom: 10px;}
+.print-wrapper .bioSideBar ul { margin-bottom: 0px;}
+.print-wrapper .print-selected-represent .collapse-expand-cont ul { padding-bottom: 10px;}

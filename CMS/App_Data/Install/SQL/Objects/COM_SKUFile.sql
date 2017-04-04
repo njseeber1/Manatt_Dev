@@ -1,0 +1,30 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[COM_SKUFile](
+	[FileID] [int] IDENTITY(1,1) NOT NULL,
+	[FileGUID] [uniqueidentifier] NOT NULL,
+	[FileSKUID] [int] NOT NULL,
+	[FilePath] [nvarchar](450) NOT NULL,
+	[FileType] [nvarchar](50) NOT NULL,
+	[FileLastModified] [datetime2](7) NOT NULL,
+	[FileName] [nvarchar](250) NOT NULL,
+	[FileMetaFileGUID] [uniqueidentifier] NULL,
+ CONSTRAINT [PK_COM_SKUFile] PRIMARY KEY CLUSTERED 
+(
+	[FileID] ASC
+)
+)
+
+GO
+CREATE NONCLUSTERED INDEX [IX_COM_SKUFile_FileSKUID] ON [dbo].[COM_SKUFile]
+(
+	[FileSKUID] ASC
+)
+GO
+ALTER TABLE [dbo].[COM_SKUFile]  WITH CHECK ADD  CONSTRAINT [FK_COM_SKUFile_COM_SKU] FOREIGN KEY([FileSKUID])
+REFERENCES [dbo].[COM_SKU] ([SKUID])
+GO
+ALTER TABLE [dbo].[COM_SKUFile] CHECK CONSTRAINT [FK_COM_SKUFile_COM_SKU]
+GO
