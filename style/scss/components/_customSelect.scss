@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// FORMS
+// -----------------------------------------------------------------------------
+
+
+.customSelect {
+	font-size:12px;
+    position: relative;
+    color: $colorWhite;
+    background: $colorBrandBlueDark;
+    font-weight:bold;
+}
+.customSelect-icon {
+    @extend .zmdi-chevron-down;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background: inherit;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:22px;
+
+    &:before {
+        @extend %iconStyle;
+        margin: 0;
+    }
+}
+select.customSelect-select,
+select.customSelect-select:focus {
+	font-size:inherit;
+	font-weight:inherit;
+            appearance: none;
+       -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    color: inherit;
+    border-width: 0;
+    option,
+    option:focus {
+    	background:$colorWhite;
+        color: $colorGrayDark;
+        font-weight:normal;
+        font-size:14px;
+        border-width:0;
+    }
+    ::-ms-value {
+    	background:red !important;
+    }
+}
+// .customSelect-select:focus {
+//  	+ .customSelect-icon {
+// 		@extend .zmdi-chevron-up;
+// 	}
+// }

@@ -3,33 +3,33 @@
 // -----------------------------------------------------------------------------
 
 .actionBar {
-	font-size:12px;
-	input[type='text'],
-	input[type='search'],
-	input[type='email'],
-	input[type='tel'] {
-		color:$colorBrandBlueDark;
-		font-weight:bold;
-		border-width:0;
-		background:rgba($colorWhite,.6);
-		  // Placeholder
-		  &::placeholder {
-		    color:$colorBrandBlueDark;
-		  }
-  	}
-  	select, select:focus {
-  		font-size:12px;
-  		background:$colorBrandBlueDark;
-  		color:$colorWhite;
-  		font-weight:bold;
-  		option {
-  			background:$colorWhite;
-  			color:$colorBrandBlueDark;
-  		}
-
-  	}
-  	.btn {
-  		font-size:inherit;
-  		line-height:1.7
-  	}
+    font-size: 12px;
+    input[type='text'],
+    input[type='search'],
+    input[type='email'],
+    input[type='tel'] {
+        color: $colorBrandBlueDark;
+        font-weight: bold;
+        border-width: 0;
+        background: rgba($colorWhite,.6);
+        // Placeholder
+        &::placeholder {
+            color: $colorBrandBlueDark;
+        }
+    }
+    // select,
+    // select:focus {
+    //     font-size: 12px;
+    //     background: $colorBrandBlueDark;
+    //     color: $colorWhite;
+    //     font-weight: bold;
+    //     option {
+    //         background: $colorWhite;
+    //         color: $colorBrandBlueDark;
+    //     }
+    // }
+    .btn {
+        font-size: inherit;
+        line-height: 1.7;
+    }
 }

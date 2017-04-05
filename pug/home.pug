@@ -46,7 +46,7 @@ html(lang="en")
 											p.tile-caption
 												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
 							.col-sm-6
-								.tile.tile--animate.ar--1-1.carousel.slide.fillColorGrayDark(data-ride='carousel')
+								.tile.tile--animate.ar--1-1.carousel.slide.fillColorBrandGreen(data-ride='carousel')
 									ol.carousel-indicators.tile-carouselIndicators
 										li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
 										li(data-target='#carouselExampleIndicators', data-slide-to='1')
@@ -114,7 +114,7 @@ html(lang="en")
 											h3.tile-heading Character max - 30 - Title
 											p.tile-caption
 												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-				section.actionBar.js-homepage-actionBar.px-4.py-8.py-md-12.fillcolorBrandCyan.fullWidth
+				section.actionBar.js-homepage-actionBar.px-4.py-8.py-md-12.fillColorBrandCyan.fullWidth
 					.row.sm-gutters
 						.col-md
 							.searchBox.mb-2.mb-md-0
@@ -122,20 +122,22 @@ html(lang="en")
 								a.searchBox-submit
 						.col-md
 							label.sr-only(for='topic') Select a Key Topic
-							select#topic.form-control.mb-2.mb-md-0
-								option Select a Key Topic
-								option 2
-								option 3
-								option 4
-								option 5    		
+							.customSelect
+								select#topic.customSelect-select.form-control
+									option Select a Key Topic
+									option 2
+									option 3
+									option 4
+								.customSelect-icon
 						.col-md
 							label.sr-only(for='content') Content Type
-							select#content.form-control.mb-2.mb-md-0
-								option Select a Key Topic
-								option 2
-								option 3
-								option 4
-								option 5					
+							.customSelect
+								select#content.customSelect-select.form-control
+									option Content Type
+									option 2
+									option 3
+									option 4
+								.customSelect-icon
 						.col-md.col-md-auto
 							button.btn.btn-primary.w-100.w-md-auto.px-4 Go
 				section.py-5.coverBg.text-white(style="background-image:url(http://placehold.it/1200x500/404040)")

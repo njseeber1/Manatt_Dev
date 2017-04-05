@@ -128,7 +128,7 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="tile tile--animate ar--1-1 carousel slide fillColorGrayDark" data-ride="carousel">
+                <div class="tile tile--animate ar--1-1 carousel slide fillColorBrandGreen" data-ride="carousel">
                   <ol class="carousel-indicators tile-carouselIndicators">
                     <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -202,7 +202,7 @@
             </div>
           </div>
         </div>
-        <section class="actionBar js-homepage-actionBar px-4 py-8 py-md-12 fillcolorBrandCyan fullWidth">
+        <section class="actionBar js-homepage-actionBar px-4 py-8 py-md-12 fillColorBrandCyan fullWidth">
           <div class="row sm-gutters">
             <div class="col-md">
               <div class="searchBox mb-2 mb-md-0">
@@ -211,23 +211,27 @@
             </div>
             <div class="col-md">
               <label class="sr-only" for="topic">Select a Key Topic</label>
-              <select class="form-control mb-2 mb-md-0" id="topic">
-                <option>Select a Key Topic</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5    		</option>
-              </select>
+              <div class="customSelect">
+                <select class="customSelect-select form-control" id="topic">
+                  <option>Select a Key Topic</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <div class="customSelect-icon"></div>
+              </div>
             </div>
             <div class="col-md">
               <label class="sr-only" for="content">Content Type</label>
-              <select class="form-control mb-2 mb-md-0" id="content">
-                <option>Select a Key Topic</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5					</option>
-              </select>
+              <div class="customSelect">
+                <select class="customSelect-select form-control" id="content">
+                  <option>Content Type</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <div class="customSelect-icon"></div>
+              </div>
             </div>
             <div class="col-md col-md-auto">
               <button class="btn btn-primary w-100 w-md-auto px-4">Go</button>
