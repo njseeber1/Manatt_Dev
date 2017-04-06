@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// HEADING BAR
+// -----------------------------------------------------------------------------
+.searchHeader {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+    margin-right: $spacer;
+    margin-left: $spacer;
+    border-bottom: 2px solid $colorGrayDarker;
+    @include media-breakpoint-up(md) {
+        background: $colorBrandBlueDark;
+        color: $colorWhite;
+        display: flex;
+        align-items: flex-end;
+        padding: $spacer $spacer*2;
+        margin-right: 0;
+        margin-left: 0;
+        border-bottom-width:0;
+		padding-right: $spacer*4;
+		padding-left: $spacer*4;
+    }
+}
+
+.searchHeader-heading {
+    font-size: 20px;
+    margin-right: $spacer;
+    font-weight: bold;
+}
+
+.searchHeader-aside {
+    font-size: 13px;
+    line-height: 1.8;
+}

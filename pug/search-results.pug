@@ -1,0 +1,210 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title Search Results
+
+	body
+		include includes/_headerMain.pug
+		main
+			.container
+				section.actionBar.actionBar--simpleSearchMobile.px-2.py-3.py-md-12.fillColorBrandCyan.fullWidth
+					.row.sm-gutters
+						.col
+							.searchBox.actionBar-searchBox.mb-md-0
+								input.searchBox-textField(type='text', name='', placeholder='Search 360 Health')
+								span.searchBox-submit
+						.col-md.d-none.d-md-block
+							label.sr-only(for='topic') Select a Key Topic
+							.customSelect.mb-2.mb-md-0
+								select#topic.customSelect-select.form-control
+									option Select a Key Topic
+									option 2
+									option 3
+									option 4
+								.customSelect-icon
+						.col-md.d-none.d-md-block
+							label.sr-only(for='content') Content Type
+							.customSelect.mb-2.mb-md-0
+								select#content.customSelect-select.form-control
+									option Content Type
+									option 2
+									option 3
+									option 4
+								.customSelect-icon
+						.col-auto.col-md-auto
+							button.btn.btn-primary.px-4 Go
+				.row
+					.col-lg-auto.pt-8.d-none.d-lg-flex
+						.filters
+							h3.filters-subHeading Publications
+							ul.filters-list.truncateList
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox1(type='checkbox',checked)
+									label(for='checkbox1')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox2(type='checkbox',checked)
+									label(for='checkbox2')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox3(type='checkbox')
+									label(for='checkbox3')
+										| Filter Item Name
+							h3.filters-subHeading Premium Insights
+							ul.filters-list.truncateList
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox4(type='checkbox')
+									label(for='checkbox4')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox5(type='checkbox')
+									label(for='checkbox5')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox6(type='checkbox')
+									label(for='checkbox6')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox7(type='checkbox')
+									label(for='checkbox7')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox8(type='checkbox')
+									label(for='checkbox8')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox9(type='checkbox')
+									label(for='checkbox9')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox10(type='checkbox')
+									label(for='checkbox10')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox11(type='checkbox')
+									label(for='checkbox11')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox12(type='checkbox')
+									label(for='checkbox12')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox13(type='checkbox')
+									label(for='checkbox13')
+										| Filter Item Name
+							h3.filters-subHeading Analytics
+							ul.filters-list.truncateList
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox14(type='checkbox')
+									label(for='checkbox14')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox15(type='checkbox')
+									label(for='checkbox15')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox16(type='checkbox')
+									label(for='checkbox16')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox17(type='checkbox')
+									label(for='checkbox17')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox18(type='checkbox')
+									label(for='checkbox18')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox19(type='checkbox')
+									label(for='checkbox19')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox20(type='checkbox')
+									label(for='checkbox20')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox21(type='checkbox')
+									label(for='checkbox21')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox22(type='checkbox')
+									label(for='checkbox22')
+										| Filter Item Name
+								li.inputStyled.inputStyled--checkbox
+									input#checkbox23(type='checkbox')
+									label(for='checkbox23')
+										| Filter Item Name
+
+					.col
+						.searchFeatured
+							.searchFeatured-header Featured Search Results for Search Terms
+							.searchItem.searchItem--keyTopic.searchFeatured-searchItem
+								.searchItem-indicator.fa-address-book
+									| Key Topic
+								h2.searchItem-title
+									| Key Topic Search Result Item
+								.searchItem-blurb.js-truncate
+									| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+							.searchItem.searchItem--publication.searchFeatured-searchItem
+								.searchItem-indicator
+									| Publication
+								h2.searchItem-title
+									| Publication Search Result Item
+								.searchItem-blurb.js-truncate
+									| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+							.searchItem.searchItem--event.searchFeatured-searchItem
+								.searchItem-indicator
+									| Event
+								h2.searchItem-title
+									| Event Search Result Item
+								.searchItem-blurb.js-truncate
+									| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+							.searchItem.searchItem--premiumInsight.searchFeatured-searchItem
+								.searchItem-indicator
+									| Premium Insight
+								h2.searchItem-title
+									| Premium Insight Search Result Item
+								.searchItem-blurb.js-truncate
+									| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+						.searchHeader
+							.searchHeader-heading Search Results for Search Terms
+							.searchHeader-aside
+								| (Showing 
+								strong 8 of 25 
+								|results)
+						.searchItem.searchItem--keyTopic
+							.searchItem-indicator.fa-address-book
+								| Key Topic
+							h2.searchItem-title
+								| Key Topic Search Result Item
+							.searchItem-blurb
+								| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+						.searchItem.searchItem--publication
+							.searchItem-indicator
+								| Publication
+							h2.searchItem-title
+								| Publication Search Result Item
+							.searchItem-blurb
+								| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+						.searchItem.searchItem--event
+							.searchItem-indicator
+								| Event
+							h2.searchItem-title
+								| Event Search Result Item
+							.searchItem-blurb
+								| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+						.searchItem.searchItem--premiumInsight
+							.searchItem-indicator
+								| Premium Insight
+							h2.searchItem-title
+								| Premium Insight Search Result Item
+							.searchItem-blurb
+								| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+						.searchItem.searchItem--analysis
+							.searchItem-indicator
+								| Analysis
+							h2.searchItem-title
+								| Analysis Search Result Item
+							.searchItem-blurb
+								| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.

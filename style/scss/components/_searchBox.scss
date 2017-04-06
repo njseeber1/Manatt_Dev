@@ -3,34 +3,34 @@
 
 /* Searchbox/button */
 .searchBox {
-	text-align:right;
-	//margin-bottom:$spacingBase;
-	position:relative;
-	color:$colorGray;
+	display:flex;
+	background:$colorWhite;
 }
-.searchBox-textField {
-	padding-right: 43px;
+.searchBox-textField, .searchBox-textField:focus {
+	padding-right: $spacer/2;
 	padding-left:$spacer/2;
 	margin:0;
 	height:38px;
 	line-height:38px;
-	border:1px solid $colorGrayLight;
+	border-width:0;
 	color:$colorBrandBlueDark;
-	width:100%;
+	flex:1 1 auto;
+	background:transparent;
+	outline:none;
+        // Placeholder
+        &::placeholder {
+            color: $colorBrandBlueDark;
+        }
 }
-a.searchBox-submit {
+.searchBox-submit {
 	@extend .zmdi-search;
-	//background: $colorGrayLight;
-	display:block;
-	position:absolute;
-	right:0;
-	top:0;
 	color:$colorBrandBlueDark !important;
-	height:38px;
-	width:38px;
-	line-height:38px;
-	text-align:center;
 	font-size:24px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding-right:$spacer;
+	padding-left:$spacer/2;
 	&:before {
 		@extend %iconStyle;
 		margin:0;

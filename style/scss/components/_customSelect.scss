@@ -9,6 +9,7 @@
     color: $colorWhite;
     background: $colorBrandBlueDark;
     font-weight:bold;
+    margin-bottom:$spacer;
 }
 .customSelect-icon {
     @extend .zmdi-chevron-down;

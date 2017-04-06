@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// FORMS
+// -----------------------------------------------------------------------------
+
+.inputStyled {
+    
+}
+
+.inputStyled--radio, .inputStyled--checkbox {
+    input[type='radio'],
+    input[type='checkbox'] {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0
+    }
+    label {
+        cursor:pointer;
+        position: relative;
+        padding-left: 30px;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 18px;
+                height: 18px;
+                display: inline-block;
+                border: 2px solid #CFD6DA;
+                top: 2px;
+                left: 0;
+                -webkit-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+    }
+}
+.inputStyled--radio {
+    label:before {
+        border-radius: 50%;
+    }
+    input[type="radio"]:checked + label:before {
+        border: 6px solid #3b99fc;
+    }
+
+    input[type='radio']:not(:checked) + label:hover:before {
+        border: 6px solid #CFD6DA;
+    }
+}
+
+.inputStyled--checkbox {
+    label:before {
+        border-radius: 2px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        font-family: '#{$zmdi-font-name}';
+        content: "\f26b";
+        color: transparent;
+    }
+    input[type="checkbox"]:checked + label:before {
+        color: $colorWhite;
+        background:$colorBrandGreen;
+        border-color:$colorBrandGreen;
+    }
+
+    input[type='checkbox']:not(:checked) + label:hover:before {
+        color: $colorBrandGreen;
+    }
+}

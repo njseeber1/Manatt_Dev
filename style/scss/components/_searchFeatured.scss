@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// SEARCH FEATURED
+// -----------------------------------------------------------------------------
+.searchFeatured {
+	background:$colorGrayLightest;
+	padding: 0 $spacer $spacer*1.5;
+	margin-left:-$spacer;
+	margin-right:-$spacer;
+	@include media-breakpoint-up(md) {
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:0;
+		margin-right:0;
+		padding:0 0 $spacer*2;
+	}
+}
+.searchFeatured-header {
+	padding: $spacer $spacer*2.5;
+    background: $colorBrandBlueDark;
+    color: $colorWhite;
+	margin-left:-$spacer;
+	margin-right:-$spacer;
+	font-size: 20px;
+	font-weight: bold;
+	@include media-breakpoint-up(md) {
+		flex:1 0 100%;
+		width:100%;
+		margin-bottom:$spacer*2;
+		margin-left:0;
+		margin-right:0;
+		padding-right: $spacer*4;
+		padding-left: $spacer*4;
+	}
+}
+.searchFeatured-searchItem {
+	flex:0 0 50%;
+	margin-left:0;
+	border-bottom-width:0;
+	padding:$spacer $spacer*1.5;
+	@include media-breakpoint-up(md) {
+		padding:$spacer $spacer*2.5;
+		&:nth-child(odd) {
+			border-left:1px solid $colorGrayLight;
+		}
+		&:nth-child(even) {
+			padding-left:$spacer*4;
+		}
+	}
+	.searchItem-blurb {
+		display:none;
+		@include media-breakpoint-up(md) {
+			display:block;
+		}
+	}
+
+}

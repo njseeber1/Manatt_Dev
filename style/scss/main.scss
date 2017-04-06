@@ -16,6 +16,7 @@
 @import
   'vendor/bootstrap',
   'vendor/material-design-iconic-font',
+  'vendor/font-awesome',
   'vendor/normalize';
 // 1. Configuration and helpers that extend BS
 @import
@@ -37,6 +38,9 @@
 
 // 5. Components
 @import
+  'components/searchItem',
+  'components/searchFeatured',
+  'components/searchHeader',
   'components/headermain',
   'components/tile',
   'components/searchBox',
@@ -45,6 +49,9 @@
   'components/pickerChooser',
   'components/actionBar',
   'components/customSelect',
+  'components/filters',
+  'components/truncateList',
+  'components/inputStyled',
   'components/button';
 
 // 6. Page-specific styles

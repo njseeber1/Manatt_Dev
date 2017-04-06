@@ -1,3 +1,6 @@
-//@prepros-append modernizr.js
-//@prepros-append retach.js
-//@prepros-append waitForFinalEvent.js
+//init js/vendor/jQuery.succinct.min.js on .js-truncate classed items globally
+$(function() {
+  $('.js-truncate').succinct({
+    size: 120
+  });
+})

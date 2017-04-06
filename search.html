@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="style/css/main.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/front-end/frontEnd.js"></script>
     <script src="js/vendor/bootstrap/util.js"></script>
     <script src="js/vendor/bootstrap/collapse.js"></script>
     <script src="js/vendor/bootstrap/carousel.js"></script>
-    <script src="js/vendor/jQuery.succinct.min.js"></script>
     <script src="js/front-end/waitForFinalEvent.js"></script>
     <script src="js/front-end/retach.js"></script>
     <script src="js/front-end/searchToggle.js"></script>
     <script src="js/front-end/mobileSubToggles.js"></script>
     <script src="js/front-end/pickerChooser.js"></script>
-    <script src="js/front-end/truncateList.js"></script>
-    <script src="https://fast.fonts.net/jsapi/a2f2325c-9bbe-4e0d-adcd-6236550cbc77.js"></script>
-    <title>Home</title>
+    <title>Search Results</title>
   </head>
   <body>
     <div class="headerMain">
@@ -209,13 +205,13 @@
         <section class="actionBar js-homepage-actionBar px-4 py-8 py-md-12 fillColorBrandCyan fullWidth">
           <div class="row sm-gutters">
             <div class="col-md">
-              <div class="searchBox actionBar-searchBox mb-2 mb-md-0">
-                <input class="searchBox-textField" type="text" name="" placeholder="Search 360 Health"><span class="searchBox-submit"></span>
+              <div class="searchBox mb-2 mb-md-0">
+                <input class="searchBox-textField" type="text" name="" placeholder="Search 360 Health"><a class="searchBox-submit"></a>
               </div>
             </div>
             <div class="col-md">
               <label class="sr-only" for="topic">Select a Key Topic</label>
-              <div class="customSelect mb-2 mb-md-0">
+              <div class="customSelect">
                 <select class="customSelect-select form-control" id="topic">
                   <option>Select a Key Topic</option>
                   <option>2</option>
@@ -227,7 +223,7 @@
             </div>
             <div class="col-md">
               <label class="sr-only" for="content">Content Type</label>
-              <div class="customSelect mb-2 mb-md-0">
+              <div class="customSelect">
                 <select class="customSelect-select form-control" id="content">
                   <option>Content Type</option>
                   <option>2</option>

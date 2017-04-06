@@ -55,3 +55,27 @@
         text-decoration: none;
     }
 }
+
+//create an iconstyle mixin for fontAwesome also:
+// <p class="zmdi-flower-alt">Now I have an icon without a clunky i element yo</p>
+
+@mixin iconStyleFA {
+  display: inline-block;
+  font: normal normal normal 14px/1 'FontAwesome';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right:.4em;
+}
+%iconStyleFA {
+    @include iconStyleFA;
+}
+[class^='fa-'],
+[class*=' fa-'] {
+    &:before {
+        @extend %iconStyleFA;
+
+        text-decoration: none;
+    }
+}

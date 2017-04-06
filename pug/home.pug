@@ -117,12 +117,12 @@ html(lang="en")
 				section.actionBar.js-homepage-actionBar.px-4.py-8.py-md-12.fillColorBrandCyan.fullWidth
 					.row.sm-gutters
 						.col-md
-							.searchBox.mb-2.mb-md-0
+							.searchBox.actionBar-searchBox.mb-2.mb-md-0
 								input.searchBox-textField(type='text', name='', placeholder='Search 360 Health')
-								a.searchBox-submit
+								span.searchBox-submit
 						.col-md
 							label.sr-only(for='topic') Select a Key Topic
-							.customSelect
+							.customSelect.mb-2.mb-md-0
 								select#topic.customSelect-select.form-control
 									option Select a Key Topic
 									option 2
@@ -131,7 +131,7 @@ html(lang="en")
 								.customSelect-icon
 						.col-md
 							label.sr-only(for='content') Content Type
-							.customSelect
+							.customSelect.mb-2.mb-md-0
 								select#content.customSelect-select.form-control
 									option Content Type
 									option 2
