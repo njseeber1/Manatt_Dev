@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style/css/main.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/front-end/frontEnd.js"></script>
+    <script src="js/vendor/bootstrap/util.js"></script>
+    <script src="js/vendor/bootstrap/collapse.js"></script>
+    <script src="js/vendor/bootstrap/carousel.js"></script>
+    <script src="js/vendor/jQuery.succinct.min.js"></script>
+    <script src="js/front-end/waitForFinalEvent.js"></script>
+    <script src="js/front-end/retach.js"></script>
+    <script src="js/front-end/searchToggle.js"></script>
+    <script src="js/front-end/mobileSubToggles.js"></script>
+    <script src="js/front-end/pickerChooser.js"></script>
+    <script src="js/front-end/truncateList.js"></script>
+    <script src="https://fast.fonts.net/jsapi/a2f2325c-9bbe-4e0d-adcd-6236550cbc77.js"></script>
+    <title>Roadblock</title>
+  </head>
+  <body>
+    <div class="headerMain">
+      <div class="container p-0">
+        <nav class="headerMain-navUtil navbar navbar-expand-md justify-content-md-end p-0">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link zmdi-favorite active" href="#">Favorites</a></li>
+            <li class="nav-item"><a class="nav-link zmdi-account-circle" href="#">Account Info</a></li>
+            <li class="nav-item"><a class="nav-link zmdi-square-right" href="#">Log Out</a></li>
+            <li class="nav-item"><a class="nav-link zmdi-home" href="#">Manatt Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="headerMain-navMain navbar navbar-expand-md navbar-inverse bg-inverse">
+        <div class="container p-0">
+          <button class="headerMain-navToggler navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span></button><a class="navbar-brand order-first" href="#">360 health</a>
+          <div class="headerMain-collapse collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="headerMain-navItems navbar-nav ml-auto">
+              <li class="nav-item hasChildren active"><a class="nav-link" href="#">Premium Insights</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hasChildren"><a class="nav-link" href="#">Key Topics</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hasChildren"><a class="nav-link" href="#">Analytics</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hasChildren"><a class="nav-link" href="#">Publications &amp; Events</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">People</a></li>
+            </ul>
+            <form class="headerMain-search my-3 my-lg-0 ml-auto mr-md-2" id="headerMainSearch">
+              <input class="headerMain-searchBox form-control" id="headerMainSearch" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">GO</button>
+            </form>
+            <button class="headerMain-searchToggler zmdi-search"></button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="bannerTitle" style="background-image:url(http://placehold.it/1920x700/707070);">
+        <div class="bannerTitle-content">
+          <h1 class="bannerTitle-heading">Roadblock Headline Text Area</h1>
+          <p class="bannerTitle-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="container">
+        <section class="actionBar px-2 py-3 py-md-12 fillColorBrandCyan fullWidth">
+          <h2 class="h5 mb-3 text-center">Log In</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="row sm-gutters">
+                <div class="col-md">
+                  <div class="row sm-gutters">
+                    <div class="col-md">
+                      <label class="sr-only" for="userName">Username</label>
+                      <input class="form-control mb-2 mb-md-0" id="userName" type="text" aria-describedby="userName" placeholder="Username">
+                    </div>
+                    <div class="col-md">
+                      <label class="sr-only" for="passWord">Password</label>
+                      <input class="form-control mb-2 mb-md-0" id="userName" type="password" aria-describedby="passWord" placeholder="Password">
+                    </div>
+                    <div class="col-12 text-center pt-2 mb-3"><a class="text-uppercase" href="">Forgot Username or Password?</a></div>
+                  </div>
+                </div>
+                <div class="col col-md-auto text-center">
+                  <button class="btn btn-primary px-6 w-100 w-md-auto"><i class="zmdi-lock mr-2"></i>Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="h5 mt-2 mb-4 text-center">or</p>
+          <p class="my-5 text-center">
+            <button class="btn btn-primary px-6 w-100 w-md-auto">Back to Manatt Home</button>
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

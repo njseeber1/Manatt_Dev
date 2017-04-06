@@ -14,10 +14,10 @@
 
 // 2. Vendors
 @import
+  //'vendor/normalize',
   'vendor/bootstrap',
   'vendor/material-design-iconic-font',
-  'vendor/font-awesome',
-  'vendor/normalize';
+  'vendor/font-awesome';
 // 1. Configuration and helpers that extend BS
 @import
   'abstracts/responsiveWidths',
@@ -38,6 +38,7 @@
 
 // 5. Components
 @import
+  'components/bannerTitle',
   'components/searchItem',
   'components/searchFeatured',
   'components/searchHeader',

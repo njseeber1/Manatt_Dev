@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title Roadblock
+	body
+		include includes/_headerMain.pug
+		main
+			.bannerTitle(style="background-image:url(http://placehold.it/1920x700/707070)")
+				.bannerTitle-content
+					h1.bannerTitle-heading
+						| Roadblock Headline Text Area
+					p.bannerTitle-blurb
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.container
+				section.actionBar.px-2.py-3.py-md-12.fillColorBrandCyan.fullWidth
+					h2.h5.mb-3.text-center Log In
+					.row.justify-content-center
+						.col-md-8
+							.row.sm-gutters
+								.col-md
+									.row.sm-gutters
+										.col-md
+											label.sr-only(for='userName') Username
+											input#userName.form-control.mb-2.mb-md-0(type='text', aria-describedby='userName',placeholder="Username")
+										.col-md
+											label.sr-only(for='passWord') Password
+											input#userName.form-control.mb-2.mb-md-0(type='password', aria-describedby='passWord',placeholder="Password")
+										.col-12.text-center.pt-2.mb-3
+											a.text-uppercase(href="") Forgot Username or Password?
+								.col.col-md-auto.text-center
+									button.btn.btn-primary.px-6.w-100.w-md-auto
+										i.zmdi-lock.mr-2
+										| Login
+					p.h5.mt-2.mb-4.text-center or
+					p.my-5.text-center
+						button.btn.btn-primary.px-6.w-100.w-md-auto Back to Manatt Home
+							

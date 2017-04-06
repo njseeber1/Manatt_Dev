@@ -1,13 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-$fontDefault: 'Univers W01',
+$font-family-base: 'Univers W01',
 Helvetica,
 Arial,
 Sans-Serif;
-$fontHighLight: 'Clarendon W01',
+$headings-font-family: 'Clarendon W01',
 Georgia,
 serif;
+$headings-font-weight: normal;
 //MATERIAL DESIGN ICON FONT OVERRIDES
 $zmdi-font-path: "../../fonts" !default;
 $zmdi-font-name: "Material-Design-Iconic-Font" !default;
@@ -26,4 +27,7 @@ $container-max-widths: ( sm: 1197px, md: 1198px, lg: 1199px, xl: 1200px) !defaul
 $spacer: 1rem !default;
 $spacers: ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 1.75), 6: ($spacer * 2), 7: ($spacer * 2.25), 8: ($spacer * 2.5), 9: ($spacer * 3), 10: ($spacer * 3.25), 11: ($spacer * 3.5), 12: ($spacer * 3.75), 13: ($spacer * 4)) !default;
 $btn-primary-bg: $colorBrandGreen !default;
+//change nav inverse color
 $navbar-inverse-color: $colorWhite !default;
+//fontawesome path
+$fa-font-path: "../../fonts" !default;
