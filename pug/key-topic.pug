@@ -1,0 +1,183 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title Roadblock
+	body
+		include includes/_headerMain.pug
+		main
+			.bannerTitle.bannerTitle--sectionTitle.text-white(style="background-image:url(http://placehold.it/1920x700/707070)")
+				.bannerTitle-content
+					h1.bannerTitle-heading
+						| Digital Health Section Header
+			.bannerTitle
+				.bannerTitle-content
+					h1.bannerTitle-heading.colorBrandGreen
+						| Digital Health Intro Content
+					p.bannerTitle-blurb
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.container
+				section.actionBar.px-2.py-3.py-md-12.fillColorBrandCyan.fullWidth
+					h2.h5.mb-3.text-center View Digital Content By
+					.row.justify-content-center
+						.col-12
+							.row.sm-gutters
+								.col-md
+									.row.sm-gutters.justify-content-center
+										.col-md-5.col-lg-4.col-xl-3
+											label.sr-only(for='content') Content Type
+											.customSelect.mb-2.mb-md-0
+												select#content.customSelect-select.form-control
+													option Content Type
+													option 2
+													option 3
+													option 4
+												.customSelect-icon
+										.col-md-auto
+											button.btn.btn-primary.px-6.w-100.w-md-auto Go
+										.col-md-auto.my-3.my-md-0.d-flex.align-items-center.justify-content-center
+											| OR
+										.col-md-auto
+											button.btn.btn-primary.px-8.w-100.w-md-auto View All Topic Content
+				.row.no-gutters.mb-7
+					.col-lg-6
+						.row.no-gutters
+							.col-12
+								.tile.tile--animate.tile--img.ar--1-1.ar-sm--2-1.ar-lg--1-1(style="background-image:url(http://placehold.it/600x600)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+												ul.tile-share
+													li SHARE
+													li
+														a(href="").zmdi-twitter
+													li
+														a(href="").zmdi-facebook
+													li
+														a(href="").zmdi-linkedin
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading Character max - 30 - Title
+											p.tile-caption
+												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+					.col-lg-6
+						.row.no-gutters
+							.col-12
+								.tile.tile--animate.tile--img.ar--1-1.ar-sm--2-1(style="background-image:url(http://placehold.it/600x300)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading Character max - 30 - Title
+											p.tile-caption
+												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							.col-sm-6
+								.tile.tile--animate.ar--1-1.carousel.slide.fillColorBrandGreen(data-ride='carousel')
+									ol.carousel-indicators.tile-carouselIndicators
+										li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+										li(data-target='#carouselExampleIndicators', data-slide-to='1')
+										li(data-target='#carouselExampleIndicators', data-slide-to='2')
+									.tile-inner.carousel-inner(role='listbox')
+										.carousel-item.tile-carouselItem.active
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 01
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="", class="tile-fullLink")
+												h3.tile-heading Character max - 30 - Title
+												p.tile-caption
+													| Character max - 48 - Lorem ipsum dolor sit amet.
+										.carousel-item.tile-carouselItem
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 02
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="", class="tile-fullLink")
+												h3.tile-heading Character max - 30 - Title
+												p.tile-caption
+													| Character max - 48 - Lorem ipsum dolor sit amet.
+										.carousel-item.tile-carouselItem
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 03
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="", class="tile-fullLink")
+												h3.tile-heading Character max - 30 - Title
+												p.tile-caption
+													| Character max - 48 - Lorem ipsum dolor sit amet.
+							.col-sm-6
+								.tile.tile--animate.tile--img.ar--1-1(style="background-image:url(http://placehold.it/300x300)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading Character max - 30 - Title
+											p.tile-caption
+												| Character max - 125 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+				h2.heading--underline.heading--defaultFont.text-center.h5.mb-4 Our Digital Health Experts
+				ul.peopleList
+					li.peopleList-tile.ar--5-6
+						a(href="").peopleList-fullLink View Full Bio
+						.peopleList-inner
+							h3.peopleList-name Firstname Lastnametwolines
+							p.peopleList-title
+								| Title Name
+							img.peopleList-img(src='http://placehold.it/240x288/696969')
+					li.peopleList-tile.ar--5-6
+						a(href="").peopleList-fullLink View Full Bio
+						.peopleList-inner
+							h3.peopleList-name Firstname Lastnametwolines
+							p.peopleList-title
+								| Title Name
+							img.peopleList-img(src='http://placehold.it/240x288/696969')
+					li.peopleList-tile.ar--5-6
+						a(href="").peopleList-fullLink View Full Bio
+						.peopleList-inner
+							h3.peopleList-name Firstname Lastnametwolines
+							p.peopleList-title
+								| Title Name
+							img.peopleList-img(src='http://placehold.it/240x288/696969')
+					li.peopleList-tile.ar--5-6
+						a(href="").peopleList-fullLink View Full Bio
+						.peopleList-inner
+							h3.peopleList-name Firstname Lastnametwolines
+							p.peopleList-title
+								| Title Name
+							img.peopleList-img(src='http://placehold.it/240x288/696969')
+					li.peopleList-tile.ar--5-6
+						a(href="").peopleList-fullLink View Full Bio
+						.peopleList-inner
+							h3.peopleList-name Firstname Lastnametwolines
+							p.peopleList-title
+								| Title Name
+							img.peopleList-img(src='http://placehold.it/240x288/696969')
+								

@@ -38,6 +38,9 @@
 .ar--3-2 {
     @include aspect-ratio(3, 2);
 }
+.ar--5-6 {
+    @include aspect-ratio(5, 6);
+}
 @include media-breakpoint-up(sm) {
     .ar-sm--1-1 {
         @include aspect-ratio(1, 1);
@@ -47,6 +50,9 @@
     }
     .ar-sm--3.2 {
         @include aspect-ratio(3, 2);
+    }
+    .ar-sm--5.6 {
+        @include aspect-ratio(5, 6);
     }
 }
 @include media-breakpoint-up(md) {
@@ -59,6 +65,9 @@
     .ar-md--3.2 {
         @include aspect-ratio(3, 2);
     }
+    .ar-md--5.5 {
+        @include aspect-ratio(5, 6);
+    }
 }
 @include media-breakpoint-up(lg) {
     .ar-lg--1-1 {
@@ -70,6 +79,9 @@
     .ar-lg--3.2 {
         @include aspect-ratio(3, 2);
     }
+    .ar-lg--5.6 {
+        @include aspect-ratio(5, 6);
+    }
 }
 @include media-breakpoint-up(xl) {
     .ar-xl--1-1 {
@@ -80,5 +92,8 @@
     }
     .ar-xl--3.2 {
         @include aspect-ratio(3, 2);
+    }
+    .ar-xl--5.6 {
+        @include aspect-ratio(5, 6);
     }
 }

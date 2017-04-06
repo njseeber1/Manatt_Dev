@@ -3,6 +3,7 @@
 // 1. Configuration and helpers
 @import
   'abstracts/colors',
+  'abstracts/textColors',
   'abstracts/contrast',
   'abstracts/fills',
   'abstracts/fullWidth',
@@ -38,6 +39,7 @@
 
 // 5. Components
 @import
+  'components/peopleList',
   'components/bannerTitle',
   'components/searchItem',
   'components/searchFeatured',

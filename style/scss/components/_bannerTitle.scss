@@ -7,18 +7,18 @@
     background-size: cover;
     text-align: center;
     padding:$spacer*2;
-    color:$colorWhite;
+    //color:$colorWhite;
     @include media-breakpoint-up(md) {
     	padding-top:$spacer*5;
     	padding-bottom:$spacer*5;
     	display:flex;
     	justify-content:center;
-    	align-items:center;
+    	//align-items:center;
     }
 }
 .bannerTitle-content {
     @include media-breakpoint-up(md) {
-    	max-width:400px;
+    	max-width:550px;
     }
 }
 .bannerTitle-heading {
@@ -27,6 +27,25 @@
 .bannerTitle-subHeading {
 	margin-top:0;
 }
+.bannerTitle--sectionTitle {
+    @include media-breakpoint-up(md) {
+    	//padding-top:$spacer*5;
+    	padding-bottom:$spacer*3;
+    	//display:flex;
+    	min-height:260px;
+    	//justify-content:flex-start;
+    	//align-items:flex-end;
+    }
+}
+.bannerTitle--sectionTitle .bannerTitle-content {
+    @include media-breakpoint-up(md) {
+    	max-width:none;
+    	display:flex;
+    	align-items:flex-end;
+    	flex: 0 1 60%;
+    }
+}
+
 // .pageTitleCopy {
 //     @extend %noPhatBottom;
 

@@ -8,3 +8,16 @@
 // 	font-family:$fontHighLight;
 // 	font-weight:normal;
 // }
+.heading--underline {
+	border-bottom:2px solid;
+	padding-bottom:$spacer/2;
+}
+.heading--sm {
+	font-size:16px;
+}
+.heading--defaultFont {
+	font-family:inherit;
+}
+.heading--center {
+	text-align:center;
+}
