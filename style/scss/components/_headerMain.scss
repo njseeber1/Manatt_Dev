@@ -41,12 +41,12 @@
             color: $white;
             &:before {
                 @extend %iconStyle;
-                color: $green;
+                color: $colorBrandGreen;
                 font-size: 120%;
             }
         }
         li:last-child {
-            background: $orange;
+            background: $colorBrandGold;
             color: $black;
             margin-right: -1rem;
             margin-bottom: -.5rem;
@@ -146,7 +146,7 @@
     text-align: center;
     cursor: pointer;
     font-size: 24px;
-    color: $green;
+    color: $colorBrandGreen;
     &,
     &:focus {
         outline: none;
@@ -202,13 +202,13 @@
     .nav-item {
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 3px solid $green;
+        border-bottom: 3px solid $colorBrandGreen;
         margin-bottom: $spacer;
         position: relative;
         .nav-link {
             color: $white;
             &:hover {
-                color: $green;
+                color: $colorBrandGreen;
             }
         }
         &.hasChildren {
@@ -224,7 +224,7 @@
             &:not(.active) {
                 border-bottom-color: transparent;
                 &:hover {
-                    border-bottom-color: $green;
+                    border-bottom-color: $colorBrandGreen;
                 }
             }
         }
@@ -277,7 +277,7 @@
             .nav-link {
                 color: $gray;
                 &:hover {
-                    color: $green;
+                    color: $colorBrandGreen;
                     font-weight: bold;
                 }
             }

@@ -1,17 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-$font-family-base: 'Univers W01',
-Helvetica,
-Arial,
-Sans-Serif;
-$headings-font-family: 'Clarendon W01',
-Georgia,
-serif;
+// $font-family-base: 'Univers W01',
+// Helvetica,
+// Arial,
+// Sans-Serif;
+// $headings-font-family: 'Clarendon W01',
+// Georgia,
+// serif;
+$font-family-base:Arial, Helvetica Neue, Helvetica, sans-serif;
+$headings-font-family:Georgia, Times, Times New Roman, serif;
 $headings-font-weight: normal;
 //MATERIAL DESIGN ICON FONT OVERRIDES
 $zmdi-font-path: "../../fonts" !default;
 $zmdi-font-name: "Material-Design-Iconic-Font" !default;
+$input-btn-padding-y: .66rem;
+$input-btn-line-height: 1.25;
 $btn-border-radius: 0;
 $input-border-radius: 0;
 //BOOTSTRAP OVERRIDES
@@ -29,5 +33,6 @@ $spacers: ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer
 $btn-primary-bg: $colorBrandGreen !default;
 //change nav inverse color
 $navbar-inverse-color: $colorWhite !default;
+$brand-inverse: $colorBrandBlueDark !default;
 //fontawesome path
 $fa-font-path: "../../fonts" !default;

@@ -22,9 +22,10 @@
     color: $colorGray;
     display: flex;
     margin-bottom: $spacer*1.25;
+    align-items:center;
     &:before {
         @extend %iconStyleFA;
-        font-size: 18px;
+        font-size: 24px;
     }
     .searchItem--keyTopic & {
         @extend .fa-dot-circle-o;

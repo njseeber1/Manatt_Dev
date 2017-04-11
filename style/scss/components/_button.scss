@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+//override bootstraps button font-size to match comps
+.btn {
+	font-size:12px;
+	font-weight:bold;
+	line-height:1.7;
+}

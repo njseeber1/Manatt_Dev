@@ -22,6 +22,9 @@
         }
     }
     @include media-breakpoint-up(md) {
+        flex: 0 0 50%;
+    }
+    @include media-breakpoint-up(lg) {
         flex: 0 0 25%;
     }
     @include media-breakpoint-down(sm) {
@@ -30,7 +33,7 @@
 }
 
 .tileList-inner {
-    padding: $spacer/2 $spacer*1.5;
+    padding: $spacer $spacer*2;
     transition: background 0.5s;
     @include media-breakpoint-up(md) {
         position: absolute;
@@ -59,7 +62,7 @@
 
 .tileList-heading {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
     position: relative;
     &:after {
         content: '\f2fb';
