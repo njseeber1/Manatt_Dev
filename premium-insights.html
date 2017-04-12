@@ -18,7 +18,7 @@
     <script src="js/front-end/pickerChooser.js"></script>
     <script src="js/front-end/truncateList.js"></script>
     <script src="https://fast.fonts.net/jsapi/a2f2325c-9bbe-4e0d-adcd-6236550cbc77.js"></script>
-    <title>Home</title>
+    <title>Premium Insights</title>
   </head>
   <body>
     <div class="headerMain">
@@ -89,8 +89,51 @@
       </nav>
     </div>
     <main>
-      <div class="container p-0">
-        <div class="row no-gutters">
+      <div class="bannerTitle bannerTitle--sectionTitle text-white" style="background-image:url(http://placehold.it/1920x300/707070);">
+        <div class="bannerTitle-content">
+          <h1 class="bannerTitle-heading">Premium Insights<br>Section Header</h1>
+        </div>
+      </div>
+      <div class="bannerTitle">
+        <div class="bannerTitle-content">
+          <h1 class="bannerTitle-heading colorBrandGreen">Intro Content</h1>
+          <p class="bannerTitle-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="container">
+        <section class="actionBar px-2 py-3 py-md-12 fillColorBrandCyan fullWidth">
+          <h2 class="actionBar-heading">View Digital Content By</h2>
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="row sm-gutters">
+                <div class="col-md">
+                  <div class="row sm-gutters justify-content-center">
+                    <div class="col-md-5 col-lg-4 col-xl-3">
+                      <label class="sr-only" for="content">Content Type</label>
+                      <div class="customSelect mb-2 mb-md-0">
+                        <select class="customSelect-select form-control" id="content">
+                          <option>Content Type</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                        <div class="customSelect-icon"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-auto">
+                      <button class="btn btn-primary px-6 w-100 w-md-auto">Go</button>
+                    </div>
+                    <div class="col-md-auto my-3 my-md-0 d-flex align-items-center justify-content-center">OR</div>
+                    <div class="col-md-auto">
+                      <button class="btn btn-primary px-8 w-100 w-md-auto">View All Topic Content</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="row no-gutters mb-7">
           <div class="col-lg-6">
             <div class="row no-gutters">
               <div class="col-12">
@@ -113,7 +156,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 d-lg-none js-homepage-mobileActionBar"></div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -206,118 +248,39 @@
             </div>
           </div>
         </div>
-        <section class="actionBar js-homepage-actionBar px-4 py-8 py-md-12 fillColorBrandCyan fullWidth">
-          <div class="row sm-gutters">
-            <div class="col-md">
-              <div class="searchBox actionBar-searchBox mb-2 mb-md-0">
-                <input class="searchBox-textField" type="text" name="" placeholder="Search 360 Health"><span class="searchBox-submit"></span>
-              </div>
+        <h2 class="heading--underline heading--defaultFont text-center h5 mb-4">Our Digital Health Experts</h2>
+        <ul class="peopleList">
+          <li class="peopleList-tile ar--5-6"><a class="peopleList-fullLink" href="">View Full Bio</a>
+            <div class="peopleList-inner">
+              <h3 class="peopleList-name">Firstname Lastnametwolines</h3>
+              <p class="peopleList-title">Title Name</p><img class="peopleList-img" src="http://placehold.it/490x588/696969">
             </div>
-            <div class="col-md">
-              <label class="sr-only" for="topic">Select a Key Topic</label>
-              <div class="customSelect mb-2 mb-md-0">
-                <select class="customSelect-select form-control" id="topic">
-                  <option>Select a Key Topic</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <div class="customSelect-icon"></div>
-              </div>
+          </li>
+          <li class="peopleList-tile ar--5-6"><a class="peopleList-fullLink" href="">View Full Bio</a>
+            <div class="peopleList-inner">
+              <h3 class="peopleList-name">Firstname Lastnametwolines</h3>
+              <p class="peopleList-title">Title Name</p><img class="peopleList-img" src="http://placehold.it/490x588/696969">
             </div>
-            <div class="col-md">
-              <label class="sr-only" for="content">Content Type</label>
-              <div class="customSelect mb-2 mb-md-0">
-                <select class="customSelect-select form-control" id="content">
-                  <option>Content Type</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <div class="customSelect-icon"></div>
-              </div>
+          </li>
+          <li class="peopleList-tile ar--5-6"><a class="peopleList-fullLink" href="">View Full Bio</a>
+            <div class="peopleList-inner">
+              <h3 class="peopleList-name">Firstname Lastnametwolines</h3>
+              <p class="peopleList-title">Title Name</p><img class="peopleList-img" src="http://placehold.it/490x588/696969">
             </div>
-            <div class="col-md col-md-auto">
-              <button class="btn btn-primary w-100 w-md-auto px-4">Go</button>
+          </li>
+          <li class="peopleList-tile ar--5-6"><a class="peopleList-fullLink" href="">View Full Bio</a>
+            <div class="peopleList-inner">
+              <h3 class="peopleList-name">Firstname Lastnametwolines</h3>
+              <p class="peopleList-title">Title Name</p><img class="peopleList-img" src="http://placehold.it/490x588/696969">
             </div>
-          </div>
-        </section>
-        <section class="py-5 coverBg text-white" style="background-image:url(http://placehold.it/1200x500/404040);">
-          <h2 class="py-3 py-md-5 text-center">Premium Insights</h2>
-          <ul class="tileList">
-            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://placehold.it/300x300/696969);"><a class="tileList-fullLink" href=""></a>
-              <div class="tileList-inner">
-                <h3 class="tileList-heading">Character max - 30 - Title</h3>
-                <p class="tileList-caption">Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se</p>
-              </div>
-            </li>
-            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://placehold.it/300x300/707070);"><a class="tileList-fullLink" href=""></a>
-              <div class="tileList-inner">
-                <h3 class="tileList-heading">Character max - 30 - Title</h3>
-                <p class="tileList-caption">Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se</p>
-              </div>
-            </li>
-            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://placehold.it/300x300/696969);"><a class="tileList-fullLink" href=""></a>
-              <div class="tileList-inner">
-                <h3 class="tileList-heading">Character max - 30 - Title</h3>
-                <p class="tileList-caption">Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se</p>
-              </div>
-            </li>
-            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://placehold.it/300x300/707070);"><a class="tileList-fullLink" href=""></a>
-              <div class="tileList-inner">
-                <h3 class="tileList-heading">Character max - 30 - Title</h3>
-                <p class="tileList-caption">Character max - 80 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, se</p>
-              </div>
-            </li>
-          </ul>
-          <div class="py-3 py-md-5 text-center">
-            <button class="btn btn-primary px-8">View All Insights</button>
-          </div>
-        </section>
-        <div class="pickerChooser">
-          <h2 class="pickerChooser-heading">Key Topics</h2>
-          <ul class="pickerChooser-list">
-            <li class="selected"><a href="" data-target="Medicare">Medicare</a></li>
-            <li><a href="" data-target="Payment and Delivery System Transformation">Payment and Delivery System Transformation</a></li>
-            <li><a href="" data-target="Medicaid">Medicaid</a></li>
-            <li><a href="" data-target="Insurance and Marketplaces">Insurance and Marketplaces</a></li>
-            <li><a href="" data-target="Life Sciences">Life Sciences</a></li>
-            <li><a href="" data-target="Digital Health">Digital Health</a></li>
-            <li><a href="" data-target="Privacy and Security">Privacy and Security</a></li>
-            <li><a href="" data-target="Fraud and Abuse">Fraud and Abuse</a></li>
-            <li><a href="" data-target="Litigation">Litigation</a></li>
-            <li><a href="" data-target="Transactions">Transactions</a></li>
-          </ul>
-          <div class="pickerChooser-content">
-            <div class="pickerChooser-choice is-visible" data-choose="Medicare">
-              <div class="pickerChooser-copy">
-                <h3 class="pickerChooser-subHeading">Medicare</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="pickerChooser-cta"><a class="btn btn-primary" href="">View Medicare Topics</a></p>
-              </div>
-              <div class="pickerChooser-img" style="background-image:url(http://placehold.it/280x600/696969);"></div>
+          </li>
+          <li class="peopleList-tile ar--5-6"><a class="peopleList-fullLink" href="">View Full Bio</a>
+            <div class="peopleList-inner">
+              <h3 class="peopleList-name">Firstname Lastnametwolines</h3>
+              <p class="peopleList-title">Title Name</p><img class="peopleList-img" src="http://placehold.it/490x588/696969">
             </div>
-            <div class="pickerChooser-choice" data-choose="Payment and Delivery System Transformation">
-              <div class="pickerChooser-copy">
-                <h3 class="pickerChooser-subHeading">Payment and Delivery System Transformation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="pickerChooser-cta"><a class="btn btn-primary" href="">View Payment and Delivery System Transformation Topics</a></p>
-              </div>
-              <div class="pickerChooser-img" style="background-image:url(http://placehold.it/280x600/707070);"></div>
-            </div>
-            <div class="pickerChooser-choice" data-choose="Medicaid">
-              <div class="pickerChooser-copy">
-                <h3 class="pickerChooser-subHeading">Medicaid</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="pickerChooser-cta"><a class="btn btn-primary" href="">View Medicaid Topics</a></p>
-              </div>
-              <div class="pickerChooser-img" style="background-image:url(http://placehold.it/280x600/787878);"></div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </main>
     <footer class="footerMain">
