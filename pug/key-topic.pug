@@ -2,20 +2,22 @@ doctype html
 html(lang="en")
 	head
 		include includes/_head.pug
-		title Roadblock
+		title Key Topic
 	body
 		include includes/_headerMain.pug
 		main
 			.bannerTitle.bannerTitle--sectionTitle.text-white(style="background-image:url(http://placehold.it/1920x300/707070)")
 				.bannerTitle-content
-					h1.bannerTitle-heading
-						| Digital Health Section Header
+					.bannerTitle-copy
+						h1.bannerTitle-heading
+							| Digital Health Section Header
 			.bannerTitle
 				.bannerTitle-content
-					h1.bannerTitle-heading.colorBrandGreen
-						| Digital Health Intro Content
-					p.bannerTitle-blurb
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.bannerTitle-copy
+						h1.bannerTitle-heading.colorBrandGreen
+							| Digital Health Intro Content
+						p.bannerTitle-blurb
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			.container
 				section.actionBar.px-2.py-3.py-md-12.fillColorBrandCyan.fullWidth
 					h2.actionBar-heading View Digital Content By

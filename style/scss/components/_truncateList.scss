@@ -28,8 +28,9 @@
     margin-top: 6px;
     padding: $spacer/4 $spacer/2;
     outline: 0;
-    background: $colorGrayLightest;
-    border-top: 3px solid $colorGrayLighter;
+    //background: $colorGrayLightest;
+    border-top: 2px solid $colorBrandCyan;
+    color:$colorGray;
     &:before {
       @extend %iconStyle;
     }
@@ -41,11 +42,15 @@
       height: 0;
       content: '';
       border-right: 7px solid transparent;
-      border-bottom: 7px solid $colorGrayLighter;
+      border-bottom: 7px solid $colorBrandCyan;
       border-left: 7px solid transparent;
+    }
+    &:hover {
+      color:$colorBrandCyan;
     }
   }
   &.is-active a {
     @extend .zmdi-minus;
+    color:$colorBrandCyan;
   }
 }

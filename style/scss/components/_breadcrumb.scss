@@ -1,0 +1,68 @@
+/* BUG
+========================================================================== */
+
+.breadcrumb {
+    padding: $spacer $spacer 0 $spacer;
+    margin-bottom:0;
+    li {
+        font-size:13px;
+        /* on mobile, we only show the last breadcrumb like a "go back one page" link.
+        So we hide all of the links on mobile except the last one. see below */
+        display: none;
+        vertical-align: middle;
+        list-style: none outside none;
+        margin: 0;
+        line-height: 1;
+        a {
+            color:$colorGrayDark;
+            text-decoration:none;
+            /* add the caret icon after the links */
+            &:after {
+                @extend %iconStyle;
+                margin-right:0;
+                content: '\f2fb';
+                margin-left: $spacer/4;
+                color: $colorGrayDark;
+            }
+        }
+        
+        /* the first link is the fontello "home" icon */
+        // &:first-child a:before {
+        //     @extend %iconStyle;
+        //     margin-right:0;
+        //     content: '\e868';
+        // }
+        
+        /* show the last link only on mobile. We make them all visible for desktop in responsive.scss */
+        &:nth-last-child(2) {
+            display: inline-block; /* hide the right pointing icon */
+            a:after {
+                display: none;
+            }
+            
+            /* add a left pointing icon indicating "go back one page" */
+            a:before {
+                @extend %iconStyle;
+                content: '\f2fa';
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) { 
+    .breadcrumb {
+        padding: 0 $spacer;
+        li {
+            /* make all the links visible that we hid on mobile */
+            display: inline-block; /* show the right pointing icon we hid on mobile and sh the right pointing icon */
+            &:nth-last-child(2) {
+                // a:after {
+                //     display: inline-block;
+                // }
+                a:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

@@ -5,6 +5,7 @@
 .searchBox {
 	display:flex;
 	background:$colorWhite;
+	color:$colorBrandBlueDark;
 }
 .searchBox-textField, .searchBox-textField:focus {
 	// padding-right: $spacer/2;
@@ -14,18 +15,18 @@
 	height:43px;
 	line-height:1.25;
 	border-width:0;
-	color:$colorBrandBlueDark;
+	color:inherit !important;
 	flex:1 1 auto;
 	background:transparent;
 	outline:none;
         // Placeholder
         &::placeholder {
-            color: $colorBrandBlueDark;
+            color: inherit !important;
         }
 }
 .searchBox-submit {
 	@extend .zmdi-search;
-	color:$colorBrandBlueDark !important;
+	color:inherit !important;
 	font-size:24px;
 	display:flex;
 	align-items:center;

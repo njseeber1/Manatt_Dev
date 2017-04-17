@@ -1,0 +1,60 @@
+/* FEATURE BLOCK
+========================================================================== */
+
+.social {
+  display: flex;
+  font-size:14px;
+  align-items:center;
+}
+.social-favorite {
+  display: flex;
+  align-items:center;
+}
+.social-title {
+  text-transform:uppercase;
+  margin-right:$spacer;
+}
+.social-favLink {
+  color: $colorBrandGreen;
+  font-size:25px;
+  line-height:25px;
+  margin-right:$spacer;
+  @extend .zmdi-favorite-outline;
+  &:before {
+    @extend %iconStyle;
+    margin: 0;
+  }
+  &.social-favLink--favorited {
+    @extend .zmdi-favorite;
+  }
+}
+
+.social-iconList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin:0;
+  li {
+    margin-right:$spacer/2;
+  }
+}
+
+.social-iconLink {
+  font-size: 13px;
+  display: block;
+  border-radius: 50%;
+  color: $colorWhite;
+  width: 25px;
+  height: 25px;
+  background: $colorBrandGreen;
+  text-align: center;
+  @include transition(all 0.2s ease-in-out);
+  &:before {
+    margin: 0;
+    line-height: 25px;
+  }
+  &:hover {
+    color:$colorWhite;
+    transform: scale(1.1, 1.1);
+  }
+}

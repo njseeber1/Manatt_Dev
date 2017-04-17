@@ -11,6 +11,10 @@
     <script src="js/vendor/bootstrap/collapse.js"></script>
     <script src="js/vendor/bootstrap/carousel.js"></script>
     <script src="js/vendor/jQuery.succinct.min.js"></script>
+    <script src="js/vendor/picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
+    <script src="js/vendor/mixitup.min.js"></script>
+    <script src="js/vendor/select2.full.min.js"></script>
     <script src="js/front-end/waitForFinalEvent.js"></script>
     <script src="js/front-end/retach.js"></script>
     <script src="js/front-end/searchToggle.js"></script>
@@ -91,28 +95,41 @@
     <main>
       <div class="bannerTitle bannerTitle--sectionTitle text-white" style="background-image:url(http://placehold.it/1920x300/707070);">
         <div class="bannerTitle-content">
-          <h1 class="bannerTitle-heading">Premium Insights<br>Section Header</h1>
+          <div class="bannerTitle-copy">
+            <h1 class="bannerTitle-heading">Premium Insights<br>Section Header</h1>
+          </div>
         </div>
       </div>
-      <div class="bannerTitle">
+      <div class="bannerTitle bannerTitle--hasNav">
         <div class="bannerTitle-content">
-          <h1 class="bannerTitle-heading colorBrandGreen">Intro Content</h1>
-          <p class="bannerTitle-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="bannerTitle-copy">
+            <h1 class="bannerTitle-heading colorBrandGreen">Intro Content</h1>
+            <p class="bannerTitle-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <nav class="bannerTitle-nav">
+            <ul>
+              <li class="bannerTitle-navItem selected"><a href="">CMS Navigator</a></li>
+              <li class="bannerTitle-navItem"><a href="">Updates</a></li>
+              <li class="bannerTitle-navItem"><a href="">Analytics</a></li>
+              <li class="bannerTitle-navItem"><a href="">Regulatory Summaries</a></li>
+              <li class="bannerTitle-navItem"><a href="">Media</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
       <div class="container">
         <section class="actionBar px-2 py-3 py-md-12 fillColorBrandCyan fullWidth">
-          <h2 class="actionBar-heading">View Digital Content By</h2>
+          <h2 class="actionBar-heading">View Insights By</h2>
           <div class="row justify-content-center">
             <div class="col-12">
               <div class="row sm-gutters">
                 <div class="col-md">
                   <div class="row sm-gutters justify-content-center">
                     <div class="col-md-5 col-lg-4 col-xl-3">
-                      <label class="sr-only" for="content">Content Type</label>
+                      <label class="sr-only" for="topic">Key Topic</label>
                       <div class="customSelect mb-2 mb-md-0">
                         <select class="customSelect-select form-control" id="content">
-                          <option>Content Type</option>
+                          <option>Key Topic</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
@@ -125,7 +142,7 @@
                     </div>
                     <div class="col-md-auto my-3 my-md-0 d-flex align-items-center justify-content-center">OR</div>
                     <div class="col-md-auto">
-                      <button class="btn btn-primary px-8 w-100 w-md-auto">View All Topic Content</button>
+                      <button class="btn btn-primary px-8 w-100 w-md-auto">View All Insights</button>
                     </div>
                   </div>
                 </div>
@@ -248,7 +265,7 @@
             </div>
           </div>
         </div>
-        <h2 class="heading--underline heading--defaultFont text-center h5 mb-4">Our Digital Health Experts</h2>
+        <h2 class="heading--underline heading--defaultFont text-center h5 mb-4">Subject Matter Experts</h2>
         <ul class="peopleList">
           <li class="peopleList-tile ar--5-6"><a class="peopleList-fullLink" href="">View Full Bio</a>
             <div class="peopleList-inner">

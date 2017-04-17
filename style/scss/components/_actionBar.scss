@@ -4,31 +4,28 @@
 
 .actionBar {
     font-size: 12px;
-    input[type='text'],
-    input[type='search'],
-    input[type='email'],
-    input[type='password'],
-    input[type='tel'] {
+    input, input:focus,.datePicker:disabled, .datePicker[readonly] {
         color: $colorBrandBlueDark;
         font-weight: bold;
         border-width: 0;
-        background: rgba($colorWhite,.6);
+        background-color: rgba($colorWhite,.6);
         font-size:inherit;
-        height:43px;
+        min-height:43px;
+        //width:100%;
         // Placeholder
         &::placeholder {
-            color: $colorBrandBlueDark;
+            color: inherit;
         }
     }
     select,
     select:focus {
         font-size: 12px;
-        background: $colorBrandBlueDark;
-        color: $colorWhite;
+        //background: $colorBrandBlueDark;
+        //color: $colorWhite;
         font-weight: bold;
         option {
             background: $colorWhite;
-            color: $colorBrandBlueDark;
+            //color: $colorBrandBlueDark;
         }
     }
     .btn {
@@ -63,6 +60,7 @@
     @include media-breakpoint-up(md) {
         .searchBox-textField {
             height:43px;
+            background:transparent;
         }
         .btn {
             height:initial;

@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// FEATURE BLOCK
+// -----------------------------------------------------------------------------
+.featureBlock {
+  padding: 0 $spacer $spacer*3 0;
+  margin-left: -$spacer;
+  margin-right: -$spacer;
+  margin-bottom:$spacer;
+  border-bottom: 1px solid $colorBorder;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.featureBlock-contentItem {
+  margin-left: 0;
+  border-bottom-width: 0;
+  padding: $spacer $spacer*1.5;
+  @include media-breakpoint-up(md) {
+    padding: $spacer $spacer*2.5;
+    border-left: 1px solid $colorBorder;
+    flex: 0 0 33.3333%;
+    &:first-child {
+      border-left-width: 0;
+    }
+  }
+  .contentItem-blurb {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}

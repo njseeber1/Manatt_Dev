@@ -32,7 +32,7 @@
 		padding-left: $spacer*4;
 	}
 }
-.searchFeatured-searchItem {
+.searchFeatured-contentItem {
 	flex:0 0 50%;
 	margin-left:0;
 	border-bottom-width:0;
@@ -46,7 +46,7 @@
 			padding-left:$spacer*4;
 		}
 	}
-	.searchItem-blurb {
+	.contentItem-blurb {
 		display:none;
 		@include media-breakpoint-up(md) {
 			display:block;

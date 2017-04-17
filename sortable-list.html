@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style/css/main.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/front-end/frontEnd.js"></script>
+    <script src="js/vendor/bootstrap/util.js"></script>
+    <script src="js/vendor/bootstrap/collapse.js"></script>
+    <script src="js/vendor/bootstrap/carousel.js"></script>
+    <script src="js/vendor/jQuery.succinct.min.js"></script>
+    <script src="js/vendor/picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
+    <script src="js/vendor/mixitup.min.js"></script>
+    <script src="js/vendor/select2.full.min.js"></script>
+    <script src="js/front-end/waitForFinalEvent.js"></script>
+    <script src="js/front-end/retach.js"></script>
+    <script src="js/front-end/searchToggle.js"></script>
+    <script src="js/front-end/mobileSubToggles.js"></script>
+    <script src="js/front-end/pickerChooser.js"></script>
+    <script src="js/front-end/truncateList.js"></script>
+    <script src="https://fast.fonts.net/jsapi/a2f2325c-9bbe-4e0d-adcd-6236550cbc77.js"></script>
+    <title>Sortable LIst</title>
+  </head>
+  <body>
+    <div class="headerMain">
+      <div class="container p-0">
+        <nav class="headerMain-navUtil navbar navbar-expand-md justify-content-md-end p-0">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link zmdi-favorite active" href="#">Favorites</a></li>
+            <li class="nav-item"><a class="nav-link zmdi-account-circle" href="#">Account Info</a></li>
+            <li class="nav-item"><a class="nav-link zmdi-square-right" href="#">Log Out</a></li>
+            <li class="nav-item"><a class="nav-link zmdi-home" href="#">Manatt Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="headerMain-navMain navbar navbar-expand-md navbar-inverse bg-inverse">
+        <div class="container p-0">
+          <button class="headerMain-navToggler navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span></button><a class="navbar-brand order-first" href="#">360 health</a>
+          <div class="headerMain-collapse collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="headerMain-navItems navbar-nav ml-auto">
+              <li class="nav-item hasChildren active"><a class="nav-link" href="#">Premium Insights</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hasChildren"><a class="nav-link" href="#">Key Topics</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hasChildren"><a class="nav-link" href="#">Analytics</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item hasChildren"><a class="nav-link" href="#">Publications &amp; Events</a>
+                <ul class="navbar-subnav">
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 01</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 04</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 05</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sub Link 06</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">People</a></li>
+            </ul>
+            <form class="headerMain-search my-3 my-lg-0 ml-auto mr-md-2" id="headerMainSearch">
+              <input class="headerMain-searchBox form-control" id="headerMainSearch" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">GO</button>
+            </form>
+            <button class="headerMain-searchToggler zmdi-search"></button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="container">
+        <section class="actionBar px-4 py-3 py-md-9 fillColorGray fullWidth">
+          <h2 class="h5 mb-4 heading--defaultFont text-center text-uppercase">Search Resource Library</h2>
+          <div class="row sm-gutters">
+            <div class="col-md">
+              <div class="searchBox actionBar-searchBox colorGrayDarker mb-2 mb-md-0">
+                <input class="searchBox-textField" type="text" name="" placeholder="Search Library"><span class="searchBox-submit"></span>
+              </div>
+            </div>
+            <div class="col-md">
+              <label class="sr-only" for="topic">Filter by Topic</label>
+              <div class="customSelect customSelect--trans colorGrayDarker mb-2 mb-md-0">
+                <select class="select2Field customSelect-select form-control" id="topicSelect" multiple="multiple">
+                  <option value=".topic-1">Topic 1</option>
+                  <option value=".topic-2">Topic 2</option>
+                  <option value=".topic-3">Topic 3</option>
+                  <option value=".topic-4">Topic 4</option>
+                  <option value=".topic-5">Topic 5</option>
+                  <option value=".topic-6">Topic 6</option>
+                </select>
+                <div class="customSelect-icon"></div>
+              </div>
+            </div>
+            <div class="col-md">
+              <label class="sr-only" for="date">Date</label>
+              <input class="form-control colorGrayDarker mb-2 mb-md-0 datePicker" type="text" name="" placeholder="Date __/__/____">
+            </div>
+            <div class="col-md col-md-auto">
+              <button class="btn btn-primary w-100 w-md-auto px-4">Go</button>
+            </div>
+          </div>
+        </section>
+        <div class="sortable">
+          <div class="sortable-header fullWidth">
+            <h2 class="sortable-heading">Sort Content Files By</h2>
+            <ul class="sortable-controls">
+              <li class="sortable-col-30">
+                <div class="sortable-option" data-sort="name">Name</div>
+              </li>
+              <li class="sortable-col-30">
+                <div class="sortable-option" data-sort="title">Title</div>
+              </li>
+              <li class="sortable-col-10">
+                <div class="sortable-option" data-sort="state">State</div>
+              </li>
+              <li class="sortable-col-10">
+                <div class="sortable-option" data-sort="published-date">Date</div>
+              </li>
+              <li class="sortable-col-20">
+                <div class="sortable-option" data-sort="state">Keywords</div>
+              </li>
+            </ul>
+          </div>
+          <ul class="sortable-list">
+            <li class="sortable-item topic-1" data-published-date="2016-11-24" data-name="Oscar" data-title="abba" data-state="SC">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Oscar Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">Abba Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">SC</div>
+              <div class="sortable-col-10">11/24/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-1" data-published-date="2016-10-12" data-name="Charlie" data-title="boston" data-state="NC">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Charlie Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">boston Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">NC</div>
+              <div class="sortable-col-10">10/12/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-2" data-published-date="2016-09-30" data-name="Lima" data-title="zztop" data-state="AZ">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Lima Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">zztop Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">AZ</div>
+              <div class="sortable-col-10">9/30/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-2" data-published-date="2016-09-03" data-name="Alpha" data-title="kiss" data-state="CO">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Alpha Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">kiss Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">CO</div>
+              <div class="sortable-col-10">9/3/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-1" data-published-date="2016-09-03" data-name="Mike" data-title="sociald" data-state="FL">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Mike Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">sociald Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">FL</div>
+              <div class="sortable-col-10">9/3/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-3" data-published-date="2016-09-03" data-name="Zulu" data-title="oingo" data-state="HI">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Zulu Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">oingo Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">HI</div>
+              <div class="sortable-col-10">9/3/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-2" data-published-date="2016-04-30" data-name="Tango" data-title="bowie" data-state="IN">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Tango Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">bowie Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">IN</div>
+              <div class="sortable-col-10">4/30/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-3" data-published-date="2016-04-24" data-name="Sierra" data-title="cash" data-state="CA">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Sierra Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">cash Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">CA</div>
+              <div class="sortable-col-10">4/24/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <li class="sortable-item topic-1" data-published-date="2016-03-12" data-name="Bravo" data-title="lucero" data-state="AK">
+              <div class="sortable-col-30"><a href=""><i class="zmdi-download"></i>Bravo Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></div>
+              <div class="sortable-col-30">lucero Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="sortable-col-10">AK</div>
+              <div class="sortable-col-10">3/12/2016</div>
+              <div class="sortable-col-20">medicare, medicad, low-income</div>
+            </li>
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footerMain">
+      <p>footer</p>
+    </footer>
+    <script>
+      var containerEl = document.querySelector('.sortable-list');
+      var mixer = mixitup(containerEl, {
+      	load: {
+      		sort: 'name:asc'
+      	},
+      	selectors: {
+      		control: '.sortable-option',
+      		target: '.sortable-item'
+      	}
+      });
+    </script>
+    <script>
+      $("#topicSelect").select2({
+      	  placeholder: "Filter by Topic",
+      	  allowClear: true			
+      });
+    </script>
+    <script>
+      $('.datePicker').pickadate({
+      	format: 'mm / dd / yyyy'
+      })
+      //trying to toggle sort order
+    </script>
+  </body>
+</html>

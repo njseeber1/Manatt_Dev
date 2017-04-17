@@ -16,7 +16,9 @@
 
 // 2. Vendors
 @import
-  //'vendor/normalize',
+  'vendor/pickadate.core',
+  'vendor/pickadate.classic.date',
+  'vendor/select2',
   'vendor/bootstrap',
   'vendor/material-design-iconic-font',
   'vendor/font-awesome';
@@ -40,15 +42,23 @@
 
 // 5. Components
 @import
+  'components/contentItem',
+  'components/featureBlock',
+  'components/article',
+  'components/social',
+  'components/sortable',
+  'components/select2overrides',
+  'components/utilityBar',
+  'components/breadcrumb',
   'components/pagination',
   'components/peopleList',
   'components/bannerTitle',
-  'components/searchItem',
   'components/searchFeatured',
   'components/searchHeader',
   'components/headermain',
   'components/tile',
   'components/searchBox',
+  'components/datePicker',
   'components/tileList',
   'components/mediaBlock',
   'components/pickerChooser',

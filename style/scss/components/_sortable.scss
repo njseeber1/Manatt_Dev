@@ -1,0 +1,123 @@
+/* FEATURE BLOCK
+========================================================================== */
+
+.sortable {
+    font-size: 14px;
+}
+
+.sortable-header {
+    background: $colorBrandBlueDark;
+    color: $colorWhite;
+}
+
+.sortable-heading {
+    text-align: center;
+    font-family: $font-family-base;
+    margin: 0;
+    padding: $spacer*1.25 0;
+    text-transform:uppercase;
+    font-size:20px;
+}
+
+.sortable-controls {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-top: 1px solid $colorWhite;
+  [class^='sortable-col'],
+  [class*=' sortable-col'] {
+    padding-top:0;
+    padding-bottom:0;
+  }
+}
+.sortable-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 0;
+    align-self: stretch;
+    cursor:pointer;
+    text-transform:uppercase;
+    font-size:13px;
+    padding-top:$spacer/2;
+    padding-bottom:$spacer/2;
+    @include transition(all 0.2s ease-in-out);
+    &:after {
+      @include transition(all 0.2s ease-in-out);
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $colorBrandGreen;
+    }
+    &.mixitup-control-active, &:hover {
+      //opacity:.85;
+      //color:$colorBrandGreen;
+      //font-weight: bold;
+      &:after {
+        width:7px;
+        height:7px;
+        border-radius:50%;
+        border-width:0;
+        background:$colorBrandCyan;
+      }
+    }
+    &.mixitup-control-active {
+      //pointer-events:none;
+    }
+    &:hover {
+      opacity:.75;
+      font-style: italic;
+      &:after {
+        opacity:.5;
+      }
+    }
+}
+.sortable-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sortable-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $colorGrayLighter;
+    padding: $spacer 0;
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        padding: 0;
+    }
+}
+[class^='sortable-col'],
+[class*=' sortable-col'] {
+    padding: $spacer/4 $spacer;
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        i {
+            color: $colorBrandCyan;
+            font-size: 20px;
+            margin-right: .2em;
+            text-decoration: none;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        padding: $spacer $spacer*1.5;
+    }
+}
+
+.sortable-col-30 {
+    flex: 0 0 30%;
+}
+
+.sortable-col-20 {
+    flex: 0 0 20%;
+}
+
+.sortable-col-10 {
+    flex: 0 0 10%;
+}

@@ -1,0 +1,188 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.pug
+		title Sortable LIst
+	body
+		include includes/_headerMain.pug
+		main
+			.container
+				section.actionBar.px-4.py-3.py-md-9.fillColorGray.fullWidth
+					h2.h5.mb-4.heading--defaultFont.text-center.text-uppercase Search Resource Library
+					.row.sm-gutters
+						.col-md
+							.searchBox.actionBar-searchBox.colorGrayDarker.mb-2.mb-md-0
+								input.searchBox-textField(type='text', name='', placeholder='Search Library')
+								span.searchBox-submit
+						.col-md
+							label.sr-only(for='topic') Filter by Topic
+							.customSelect.customSelect--trans.colorGrayDarker.mb-2.mb-md-0
+								select#topicSelect.select2Field.customSelect-select.form-control(multiple="multiple")
+									option(value='.topic-1') Topic 1
+									option(value='.topic-2') Topic 2
+									option(value='.topic-3') Topic 3
+									option(value='.topic-4') Topic 4
+									option(value='.topic-5') Topic 5
+									option(value='.topic-6') Topic 6
+								.customSelect-icon
+						.col-md
+							label.sr-only(for='date') Date
+							input.form-control.colorGrayDarker.mb-2.mb-md-0.datePicker(type='text', name='', placeholder='Date __/__/____')
+						.col-md.col-md-auto
+							button.btn.btn-primary.w-100.w-md-auto.px-4 Go
+				.sortable
+					.sortable-header.fullWidth
+						h2.sortable-heading Sort Content Files By
+						ul.sortable-controls
+							li.sortable-col-30
+								.sortable-option(data-sort='name') Name
+							li.sortable-col-30
+								.sortable-option(data-sort='title') Title
+							li.sortable-col-10
+								.sortable-option(data-sort='state') State
+							li.sortable-col-10
+								.sortable-option(data-sort='published-date') Date
+							li.sortable-col-20
+								.sortable-option(data-sort='state') Keywords
+					ul.sortable-list
+						li.sortable-item.topic-1(data-published-date='2016-11-24', data-name='Oscar', data-title='abba', data-state='SC')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Oscar Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 Abba Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 SC
+							.sortable-col-10 11/24/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-1(data-published-date='2016-10-12', data-name='Charlie', data-title='boston', data-state='NC')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Charlie Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 boston Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 NC
+							.sortable-col-10 10/12/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-2(data-published-date='2016-09-30', data-name='Lima', data-title='zztop', data-state='AZ')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Lima Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 zztop Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 AZ
+							.sortable-col-10 9/30/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-2(data-published-date='2016-09-03', data-name='Alpha', data-title='kiss', data-state='CO')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Alpha Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 kiss Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 CO
+							.sortable-col-10 9/3/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-1(data-published-date='2016-09-03', data-name='Mike', data-title='sociald', data-state='FL')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Mike Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 sociald Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 FL
+							.sortable-col-10 9/3/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-3(data-published-date='2016-09-03', data-name='Zulu', data-title='oingo', data-state='HI')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									|Zulu Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 oingo Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 HI
+							.sortable-col-10 9/3/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-2(data-published-date='2016-04-30', data-name='Tango', data-title='bowie', data-state='IN')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Tango Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 bowie Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 IN
+							.sortable-col-10 4/30/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-3(data-published-date='2016-04-24', data-name='Sierra', data-title='cash', data-state='CA')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Sierra Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 cash Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 CA
+							.sortable-col-10 4/24/2016
+							.sortable-col-20 medicare, medicad, low-income
+						li.sortable-item.topic-1(data-published-date='2016-03-12', data-name='Bravo', data-title='lucero', data-state='AK')
+							.sortable-col-30
+								a(href='')
+									i.zmdi-download
+									| Bravo Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-30 lucero Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							.sortable-col-10 AK
+							.sortable-col-10 3/12/2016
+							.sortable-col-20 medicare, medicad, low-income
+						.gap
+						.gap
+						.gap
+
+
+		include includes/_footerMain.pug
+
+		script.
+			var containerEl = document.querySelector('.sortable-list');
+			var mixer = mixitup(containerEl, {
+				load: {
+					sort: 'name:asc'
+				},
+				selectors: {
+					control: '.sortable-option',
+					target: '.sortable-item'
+				}
+			});
+		//- initially thought we needed to filter with the actionbar select
+		//- script.
+		//- 	$(function(){
+		//- 		var $filterSelect = $('#topicSelect'),
+		//- 			//$sortSelect = $('#SortSelect'),
+		//- 			$container = $('.sortable-list');
+		//- 			$container.mixItUp();
+		//- 			$filterSelect.on('change', function(){
+		//- 			$container.mixItUp('filter', this.value);
+		//- 		});
+		//- 			//$sortSelect.on('change', function(){
+		//- 			//$container.mixItUp('sort', this.value);
+		//- 		//});
+		//- 	});
+		script.
+			$("#topicSelect").select2({
+				  placeholder: "Filter by Topic",
+				  allowClear: true			
+			});
+		script.
+			$('.datePicker').pickadate({
+				format: 'mm / dd / yyyy'
+			})
+			//trying to toggle sort order
+		//- script.
+		//- 	$(function(){
+		//- 	var sortOrder = 'asc',
+		//- 	$container = $('.sortable-list'),
+		//- 	$toggleSort = $('.sortable-option');
+		//- 	//$container.mixItUp();
+		//- 	$toggleSort.on('click', function() {
+		//- 	switch (sortOrder) {
+		//- 	case 'asc':
+		//- 	sortOrder = 'desc';
+		//- 	break;
+		//- 	case 'desc':
+		//- 	sortOrder = 'asc';
+		//- 	break;
+		//- 	}
+		//- 	$container.mixItUp('sort', 'myorder:' + sortOrder);
+		//- 	});
+		//- 	});

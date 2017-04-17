@@ -10,6 +10,10 @@
     background: $colorBrandBlueDark;
     font-weight:bold;
     margin-bottom:$spacer;
+    &.customSelect--trans {
+        background:rgba($colorWhite,.6);
+        //color:$colorText;
+    }
 }
 .customSelect-icon {
     @extend .zmdi-chevron-down;
@@ -18,7 +22,7 @@
     top: 0;
     bottom: 0;
     width: 40px;
-    background: inherit;
+    //background: inherit;
     pointer-events: none;
     display: flex;
     align-items: center;

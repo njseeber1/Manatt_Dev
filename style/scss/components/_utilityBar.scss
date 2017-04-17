@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// ACTION BAR
+// -----------------------------------------------------------------------------
+
+.utilityBar {
+    border-bottom:1px solid $colorGrayLighter;
+    padding-top:$spacer;
+    padding-bottom:$spacer;
+    margin-bottom:$spacer;
+}
+.utilityBar-inner {
+    max-width:1200px;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    justify-content:space-between;
+}

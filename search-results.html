@@ -11,6 +11,10 @@
     <script src="js/vendor/bootstrap/collapse.js"></script>
     <script src="js/vendor/bootstrap/carousel.js"></script>
     <script src="js/vendor/jQuery.succinct.min.js"></script>
+    <script src="js/vendor/picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
+    <script src="js/vendor/mixitup.min.js"></script>
+    <script src="js/vendor/select2.full.min.js"></script>
     <script src="js/front-end/waitForFinalEvent.js"></script>
     <script src="js/front-end/retach.js"></script>
     <script src="js/front-end/searchToggle.js"></script>
@@ -237,55 +241,55 @@
           <div class="col">
             <div class="searchFeatured">
               <div class="searchFeatured-header">Featured Results for &lt; Search Terms &gt;</div>
-              <div class="searchItem searchItem--keyTopic searchFeatured-searchItem">
-                <div class="searchItem-indicator fa-address-book">Key Topic</div>
-                <h2 class="searchItem-title">Key Topic Search Result Item</h2>
-                <div class="searchItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+              <div class="contentItem contentItem--keyTopic searchFeatured-contentItem">
+                <div class="contentItem-indicator fa-address-book">Key Topic</div>
+                <h2 class="contentItem-title">Key Topic Search Result Item</h2>
+                <div class="contentItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
               </div>
-              <div class="searchItem searchItem--publication searchFeatured-searchItem">
-                <div class="searchItem-indicator">Publication</div>
-                <h2 class="searchItem-title">Publication Search Result Item</h2>
-                <div class="searchItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+              <div class="contentItem contentItem--publication searchFeatured-contentItem">
+                <div class="contentItem-indicator">Publication</div>
+                <h2 class="contentItem-title">Publication Search Result Item</h2>
+                <div class="contentItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
               </div>
-              <div class="searchItem searchItem--event searchFeatured-searchItem">
-                <div class="searchItem-indicator">Event</div>
-                <h2 class="searchItem-title">Event Search Result Item</h2>
-                <div class="searchItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+              <div class="contentItem contentItem--event searchFeatured-contentItem">
+                <div class="contentItem-indicator">Event</div>
+                <h2 class="contentItem-title">Event Search Result Item</h2>
+                <div class="contentItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
               </div>
-              <div class="searchItem searchItem--premiumInsight searchFeatured-searchItem">
-                <div class="searchItem-indicator">Premium Insight</div>
-                <h2 class="searchItem-title">Premium Insight Search Result Item</h2>
-                <div class="searchItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+              <div class="contentItem contentItem--premiumInsight searchFeatured-contentItem">
+                <div class="contentItem-indicator">Premium Insight</div>
+                <h2 class="contentItem-title">Premium Insight Search Result Item</h2>
+                <div class="contentItem-blurb js-truncate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
               </div>
             </div>
             <div class="searchHeader">
               <div class="searchHeader-heading">Search for &lt; Search Terms &gt;</div>
               <div class="searchHeader-aside">(Showing <strong>8 of 25 </strong>results)</div>
             </div>
-            <div class="searchItem searchItem--keyTopic">
-              <div class="searchItem-indicator fa-address-book">Key Topic</div>
-              <h2 class="searchItem-title">Key Topic Search Result Item</h2>
-              <div class="searchItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+            <div class="contentItem contentItem--keyTopic">
+              <div class="contentItem-indicator fa-address-book">Key Topic</div>
+              <h2 class="contentItem-title">Key Topic Search Result Item</h2>
+              <div class="contentItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
             </div>
-            <div class="searchItem searchItem--publication">
-              <div class="searchItem-indicator">Publication</div>
-              <h2 class="searchItem-title">Publication Search Result Item</h2>
-              <div class="searchItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+            <div class="contentItem contentItem--publication">
+              <div class="contentItem-indicator">Publication</div>
+              <h2 class="contentItem-title">Publication Search Result Item</h2>
+              <div class="contentItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
             </div>
-            <div class="searchItem searchItem--event">
-              <div class="searchItem-indicator">Event</div>
-              <h2 class="searchItem-title">Event Search Result Item</h2>
-              <div class="searchItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+            <div class="contentItem contentItem--event">
+              <div class="contentItem-indicator">Event</div>
+              <h2 class="contentItem-title">Event Search Result Item</h2>
+              <div class="contentItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
             </div>
-            <div class="searchItem searchItem--premiumInsight">
-              <div class="searchItem-indicator">Premium Insight</div>
-              <h2 class="searchItem-title">Premium Insight Search Result Item</h2>
-              <div class="searchItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+            <div class="contentItem contentItem--premiumInsight">
+              <div class="contentItem-indicator">Premium Insight</div>
+              <h2 class="contentItem-title">Premium Insight Search Result Item</h2>
+              <div class="contentItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
             </div>
-            <div class="searchItem searchItem--analysis">
-              <div class="searchItem-indicator">Analysis</div>
-              <h2 class="searchItem-title">Analysis Search Result Item</h2>
-              <div class="searchItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+            <div class="contentItem contentItem--analysis">
+              <div class="contentItem-indicator">Analysis</div>
+              <h2 class="contentItem-title">Analysis Search Result Item</h2>
+              <div class="contentItem-blurb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
             </div>
           </div>
         </div>
